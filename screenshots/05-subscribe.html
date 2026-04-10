@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 430px; height: 932px; background: #000; font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif; color: #fff; overflow: hidden; display: flex; flex-direction: column; }
+.notch { width: 126px; height: 34px; background: #000; border-radius: 0 0 20px 20px; position: absolute; top: 0; left: 50%; transform: translateX(-50%); }
+.status-bar { height: 54px; display: flex; align-items: center; justify-content: space-between; padding: 14px 20px 0; font-size: 15px; font-weight: 600; }
+.toolbar { display: flex; justify-content: flex-end; padding: 0 16px; }
+.close-btn { width: 30px; height: 30px; background: #333; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #999; font-size: 14px; }
+.content { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 32px; gap: 20px; }
+.icon-wrap { font-size: 72px; margin-bottom: 8px; position: relative; }
+.icon-glow { position: absolute; inset: -20px; background: radial-gradient(circle, rgba(255,149,0,0.15), transparent 70%); border-radius: 50%; }
+.title { font-size: 26px; font-weight: 700; text-align: center; }
+.desc { font-size: 16px; color: #8e8e93; text-align: center; line-height: 1.5; }
+.plans { width: 100%; display: flex; flex-direction: column; gap: 12px; margin-top: 8px; }
+.plan { width: 100%; padding: 16px 20px; border-radius: 14px; display: flex; align-items: center; justify-content: space-between; }
+.plan-yearly { background: #0a84ff; }
+.plan-monthly { background: #1c1c1e; border: 1px solid #333; }
+.plan-label { font-size: 17px; font-weight: 600; }
+.plan-price { font-size: 15px; opacity: 0.9; }
+.plan-badge { font-size: 11px; background: rgba(255,255,255,0.2); padding: 2px 8px; border-radius: 10px; margin-left: 8px; font-weight: 600; }
+.restore { font-size: 15px; color: #8e8e93; margin-top: 4px; }
+.home-bar { width: 134px; height: 5px; background: #fff; border-radius: 3px; margin: 8px auto 12px; }
+</style></head><body>
+<div class="notch"></div>
+<div class="status-bar"><span>9:41</span><span style="letter-spacing:2px">📶 🔋</span></div>
+<div class="toolbar"><div class="close-btn">✕</div></div>
+<div class="content">
+<div class="icon-wrap"><div class="icon-glow"></div>⌚</div>
+<div class="title">K-Radio on<br>Apple Watch</div>
+<div class="desc">Listen to radio stations directly from your Apple Watch — no iPhone needed.</div>
+<div class="plans">
+<div class="plan plan-yearly">
+<div><span class="plan-label">Yearly</span><span class="plan-badge">SAVE 33%</span></div>
+<div class="plan-price">$7.99/yr</div>
+</div>
+<div class="plan plan-monthly">
+<div class="plan-label">Monthly</div>
+<div class="plan-price">$0.99/mo</div>
+</div>
+</div>
+<div class="restore">Restore Purchases</div>
+</div>
+<div class="home-bar"></div>
+</body></html>

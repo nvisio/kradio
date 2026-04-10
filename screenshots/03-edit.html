@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 430px; height: 932px; background: #000; font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif; color: #fff; overflow: hidden; }
+.notch { width: 126px; height: 34px; background: #000; border-radius: 0 0 20px 20px; position: absolute; top: 0; left: 50%; transform: translateX(-50%); }
+.status-bar { height: 54px; display: flex; align-items: center; justify-content: space-between; padding: 14px 20px 0; font-size: 15px; font-weight: 600; }
+.promo { text-align: center; padding: 16px 20px 12px; }
+.promo h1 { font-size: 22px; font-weight: 700; }
+.promo p { font-size: 14px; color: #8e8e93; margin-top: 4px; }
+.nav-title { font-size: 34px; font-weight: 700; padding: 8px 20px 12px; }
+.section-header { font-size: 13px; font-weight: 600; color: #8e8e93; text-transform: uppercase; padding: 20px 16px 6px; }
+.list { background: #1c1c1e; border-radius: 12px; margin: 0 16px; overflow: hidden; }
+.row { display: flex; align-items: center; padding: 11px 16px; border-bottom: 0.5px solid #38383a; gap: 12px; position: relative; }
+.row:last-child { border-bottom: none; }
+.row-icon { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+.row-text { flex: 1; }
+.row-text .name { font-size: 17px; font-weight: 500; }
+.row-text .sub { font-size: 13px; color: #8e8e93; margin-top: 1px; }
+.swipe-row { transform: translateX(-160px); }
+.swipe-actions { position: absolute; right: -160px; top: 0; bottom: 0; display: flex; }
+.swipe-btn { width: 80px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 4px; font-size: 12px; font-weight: 500; }
+.swipe-edit { background: #ff9500; color: #fff; }
+.swipe-delete { background: #ff3b30; color: #fff; }
+.swipe-btn-icon { font-size: 18px; }
+.add-row { display: flex; align-items: center; padding: 11px 16px; gap: 12px; }
+.add-icon { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 24px; color: #0a84ff; }
+.add-text { font-size: 17px; color: #0a84ff; }
+.reset-section { margin-top: 20px; }
+.reset-btn { text-align: center; padding: 12px; }
+.reset-label { color: #ff3b30; font-size: 17px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+.home-bar { width: 134px; height: 5px; background: #fff; border-radius: 3px; margin: 8px auto; position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); }
+</style></head><body>
+<div class="notch"></div>
+<div class="status-bar"><span>9:41</span><span style="letter-spacing:2px">📶 🔋</span></div>
+<div class="promo"><h1>Customize Your Stations</h1><p>Edit, Remove, and Add Your Own</p></div>
+<div class="nav-title">K-Radio Tuner</div>
+<div class="section-header" style="margin: 0 16px;">BBC</div>
+<div class="list">
+<div class="row"><div class="row-icon">🎤</div><div class="row-text"><div class="name">BBC Radio 1</div><div class="sub">Pop · New Music</div></div></div>
+<div class="row swipe-row"><div class="row-icon">🎵</div><div class="row-text"><div class="name">BBC Radio 2</div><div class="sub">Music · Entertainment</div></div><div class="swipe-actions"><div class="swipe-btn swipe-edit"><div class="swipe-btn-icon">✏️</div>Edit</div><div class="swipe-btn swipe-delete"><div class="swipe-btn-icon">🗑</div>Delete</div></div></div>
+<div class="row"><div class="row-icon">🎼</div><div class="row-text"><div class="name">BBC Radio 3</div><div class="sub">Classical · Jazz · Arts</div></div></div>
+<div class="row"><div class="row-icon">📖</div><div class="row-text"><div class="name">BBC Radio 4</div><div class="sub">News · Drama</div></div></div>
+</div>
+<div class="section-header" style="margin: 0 16px;">My Stations</div>
+<div class="list">
+<div class="row"><div class="row-icon" style="color: #0a84ff;">📻</div><div class="row-text"><div class="name">NHK World Radio</div><div class="sub">nhk.or.jp</div></div></div>
+<div class="add-row"><div class="add-icon">＋</div><div class="add-text">Add Station</div></div>
+</div>
+<div class="reset-section">
+<div class="list">
+<div class="reset-btn"><span class="reset-label">↺ Reset to Defaults</span></div>
+</div>
+</div>
+<div class="home-bar"></div>
+</body></html>

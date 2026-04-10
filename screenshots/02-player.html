@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 430px; height: 932px; background: #000; font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif; color: #fff; overflow: hidden; display: flex; flex-direction: column; }
+.notch { width: 126px; height: 34px; background: #000; border-radius: 0 0 20px 20px; position: absolute; top: 0; left: 50%; transform: translateX(-50%); }
+.status-bar { height: 54px; display: flex; align-items: center; justify-content: space-between; padding: 14px 20px 0; font-size: 15px; font-weight: 600; }
+.toolbar { display: flex; padding: 0 16px; }
+.toolbar-btn { font-size: 20px; color: #fff; opacity: 0.8; }
+.promo { text-align: center; padding: 12px 20px 8px; }
+.promo h1 { font-size: 22px; font-weight: 700; }
+.promo p { font-size: 14px; color: #8e8e93; margin-top: 4px; }
+.content { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 40px; gap: 24px; }
+.artwork { width: 280px; height: 280px; border-radius: 16px; background: linear-gradient(135deg, #1a1a3e, #0d1b2a, #1b2838); display: flex; align-items: center; justify-content: center; box-shadow: 0 20px 60px rgba(0,0,0,0.5); position: relative; overflow: hidden; }
+.artwork::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 30% 40%, rgba(10,132,255,0.15), transparent 60%), radial-gradient(circle at 70% 60%, rgba(255,55,95,0.1), transparent 50%); }
+.artwork-icon { font-size: 72px; opacity: 0.6; position: relative; z-index: 1; }
+.info { text-align: center; }
+.info .station { font-size: 15px; color: #8e8e93; }
+.info .program { font-size: 24px; font-weight: 600; margin-top: 6px; }
+.controls { display: flex; align-items: center; gap: 40px; }
+.play-btn { width: 80px; height: 80px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; }
+.play-icon { width: 0; height: 0; border-style: solid; border-width: 16px 0 16px 28px; border-color: transparent transparent transparent #000; margin-left: 4px; }
+.pause-icon { display: flex; gap: 8px; }
+.pause-bar { width: 8px; height: 32px; background: #000; border-radius: 2px; }
+.skip { font-size: 32px; color: #fff; opacity: 0.6; }
+.airplay { width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-size: 24px; opacity: 0.5; }
+.home-bar { width: 134px; height: 5px; background: #fff; border-radius: 3px; margin: 8px auto 12px; }
+</style></head><body>
+<div class="notch"></div>
+<div class="status-bar"><span>9:41</span><span style="letter-spacing:2px">📶 🔋</span></div>
+<div class="toolbar"><span class="toolbar-btn">‹</span></div>
+<div class="promo"><h1>Now Playing</h1><p>Background Audio & Lock Screen Controls</p></div>
+<div class="content">
+<div class="artwork"><span class="artwork-icon">📡</span></div>
+<div class="info">
+<div class="station">KBS 1라디오</div>
+<div class="program">뉴스광장 1부</div>
+</div>
+<div class="controls">
+<div class="play-btn"><div class="pause-icon"><div class="pause-bar"></div><div class="pause-bar"></div></div></div>
+</div>
+<div class="airplay">📺</div>
+</div>
+<div class="home-bar"></div>
+</body></html>
