@@ -93,14 +93,15 @@ Streams drop sometimes — K-Radio handles it. Auto-recovery reconnects when a s
 K-Radio Tuner does not collect any personal data. No accounts, no analytics, no tracking. Station preferences are stored locally on your device and synced to your Apple Watch via Watch Connectivity. That's it.
 
 [Privacy Policy](privacy-policy.html) | [Terms of Use](terms-of-use.html)
+[개인정보 처리방침](privacy-policy-ko.html) | [이용약관](terms-of-use-ko.html)
 
 ## Links
 
 - [App Store](https://apps.apple.com/app/k-radio-tuner/id0000000000)
-- [Privacy Policy](https://hkmoon.github.io/kbsCong/privacy-policy.html)
-- [Terms of Use](https://hkmoon.github.io/kbsCong/terms-of-use.html)
-- [Support](https://github.com/hkmoon/kbsCong)
+- [Privacy Policy](https://nvisio.github.io/kradio/privacy-policy.html)
+- [Terms of Use](https://nvisio.github.io/kradio/terms-of-use.html)
+- [Support](https://github.com/nvisio/kradio)
 
 ---
 
-Made by [HongKee Moon](https://github.com/hkmoon)
+Made by [nvisio](https://nvis.io/)

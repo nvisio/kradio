@@ -47,4 +47,4 @@ We may update this Privacy Policy from time to time. Any changes will be posted 
 
 ## Contact
 
-If you have questions about this Privacy Policy, contact us at: hkmoon (at) me dot(.) com
+If you have questions about this Privacy Policy, contact us at: moon@nvis.io

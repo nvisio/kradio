@@ -44,4 +44,4 @@ We may update these Terms from time to time. Continued use of the App after chan
 
 ## Contact
 
-If you have questions about these Terms, contact us at: hkmoon@nvisio.de
+If you have questions about these Terms, contact us at: moon@nvis.io

@@ -47,4 +47,4 @@ K-Radio Tuner("본 앱")는 HongKee Moon이 개발하였습니다. 본 개인정
 
 ## 연락처
 
-본 개인정보 처리방침에 관한 문의 사항은 다음으로 연락해 주십시오: hkmoon (at) me dot(.) com
+본 개인정보 처리방침에 관한 문의 사항은 다음으로 연락해 주십시오: moon@nvis.io
