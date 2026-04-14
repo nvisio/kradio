@@ -68,8 +68,8 @@ The Watch app is available with an optional subscription:
 
 | Plan | Price |
 |------|-------|
-| **Yearly** | $7.99/year (save 33%) |
-| **Monthly** | $0.99/month |
+| **Yearly** | $8.99/year (save 25%) |
+| **Monthly** | $0.99/month           |
 
 <p align="center">
   <img src="screenshots/05-subscribe.png" width="260" />
