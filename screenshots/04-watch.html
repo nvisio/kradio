@@ -10,26 +10,26 @@ body { width: 430px; height: 932px; background: #000; font-family: -apple-system
 .watch::before { content: ''; position: absolute; top: -20px; right: -12px; width: 14px; height: 44px; background: #333; border-radius: 4px; }
 .watch-band-top { width: 160px; height: 60px; background: linear-gradient(180deg, #2a2a2a, #333); border-radius: 0 0 20px 20px; margin: 0 auto 8px; }
 .watch-band-bottom { width: 160px; height: 60px; background: linear-gradient(0deg, #2a2a2a, #333); border-radius: 20px 20px 0 0; margin: 8px auto 0; }
-.w-title { font-size: 11px; font-weight: 700; color: #fff; margin-bottom: 6px; }
-.w-section { font-size: 8px; color: #8e8e93; text-transform: uppercase; margin: 6px 0 3px; font-weight: 600; }
-.w-now { background: #2c2c2e; border-radius: 8px; padding: 6px 8px; margin-bottom: 4px; }
+.w-title { font-size: 11px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.w-section { font-size: 8px; color: #8e8e93; text-transform: uppercase; margin: 4px 0 2px; font-weight: 600; }
+.w-now { background: #2c2c2e; border-radius: 8px; padding: 5px 7px; margin-bottom: 3px; }
 .w-now-label { font-size: 7px; color: #8e8e93; text-transform: uppercase; font-weight: 600; }
 .w-now-station { font-size: 7px; color: #8e8e93; margin-top: 1px; }
-.w-now-program { font-size: 10px; font-weight: 600; }
+.w-now-program { font-size: 9px; font-weight: 600; }
 .w-now-right { display: flex; align-items: center; justify-content: space-between; }
 .w-playing { font-size: 8px; color: #30d158; }
-.w-row { display: flex; align-items: center; padding: 4px 0; gap: 6px; border-bottom: 0.3px solid #38383a; }
+.w-row { display: flex; align-items: center; padding: 3px 0; gap: 5px; border-bottom: 0.3px solid #38383a; }
 .w-row:last-child { border: none; }
-.w-row-icon { font-size: 12px; width: 18px; text-align: center; }
+.w-row-icon { font-size: 11px; width: 16px; text-align: center; }
 .w-row-text { flex: 1; }
-.w-row-name { font-size: 10px; font-weight: 500; }
+.w-row-name { font-size: 9px; font-weight: 500; }
 .w-row-sub { font-size: 7px; color: #8e8e93; }
 .feature-list { margin-top: 32px; text-align: left; padding: 0 60px; }
 .feature { display: flex; align-items: center; gap: 12px; margin: 10px 0; }
 .feature-icon { font-size: 18px; width: 28px; text-align: center; }
 .feature-text { font-size: 15px; color: #ccc; }
 </style></head><body>
-<div class="promo"><h1>Apple Watch Companion</h1><p>Listen Without Your iPhone</p></div>
+<div class="promo"><h1>Apple Watch Companion</h1><p>Standalone playback with iCloud-synced stations</p></div>
 <div class="watch-band-top"></div>
 <div class="watch">
 <div class="w-title">K-Radio</div>
@@ -46,12 +46,13 @@ body { width: 430px; height: 932px; background: #000; font-family: -apple-system
 <div class="w-section">KBS</div>
 <div class="w-row"><div class="w-row-icon">📡</div><div class="w-row-text"><div class="w-row-name">KBS 1라디오</div><div class="w-row-sub">뉴스 · 시사</div></div></div>
 <div class="w-row"><div class="w-row-icon">😊</div><div class="w-row-text"><div class="w-row-name">KBS HappyFM</div><div class="w-row-sub">오락 · 음악</div></div></div>
-<div class="w-row"><div class="w-row-icon">🎵</div><div class="w-row-text"><div class="w-row-name">KBS ClassicFM</div><div class="w-row-sub">클래식 음악</div></div></div>
+<div class="w-section">My Stations</div>
+<div class="w-row"><div class="w-row-icon">📻</div><div class="w-row-text"><div class="w-row-name">My Custom FM</div><div class="w-row-sub">stream.example.com</div></div></div>
 </div>
 <div class="watch-band-bottom"></div>
 <div class="feature-list">
-<div class="feature"><div class="feature-icon">⌚</div><div class="feature-text">Standalone playback</div></div>
-<div class="feature"><div class="feature-icon">🔄</div><div class="feature-text">Stations synced from iPhone</div></div>
-<div class="feature"><div class="feature-icon">🎵</div><div class="feature-text">Now Playing on watch face</div></div>
+<div class="feature"><div class="feature-icon">⌚</div><div class="feature-text">Standalone playback via Bluetooth</div></div>
+<div class="feature"><div class="feature-icon">☁️</div><div class="feature-text">iCloud sync — your stations follow you</div></div>
+<div class="feature"><div class="feature-icon">⭐</div><div class="feature-text">My Stations on the wrist</div></div>
 </div>
 </body></html>

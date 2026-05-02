@@ -10,14 +10,14 @@ body { width: 430px; height: 932px; background: #000; font-family: -apple-system
 .promo p { font-size: 14px; color: #8e8e93; margin-top: 4px; }
 .nav-title { font-size: 34px; font-weight: 700; padding: 8px 20px 12px; }
 .list { background: #1c1c1e; border-radius: 12px; margin: 0 16px; overflow: hidden; }
-.section-header { font-size: 13px; font-weight: 600; color: #8e8e93; text-transform: uppercase; padding: 20px 16px 6px; background: #000; margin: 0 -0px; }
-.section-header:first-child { padding-top: 8px; }
-.row { display: flex; align-items: center; padding: 11px 16px; border-bottom: 0.5px solid #38383a; gap: 12px; }
+.section-header { font-size: 13px; font-weight: 600; color: #8e8e93; text-transform: uppercase; padding: 16px 16px 6px; background: #000; margin: 0 -0px; }
+.section-header:first-child { padding-top: 4px; }
+.row { display: flex; align-items: center; padding: 9px 16px; border-bottom: 0.5px solid #38383a; gap: 12px; }
 .row:last-child { border-bottom: none; }
-.row-icon { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+.row-icon { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
 .row-text { flex: 1; }
-.row-text .name { font-size: 17px; font-weight: 500; }
-.row-text .sub { font-size: 13px; color: #8e8e93; margin-top: 1px; }
+.row-text .name { font-size: 16px; font-weight: 500; }
+.row-text .sub { font-size: 12px; color: #8e8e93; margin-top: 1px; }
 .active .name, .active .row-icon { color: #0a84ff; }
 .playing-icon { color: #0a84ff; font-size: 13px; }
 .mini-player { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(44,44,46,0.95); backdrop-filter: blur(20px); padding: 10px 16px; display: flex; align-items: center; gap: 12px; border-top: 0.5px solid #48484a; }
@@ -30,7 +30,7 @@ body { width: 430px; height: 932px; background: #000; font-family: -apple-system
 </style></head><body>
 <div class="notch"></div>
 <div class="status-bar"><span>9:41</span><span style="letter-spacing:2px">📶 🔋</span></div>
-<div class="promo"><h1>21+ Radio Stations</h1><p>Korean & International Radio in One App</p></div>
+<div class="promo"><h1>23 Radio Stations</h1><p>Korean &amp; International Radio in One App</p></div>
 <div class="nav-title">K-Radio Tuner</div>
 <div style="margin-top: 4px;">
 <div class="section-header" style="margin: 0 16px; background: transparent;">KBS</div>
@@ -44,10 +44,13 @@ body { width: 430px; height: 932px; background: #000; font-family: -apple-system
 <div class="list">
 <div class="row"><div class="row-icon">📻</div><div class="row-text"><div class="name">MBC 표준FM</div><div class="sub">뉴스 · 시사 · 오락</div></div></div>
 <div class="row"><div class="row-icon">🎶</div><div class="row-text"><div class="name">MBC FM4U</div><div class="sub">음악 · DJ</div></div></div>
+<div class="row"><div class="row-icon">🎼</div><div class="row-text"><div class="name">MBC mini 올댓뮤직</div><div class="sub">음악 전문</div></div></div>
 </div>
 <div class="section-header" style="margin: 0 16px; background: transparent;">SBS</div>
 <div class="list">
 <div class="row"><div class="row-icon">⚡</div><div class="row-text"><div class="name">SBS 파워FM</div><div class="sub">대중음악 · DJ</div></div></div>
+<div class="row"><div class="row-icon">❤️</div><div class="row-text"><div class="name">SBS 러브FM</div><div class="sub">음악 · 토크</div></div></div>
+<div class="row"><div class="row-icon">📊</div><div class="row-text"><div class="name">SBS 고릴라디오M</div><div class="sub">음악 전문</div></div></div>
 </div>
 </div>
 <div class="mini-player">

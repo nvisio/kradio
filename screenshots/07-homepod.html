@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 430px; height: 932px; background: #000; font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif; color: #fff; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; }
+.promo { text-align: center; margin-bottom: 28px; }
+.promo h1 { font-size: 22px; font-weight: 700; }
+.promo p { font-size: 14px; color: #8e8e93; margin-top: 4px; }
+.scene { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.bubble { background: rgba(255,255,255,0.06); border: 0.5px solid rgba(255,255,255,0.1); border-radius: 22px; padding: 18px 24px; max-width: 320px; text-align: center; }
+.bubble .siri { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #8e8e93; margin-bottom: 6px; }
+.bubble .quote { font-size: 18px; font-weight: 500; line-height: 1.4; }
+.bubble .quote em { font-style: normal; color: #ff9500; }
+.airplay-line { display: flex; align-items: center; gap: 12px; color: #8e8e93; font-size: 13px; }
+.dot { width: 6px; height: 6px; background: #0a84ff; border-radius: 50%; box-shadow: 0 0 10px #0a84ff; }
+.homepod { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-top: 4px; }
+.homepod-body { width: 130px; height: 150px; background: radial-gradient(circle at 50% 30%, #2a2a2a, #0e0e0e); border-radius: 64px; border: 1px solid #2a2a2a; position: relative; box-shadow: 0 14px 40px rgba(0,0,0,0.55); display: flex; align-items: flex-start; justify-content: center; padding-top: 18px; }
+.homepod-glow { width: 60px; height: 60px; border-radius: 50%; background: radial-gradient(circle, rgba(10,132,255,0.7), rgba(255,55,95,0.4) 60%, transparent 75%); filter: blur(8px); animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%,100% { opacity: 0.6; } 50% { opacity: 1; } }
+.homepod-base { width: 100px; height: 8px; background: #1a1a1a; border-radius: 4px; }
+.homepod-label { font-size: 12px; color: #8e8e93; }
+.feature-list { margin-top: 28px; text-align: left; padding: 0 60px; }
+.feature { display: flex; align-items: center; gap: 12px; margin: 10px 0; }
+.feature-icon { font-size: 18px; width: 28px; text-align: center; }
+.feature-text { font-size: 15px; color: #ccc; }
+</style></head><body>
+<div class="promo"><h1>HomePod &amp; Siri</h1><p>Hands-free Korean radio at home</p></div>
+<div class="scene">
+<div class="bubble">
+<div class="siri">Hey Siri</div>
+<div class="quote">Play <em>KBS 2라디오</em> on HomePod</div>
+</div>
+<div class="airplay-line"><span class="dot"></span><span>Playing on HomePod · Living Room</span></div>
+<div class="homepod">
+<div class="homepod-body"><div class="homepod-glow"></div></div>
+<div class="homepod-base"></div>
+<div class="homepod-label">HomePod</div>
+</div>
+</div>
+<div class="feature-list">
+<div class="feature"><div class="feature-icon">🎙</div><div class="feature-text">Voice commands via SiriKit</div></div>
+<div class="feature"><div class="feature-icon">🔊</div><div class="feature-text">AirPlay to HomePod &amp; speakers</div></div>
+<div class="feature"><div class="feature-icon">🌐</div><div class="feature-text">Stream resumes on any device</div></div>
+</div>
+</body></html>

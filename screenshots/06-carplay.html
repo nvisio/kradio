@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 430px; height: 932px; background: #000; font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif; color: #fff; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; }
+.promo { text-align: center; margin-bottom: 28px; }
+.promo h1 { font-size: 22px; font-weight: 700; }
+.promo p { font-size: 14px; color: #8e8e93; margin-top: 4px; }
+.carplay { width: 380px; height: 256px; background: #1c1c1e; border-radius: 18px; padding: 14px 16px; box-shadow: 0 18px 50px rgba(0,0,0,0.55); border: 1px solid #2a2a2a; display: flex; flex-direction: column; }
+.cp-bar { display: flex; align-items: center; justify-content: space-between; padding-bottom: 10px; border-bottom: 0.5px solid #2a2a2a; margin-bottom: 8px; }
+.cp-bar-left { display: flex; align-items: center; gap: 10px; }
+.cp-icon { width: 22px; height: 22px; border-radius: 5px; background: linear-gradient(135deg, #34d399, #0a84ff); display:flex; align-items:center; justify-content:center; font-size: 12px; }
+.cp-title { font-size: 14px; font-weight: 600; }
+.cp-time { font-size: 12px; color: #8e8e93; }
+.cp-section { font-size: 9px; color: #8e8e93; text-transform: uppercase; margin: 6px 0 4px; font-weight: 600; }
+.cp-list { display: flex; flex-direction: column; gap: 2px; }
+.cp-row { display: flex; align-items: center; padding: 5px 6px; gap: 8px; border-radius: 6px; }
+.cp-row.active { background: #2c2c2e; }
+.cp-row-icon { font-size: 13px; width: 18px; text-align: center; flex-shrink: 0; }
+.cp-row-text { flex: 1; }
+.cp-row-name { font-size: 11px; font-weight: 500; }
+.cp-row-sub { font-size: 9px; color: #8e8e93; }
+.cp-row .indicator { font-size: 11px; color: #0a84ff; }
+.feature-list { margin-top: 32px; text-align: left; padding: 0 60px; }
+.feature { display: flex; align-items: center; gap: 12px; margin: 10px 0; }
+.feature-icon { font-size: 18px; width: 28px; text-align: center; }
+.feature-text { font-size: 15px; color: #ccc; }
+</style></head><body>
+<div class="promo"><h1>CarPlay</h1><p>Drive with your favorite stations</p></div>
+<div class="carplay">
+<div class="cp-bar">
+<div class="cp-bar-left"><div class="cp-icon">📡</div><div class="cp-title">K-Radio</div></div>
+<div class="cp-time">9:41</div>
+</div>
+<div class="cp-section">KBS</div>
+<div class="cp-list">
+<div class="cp-row active"><div class="cp-row-icon">📡</div><div class="cp-row-text"><div class="cp-row-name">KBS 1라디오</div><div class="cp-row-sub">뉴스 · 시사 · 교양</div></div><div class="indicator">▶</div></div>
+<div class="cp-row"><div class="cp-row-icon">😊</div><div class="cp-row-text"><div class="cp-row-name">KBS HappyFM</div><div class="cp-row-sub">오락 · 음악</div></div></div>
+<div class="cp-row"><div class="cp-row-icon">🎵</div><div class="cp-row-text"><div class="cp-row-name">KBS ClassicFM</div><div class="cp-row-sub">클래식 음악</div></div></div>
+</div>
+<div class="cp-section">SBS</div>
+<div class="cp-list">
+<div class="cp-row"><div class="cp-row-icon">⚡</div><div class="cp-row-text"><div class="cp-row-name">SBS 파워FM</div><div class="cp-row-sub">대중음악 · DJ</div></div></div>
+</div>
+</div>
+<div class="feature-list">
+<div class="feature"><div class="feature-icon">🚗</div><div class="feature-text">Browse stations from the dashboard</div></div>
+<div class="feature"><div class="feature-icon">▶️</div><div class="feature-text">Tap to play, tap again to pause</div></div>
+<div class="feature"><div class="feature-icon">🛡</div><div class="feature-text">Standard CarPlay templates only</div></div>
+</div>
+</body></html>

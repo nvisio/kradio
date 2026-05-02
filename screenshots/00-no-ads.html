@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 430px; height: 932px; background: #000; font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif; color: #fff; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px; position: relative; }
+.bg-glow { position: absolute; inset: 0; background: radial-gradient(circle at 50% 35%, rgba(10,132,255,0.18), transparent 55%), radial-gradient(circle at 50% 70%, rgba(48,209,88,0.12), transparent 55%); pointer-events: none; }
+.headline { text-align: center; z-index: 1; }
+.headline .small { font-size: 14px; color: #8e8e93; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 12px; }
+.headline h1 { font-size: 64px; font-weight: 800; line-height: 1.0; letter-spacing: -2px; }
+.headline h1 .accent { background: linear-gradient(135deg, #30d158, #0a84ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.tagline { font-size: 17px; color: #c7c7cc; margin-top: 22px; line-height: 1.5; max-width: 320px; text-align: center; z-index: 1; }
+.divider { width: 60px; height: 2px; background: rgba(255,255,255,0.2); margin: 28px 0; z-index: 1; }
+.bullets { display: flex; flex-direction: column; gap: 14px; z-index: 1; }
+.bullet { display: flex; align-items: center; gap: 14px; }
+.bullet .icon { width: 32px; height: 32px; background: rgba(48,209,88,0.15); border: 1px solid rgba(48,209,88,0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #30d158; }
+.bullet .text { font-size: 17px; font-weight: 500; color: #fff; }
+.brand { position: absolute; bottom: 60px; font-size: 14px; color: #6e6e73; letter-spacing: 1px; z-index: 1; }
+</style></head><body>
+<div class="bg-glow"></div>
+<div class="headline">
+<div class="small">K-Radio Tuner</div>
+<h1>No <span class="accent">in-app</span><br>ads.</h1>
+</div>
+<p class="tagline">Just the broadcast.<br>앱 광고 없음 — 방송 그대로.</p>
+<div class="divider"></div>
+<div class="bullets">
+<div class="bullet"><div class="icon">✓</div><div class="text">No pre-roll ads</div></div>
+<div class="bullet"><div class="icon">✓</div><div class="text">No banners or pop-ups</div></div>
+<div class="bullet"><div class="icon">✓</div><div class="text">No accounts · No tracking</div></div>
+<div class="bullet"><div class="icon">✓</div><div class="text">Original station audio</div></div>
+</div>
+<div class="brand">23 Korean &amp; international stations</div>
+</body></html>
