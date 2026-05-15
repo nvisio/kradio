@@ -113,6 +113,7 @@ K-Radio Tuner does not collect any personal data. No accounts, no analytics, no 
 ## Links
 
 - [App Store](https://apps.apple.com/app/id6761031039)
+- [Deep Link Examples](https://nvis.io/kradio/play-examples.html)
 - [Privacy Policy](https://nvisio.github.io/kradio/privacy-policy.html)
 - [Terms of Use](https://nvisio.github.io/kradio/terms-of-use.html)
 - [Support](https://github.com/nvisio/kradio)

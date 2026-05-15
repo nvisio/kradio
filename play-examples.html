@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>K-Radio Tuner — Deep Link Examples</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 24px 18px 56px;
+    background: #0A0E1A; color: #F5F1EA;
+    font: 16px/1.5 -apple-system, "SF Pro Text", system-ui, sans-serif;
+    max-width: 640px; margin-inline: auto;
+  }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  h2 { font-size: 14px; letter-spacing: 2px; text-transform: uppercase;
+       color: #EB5764; margin: 32px 0 12px; }
+  p.note { color: #9CA3B0; font-size: 13px; margin: 6px 0 0; }
+  .card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(156,163,176,0.25);
+    border-radius: 14px; padding: 14px 16px; margin: 12px 0;
+  }
+  .card .name { font-weight: 700; font-size: 17px; margin-bottom: 2px; }
+  .card .url { color: #9CA3B0; font-size: 12px; word-break: break-all; margin-bottom: 12px; }
+  .links { display: flex; gap: 10px; flex-wrap: wrap; }
+  a.btn {
+    flex: 1 1 auto; text-align: center; text-decoration: none;
+    padding: 12px 14px; border-radius: 10px; font-weight: 600; font-size: 14px;
+    min-width: 150px;
+  }
+  a.scheme { background: #EB5764; color: #fff; }
+  a.universal { background: rgba(255,255,255,0.08); color: #F5F1EA;
+                border: 1px solid rgba(156,163,176,0.35); }
+  form { margin-top: 10px; display: grid; gap: 10px; }
+  input {
+    width: 100%; padding: 12px 14px; border-radius: 10px;
+    border: 1px solid rgba(156,163,176,0.35);
+    background: rgba(255,255,255,0.05); color: #F5F1EA; font-size: 15px;
+  }
+  code { background: rgba(255,255,255,0.07); padding: 1px 6px; border-radius: 5px;
+         font-size: 12px; }
+</style>
+</head>
+<body>
+  <h1>K-Radio Tuner — Deep Link Examples</h1>
+  <p class="note">
+    Open this page on an iPhone with K-Radio Tuner installed. Tap a link to
+    open the app, start playback, and get the “Save to My Stations?” prompt.
+    The <strong>kradio://</strong> link works immediately; the
+    <strong>nvis.io</strong> universal link also works once the
+    apple-app-site-association file is live.
+  </p>
+
+  <h2>Example stations</h2>
+  <div id="stations"></div>
+
+  <h2>Build your own</h2>
+  <div class="card">
+    <form id="builder" onsubmit="return false;">
+      <input id="bname" type="text" placeholder="Station name (optional)" autocomplete="off">
+      <input id="burl" type="url" placeholder="https://… stream URL (m3u8 / mp3 / aac)" autocomplete="off">
+      <div class="links">
+        <a id="bscheme" class="btn scheme" href="#">kradio://</a>
+        <a id="buniversal" class="btn universal" href="#">nvis.io link</a>
+      </div>
+    </form>
+    <p class="note">Links update as you type. Only <code>http</code>/<code>https</code>
+       stream URLs are accepted by the app.</p>
+  </div>
+
+<script>
+  // Real stream URLs taken from the app's station catalog.
+  var STATIONS = [
+    { name: "RadiCro",          url: "https://radicrojapan.out.airtime.pro/radicrojapan_a" },
+    { name: "BBC Radio 1",      url: "https://as-hls-ww-live.akamaized.net/pool_01505109/live/ww/bbc_radio_one/bbc_radio_one.isml/.m3u8" },
+    { name: "BBC World Service",url: "https://as-hls-ww-live.akamaized.net/pool_87948813/live/ww/bbc_world_service/bbc_world_service.isml/.m3u8" },
+    { name: "J1 HITS",          url: "https://jenny.torontocast.com:2000/stream/J1HITS" },
+    { name: "TBS eFM",          url: "https://cdnefm.tbs.seoul.kr/tbs/_definst_/tbs_efm_web_360.smil/playlist.m3u8" },
+    { name: "Gugak FM",         url: "https://mgugaklive.nowcdn.co.kr/gugakradio/gugakradio.stream/playlist.m3u8" }
+  ];
+
+  function schemeLink(name, url) {
+    return "kradio://play?name=" + encodeURIComponent(name) +
+           "&url=" + encodeURIComponent(url);
+  }
+  function universalLink(name, url) {
+    return "https://nvis.io/kradio/play?name=" + encodeURIComponent(name) +
+           "&url=" + encodeURIComponent(url);
+  }
+
+  var container = document.getElementById("stations");
+  STATIONS.forEach(function (s) {
+    var card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML =
+      '<div class="name"></div>' +
+      '<div class="url"></div>' +
+      '<div class="links">' +
+        '<a class="btn scheme">kradio://</a>' +
+        '<a class="btn universal">nvis.io link</a>' +
+      '</div>';
+    card.querySelector(".name").textContent = s.name;
+    card.querySelector(".url").textContent = s.url;
+    card.querySelector(".scheme").href = schemeLink(s.name, s.url);
+    card.querySelector(".universal").href = universalLink(s.name, s.url);
+    container.appendChild(card);
+  });
+
+  var bname = document.getElementById("bname");
+  var burl = document.getElementById("burl");
+  var bscheme = document.getElementById("bscheme");
+  var buniversal = document.getElementById("buniversal");
+  function refreshBuilder() {
+    var n = bname.value.trim() || "Radio";
+    var u = burl.value.trim();
+    var ok = /^https?:\/\/.+/i.test(u);
+    bscheme.href = ok ? schemeLink(n, u) : "#";
+    buniversal.href = ok ? universalLink(n, u) : "#";
+    bscheme.style.opacity = buniversal.style.opacity = ok ? "1" : "0.4";
+  }
+  bname.addEventListener("input", refreshBuilder);
+  burl.addEventListener("input", refreshBuilder);
+  refreshBuilder();
+</script>
+</body>
+</html>
