@@ -71,14 +71,15 @@
   </div>
 
 <script>
-  // Real stream URLs taken from the app's station catalog.
+  // Jazz stations sourced from radio.garden, resolved to their direct
+  // stream URLs (radio.garden blocks non-browser clients with 403).
   var STATIONS = [
-    { name: "RadiCro",          url: "https://radicrojapan.out.airtime.pro/radicrojapan_a" },
-    { name: "BBC Radio 1",      url: "https://as-hls-ww-live.akamaized.net/pool_01505109/live/ww/bbc_radio_one/bbc_radio_one.isml/.m3u8" },
-    { name: "BBC World Service",url: "https://as-hls-ww-live.akamaized.net/pool_87948813/live/ww/bbc_world_service/bbc_world_service.isml/.m3u8" },
-    { name: "J1 HITS",          url: "https://jenny.torontocast.com:2000/stream/J1HITS" },
-    { name: "TBS eFM",          url: "https://cdnefm.tbs.seoul.kr/tbs/_definst_/tbs_efm_web_360.smil/playlist.m3u8" },
-    { name: "Gugak FM",         url: "https://mgugaklive.nowcdn.co.kr/gugakradio/gugakradio.stream/playlist.m3u8" }
+    { name: "Jazz Radio (Lyon)",     url: "https://jazzradio.ice.infomaniak.ch/jazzradio-high.mp3" },
+    { name: "Jazz 88.5 FM — KBEM",   url: "https://kbem-live.streamguys1.com/kbem_mp3" },
+    { name: "Jazz London Radio",     url: "https://radio.canstream.co.uk:8075/live.mp3" },
+    { name: "Jazz de Ville — Chill", url: "https://onair22.xdevel.com/proxy/xautocloud_td3e_421?mp=/stream" },
+    { name: "Jazz Con Class (NYC)",  url: "https://s4.radio.co/s28f48cb7d/listen" },
+    { name: "Jazz FM Spain",         url: "https://ns1.estaciondigital.es/listen/jazzfmspain/live" }
   ];
 
   function schemeLink(name, url) {
