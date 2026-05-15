@@ -1,6 +1,11 @@
-# Privacy Policy
-
-*Effective Date: April 10, 2026*
+---
+layout: legal
+title: Privacy Policy
+lang: en
+effective: Effective April 10, 2026
+alt_label: 한국어
+alt_href: privacy-policy-ko.html
+---
 
 K-Radio Tuner ("the App") is developed by HongKee Moon. This Privacy Policy describes how the App handles your information.
 

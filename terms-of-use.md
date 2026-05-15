@@ -1,6 +1,11 @@
-# Terms of Use
-
-*Effective Date: April 10, 2026*
+---
+layout: legal
+title: Terms of Use
+lang: en
+effective: Effective April 10, 2026
+alt_label: 한국어
+alt_href: terms-of-use-ko.html
+---
 
 By using K-Radio Tuner ("the App"), you agree to these Terms of Use.
 

@@ -1,6 +1,11 @@
-# 개인정보 처리방침
-
-*시행일: 2026년 4월 10일*
+---
+layout: legal
+title: 개인정보 처리방침
+lang: ko
+effective: 시행일 2026년 4월 10일
+alt_label: English
+alt_href: privacy-policy.html
+---
 
 K-Radio Tuner("본 앱")는 HongKee Moon이 개발하였습니다. 본 개인정보 처리방침은 본 앱이 사용자의 정보를 어떻게 처리하는지 설명합니다.
 

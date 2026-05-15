@@ -1,0 +1,13 @@
+title: K-Radio Tuner
+description: Korean radio with no in-app ads
+url: https://nvis.io
+baseurl: "/kradio"
+
+markdown: kramdown
+
+# Only the legal pages opt into a layout (via per-file YAML front matter).
+# Files without front matter (README.md, play-examples.html, screenshots/)
+# pass through unchanged and are served exactly as before.
+exclude:
+  - Gemfile
+  - Gemfile.lock

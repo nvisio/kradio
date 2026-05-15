@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} — {{ site.title }}</title>
+  <meta name="description" content="{{ page.title }} for {{ site.title }}.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="https://nvis.io/">
+        <span class="brand-mark">n</span>
+        <span class="brand-word">nvis<span class="dot">.</span>io</span>
+      </a>
+      <nav class="nav-meta">
+        <span class="hide-sm">K-Radio Tuner</span>
+        {% if page.alt_href %}
+        <a href="{{ page.alt_href }}">{{ page.alt_label }}</a>
+        {% endif %}
+        <a href="https://apps.apple.com/app/k-radio-tuner/id6761031039" target="_blank" rel="noreferrer">App Store &#8599;</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="doc">
+      <div class="doc-kicker small-caps">K-Radio Tuner &mdash; Legal</div>
+      <h1 class="doc-title">{{ page.title }}</h1>
+      {% if page.effective %}
+      <div class="doc-meta small-caps">{{ page.effective }}</div>
+      {% endif %}
+      <hr class="rule">
+      <div class="doc-body">
+        {{ content }}
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap ft-inner">
+      <a href="https://nvis.io/" class="ft-back">&larr; nvis<span class="ac">.</span>io</a>
+      <span class="ft-legal">&copy; MMXXVI &middot; HongKee Moon &middot; Seoul, KR</span>
+    </div>
+  </footer>
+</body>
+</html>

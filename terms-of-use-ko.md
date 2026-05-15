@@ -1,6 +1,11 @@
-# 이용약관
-
-시행일: 2026년 4월 10일
+---
+layout: legal
+title: 이용약관
+lang: ko
+effective: 시행일 2026년 4월 10일
+alt_label: English
+alt_href: terms-of-use.html
+---
 
 K-Radio Tuner("본 앱")를 사용함으로써 본 이용약관에 동의하게 됩니다.
 
