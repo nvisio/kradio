@@ -74,6 +74,23 @@ Ask Siri to play your favorite station on HomePod, AirPods, or any speaker — h
   <img src="screenshots/07-homepod.png" width="280" />
 </p>
 
+### Wake Up to Radio (Shortcuts Recipe)
+
+iOS's built-in Clock alarm only accepts Apple Music tracks as the sound, so K-Radio Tuner can't replace the alarm itself. Instead, use **Shortcuts** to start a station at a scheduled time and route the audio to a HomePod or any AirPlay 2 speaker.
+
+**iPhone → HomePod, daily at 7:00 am**
+
+1. Open the **Shortcuts** app → **Automation** tab → **+** → **Time of Day**. Set the time and repeat, then turn **Run Immediately** on.
+2. Add these actions in order:
+   - **Set Playback Destination** → pick your HomePod *(iOS 17+)*.
+   - **Open URL** → `kradio://play?name=KBS%20Cool%20FM&url=<streamURL>`
+     *(grab a ready-made link from [the examples page](https://nvis.io/kradio/play-examples.html))*
+   - *(optional)* **Wait** 1 Hour → **Pause** *(Now Playing)*.
+
+At the scheduled time the iPhone wakes K-Radio Tuner and the station streams to your HomePod via AirPlay 2. The same recipe works with an "Alarm Stopped" trigger if you want the radio to start the moment you dismiss your usual Clock alarm.
+
+> **Direct HomePod scheduling** (no iPhone in the loop) requires Apple's *SiriKit Media Intents for HomePod* program approval — our submission is pending. Until it's granted, the iPhone-mediated recipe above is the most reliable way to use K-Radio Tuner as a radio alarm.
+
 ### Make It Yours
 Swipe to edit or remove any station. Add your own stations by URL. Reset to defaults anytime — your custom stations are kept. Settings sync across iPhone, iPad, and Apple Watch via iCloud.
 
