@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>K-Radio Tuner — Open Station</title>
+<link rel="canonical" href="https://nvis.io/kradio/play/">
+<!-- Safari Smart App Banner: lets iOS surface a one-tap "Open" prompt. -->
+<meta name="apple-itunes-app" content="app-id=6761031039">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0; padding: 24px 18px;
+    background: #0A0E1A; color: #F5F1EA;
+    font: 16px/1.5 -apple-system, "SF Pro Text", system-ui, sans-serif;
+    display: flex; align-items: center; justify-content: center;
+  }
+  main {
+    width: 100%; max-width: 460px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(156,163,176,0.25);
+    border-radius: 18px; padding: 26px 22px;
+  }
+  .brand {
+    font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+    color: #EB5764; margin-bottom: 8px;
+  }
+  h1 { font-size: 22px; margin: 0 0 18px; font-weight: 700; }
+  .station {
+    margin: 14px 0 22px;
+    border-left: 3px solid #EB5764; padding-left: 12px;
+  }
+  .station .name { font-weight: 700; font-size: 17px; }
+  .station .url  { color: #9CA3B0; font-size: 11px; word-break: break-all; margin-top: 4px; }
+  .actions { display: flex; flex-direction: column; gap: 10px; }
+  a.btn {
+    display: block; text-align: center; text-decoration: none;
+    padding: 13px 16px; border-radius: 12px; font-weight: 600; font-size: 15px;
+  }
+  a.primary   { background: #EB5764; color: #fff; }
+  a.primary:active { background: #d24852; }
+  a.secondary { background: rgba(255,255,255,0.08); color: #F5F1EA;
+                border: 1px solid rgba(156,163,176,0.35); }
+  .explain {
+    color: #9CA3B0; font-size: 12px; line-height: 1.5; margin-top: 18px;
+  }
+  .explain a { color: #EB5764; }
+  .err {
+    background: rgba(235,87,100,0.12); border: 1px solid rgba(235,87,100,0.45);
+    color: #FCE5E8; padding: 10px 12px; border-radius: 10px;
+    font-size: 13px; margin: 6px 0 18px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">K-Radio Tuner</div>
+  <h1 id="heading">Opening station…</h1>
+
+  <div id="err" class="err" hidden></div>
+
+  <div class="station">
+    <div class="name" id="stationName">—</div>
+    <div class="url"  id="stationUrl">—</div>
+  </div>
+
+  <div class="actions">
+    <a id="openApp"  class="btn primary"   href="#">Open in K-Radio Tuner</a>
+    <a id="appStore" class="btn secondary" href="https://apps.apple.com/app/id6761031039">Get it on the App Store</a>
+  </div>
+
+  <p class="explain">
+    Tapping <em>Open in K-Radio Tuner</em> launches the app if it's installed,
+    starts the station, and shows the "Save to My Stations?" prompt. If
+    nothing happens, you probably don't have the app yet — grab it above.
+  </p>
+  <p class="explain">
+    Looking for ideas? <a href="../play-examples.html">Browse the station catalogue</a>.
+  </p>
+</main>
+
+<script>
+  (function () {
+    var p = new URLSearchParams(location.search);
+    var name = (p.get("name") || "").trim();
+    var url  = (p.get("url")  || "").trim();
+
+    var elName  = document.getElementById("stationName");
+    var elUrl   = document.getElementById("stationUrl");
+    var elErr   = document.getElementById("err");
+    var openApp = document.getElementById("openApp");
+    var heading = document.getElementById("heading");
+
+    // Validate inputs — only http(s) stream URLs are accepted by the app.
+    var validUrl = /^https?:\/\/.+/i.test(url);
+    if (!validUrl) {
+      heading.textContent = "Missing station info";
+      elErr.hidden = false;
+      elErr.textContent = url
+        ? "The stream URL must start with http:// or https://."
+        : "No stream URL was provided in this link.";
+      elName.textContent = name || "(no name)";
+      elUrl.textContent  = url  || "(missing)";
+      openApp.style.opacity = "0.4";
+      openApp.style.pointerEvents = "none";
+      return;
+    }
+
+    elName.textContent = name || "Unknown station";
+    elUrl.textContent  = url;
+
+    // Build the custom-scheme URL.
+    var qs = "name=" + encodeURIComponent(name) + "&url=" + encodeURIComponent(url);
+    var kradioUrl = "kradio://play?" + qs;
+    openApp.href = kradioUrl;
+
+    // iOS / iPadOS heuristic
+    var ua = navigator.userAgent || "";
+    var isAppleMobile =
+      /iPhone|iPad|iPod/i.test(ua) ||
+      (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+
+    if (isAppleMobile) {
+      // Give the user a beat to read the page, then attempt the scheme
+      // automatically. If the app is installed, iOS hands off to it; if
+      // not, the navigation silently fails and the page stays visible.
+      setTimeout(function () {
+        try { location.href = kradioUrl; } catch (e) { /* ignore */ }
+      }, 200);
+    } else {
+      heading.textContent = "Tap to open in K-Radio Tuner";
+    }
+  })();
+</script>
+</body>
+</html>
