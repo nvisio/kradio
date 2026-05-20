@@ -6,7 +6,7 @@ baseurl: "/kradio"
 markdown: kramdown
 
 # Only the legal pages opt into a layout (via per-file YAML front matter).
-# Files without front matter (README.md, play-examples.html, screenshots/)
+# Files without front matter (README.md, index.html, play.html, screenshots/)
 # pass through unchanged and are served exactly as before.
 exclude:
   - Gemfile
