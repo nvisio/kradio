@@ -200,9 +200,7 @@ async function importChannel(id, args) {
     country: args.country || countryCodeFrom(country) || null,
     genre: args.genre.length ? args.genre.slice() : [],
     lang: args.lang.length ? args.lang.slice() : [],
-    city: city || null,
-    source: "radio.garden",
-    rgId: id
+    city: city || null
   };
 }
 
@@ -244,25 +242,21 @@ async function main() {
     seenIds.add(id); return true;
   });
 
-  // 3. import each channel
+  // 3. import each channel — dedup by normalized stream URL only.
   const existing = await loadExisting();
   const existingUrls = new Set(existing.map(s => s.url));
-  const existingRgIds = new Set(existing.map(s => s.rgId).filter(Boolean));
   const fresh = [];
   const skipped = [];
   const errors = [];
 
   for (const id of uniqueChannelIds) {
-    if (existingRgIds.has(id)) {
-      skipped.push({ id, why: "rgId already in stations.json" });
-      continue;
-    }
     try {
       const entry = await importChannel(id, args);
       if (existingUrls.has(entry.url)) {
         skipped.push({ id, why: `url dup: ${entry.url}` });
         continue;
       }
+      existingUrls.add(entry.url);
       fresh.push(clean(entry));
       console.log(`+ ${entry.name}  [${entry.country || "??"}${entry.city ? " · " + entry.city : ""}]`);
     } catch (err) {

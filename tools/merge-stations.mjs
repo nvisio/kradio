@@ -6,7 +6,7 @@
 // Order: base entries are kept first (so manually-curated seeds win on
 // duplicate URLs); then de-duplicated additions are appended.
 //
-// Dedup keys: normalized URL, and rgId when present.
+// Dedup key: normalized URL.
 //
 // Output style is "entry-per-line" — one JSON object per line, with the
 // outer array brackets on their own lines. Valid JSON, but diffs survive
@@ -56,18 +56,15 @@ async function main() {
   if (!Array.isArray(base) || !Array.isArray(add)) throw new Error("both inputs must be JSON arrays");
 
   const seenUrls = new Set(base.map(s => normUrl(s.url)).filter(Boolean));
-  const seenIds  = new Set(base.map(s => s.rgId).filter(Boolean));
 
   const merged = base.slice();
   let added = 0, skipped = 0;
   for (const s of add) {
     const u = normUrl(s.url);
-    if (!u)                              { skipped++; continue; }
-    if (seenUrls.has(u))                 { skipped++; continue; }
-    if (s.rgId && seenIds.has(s.rgId))   { skipped++; continue; }
+    if (!u)              { skipped++; continue; }
+    if (seenUrls.has(u)) { skipped++; continue; }
     merged.push(s);
     seenUrls.add(u);
-    if (s.rgId) seenIds.add(s.rgId);
     added++;
   }
   console.log(`base=${base.length}  add=${add.length}  → merged=${merged.length}  (+${added}, skipped ${skipped})`);
