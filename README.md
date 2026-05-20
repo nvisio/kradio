@@ -84,7 +84,7 @@ iOS's built-in Clock alarm only accepts Apple Music tracks as the sound, so K-Ra
 2. Add these actions in order:
    - **Set Playback Destination** → pick your HomePod *(iOS 17+)*.
    - **Open URL** → `kradio://play?name=KBS%20Cool%20FM&url=<streamURL>`
-     *(grab a ready-made link from [the examples page](https://nvis.io/kradio/play-examples.html))*
+     *(grab a ready-made link from [the station catalogue](https://nvis.io/kradio/))*
    - *(optional)* **Wait** 1 Hour → **Pause** *(Now Playing)*.
 
 At the scheduled time the iPhone wakes K-Radio Tuner and the station streams to your HomePod via AirPlay 2. The same recipe works with an "Alarm Stopped" trigger if you want the radio to start the moment you dismiss your usual Clock alarm.
@@ -130,7 +130,7 @@ K-Radio Tuner does not collect any personal data. No accounts, no analytics, no 
 ## Links
 
 - [App Store](https://apps.apple.com/app/id6761031039)
-- [Deep Link Examples](https://nvis.io/kradio/play-examples.html)
+- [Station Catalogue](https://nvis.io/kradio/)
 - [Privacy Policy](https://nvis.io/kradio/privacy-policy.html)
 - [Terms of Use](https://nvis.io/kradio/terms-of-use.html)
 - [Support](https://github.com/nvisio/kradio)
