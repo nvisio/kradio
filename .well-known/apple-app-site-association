@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["JD6369T7Y6.com.hkmoon.kbsradio"],
+        "components": [
+          {
+            "/": "/play",
+            "?": { "url": "*" },
+            "comment": "Open an external radio station in K-Radio Tuner"
+          },
+          {
+            "/": "/play*",
+            "comment": "Open an external radio station in K-Radio Tuner"
+          }
+        ]
+      }
+    ]
+  }
+}

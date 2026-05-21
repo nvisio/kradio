@@ -1,12 +1,17 @@
 title: K-Radio Tuner
 description: Korean radio with no in-app ads
-url: https://nvis.io
-baseurl: "/kradio"
+url: https://kradio.nvis.io
+baseurl: ""
 
 markdown: kramdown
 
+# Jekyll ignores dotfolders by default; force-include .well-known so
+# GitHub Pages publishes the apple-app-site-association file.
+include:
+  - .well-known
+
 # Only the legal pages opt into a layout (via per-file YAML front matter).
-# Files without front matter (README.md, index.html, play.html, screenshots/)
+# Files without front matter (README.md, stations.html, play.html, screenshots/)
 # pass through unchanged and are served exactly as before.
 exclude:
   - Gemfile
