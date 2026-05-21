@@ -136,7 +136,7 @@
       <input id="burl" type="url" placeholder="https://… stream URL (m3u8 / mp3 / aac)" autocomplete="off">
       <div class="links">
         <a id="bscheme" class="btn scheme" href="#">kradio://</a>
-        <a id="buniversal" class="btn universal" href="#">nvis.io link</a>
+        <a id="buniversal" class="btn universal" href="#">kradio.nvis.io link</a>
       </div>
     </form>
     <p class="note">Links update as you type. Only <code>http</code>/<code>https</code>
@@ -213,7 +213,7 @@
            "&url="  + encodeURIComponent(url);
   }
   function universalLink(name, url) {
-    return "https://nvis.io/kradio/play?name=" + encodeURIComponent(name) +
+    return "https://kradio.nvis.io/play?name=" + encodeURIComponent(name) +
            "&url=" + encodeURIComponent(url);
   }
 
@@ -427,7 +427,7 @@
       '<div class="url"></div>' +
       '<div class="links">' +
         '<a class="btn scheme">kradio://</a>' +
-        '<a class="btn universal">nvis.io link</a>' +
+        '<a class="btn universal">kradio.nvis.io link</a>' +
       '</div>';
     card.querySelector(".name").textContent = s.name;
     card.querySelector(".meta").textContent = metaParts.join(" · ");
