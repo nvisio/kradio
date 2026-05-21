@@ -36,7 +36,7 @@ import { dirname, join } from "node:path";
 const HERE = dirname(fileURLToPath(import.meta.url));
 const STATIONS_PATH = join(HERE, "..", "stations.json");
 const RG = "https://radio.garden";
-const UA = "kradio-importer/1.0 (+https://nvis.io/kradio)";
+const UA = "kradio-importer/1.0 (+https://kradio.nvis.io)";
 
 // ── arg parsing ────────────────────────────────────────────────────
 function parseArgs(argv) {

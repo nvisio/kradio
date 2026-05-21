@@ -224,7 +224,7 @@ hr.rule{
 
 /* ─────────────────────────────────────────────────────────────
    README index (GitHub Pages default theme renders README.md as
-   /kradio/ with .container-lg / .markdown-body wrappers). Our
+   the / index with .container-lg / .markdown-body wrappers). Our
    stylesheet sits at the theme's assets/css/style.css path, so we
    restore spacing here and style it to match the editorial pages.
    ───────────────────────────────────────────────────────────── */
