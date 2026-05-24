@@ -24,7 +24,7 @@ Most radio apps are cluttered with ads, require accounts, or bury Korean station
 
 - **No account required.** Open the app, tap a station, listen.
 - **No in-app ads.** No pre-rolls, banners, or pop-ups added by us. Broadcasts play exactly as they air.
-- **No tracking.** Your data stays on your device. Period.
+- **No tracking in the app.** Your in-app data stays on your device. Period. *(The web catalogue records anonymous aggregate click counts — station name + page + date — to see which stations are popular. No identifiers, no cookies, no third-party services.)*
 
 ## Stations
 
