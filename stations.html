@@ -97,6 +97,7 @@
                vertical-align: top; }
   details td:first-child { color: #EB5764; font-family: ui-monospace, monospace; white-space: nowrap; }
 </style>
+<script defer src="assets/track.js"></script>
 </head>
 <body>
   <h1>K-Radio Tuner — Station Catalogue</h1>
@@ -434,6 +435,14 @@
     card.querySelector(".url").textContent = s.url;
     card.querySelector(".scheme").href    = schemeLink(s.name, s.url);
     card.querySelector(".universal").href = universalLink(s.name, s.url);
+    var schemeBtn = card.querySelector(".scheme");
+    var univBtn   = card.querySelector(".universal");
+    schemeBtn.addEventListener("click", function () {
+      if (window.kradioTrack) window.kradioTrack(s.name, s.url, "stations");
+    });
+    univBtn.addEventListener("click", function () {
+      if (window.kradioTrack) window.kradioTrack(s.name, s.url, "stations");
+    });
     return card;
   }
 
@@ -551,6 +560,17 @@
   bname.addEventListener("input", refreshBuilder);
   burl.addEventListener("input",  refreshBuilder);
   refreshBuilder();
+
+  function trackBuilderClick() {
+    if (bscheme.href === "#" || buniversal.href === "#") return;
+    if (window.kradioTrack) window.kradioTrack(
+      bname.value.trim() || "Radio",
+      burl.value.trim(),
+      "stations:builder"
+    );
+  }
+  bscheme.addEventListener("click", trackBuilderClick);
+  buniversal.addEventListener("click", trackBuilderClick);
 </script>
 </body>
 </html>
