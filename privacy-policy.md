@@ -42,6 +42,23 @@ The App offers auto-renewable subscriptions for Apple Watch functionality. Subsc
 
 The App does not use any third-party analytics, advertising, or tracking services.
 
+## Website Analytics (kradio.nvis.io)
+
+The K-Radio Tuner website (kradio.nvis.io) records anonymous aggregate counts
+of which station links are clicked on the catalogue page and which landing
+pages receive traffic. The data we collect is limited to:
+
+- Station name (as shown in the catalogue)
+- Page name (`stations`, `stations:builder`, or `play`)
+- UTC date
+
+No personal identifiers, IP addresses, cookies, user agents, or session data
+are stored. The data is held on Cloudflare Workers D1 (SQLite) under our own
+account; no third-party analytics services are involved.
+
+This applies to the website only. The iOS app itself collects nothing — see
+"Information We Do Not Collect" above.
+
 ## Children's Privacy
 
 The App does not knowingly collect information from children under 13.
