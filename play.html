@@ -53,6 +53,7 @@
     font-size: 13px; margin: 6px 0 18px;
   }
 </style>
+<script defer src="assets/track.js"></script>
 </head>
 <body>
 <main>
@@ -110,6 +111,10 @@
 
     elName.textContent = name || "Unknown station";
     elUrl.textContent  = url;
+
+    if (typeof window.kradioTrack === "function") {
+      window.kradioTrack(name || "Unknown station", url, "play");
+    }
 
     // Build the custom-scheme URL.
     var qs = "name=" + encodeURIComponent(name) + "&url=" + encodeURIComponent(url);
