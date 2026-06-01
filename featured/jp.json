@@ -1,0 +1,22 @@
+[
+  {
+    "name": "J1 Radio",
+    "url": "https://jenny.torontocast.com:2000/stream/J1HITS"
+  },
+  {
+    "name": "Listen.moe",
+    "url": "https://listen.moe/fallback"
+  },
+  {
+    "name": "Ottava",
+    "url": "https://ottava2.out.airtime.pro:8000/ottava2_a"
+  },
+  {
+    "name": "Shonan Beach FM 78.9 湘南ビーチ",
+    "url": "https://shonanbeachfm.out.airtime.pro:8000/shonanbeachfm_a"
+  },
+  {
+    "name": "Súper Tokio Radio",
+    "url": "https://streamer.radio.co/s83eb8ff39/listen"
+  }
+]

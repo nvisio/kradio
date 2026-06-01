@@ -1,0 +1,34 @@
+[
+  {
+    "name": "MBC FM4U",
+    "url": "https://radio.bsod.kr/stream/?stn=mbc&ch=fm4u"
+  },
+  {
+    "name": "KBS 2FM",
+    "url": "https://radio.bsod.kr/stream/?stn=kbs&ch=2fm"
+  },
+  {
+    "name": "SBS 러브FM",
+    "url": "https://radio.bsod.kr/stream/?stn=sbs&ch=lovefm"
+  },
+  {
+    "name": "KBS 1라디오",
+    "url": "https://radio.bsod.kr/stream/?stn=kbs&ch=1radio"
+  },
+  {
+    "name": "MBC 표준FM",
+    "url": "https://radio.bsod.kr/stream/?stn=mbc&ch=sfm"
+  },
+  {
+    "name": "CBS 표준FM",
+    "url": "https://radio.bsod.kr/stream/?stn=cbs&ch=sfm"
+  },
+  {
+    "name": "YTN 라디오",
+    "url": "https://radio.bsod.kr/stream/?stn=ytn"
+  },
+  {
+    "name": "EBS FM",
+    "url": "https://radio.bsod.kr/stream/?stn=ebs"
+  }
+]
