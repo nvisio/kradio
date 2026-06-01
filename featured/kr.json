@@ -1,34 +1,26 @@
 [
   {
-    "name": "MBC FM4U",
-    "url": "https://radio.bsod.kr/stream/?stn=mbc&ch=fm4u"
+    "name": "KBS HappyFM",
+    "url": "https://radio.bsod.kr/stream?stn=kbs&ch=2radio"
   },
   {
-    "name": "KBS 2FM",
-    "url": "https://radio.bsod.kr/stream/?stn=kbs&ch=2fm"
+    "name": "KBS ClassicFM",
+    "url": "https://radio.bsod.kr/stream?stn=kbs&ch=1fm"
   },
   {
-    "name": "SBS 러브FM",
-    "url": "https://radio.bsod.kr/stream/?stn=sbs&ch=lovefm"
-  },
-  {
-    "name": "KBS 1라디오",
-    "url": "https://radio.bsod.kr/stream/?stn=kbs&ch=1radio"
+    "name": "KBS CoolFM",
+    "url": "https://radio.bsod.kr/stream?stn=kbs&ch=2fm"
   },
   {
     "name": "MBC 표준FM",
-    "url": "https://radio.bsod.kr/stream/?stn=mbc&ch=sfm"
+    "url": "https://radio.bsod.kr/stream?stn=mbc&ch=sfm"
   },
   {
-    "name": "CBS 표준FM",
-    "url": "https://radio.bsod.kr/stream/?stn=cbs&ch=sfm"
+    "name": "MBC FM4U",
+    "url": "https://radio.bsod.kr/stream?stn=mbc&ch=fm4u"
   },
   {
-    "name": "YTN 라디오",
-    "url": "https://radio.bsod.kr/stream/?stn=ytn"
-  },
-  {
-    "name": "EBS FM",
-    "url": "https://radio.bsod.kr/stream/?stn=ebs"
+    "name": "SBS 파워FM",
+    "url": "https://radio.bsod.kr/stream?stn=sbs&ch=powerfm"
   }
 ]
