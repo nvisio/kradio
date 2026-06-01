@@ -1,34 +1,22 @@
 [
   {
-    "name": "Heart 106.2 FM",
-    "url": "https://ice-sov.musicradio.com/HeartLondonMP3"
+    "name": "BBC Radio 1",
+    "url": "https://as-hls-ww-live.akamaized.net/pool_01505109/live/ww/bbc_radio_one/bbc_radio_one.isml/.m3u8"
   },
   {
-    "name": "Classic FM",
-    "url": "https://media-ice.musicradio.com/ClassicFMMP3"
+    "name": "BBC Radio 2",
+    "url": "https://as-hls-ww-live.akamaized.net/pool_74208725/live/ww/bbc_radio_two/bbc_radio_two.isml/.m3u8"
   },
   {
-    "name": "LBC UK",
-    "url": "https://media-ice.musicradio.com/LBCUKMP3Low"
+    "name": "BBC Radio 3",
+    "url": "https://as-hls-ww-live.akamaized.net/pool_23461179/live/ww/bbc_radio_three/bbc_radio_three.isml/.m3u8"
   },
   {
-    "name": "Virgin Radio",
-    "url": "https://radio.virginradio.co.uk/stream"
-  },
-  {
-    "name": "Radio X UK 104.9",
-    "url": "https://media-ssl.musicradio.com/RadioXUK"
-  },
-  {
-    "name": "Times Radio",
-    "url": "https://timesradio.wireless.radio/stream"
-  },
-  {
-    "name": "Capital Xtra",
-    "url": "https://media-ice.musicradio.com/CapitalXTRANationalMP3?.mp3"
+    "name": "BBC Radio 4",
+    "url": "https://as-hls-ww-live.akamaized.net/pool_55057080/live/ww/bbc_radio_fourfm/bbc_radio_fourfm.isml/.m3u8"
   },
   {
     "name": "BBC World Service",
-    "url": "https://stream.live.vc.bbcmedia.co.uk/bbc_world_service"
+    "url": "https://as-hls-ww-live.akamaized.net/pool_87948813/live/ww/bbc_world_service/bbc_world_service.isml/.m3u8"
   }
 ]
