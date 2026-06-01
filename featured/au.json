@@ -30,5 +30,133 @@
   {
     "name": "ABC Classic",
     "url": "https://live-radio01.mediahubaustralia.com/2FMW/mp3/"
+  },
+  {
+    "name": "ABC Radio Sydney AM 702",
+    "url": "https://live-radio01.mediahubaustralia.com/2LRW/mp3/"
+  },
+  {
+    "name": "Double J",
+    "url": "https://live-radio01.mediahubaustralia.com/DJDW/aac/"
+  },
+  {
+    "name": "Smooth FM 91.5",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SMOOTH915_AAC48.aac"
+  },
+  {
+    "name": "Gold FM 98.3",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BEN_GOLDAAC.aac"
+  },
+  {
+    "name": "3AW 693",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/3AWAAC_O"
+  },
+  {
+    "name": "FBi Radio 94.5FM",
+    "url": "https://streamer.fbiradio.com/stream"
+  },
+  {
+    "name": "2SER 107.3",
+    "url": "https://livestream.2ser.com/streamrelay"
+  },
+  {
+    "name": "Triple J Unearthed",
+    "url": "https://live-radio01.mediahubaustralia.com/UNEW/aac/"
+  },
+  {
+    "name": "ABC Brisbane",
+    "url": "https://live-radio01.mediahubaustralia.com/4LRW/aac/;*.mp3"
+  },
+  {
+    "name": "ABC Radio Adelaide AM 891",
+    "url": "https://live-radio01.mediahubaustralia.com/5LRW/aac/;*.mp3"
+  },
+  {
+    "name": "ABC Radio Perth",
+    "url": "https://live-radio01.mediahubaustralia.com/6LRW/mp3/"
+  },
+  {
+    "name": "ABC North West (WA)",
+    "url": "https://live-radio02.mediahubaustralia.com/6KARW/mp3/"
+  },
+  {
+    "name": "Nova Jamz",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOVA_JAMZ_AAC48.aac"
+  },
+  {
+    "name": "Nova Nation",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOVA_NATION_SYDNEY_AAC.aac"
+  },
+  {
+    "name": "Sky News Australia",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOVA_SKYNEWSAAC.aac"
+  },
+  {
+    "name": "4MBS Classic FM 103.7",
+    "url": "https://stream.4mbs.com.au/4mbsclassicfm"
+  },
+  {
+    "name": "K-Rock FM 95.5",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/GEE_KROCKAAC.aac"
+  },
+  {
+    "name": "Totally Radio Pop",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/T_RAD_POP_S01AAC.aac"
+  },
+  {
+    "name": "Totally Radio Hits",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/T_RAD_HITS_S01AAC.aac"
+  },
+  {
+    "name": "SBS Chill",
+    "url": "https://sbs-ice.streamguys1.com/sbschill-sbs-web"
+  },
+  {
+    "name": "iHeart Australia - The 80s",
+    "url": "https://stream.revma.ihrhls.com/zc5060"
+  },
+  {
+    "name": "Capital Country Radio",
+    "url": "https://stream.radio.co/s44fa33dbc/listen"
+  },
+  {
+    "name": "OZ Urban Radio 87.8 FM",
+    "url": "https://streaming.radio.co/s53f27469e/listen"
+  },
+  {
+    "name": "Classic 87.6 FM",
+    "url": "https://stream.classic876.com:8000/sid=1"
+  },
+  {
+    "name": "Smooth Sailing Radio - Yacht Rock",
+    "url": "https://s44.myradiostream.com/9144/listen.mp3"
+  },
+  {
+    "name": "BitWaves Classics",
+    "url": "https://bitwavesclassics.bitwaves.com.au"
+  },
+  {
+    "name": "Vintage FM 87.6",
+    "url": "https://stream.radio.co/sd60e90ab1/listen"
+  },
+  {
+    "name": "Australian Country Radio",
+    "url": "https://streaming.radio.co/s5ea3fdd1c/listen"
+  },
+  {
+    "name": "Trax FM 88.0 - Greatest Hits",
+    "url": "https://s3.voscast.com:9187/live"
+  },
+  {
+    "name": "IMC Country Radio",
+    "url": "https://servidor36.brlogic.com:7050/live"
+  },
+  {
+    "name": "Switch Country 87.8 FM",
+    "url": "https://streaming.switchfm.com.au:8000/SwitchCountry"
+  },
+  {
+    "name": "Trax FM 88.0 - Trax Country",
+    "url": "https://s3.voscast.com:9189/live"
   }
 ]

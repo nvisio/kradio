@@ -30,5 +30,133 @@
   {
     "name": "RockFM 101.6 FM",
     "url": "https://flucast-bl04.flumotion.com/cope/rockfm-low.mp3"
+  },
+  {
+    "name": "RNE Radio Clásica FM 98.8",
+    "url": "https://dispatcher.rndfnk.com/crtve/rnerc/main/mp3/high"
+  },
+  {
+    "name": "Flaixbac",
+    "url": "https://stream.flaixbac.cat/icecast"
+  },
+  {
+    "name": "Catalunya Ràdio",
+    "url": "https://shoutcast.ccma.cat/ccma/catalunyaradioHD.mp3"
+  },
+  {
+    "name": "RAC1",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RAC_1.mp3"
+  },
+  {
+    "name": "Radio Marca",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIOMARCA_NACIONAL.mp3"
+  },
+  {
+    "name": "esRadio",
+    "url": "https://libertaddigital-radio-live1.flumotion.com/libertaddigital/ld-live1-med.aac"
+  },
+  {
+    "name": "Todo Noticias Latinas 96.7 FM",
+    "url": "https://securestream.radioshd.info:7064/;"
+  },
+  {
+    "name": "LOS40 Classic",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40_CLASSICAAC.aac"
+  },
+  {
+    "name": "Jazz FM Spain",
+    "url": "https://ns1.estaciondigital.es/listen/jazzfmspain/live"
+  },
+  {
+    "name": "Radio Jazz, Rock & Blues",
+    "url": "https://conectperu.com/8464/stream"
+  },
+  {
+    "name": "Costa FM - Pop Latino",
+    "url": "https://stream.costafm.es/listen/costafmpoplatino/radio.mp3"
+  },
+  {
+    "name": "LOS40 Dance",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40_DANCE_SC"
+  },
+  {
+    "name": "Radio Club Tenerife Cadena SER",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SER_TENERIFEAAC.aac"
+  },
+  {
+    "name": "Mallorca Sunshine Radio Classics",
+    "url": "https://stream.rcs.revma.com/mallorcasunshineradioclassics.mp3"
+  },
+  {
+    "name": "Relax FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PENSAMIENTO_POSITIVO.mp3"
+  },
+  {
+    "name": "MoreFM 70s",
+    "url": "https://stream-mmr70s.creativedork.com/"
+  },
+  {
+    "name": "Loca Dub Techno",
+    "url": "https://s02.fjperezdj.com:8060/live"
+  },
+  {
+    "name": "Paranoia Metal Show",
+    "url": "https://giss.tv:666/paranoiashow.mp3"
+  },
+  {
+    "name": "LOS40 Urban",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40_URBAN.mp3"
+  },
+  {
+    "name": "Hits1 Latina",
+    "url": "https://str3.openstream.co/1183"
+  },
+  {
+    "name": "Sisu RnB Radio FM 95.2",
+    "url": "http://stream.beachgrooves.com:8100/stream"
+  },
+  {
+    "name": "Radio Europa Schlager",
+    "url": "https://server8.emitironline.com:18734/"
+  },
+  {
+    "name": "Cool Chill House",
+    "url": "https://listen.openstream.co/6620/audio"
+  },
+  {
+    "name": "LOS40 Classic Vigo 101.2 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40CL_ASO_VIGO.mp3"
+  },
+  {
+    "name": "Costa Del Mar - Smooth Jazz",
+    "url": "https://radio4.cdm-radio.com:18024/stream-mp3-Smooth"
+  },
+  {
+    "name": "Classic Rock",
+    "url": "https://streaming2.elitecomunicacion.es:8054/stream"
+  },
+  {
+    "name": "Pop FM Granada",
+    "url": "https://sonicpanel.streamsolutions.us/8034/stream"
+  },
+  {
+    "name": "Hot FM Dance",
+    "url": "https://ukstream.radiohost.co.uk/listen/hot_fm_dance/radio.mp3"
+  },
+  {
+    "name": "Techno Room",
+    "url": "https://s12.myradiostream.com/17550/listen.mp3"
+  },
+  {
+    "name": "Ibiza Global Classics",
+    "url": "https://control.streaming-pro.com:8000/ibizaglobalclassics.mp3"
+  },
+  {
+    "name": "Relax FM",
+    "url": "https://server9.emitironline.com:19288/stream"
+  },
+  {
+    "name": "MoreFM 80s",
+    "url": "https://stream-mmr80s.creativedork.com/"
   }
 ]

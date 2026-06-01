@@ -30,5 +30,133 @@
   {
     "name": "Melody FM",
     "url": "https://stream.rcs.revma.com/2u1n6dtbv4uvv"
+  },
+  {
+    "name": "Jazz Lounge",
+    "url": "https://eu8.fastcast4u.com/proxy/lch?mp=/1/;"
+  },
+  {
+    "name": "KL FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KL_FMAAC.aac"
+  },
+  {
+    "name": "Wai FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WAI_FM_BK.mp3"
+  },
+  {
+    "name": "Miri FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MIRI_FMAAC.aac"
+  },
+  {
+    "name": "Sibu FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SIBU_FMAAC.aac"
+  },
+  {
+    "name": "Kedah FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KEDAH_FMAAC.aac"
+  },
+  {
+    "name": "Perak FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PERAK_FMAAC.aac"
+  },
+  {
+    "name": "Johor FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/JOHOR_FMAAC.aac"
+  },
+  {
+    "name": "Sabah FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SABAH_FMAAC.aac"
+  },
+  {
+    "name": "Asyik FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ASYIK_FMAAC.aac"
+  },
+  {
+    "name": "Traxx FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TRAXX_FMAAC.aac"
+  },
+  {
+    "name": "Tawau FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TAWAU_FMAAC.aac"
+  },
+  {
+    "name": "Pahang FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PAHANG_FMAAC.aac"
+  },
+  {
+    "name": "Labuan FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LABUAN_FMAAC.aac"
+  },
+  {
+    "name": "Melaka FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MELAKA_FMAAC.aac"
+  },
+  {
+    "name": "Negeri FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NEGERI_FMAAC.aac"
+  },
+  {
+    "name": "Bintulu FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BINTULU_FMAAC.aac"
+  },
+  {
+    "name": "Mutiara FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MUTIARA_FMAAC.aac"
+  },
+  {
+    "name": "Sabah V FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SABAH_VFMAAC.aac"
+  },
+  {
+    "name": "Ai FM 89.3",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/AI_FMAAC.aac"
+  },
+  {
+    "name": "Sarawak FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SARAWAK_FMAAC.aac"
+  },
+  {
+    "name": "WaiFM Iban",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WAI_FM_IBANAAC.aac"
+  },
+  {
+    "name": "Limbang FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LIMBANGAAC.aac"
+  },
+  {
+    "name": "Kelantan FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KELANTAN_FMAAC.aac"
+  },
+  {
+    "name": "Nasional FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NASIONAL_FMAAC.aac"
+  },
+  {
+    "name": "Selangor FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SELANGOR_FMAAC.aac"
+  },
+  {
+    "name": "Sandakan FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SANDAKAN_FMAAC.aac"
+  },
+  {
+    "name": "Sri Aman FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SRIAMAN_FMAAC.aac"
+  },
+  {
+    "name": "Wai FM 106.1",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WAI_FM_BKAAC.aac"
+  },
+  {
+    "name": "Terengganu FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TERENGGANU_FMAAC.aac"
+  },
+  {
+    "name": "Perlis FM 102.9",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PERLIS_FMAAC.aac"
+  },
+  {
+    "name": "Rakita 107.9 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RAKITAAAC.aac"
   }
 ]

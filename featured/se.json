@@ -30,5 +30,53 @@
   {
     "name": "SR P2 Alltid Musik",
     "url": "https://live1.sr.se/p2-aac-320"
+  },
+  {
+    "name": "Bandit Classic Rock",
+    "url": "https://wr11-ice.stream.khz.se/wr11_mp3"
+  },
+  {
+    "name": "Pop & Rock 102,3",
+    "url": "https://sstream.ueteknik.se/listen/poporock/radio.mp3"
+  },
+  {
+    "name": "Disco 54",
+    "url": "https://wr15-ice.stream.khz.se/wr15_mp3"
+  },
+  {
+    "name": "Oldies FM",
+    "url": "https://stream3.themediasite.co.uk:8030/stream"
+  },
+  {
+    "name": "Country Rocks Radio",
+    "url": "https://stream.dbmedia.se/crrMP3"
+  },
+  {
+    "name": "Bandit Metal",
+    "url": "https://wr03-ice.stream.khz.se/wr03_mp3"
+  },
+  {
+    "name": "Radio Pasion Latina",
+    "url": "https://sonic-us.fhost.cl/9948/stream"
+  },
+  {
+    "name": "Pirate Rock",
+    "url": "https://stream.piraterock.se:8100/webradio"
+  },
+  {
+    "name": "Go Country FM 107.9",
+    "url": "https://wr14-ice.stream.khz.se/wr14_mp3"
+  },
+  {
+    "name": "DistFM - 100% Rock!",
+    "url": "http://listen.to.distfm.se/proxy/distfmsam192?mp=/stream"
+  },
+  {
+    "name": "Radio AF",
+    "url": "https://stream.rcs.revma.com/e3tha8v4dkhvv"
+  },
+  {
+    "name": "Radio Viking 101,4",
+    "url": "https://stream.rcs.revma.com/qp6w2wzrruhvv"
   }
 ]

@@ -26,5 +26,49 @@
   {
     "name": "Radio Disney FM 97.3",
     "url": "https://stream.zeno.fm/zky9fvlfkootv"
+  },
+  {
+    "name": "Locos Por El Jazz Radio",
+    "url": "https://stream2.305stream.com/proxy/client041?mp=/stream"
+  },
+  {
+    "name": "Disco 89",
+    "url": "http://radio2.rgradio.net:9020/disco89"
+  },
+  {
+    "name": "Latina 104",
+    "url": "https://radio.dominiserver.com/proxy/latina104?mp=/stream"
+  },
+  {
+    "name": "Ma Merengue",
+    "url": "https://radio.mystreamrd.com/8002/stream"
+  },
+  {
+    "name": "Mas Merengue",
+    "url": "https://radio.mystreamrd.com/masmerengue"
+  },
+  {
+    "name": "Sabora Merengue",
+    "url": "https://radiordomi.com/8542/stream"
+  },
+  {
+    "name": "Top Salsa Radio",
+    "url": "https://radio.dominiserver.com/proxy/topsalsaradio?mp=/stream"
+  },
+  {
+    "name": "Top Bachata Radio",
+    "url": "https://radio.dominiserver.com/proxy/topbachata?mp=/stream"
+  },
+  {
+    "name": "Basto Studio Salsa",
+    "url": "https://centova.streamingcastrd.net/proxy/bastosalsa/stream"
+  },
+  {
+    "name": "Top Merengue Radio",
+    "url": "https://radio.dominiserver.com/proxy/topmerengueradio?mp=/stream"
+  },
+  {
+    "name": "Latina 88.7 FM",
+    "url": "https://sp.totalstreaming.net:8060/stream"
   }
 ]

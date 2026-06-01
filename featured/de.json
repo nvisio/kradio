@@ -30,5 +30,133 @@
   {
     "name": "Hit Radio FFH",
     "url": "https://streams.ffh.de/radioffh/aac/hqlivestream.aac?amsparams=playerid:RTFFHRadioGarden/;"
+  },
+  {
+    "name": "WDR 2 Rhein-Ruhr",
+    "url": "https://wdr-wdr2-rheinruhr.icecastssl.wdr.de/wdr/wdr2/rheinruhr/mp3/128/stream.mp3"
+  },
+  {
+    "name": "WDR 4 100.5 FM",
+    "url": "https://wdr-wdr4-live.icecastssl.wdr.de/wdr/wdr4/live/mp3/128/stream.mp3"
+  },
+  {
+    "name": "WDR 5",
+    "url": "https://wdr-wdr5-live.icecastssl.wdr.de/wdr/wdr5/live/mp3/128/stream.mp3"
+  },
+  {
+    "name": "N-Joy Radio",
+    "url": "https://icecast.ndr.de/ndr/njoy/live/mp3/128/stream.mp3"
+  },
+  {
+    "name": "SWR1",
+    "url": "https://liveradio.swr.de/sw282p3/swr1bw/play.mp3"
+  },
+  {
+    "name": "Deutschlandfunk Kultur",
+    "url": "https://st02.sslstream.dlf.de/dlf/02/128/mp3/stream.mp3"
+  },
+  {
+    "name": "Deutschlandfunk NOVA",
+    "url": "https://st03.sslstream.dlf.de/dlf/03/high/aac/stream.aac?aggregator=web"
+  },
+  {
+    "name": "bigFM RnB",
+    "url": "https://stream.bigfm.de/rnb/mp3-128/radiogarden"
+  },
+  {
+    "name": "Sunshine Live",
+    "url": "https://sunsl.streamabc.net/sunsl-sslsimulcast-mp3-192-4434053"
+  },
+  {
+    "name": "Radio Hamburg FM 103.6",
+    "url": "https://frontend.streamonkey.net/rhh-1036"
+  },
+  {
+    "name": "MDR JUMP",
+    "url": "http://mdr-284320-0.cast.mdr.de/mdr/284320/0/mp3/high/stream.mp3"
+  },
+  {
+    "name": "Energy Sachsen",
+    "url": "https://regiocast.streamabc.net/regc_nren36tvre_bunk-mp3-192-6739542"
+  },
+  {
+    "name": "Jam FM",
+    "url": "https://rtlberlin.streamabc.net/rtlb-jamfmlive-mp3-128-6002587"
+  },
+  {
+    "name": "Schlager Radio",
+    "url": "https://addrad.io/4454r93/;"
+  },
+  {
+    "name": "RBB 88.8",
+    "url": "https://dispatcher.rndfnk.com/rbb/rbb888/live/mp3/mid"
+  },
+  {
+    "name": "Antenne 1",
+    "url": "https://stream.antenne1.de/a1stg/livestream2.mp3?usid=M-M-07-0-0&listenerid=6cfa54807b2234df3d9c7f96963422d5&aw_0_1st.kuid=&aw_0_1st.ksg=[]&aw_0_req.gdpr=false"
+  },
+  {
+    "name": "Cosmo FM 95.6",
+    "url": "https://wdr-cosmo-live.icecastssl.wdr.de/wdr/cosmo/live/mp3/128/stream.mp3"
+  },
+  {
+    "name": "Schwarzwaldradio",
+    "url": "https://frontend.streamonkey.net/fho-schwarzwaldradiolive?aggregator=radio.garden"
+  },
+  {
+    "name": "NDR 1 Radio MV",
+    "url": "https://icecast.ndr.de/ndr/ndr1radiomv/schwerin/mp3/128/stream.mp3"
+  },
+  {
+    "name": "NDR Info",
+    "url": "https://icecast.ndr.de/ndr/ndrinfo/hamburg/mp3/128/stream.mp3"
+  },
+  {
+    "name": "1A Classic Rock",
+    "url": "https://1a-classicrock.radionetz.de/1a-classicrock.mp3"
+  },
+  {
+    "name": "1A Jazz",
+    "url": "https://1a-jazz.radionetz.de/1a-jazz.mp3"
+  },
+  {
+    "name": "ON Classic Rock",
+    "url": "https://0n-classicrock.radionetz.de/0n-classicrock.mp3"
+  },
+  {
+    "name": "Pop Jazz Radio",
+    "url": "https://s35.derstream.net/popjazzradio.mp3?_=1"
+  },
+  {
+    "name": "ON Dance",
+    "url": "https://0n-dance.radionetz.de/0n-dance.mp3"
+  },
+  {
+    "name": "ON EDM",
+    "url": "https://0n-edm.radionetz.de/0n-edm.mp3"
+  },
+  {
+    "name": "1A Hits",
+    "url": "https://1a-hits.radionetz.de/1a-hits.mp3"
+  },
+  {
+    "name": "1A Relax",
+    "url": "https://1a-relax.radionetz.de/1a-relax.mp3"
+  },
+  {
+    "name": "ON 60s",
+    "url": "https://0n-60s.radionetz.de/0n-60s.mp3"
+  },
+  {
+    "name": "ON Blues",
+    "url": "https://0n-blues.radionetz.de/0n-blues.mp3"
+  },
+  {
+    "name": "ON Country",
+    "url": "https://0n-country.radionetz.de/0n-country.mp3"
+  },
+  {
+    "name": "ON Reggae",
+    "url": "https://0n-reggae.radionetz.de/0n-reggae.mp3"
   }
 ]

@@ -30,5 +30,133 @@
   {
     "name": "Veronica",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/VERONICA.mp3"
+  },
+  {
+    "name": "Team FM Atlantis",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TEAMFM.mp3"
+  },
+  {
+    "name": "Classic NL",
+    "url": "https://stream.classic.nl/classicnl.mp3"
+  },
+  {
+    "name": "News Internetradio",
+    "url": "https://audio.newsinternetradio.nl/aac"
+  },
+  {
+    "name": "Classic NL - Opera",
+    "url": "https://stream.classic.nl/classicnl-opera.mp3"
+  },
+  {
+    "name": "Sublime - Jazz",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WEB21_MP3_SC"
+  },
+  {
+    "name": "Arrow Classic Rock",
+    "url": "https://stream.player.arrow.nl/arrow"
+  },
+  {
+    "name": "Pinguin Pop",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SP_R2591862_SC"
+  },
+  {
+    "name": "Q-Dance Radio",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/Q_DANCE.mp3"
+  },
+  {
+    "name": "Trance 21 - Psy Trance",
+    "url": "https://mscp4.live-streams.nl:8092/autodj.mp3"
+  },
+  {
+    "name": "Sky Radio Hits",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SRGSTR01.mp3?dist=radiogarden"
+  },
+  {
+    "name": "538 90s",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR21.mp3?dist=radiogarden"
+  },
+  {
+    "name": "Pinguin Blues",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SP_R2406394_SC"
+  },
+  {
+    "name": "Team FM Country",
+    "url": "https://stream4.audiostreamen.nl/teamfmcountry"
+  },
+  {
+    "name": "NPO FunX Reggae",
+    "url": "https://icecast.omroep.nl/funx-reggae-bb-mp3"
+  },
+  {
+    "name": "NPO FunX - Hip Hop",
+    "url": "https://icecast.omroep.nl/funx-hiphop-bb-mp3"
+  },
+  {
+    "name": "Concertzender - Folk it!",
+    "url": "https://streams.greenhost.nl:8006/folkit"
+  },
+  {
+    "name": "Soul Radio",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SOULRADIOAAC.aac"
+  },
+  {
+    "name": "Classic NL - Mind Radio",
+    "url": "https://stream.classic.nl/classicnl-mindradio.mp3"
+  },
+  {
+    "name": "Jazz de Ville - Jazz",
+    "url": "https://onair22.xdevel.com/proxy/xautocloud_kkyb_420?mp=/stream"
+  },
+  {
+    "name": "Nova Classic Rock",
+    "url": "https://mediaserv68.live-streams.nl:8070/stream"
+  },
+  {
+    "name": "538 Dance Dept.",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR01.mp3?dist=radiogarden"
+  },
+  {
+    "name": "Trance 21 - Vocal Trance",
+    "url": "https://mscp3.live-streams.nl:8022/autodj.mp3"
+  },
+  {
+    "name": "538 Greatest Hits",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR08.mp3?dist=radiogarden"
+  },
+  {
+    "name": "KINK 80s",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KINK_DNAAAC.aac"
+  },
+  {
+    "name": "ISKC Blues Café",
+    "url": "https://mediaserv68.live-streams.nl:18012/BluesCafe/;"
+  },
+  {
+    "name": "Crossroads Country Radio",
+    "url": "https://server-27.stream-server.nl/stream/CrossroadsCountryRadio/stream"
+  },
+  {
+    "name": "Radio 10 Soul",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR04.mp3?dist=radiogarden"
+  },
+  {
+    "name": "Classic Hits 106",
+    "url": "https://stream.laut.fm/classichits106"
+  },
+  {
+    "name": "Jazz de Ville - Dance",
+    "url": "https://onair22.xdevel.com/proxy/xautocloud_6cqz_422?mp=/stream"
+  },
+  {
+    "name": "Unique Classic Rock",
+    "url": "https://mscp2.live-streams.nl:8182/radio"
+  },
+  {
+    "name": "Radio Dance 90s",
+    "url": "https://radiodance.streamingmedia.it/audio.aac"
+  },
+  {
+    "name": "In Tha House",
+    "url": "https://ex52.voordeligstreamen.nl/8056/stream"
   }
 ]

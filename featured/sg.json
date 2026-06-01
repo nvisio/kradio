@@ -30,5 +30,49 @@
   {
     "name": "Capital FM 95.8",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CAPITAL958FMAAC.aac"
+  },
+  {
+    "name": "Oli 968",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/OLI968FM_PREM.aac"
+  },
+  {
+    "name": "UFM1003",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/UFM_1003AAC.aac"
+  },
+  {
+    "name": "96.3 好FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/HAO_963AAC.aac"
+  },
+  {
+    "name": "88.3 Jia FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/883JIA.mp3"
+  },
+  {
+    "name": "One FM 91.3",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ONE_FM_913AAC.aac"
+  },
+  {
+    "name": "Ria 89.7 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RIA897FM_PREM.aac"
+  },
+  {
+    "name": "Symphony 924",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SYMPHONY924_PREM.aac"
+  },
+  {
+    "name": "Money FM 89.3",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MONEY_893AAC.aac"
+  },
+  {
+    "name": "Warna 94.2 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WARNA942FM.mp3?dist=radiogarden"
+  },
+  {
+    "name": "Bisme Islamic Radio",
+    "url": "https://n11a-eu.rcs.revma.com/pcr8x50uty8uv"
+  },
+  {
+    "name": "Power 98 Love Songs",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/POWER98_LOVESONGS_SC"
   }
 ]

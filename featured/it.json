@@ -30,5 +30,133 @@
   {
     "name": "Radio 24 - FM 106.8",
     "url": "http://shoutcast2.radio24.ilsole24ore.com:8000/;"
+  },
+  {
+    "name": "RAI Radio 2",
+    "url": "https://icestreaming.rai.it/2.mp3"
+  },
+  {
+    "name": "RAI Radio 3",
+    "url": "https://icestreaming.rai.it/3.mp3"
+  },
+  {
+    "name": "Radio Subasio 88.7",
+    "url": "https://icy.unitedradio.it/Subasio.mp3"
+  },
+  {
+    "name": "Radio Maria",
+    "url": "https://dreamsiteradiocp5.com/proxy/rmitalia?mp=/stream"
+  },
+  {
+    "name": "RAI Isoradio",
+    "url": "https://icestreaming.rai.it/12.mp3"
+  },
+  {
+    "name": "Virgin Radio - Rock 2K",
+    "url": "https://icy.unitedradio.it/Virgin_02.mp3"
+  },
+  {
+    "name": "Virgin Radio - Rock 70",
+    "url": "https://icy.unitedradio.it/VirginRock70.mp3"
+  },
+  {
+    "name": "Radio Italia anni 60",
+    "url": "https://ice12.fluidstream.net/ria60_ba.aac"
+  },
+  {
+    "name": "Radio GR News",
+    "url": "https://gr.fluidstream.eu/gr2.mp3"
+  },
+  {
+    "name": "Radio Studio Emme Classic",
+    "url": "https://ice05.fluidstream.net/fluid0511.mp3"
+  },
+  {
+    "name": "Musica Jazz",
+    "url": "https://ice03.fluidstream.net/mjr.aac"
+  },
+  {
+    "name": "Virgin Radio - Classic Rock",
+    "url": "https://icy.unitedradio.it/VirginRockClassics.mp3"
+  },
+  {
+    "name": "Radio Pop e Rock",
+    "url": "https://rtr99.fluidstream.eu/rtr99_poprock.aac"
+  },
+  {
+    "name": "LolliRadio Dance",
+    "url": "https://stream.lolliradio.net/lolli_dance.mp3?FLID=5"
+  },
+  {
+    "name": "Radio Club",
+    "url": "https://streaming.cst98.com/club.php"
+  },
+  {
+    "name": "FM Classic Hits",
+    "url": "https://stream.laut.fm/classichits"
+  },
+  {
+    "name": "MC2 - Gipsy Lounge",
+    "url": "https://stream.rcs.revma.com/edg86zmp81uvv"
+  },
+  {
+    "name": "Radio SeiSei Vintage",
+    "url": "https://ice02.fluidstream.net/fluid02_8360.aac"
+  },
+  {
+    "name": "Radio Padova Country",
+    "url": "https://sphera.fluidstream.eu/rpd_country.mp3?FLID=5"
+  },
+  {
+    "name": "Tango Pasion Radio",
+    "url": "https://nr11.newradio.it/proxy/tangopas?mp=/stream"
+  },
+  {
+    "name": "Radio Easy Network  - Jazz and Soul",
+    "url": "https://sphera.fluidstream.eu/easy_jazz.mp3"
+  },
+  {
+    "name": "Musical Factory Kpop Zone",
+    "url": "https://stream.musicalfactory.it:8030/radio.mp3"
+  },
+  {
+    "name": "Electro lounge",
+    "url": "https://electrolounge.stream.laut.fm/electrolounge"
+  },
+  {
+    "name": "Radio Easy Network - Classic",
+    "url": "https://sphera.fluidstream.eu/easy_classica.mp3"
+  },
+  {
+    "name": "MC2 - Smooth Jazz",
+    "url": "https://stream.rcs.revma.com/4t617kep81uvv"
+  },
+  {
+    "name": "k.rock",
+    "url": "https://ice09.fluidstream.net/krock.mp3"
+  },
+  {
+    "name": "Adoro Pop",
+    "url": "https://stream.deegay.fm/deegay1.aac"
+  },
+  {
+    "name": "RMI - Italo Disco Classic",
+    "url": "https://ams-pioneer02.dedicateware.com:2485/stream"
+  },
+  {
+    "name": "Radio Club 91",
+    "url": "https://stream5.xdevel.com/audio0s976546-1307/stream/icecast.audio"
+  },
+  {
+    "name": "LolliRadio Hits",
+    "url": "https://stream.lolliradio.net/lolli_hits.mp3?FLID=5"
+  },
+  {
+    "name": "Radio Tigullio Ambient",
+    "url": "https://stream.laut.fm/radio-tigullio-ambient/;"
+  },
+  {
+    "name": "Radio Nostalgia Liguria",
+    "url": "https://ice08.fluidstream.net:8080/fluid814.mp3"
   }
 ]

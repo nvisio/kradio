@@ -30,5 +30,133 @@
   {
     "name": "SRF 2",
     "url": "https://stream.srg-ssr.ch/m/drs2/mp3_128?.mp3"
+  },
+  {
+    "name": "SRF 4 News",
+    "url": "http://streaming.swisstxt.ch/m/drs4news/mp3_128"
+  },
+  {
+    "name": "1.FM - Classic Country",
+    "url": "https://strm112.1.fm/ccountry_mobile_mp3"
+  },
+  {
+    "name": "Radio Swiss Jazz",
+    "url": "https://stream.srg-ssr.ch/m/rsj/mp3_128"
+  },
+  {
+    "name": "1.FM - Classic Rock Replay Radio",
+    "url": "https://strm112.1.fm/crock_mobile_mp3"
+  },
+  {
+    "name": "Malki Retro Pop, Rock & Latino",
+    "url": "https://radio.andaina.net/8054/stream"
+  },
+  {
+    "name": "Energy Hits",
+    "url": "https://energyzuerich.mp3.energy.ch/energyzuerich-high.mp3"
+  },
+  {
+    "name": "Lounge-Radio.com",
+    "url": "https://fr1.streamhosting.ch/lounge128.mp3"
+  },
+  {
+    "name": "Rouge 90s",
+    "url": "https://rouge-90.ice.infomaniak.ch/rouge-90-128.mp3?.mp3"
+  },
+  {
+    "name": "Country Radio Switzerland",
+    "url": "https://countryradioswitzerland.ice.infomaniak.ch/crs-128.mp3"
+  },
+  {
+    "name": "Klassik Radio Schweiz",
+    "url": "https://live.streams.klassikradio.de/klassikradio-schweiz/stream/mp3?aggregator=radiogarden"
+  },
+  {
+    "name": "A Fine Jazz Gumbo Radio",
+    "url": "https://streaming.smartradio.ch:9502/stream"
+  },
+  {
+    "name": "My105 Rock",
+    "url": "https://stream01.my105.ch/my105rock.mp3?.mp3/;"
+  },
+  {
+    "name": "RADIO VINTAGE",
+    "url": "https://vintage.ice.infomaniak.ch/vintage.mp3"
+  },
+  {
+    "name": "Country Radio Switzerland",
+    "url": "https://listen.countryradio.ch"
+  },
+  {
+    "name": "Radio Suisse Classique",
+    "url": "https://stream.srg-ssr.ch/m/rsc_fr/mp3_128?.mp3"
+  },
+  {
+    "name": "Public Domain Radio - Jazz, Swing",
+    "url": "http://relay.publicdomainradio.org/jazz_swing.mp3"
+  },
+  {
+    "name": "Vintage Radio",
+    "url": "https://vintageradio.ice.infomaniak.ch/vintageradio-high.mp3"
+  },
+  {
+    "name": "Radio Svizzera Classica",
+    "url": "https://stream.srg-ssr.ch/m/rsc_it/mp3_128?.mp3"
+  },
+  {
+    "name": "80s Forever Radio",
+    "url": "https://azuracast.ssl-stream.com/radio/8050/256.mp3"
+  },
+  {
+    "name": "Public Domain Radio - Classical",
+    "url": "http://relay.publicdomainradio.org/classical.mp3"
+  },
+  {
+    "name": "neo1",
+    "url": "https://neo1.ice.infomaniak.ch/neo1.mp3"
+  },
+  {
+    "name": "UZIC",
+    "url": "https://uzic.ice.infomaniak.ch/uzic-128.aac"
+  },
+  {
+    "name": "Radio R",
+    "url": "https://radior.ice.infomaniak.ch/radior-128.mp3"
+  },
+  {
+    "name": "RhoneFM",
+    "url": "https://rhonefm.ice.infomaniak.ch/rhonefm-high.mp3"
+  },
+  {
+    "name": "Rouge FM",
+    "url": "https://rougefm.ice.infomaniak.ch/rougefm-high.mp3"
+  },
+  {
+    "name": "Radio 15",
+    "url": "https://radio15.ice.infomaniak.ch/radio15-192kbps.mp3"
+  },
+  {
+    "name": "Global FM",
+    "url": "https://globalfm.ice.infomaniak.ch/globalfm-high.mp3"
+  },
+  {
+    "name": "Radio Lac",
+    "url": "https://yesfm.ice.infomaniak.ch/yesfm-high.aac"
+  },
+  {
+    "name": "Global FM",
+    "url": "https://globalsportvaud.ice.infomaniak.ch/globalsportvaud-128.mp3"
+  },
+  {
+    "name": "Radio LFM",
+    "url": "https://lausannefm.ice.infomaniak.ch/lausannefm-high.mp3"
+  },
+  {
+    "name": "Radio Top",
+    "url": "https://radiotop.ice.infomaniak.ch/radiotop96.aac"
+  },
+  {
+    "name": "Radio4tng",
+    "url": "https://radio4tng.ice.infomaniak.ch/radio4tng-live-web.mp3"
   }
 ]

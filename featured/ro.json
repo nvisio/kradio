@@ -30,5 +30,133 @@
   {
     "name": "Virgin Radio FM 100.2",
     "url": "https://astreaming.edi.ro:8443/VirginRadio_aac"
+  },
+  {
+    "name": "News FM Pascani",
+    "url": "https://stream2.rcast.net/64531"
+  },
+  {
+    "name": "EBS Classical",
+    "url": "https://azura.ebsmedia.ro/listen/classical/classical128.mp3"
+  },
+  {
+    "name": "EBS Jazz",
+    "url": "https://azura.ebsmedia.ro/radio/8030/jazz320.aac"
+  },
+  {
+    "name": "Rock FM Blues",
+    "url": "https://live.kissfm.ro/blues"
+  },
+  {
+    "name": "Dance FM",
+    "url": "https://edge126.rcs-rds.ro/profm/dancefm.mp3"
+  },
+  {
+    "name": "EBS Electro",
+    "url": "https://azura.ebsmedia.ro/radio/8040/electro320.aac"
+  },
+  {
+    "name": "Retro Radio",
+    "url": "https://online.radioretro.ro:8003/RetroRadio.mp3"
+  },
+  {
+    "name": "Chill FM",
+    "url": "https://edge126.rcs-rds.ro/profm/chillfm.mp3"
+  },
+  {
+    "name": "Radio Bandit - 90s",
+    "url": "https://pro.radiobandit.ro/listen/bandit90/radio.mp3"
+  },
+  {
+    "name": "EBS Blues",
+    "url": "https://azura.ebsmedia.ro/radio/8050/blues320.aac"
+  },
+  {
+    "name": "Radio Clasic - Country",
+    "url": "https://radioclasic.ro:8586/stream/;"
+  },
+  {
+    "name": "Radio GMusic Trap",
+    "url": "https://s9.webradio-hosting.com/proxy/rgmtrap/stream"
+  },
+  {
+    "name": "Radio Clasic - Latino",
+    "url": "https://radioclasic.ro:8646/stream"
+  },
+  {
+    "name": "EBS Romanian Folk",
+    "url": "https://azura.ebsmedia.ro/radio/8150/romanianfolk320.aac"
+  },
+  {
+    "name": "Radio GMusic Planet Funk",
+    "url": "https://play.webradio-hosting.com:8036/stream"
+  },
+  {
+    "name": "EBS Lounge",
+    "url": "https://azura.ebsmedia.ro/listen/lounge/lounge128.mp3"
+  },
+  {
+    "name": "Jazz FM",
+    "url": "https://s4.radio.co/s1e25bf273/listen"
+  },
+  {
+    "name": "Rock 80s & 90s",
+    "url": "https://live.kissfm.ro/rock.8090"
+  },
+  {
+    "name": "Disco Mix",
+    "url": "https://play.discomix.ro/8002/stream"
+  },
+  {
+    "name": "Smart Rave",
+    "url": "https://web.smartradio.ro:8443/smartrave"
+  },
+  {
+    "name": "SpaceFM Retro",
+    "url": "https://retro.spacefm.live/listen/spacefm_retro/retro128"
+  },
+  {
+    "name": "Kiss - Kiss & Chill",
+    "url": "https://live.kissfm.ro/kissnchill"
+  },
+  {
+    "name": "Nostalgia Radio 90.2 FM",
+    "url": "https://live.radionostalgia.ro:8443/nostalgia.aac"
+  },
+  {
+    "name": "Radio Romanian Hip-Hop",
+    "url": "https://asculta.radioromanian.net/hiphop"
+  },
+  {
+    "name": "Radio Traditional Manele",
+    "url": "https://radio.ascultatare.ro/7000/stream"
+  },
+  {
+    "name": "Lounge Avenue",
+    "url": "https://arlandria.go.ro:7443/lounge"
+  },
+  {
+    "name": "Napoca FM Rock",
+    "url": "https://streaming.napocalive.ro/napoca-rock"
+  },
+  {
+    "name": "Space FM Dance",
+    "url": "https://spacefm.live/radio/8000/spacefm128"
+  },
+  {
+    "name": "Kiss - Clean The House Playlist by Cristi Neacsu",
+    "url": "https://live.kissfm.ro/cleanthehousebycristineacsu"
+  },
+  {
+    "name": "Magic 80s Hits",
+    "url": "https://live.kissfm.ro/Magic-80s"
+  },
+  {
+    "name": "Smart In Lounge",
+    "url": "https://web.smartradio.ro:8443/smartlounge"
+  },
+  {
+    "name": "90s 3NeRgY",
+    "url": "https://s11.ssl-stream.com/ssl/90s_energy?mp=/stream"
   }
 ]

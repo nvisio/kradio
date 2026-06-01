@@ -30,5 +30,133 @@
   {
     "name": "Mustang FM 88.0",
     "url": "https://ic.mari.co.id:8443/mustangfm"
+  },
+  {
+    "name": "RRI Pro 2",
+    "url": "https://stream-node1.rri.co.id/streaming/19/9219/rrisurakartapro2.mp3"
+  },
+  {
+    "name": "RRI Pro1 Nabire",
+    "url": "https://stream-node0.rri.co.id/streaming/22/9122/rrinabirepro1.mp3"
+  },
+  {
+    "name": "X Channel FM 90.9",
+    "url": "https://stream.xradio.co.id/xchannelbdg"
+  },
+  {
+    "name": "RRI Pro2 Nabire",
+    "url": "https://stream-node0.rri.co.id/streaming/22/9122/rrinabirepro2.mp3"
+  },
+  {
+    "name": "Insania FM 88.7",
+    "url": "https://stream-sg1.galuhmedia.co.id/listen/insaniasorong/887sorong"
+  },
+  {
+    "name": "RRI Jazz Channel",
+    "url": "https://stream-node2.rri.co.id/streaming/40/9340/jazz.mp3"
+  },
+  {
+    "name": "Hits Unikom FM 103.9",
+    "url": "https://streaming.hitsunikomradio.com"
+  },
+  {
+    "name": "Urban FM 106.3",
+    "url": "https://a1.siar.us/listen/urbanradio/stream"
+  },
+  {
+    "name": "RRI Pro 1 Banda Aceh",
+    "url": "https://stream-node2.rri.co.id/streaming/14/9214/rribandaacehpro1.mp3"
+  },
+  {
+    "name": "RRI Pro 4 Banda Aceh",
+    "url": "https://stream-node2.rri.co.id/streaming/14/9214/rribandaacehpro4.mp3"
+  },
+  {
+    "name": "VOKS Radio Banda Aceh FM 99.3",
+    "url": "https://svara-stream.radioddns.net/voksbandaaceh"
+  },
+  {
+    "name": "Sebayu FM",
+    "url": "https://radio-streaming.tegalkota.go.id/stream.mp3"
+  },
+  {
+    "name": "Jateng Radio",
+    "url": "https://stream.jatengradio.jatengprov.go.id/listen/jateng_radio/radio.mp3"
+  },
+  {
+    "name": "RRI Jember Pro1",
+    "url": "https://stream-node2.rri.co.id/streaming/40/9340/rrijemberpro1.mp3"
+  },
+  {
+    "name": "RRI Jember Pro2",
+    "url": "https://stream-node2.rri.co.id/streaming/40/9340/rrijemberpro2.mp3"
+  },
+  {
+    "name": "RRI Pro1 Fak-Fak",
+    "url": "https://stream-node2.rri.co.id/streaming/21/9321/rrifakfakpro1.mp3"
+  },
+  {
+    "name": "RRI Pro2 Fak-Fak",
+    "url": "https://stream-node2.rri.co.id/streaming/21/9321/rrifakfakpro2.mp3"
+  },
+  {
+    "name": "RRI Pro1 FM 94.3",
+    "url": "https://stream-node1.rri.co.id/streaming/24/9024/rrimanokwaripro1.mp3"
+  },
+  {
+    "name": "RRI Pro2 FM 97.8",
+    "url": "https://stream-node1.rri.co.id/streaming/24/9024/rrimanokwaripro2.mp3"
+  },
+  {
+    "name": "RRI Pro4 FM 96.7",
+    "url": "https://stream-node1.rri.co.id/streaming/24/9024/rrimanokwaripro4.mp3"
+  },
+  {
+    "name": "RRI Pro4 FM 92.4",
+    "url": "https://stream-node0.rri.co.id/streaming/11/9111/rripadangpro4.mp3"
+  },
+  {
+    "name": "RRI P1 Pontianak",
+    "url": "https://stream-node1.rri.co.id/streaming/12/9212/rripontianakpro1.mp3"
+  },
+  {
+    "name": "RRI P2 Pontianak",
+    "url": "https://stream-node1.rri.co.id/streaming/12/9212/rripontianakpro2.mp3"
+  },
+  {
+    "name": "RRI P4 Pontianak",
+    "url": "https://stream-node1.rri.co.id/streaming/12/9212/rripontianakpro4.mp3"
+  },
+  {
+    "name": "Pro 1 RRI 96.7 FM",
+    "url": "https://stream-node0.rri.co.id/streaming/19/9019/rribanjarmasinpro1.mp3"
+  },
+  {
+    "name": "Pro 2 RRI 95.2 FM",
+    "url": "https://stream-node0.rri.co.id/streaming/19/9019/rribanjarmasinpro2.mp3"
+  },
+  {
+    "name": "Pro 4 RRI 87.7 FM",
+    "url": "https://stream-node0.rri.co.id/streaming/19/9019/rribanjarmasinpro4.mp3"
+  },
+  {
+    "name": "Pro 1 RRI FM 93.0",
+    "url": "https://stream-node0.rri.co.id/streaming/21/9021/rridenpasarpro1.mp3"
+  },
+  {
+    "name": "LPP RRI Pro 2 FM 92.2",
+    "url": "https://stream-node1.rri.co.id/streaming/23/9223/rriendepro2.mp3"
+  },
+  {
+    "name": "LPP RRI Pro 1 FM 100.5",
+    "url": "https://stream-node1.rri.co.id/streaming/23/9223/rriendepro1.mp3"
+  },
+  {
+    "name": "Suara Jombang FM 104.1",
+    "url": "https://stream.jombangkab.go.id/sjfm2.mp3"
+  },
+  {
+    "name": "RRI SW 4755 Voice of Indonesia",
+    "url": "https://stream-node0.rri.co.id/streaming/25/9125/voi.mp3"
   }
 ]

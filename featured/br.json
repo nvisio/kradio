@@ -30,5 +30,133 @@
   {
     "name": "Transamérica 88.7 FM",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RT_BH.mp3"
+  },
+  {
+    "name": "Jovem Pan FM",
+    "url": "https://r18.ciclano.io/proxy/jovempan90/stream"
+  },
+  {
+    "name": "Radio Globo 98.1 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_GLOBO_RJAAC.aac"
+  },
+  {
+    "name": "Mix FM 90.3",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MIXFM_BH.mp3"
+  },
+  {
+    "name": "Antena 1",
+    "url": "https://antenaone.crossradio.com.br/stream"
+  },
+  {
+    "name": "Kiss FM 92.5",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_KISSFM_ADP.aac"
+  },
+  {
+    "name": "Nativa FM 101.9",
+    "url": "https://9582.brasilstream.com.br/stream"
+  },
+  {
+    "name": "Alpha FM 101.7",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ALPHAFMAAC.aac"
+  },
+  {
+    "name": "Massa FM 96.9",
+    "url": "https://play.wisestream.io/massafmcianorte"
+  },
+  {
+    "name": "Rádio Itatiaia",
+    "url": "https://8903.brasilstream.com.br/stream"
+  },
+  {
+    "name": "89 FM",
+    "url": "https://stm04.virtualcast.com.br:8260/89saobentosul"
+  },
+  {
+    "name": "Metropolitana FM 99.3 ",
+    "url": "https://rrdns-megasistema.webnow.com.br/993fm.aac"
+  },
+  {
+    "name": "Transamerica Brasilia FM 100.1",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RT_DFAAC.aac"
+  },
+  {
+    "name": "Energia 97 FM",
+    "url": "https://streaming.inweb.com.br/energia"
+  },
+  {
+    "name": "Rádio Bandeirantes",
+    "url": "https://stm23.xcast.com.br:11284/stream/;"
+  },
+  {
+    "name": "Educadora FM 107.5",
+    "url": "https://streaming.educadorafm.ba.gov.br/stream-01"
+  },
+  {
+    "name": "Rádio Cultura FM",
+    "url": "https://rrdns-imprensafm.webnow.com.br/culturafm.mp3"
+  },
+  {
+    "name": "012 News",
+    "url": "https://9881.brasilstream.com.br/stream"
+  },
+  {
+    "name": "Classic Pan FM 105,9",
+    "url": "https://stm14.xcast.com.br:10338/stream"
+  },
+  {
+    "name": "Tropical Smooth Jazz",
+    "url": "https://servidor32-4.brlogic.com:8230/live"
+  },
+  {
+    "name": "Rádio Rock FM 89.1",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_89FM_ADP.aac"
+  },
+  {
+    "name": "Transamérica Pop",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RT_CWBAAC.aac"
+  },
+  {
+    "name": "MGT Dance Hits",
+    "url": "https://api-cast.mgtradio.net/radio/8080/aac"
+  },
+  {
+    "name": "Comfort Club",
+    "url": "https://server.dacsolution.com.br/shoutcast2/listen.mp3"
+  },
+  {
+    "name": "Cultura Hits",
+    "url": "https://ssl.xcast.com.br:8926/stream"
+  },
+  {
+    "name": "Spaço FM 100.9",
+    "url": "https://painel.sintonizar.tv.br/stream/spacoaudio"
+  },
+  {
+    "name": "Conexão Vintage",
+    "url": "https://stm24.xcast.com.br:10380/stream"
+  },
+  {
+    "name": "Reggae Jah",
+    "url": "https://s09.w3bserver.com/listen/reggaejahcom/radio.mp3"
+  },
+  {
+    "name": "Metal Heads",
+    "url": "https://hts01.brascast.com:9194/live"
+  },
+  {
+    "name": "Barraco Rap 98.3 FM",
+    "url": "https://cast2.midiazdx.com.br:7260/stream"
+  },
+  {
+    "name": "Bossa Nova Brazil",
+    "url": "https://radio2.vip-radios.fm:18009/stream-128kmp3-BossaNovaBrazil"
+  },
+  {
+    "name": "Clássicos do Funk",
+    "url": "https://radio.saopaulo01.com.br/9812/stream"
+  },
+  {
+    "name": "Mirante News",
+    "url": "https://mirante.jmvstream.com/stream"
   }
 ]

@@ -26,5 +26,41 @@
   {
     "name": "Radio Kys FM 101.5",
     "url": "http://streaming3.globalhostla.com:9068/stream"
+  },
+  {
+    "name": "News 105.5 FM",
+    "url": "https://server6.globalhostla.com:9350/stream"
+  },
+  {
+    "name": "Circuito Pop FM 105.9",
+    "url": "https://acp2.lorini.net:10120/stream"
+  },
+  {
+    "name": "Radio Mix Retro",
+    "url": "https://streamingned.com:7084/stream"
+  },
+  {
+    "name": "Latina 95.9 FM",
+    "url": "https://radiostream2.interven.ca/listen/latina_95.9_fm/radio.mp3"
+  },
+  {
+    "name": "Radio Noticias FM 91.7 Fe y Alegría",
+    "url": "https://tx.feyalegrianoticias.com/listen/eltigrefm/radio.mp3"
+  },
+  {
+    "name": "Latina 101.9 FM",
+    "url": "https://radiostream2.interven.ca/listen/latina_101.9_fm//radio.mp3"
+  },
+  {
+    "name": "Magia Latina 96.9 FM",
+    "url": "https://app0102.sonicpanelradio.com/8758/stream"
+  },
+  {
+    "name": "Latina 98.7 FM",
+    "url": "https://server6.globalhostla.com:8028/stream"
+  },
+  {
+    "name": "Swing Latina 88.3 FM",
+    "url": "https://server6.globalhostla.com:9310/stream"
   }
 ]

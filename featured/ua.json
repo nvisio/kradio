@@ -30,5 +30,69 @@
   {
     "name": "NRJ",
     "url": "https://cast.mediaonline.net.ua/nrj320"
+  },
+  {
+    "name": "Radio Jazz",
+    "url": "https://online.radiojazz.ua/RadioJazz_HD"
+  },
+  {
+    "name": "Classic Radio",
+    "url": "https://online.classicradio.ua/ClassicRadio"
+  },
+  {
+    "name": "Radio Jazz Gold",
+    "url": "https://online.radiojazz.ua/RadioJazz_Gold_HD"
+  },
+  {
+    "name": "Radio ROKS Classic Rock",
+    "url": "https://online.radioroks.ua/RadioROKS_ClassicRock"
+  },
+  {
+    "name": "Melodia FM Disco",
+    "url": "https://online.melodiafm.ua/MelodiaFM_Disco"
+  },
+  {
+    "name": "Hit FM Modern hits",
+    "url": "https://online.hitfm.ua/HitFM_Top"
+  },
+  {
+    "name": "Lounge FM",
+    "url": "https://cast.mediaonline.net.ua/loungefm320"
+  },
+  {
+    "name": "Western Pole Radio FM 104.3",
+    "url": "https://online.1043.com.ua/1043fm"
+  },
+  {
+    "name": "True Black Metal Radio",
+    "url": "https://trueblackmetalradio.com:666/radio"
+  },
+  {
+    "name": "Radio Ritmo Latino",
+    "url": "https://online.radioplayer.ua/RadioRitmoLatino_HD"
+  },
+  {
+    "name": "Radio Relax Cafe",
+    "url": "https://online.radiorelax.ua/RadioRelax_Cafe_HD"
+  },
+  {
+    "name": "Radio Jazz Cover",
+    "url": "https://online.radiojazz.ua/RadioJazz_Cover_HD"
+  },
+  {
+    "name": "RockRadio Metal",
+    "url": "https://rockradioua.online:8433/metal_dodatok_256"
+  },
+  {
+    "name": "Radio Kyiv - Rock'n'Kyiv",
+    "url": "https://cdn.vsnw.net:8943/kyiv_fm_rock_192k"
+  },
+  {
+    "name": "Radio Tavria 103.5 FM",
+    "url": "https://tavria.hostingradio.ru/tavria192.mp3"
+  },
+  {
+    "name": "Radio KP",
+    "url": "https://kpradio.hostingradio.ru:8000/crimea.radiokp128.mp3"
   }
 ]

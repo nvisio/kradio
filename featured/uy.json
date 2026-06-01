@@ -30,5 +30,41 @@
   {
     "name": "FM Hit 90.3",
     "url": "https://hit-1.nty.uy/stream"
+  },
+  {
+    "name": "Radio Cenit Classica",
+    "url": "https://s3.servicioderadio.com:7035/stream"
+  },
+  {
+    "name": "Hits FM 89.9",
+    "url": "https://srv2.radiostreamuy.com/8008/stream"
+  },
+  {
+    "name": "Nostalgia Radio Montevideo",
+    "url": "https://stm6.xcast.com.br:9494/;"
+  },
+  {
+    "name": "Latina FM 95.3",
+    "url": "https://medios.ciudaddigital.com.uy:18168/LatinaFM"
+  },
+  {
+    "name": "Radio Cenit Latina",
+    "url": "https://s3.servicioderadio.com:7034/stream"
+  },
+  {
+    "name": "FM Mágica 93.5",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MAGICA.mp3"
+  },
+  {
+    "name": "Radio Colonia AM 550",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/COLONIAAAC.aac"
+  },
+  {
+    "name": "Clasica AM 650",
+    "url": "https://radios.iwstreaming.uy/8032/stream"
+  },
+  {
+    "name": "Radio Cultura 1290 AM",
+    "url": "https://radios.iwstreaming.uy/8034/stream"
   }
 ]

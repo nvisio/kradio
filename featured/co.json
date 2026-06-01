@@ -30,5 +30,133 @@
   {
     "name": "Radio Aktiva 97.9",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ACTIVAAAC.aac"
+  },
+  {
+    "name": "La Voz De Los Llaneros 106.3 FM",
+    "url": "https://1063.meta.gov.co/"
+  },
+  {
+    "name": "Olímpica Stereo",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/OLP_MEDELLINAAC.aac"
+  },
+  {
+    "name": "Radio Tiempo 96.1 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RT_BARRANQUILLAAAC.aac"
+  },
+  {
+    "name": "La Reina",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RNA_CARTAGENA.mp3"
+  },
+  {
+    "name": "Los 40 104.0 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40_CALIAAC.aac"
+  },
+  {
+    "name": "Matinal Noticias Boyacá",
+    "url": "https://radiohd.streaminghd.co:7541/live"
+  },
+  {
+    "name": "ALR Jazz Radio",
+    "url": "https://radio30.virtualtronics.com/proxy/abaco?mp=/stream"
+  },
+  {
+    "name": "LSD Radio - Punk en Español",
+    "url": "https://lsdradiohostserver.com/listen/05_lsd_radio__punk_spanish_/radio.mp3"
+  },
+  {
+    "name": "Colombia Pop Rock",
+    "url": "https://play10.tikast.com/proxy/colpoprock?mp=/stream"
+  },
+  {
+    "name": "BPM Electro",
+    "url": "https://listen.openstream.co/5706/audio"
+  },
+  {
+    "name": "Sonido Retro",
+    "url": "https://radio.sonidoretro.com/radio/8000/radio.mp3"
+  },
+  {
+    "name": "Colombia Lounge",
+    "url": "https://play10.tikast.com/proxy/collounge?mp=/stream"
+  },
+  {
+    "name": "La Retro 95.9 FM",
+    "url": "https://radio35.virtualtronics.com/proxy/laretro?mp=/stream"
+  },
+  {
+    "name": "LSD Radio - Ska & Rocksteady",
+    "url": "https://lsdradiohostserver.com/listen/ska/radio.mp3"
+  },
+  {
+    "name": "Capital Salsa",
+    "url": "https://stream.integracionvirtual.com/proxy/capitalsalsa?mp=/stream"
+  },
+  {
+    "name": "Nueva Época Tradicional",
+    "url": "https://radiohd4.streaminghd.co:8003/stream"
+  },
+  {
+    "name": "Belencia Noticias Online",
+    "url": "https://virtual3.emisorasvirtuales.com:8100/live"
+  },
+  {
+    "name": "BR Rock Digital",
+    "url": "https://impactodigitalcol.com:8014/stream/;"
+  },
+  {
+    "name": "BR Balada Pop",
+    "url": "https://impactodigitalcol.com:8010/stream"
+  },
+  {
+    "name": "Club DJ Radio",
+    "url": "https://radio35.virtualtronics.com/proxy/clubdjradio?mp=/stream"
+  },
+  {
+    "name": "La Poderosa – 80s",
+    "url": "https://radios.lapoderosacpanel.com/listen/80sy90s/mp3"
+  },
+  {
+    "name": "Salsa Magistral",
+    "url": "https://cloudstream2032.conectarhosting.com/8122/stream"
+  },
+  {
+    "name": "BR Radio Club",
+    "url": "https://impactodigitalcol.com/8028/stream"
+  },
+  {
+    "name": "La Voz De La Nostalgia",
+    "url": "https://play8.tikast.com/proxy/lavozdelanostalgia?mp=/stream"
+  },
+  {
+    "name": "Salsa Con Estilo",
+    "url": "https://play8.tikast.com/proxy/salsaconestilo?mp=/stream"
+  },
+  {
+    "name": "Electro Colombia Radio",
+    "url": "https://servers58.com/proxy/sc_elect2?mp=/stream"
+  },
+  {
+    "name": "Goce Latina Radio",
+    "url": "https://play10.tikast.com/proxy/gocelatinoradio?mp=/stream"
+  },
+  {
+    "name": "La Poderosa – Salsa",
+    "url": "https://radios.lapoderosacpanel.com/listen/salsa/mp3"
+  },
+  {
+    "name": "Colombia Salsa Dura",
+    "url": "https://play10.tikast.com/proxy/colsalsadura?mp=/stream"
+  },
+  {
+    "name": "Colombia Salsa Rosa",
+    "url": "https://play10.tikast.com/proxy/colsalsarosa?mp=/stream"
+  },
+  {
+    "name": "Radio Latina Online",
+    "url": "https://audioserverhd.com/listen/latina-online/stream"
+  },
+  {
+    "name": "Salsa Son y Sabor Latino",
+    "url": "https://radio35.virtualtronics.com/proxy/salsasonysabor?mp=/stream"
   }
 ]

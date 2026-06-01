@@ -26,5 +26,61 @@
   {
     "name": "Radio Tel Aviv 102 FM",
     "url": "https://102.livecdn.biz/102fm_aac"
+  },
+  {
+    "name": "100fm Jazz",
+    "url": "https://gb25.streamgates.net/radios-audio/100Jazz/icecast.audio"
+  },
+  {
+    "name": "100fm Rock",
+    "url": "https://gb25.streamgates.net/radios-audio/100Rock/icecast.audio"
+  },
+  {
+    "name": "100fm Dance",
+    "url": "https://gb25.streamgates.net/radios-audio/100Dance/icecast.audio"
+  },
+  {
+    "name": "100fm Club",
+    "url": "https://gb25.streamgates.net/radios-audio/100Club/icecast.audio"
+  },
+  {
+    "name": "100fm 100% Hits",
+    "url": "https://gb25.streamgates.net/radios-audio/100Hits/icecast.audio"
+  },
+  {
+    "name": "100fm Chillout",
+    "url": "https://gb25.streamgates.net/radios-audio/100Chillout/icecast.audio"
+  },
+  {
+    "name": "100fm Nostalgia",
+    "url": "https://gb25.streamgates.net/radios-audio/100Nostalgia/icecast.audio"
+  },
+  {
+    "name": "Joint Radio Blues",
+    "url": "https://jointil.com/stream-blues"
+  },
+  {
+    "name": "100fm Hiphop",
+    "url": "https://gb25.streamgates.net/radios-audio/100Hiphop/icecast.audio"
+  },
+  {
+    "name": "100fm Latin",
+    "url": "https://gb25.streamgates.net/radios-audio/100Latin/icecast.audio"
+  },
+  {
+    "name": "Ze Rock Radio",
+    "url": "https://icecast.live/proxy/zerock/zerock"
+  },
+  {
+    "name": "100fm Trance",
+    "url": "https://gb25.streamgates.net/radios-audio/100Trance/icecast.audio"
+  },
+  {
+    "name": "100fm 100% Retro",
+    "url": "https://gb25.streamgates.net/radios-audio/100Retro/icecast.audio"
+  },
+  {
+    "name": "The Voice of the University",
+    "url": "https://1062onair.runi.ac.il/idc123.mp3"
   }
 ]

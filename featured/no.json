@@ -30,5 +30,69 @@
   {
     "name": "P5 Hits",
     "url": "https://p5.p4groupaudio.com/P05_MM"
+  },
+  {
+    "name": "1FM Jazz",
+    "url": "https://lyd.1fm.no/1fmjazz_hq"
+  },
+  {
+    "name": "P6 Rock",
+    "url": "https://p6.p4groupaudio.com/P06_MH"
+  },
+  {
+    "name": "P7 Kristen Pop",
+    "url": "https://radio.p7.no/radio/8000/kristen_pop"
+  },
+  {
+    "name": "P11 Dance",
+    "url": "https://p11.p4groupaudio.com/P11_AH"
+  },
+  {
+    "name": "P9 Retro",
+    "url": "https://p9.p4groupaudio.com/P09_MH"
+  },
+  {
+    "name": "P8 Pop 80s & 90s",
+    "url": "https://p8.p4groupaudio.com/P08_MM"
+  },
+  {
+    "name": "P10 Country",
+    "url": "https://p10.p4groupaudio.com/P10_MH"
+  },
+  {
+    "name": "Metal Express Radio",
+    "url": "https://s39.myradiostream.com/:11590/;?"
+  },
+  {
+    "name": "Radio Latin-Amerika",
+    "url": "https://stream.radiolatinamerika.no/latam_hq"
+  },
+  {
+    "name": "NRK Jazz",
+    "url": "https://lyd.nrk.no/nrk_radio_jazz_mp3_h"
+  },
+  {
+    "name": "1FM Rock",
+    "url": "https://lyd.1fm.no/1fmrock_hq"
+  },
+  {
+    "name": "RT Hits FM 94.4",
+    "url": "https://stream.bardufoss.no/rthits128"
+  },
+  {
+    "name": "The Beat",
+    "url": "https://live-nors.sharp-stream.com/nors17.mp3"
+  },
+  {
+    "name": "Radio Metro",
+    "url": "https://live-nors.sharp-stream.com/nors8.mp3"
+  },
+  {
+    "name": "Rox FM 90.1",
+    "url": "https://live-nors.sharp-stream.com/nors13.mp3"
+  },
+  {
+    "name": "Dansbandradioen",
+    "url": "https://live-nors.sharp-stream.com/nors1.mp3"
   }
 ]

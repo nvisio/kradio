@@ -30,5 +30,85 @@
   {
     "name": "TRT FM",
     "url": "https://trt.radyotvonline.net/trtfm"
+  },
+  {
+    "name": "Radyo Haber FM 106.9",
+    "url": "https://stream.netradyom.com/listen/radyohaber/radio.mp3"
+  },
+  {
+    "name": "RadioTEDU Classical",
+    "url": "https://stream.radiotedu.com/classic"
+  },
+  {
+    "name": "RadioTEDU Jazz",
+    "url": "https://stream.radiotedu.com/cazz"
+  },
+  {
+    "name": "Joy Turk Rock",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/JOYTURK_ROCK.mp3"
+  },
+  {
+    "name": "Power Pop 101.00",
+    "url": "https://listen.powerapp.com.tr/powerpop/mpeg/icecast.audio"
+  },
+  {
+    "name": "Power Dance",
+    "url": "https://listen.powerapp.com.tr/powerdance/mpeg/icecast.audio"
+  },
+  {
+    "name": "Lounge FM 96",
+    "url": "https://edge1.radyotvonline.net/shoutcast/play/loungefm"
+  },
+  {
+    "name": "Power Türk Rap",
+    "url": "https://listen.powerapp.com.tr/powerturkrap/mpeg/icecast.audio"
+  },
+  {
+    "name": "Radio LTB Lounge",
+    "url": "http://strm.radioltb.com:8000/Lounge"
+  },
+  {
+    "name": "Radyo Haber FM 95",
+    "url": "https://trt.radyotvonline.net/trthaber"
+  },
+  {
+    "name": "Power Smooth Jazz",
+    "url": "https://listen.powerapp.com.tr/powersmoothjazz/mpeg/icecast.audio"
+  },
+  {
+    "name": "Radyo ODTÜ Rock",
+    "url": "https://stream.radyoodtu.com.tr/rock"
+  },
+  {
+    "name": "MaX Jazz FM",
+    "url": "http://live.radyotvonline.com:8090/;"
+  },
+  {
+    "name": "Rock FM",
+    "url": "https://rockfm.rockfm.com.tr:9450/stream"
+  },
+  {
+    "name": "The Rock Radio",
+    "url": "https://yayin.jumboserver.net:9090/stream"
+  },
+  {
+    "name": "Joy FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/JOY_FMAAC.aac"
+  },
+  {
+    "name": "Süper FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SUPER_FM128AAC.aac"
+  },
+  {
+    "name": "Süper FM 90.8",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SUPER_FM.mp3"
+  },
+  {
+    "name": "Radyo Mydonose",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_MYDONOSE128AAC.aac"
+  },
+  {
+    "name": "Radyo Mydonose Türk",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MYDONOSE_TURK128AAC.aac"
   }
 ]

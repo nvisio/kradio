@@ -30,5 +30,69 @@
   {
     "name": "Radio Novosti FM 104.7",
     "url": "https://novosti.radiostreaming.rs/novosti_1"
+  },
+  {
+    "name": "Naxi Classic Radio",
+    "url": "https://naxidigital-classic128.streaming.rs:8032/;"
+  },
+  {
+    "name": "Naxi Jazz Radio",
+    "url": "https://naxidigital-jazz128.streaming.rs:8172/;"
+  },
+  {
+    "name": "Play Rock",
+    "url": "https://stream.playradio.rs:8443/rock.mp3"
+  },
+  {
+    "name": "Radio S Pop & Rock",
+    "url": "https://stream.radios.rs:9028/;"
+  },
+  {
+    "name": "Naxi Disco Radio",
+    "url": "https://naxidigital-disco128ssl.streaming.rs:8352/;stream.nsv"
+  },
+  {
+    "name": "Naxi House Radio",
+    "url": "https://naxidigital-house128.streaming.rs:8002/;"
+  },
+  {
+    "name": "Radio 021 - Lounge",
+    "url": "https://centova.dukahosting.com/proxy/021disco//stream"
+  },
+  {
+    "name": "Naxi Blues Rock Radio",
+    "url": "https://naxidigital-blues128ssl.streaming.rs:8312/;stream.mp3"
+  },
+  {
+    "name": "Play Urban",
+    "url": "https://stream.playradio.rs:8443/urban.mp3"
+  },
+  {
+    "name": "Naxi Latino Radio",
+    "url": "https://naxidigital-latino128.streaming.rs:8232/;"
+  },
+  {
+    "name": "Naxi Funk Radio",
+    "url": "https://naxidigital-funk128ssl.streaming.rs:8362/;stream.nsv"
+  },
+  {
+    "name": "Naxi Lounge Radio",
+    "url": "https://naxidigital-lounge128.streaming.rs:8252/;"
+  },
+  {
+    "name": "Rock Radio FM 96.2",
+    "url": "https://edge9.pink.rs/rockstream"
+  },
+  {
+    "name": "Naxi Dance Radio",
+    "url": "https://naxidigital-dance128.streaming.rs:8112/;"
+  },
+  {
+    "name": "Naxi EX YU Rock Radio",
+    "url": "https://naxidigital-exyurock128ssl.streaming.rs:8402/;stream.nsv"
+  },
+  {
+    "name": "Naxi Rock Radio",
+    "url": "https://naxidigital-rock128.streaming.rs:8182/;"
   }
 ]

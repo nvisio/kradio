@@ -30,5 +30,133 @@
   {
     "name": "News 1130",
     "url": "https://rogers-hls.leanstream.co/rogers/van1130.stream/icy"
+  },
+  {
+    "name": "Q107 FM 107.3",
+    "url": "https://corus.leanstream.co/CFGQFM"
+  },
+  {
+    "name": "CFNY The Edge 102.1 FM",
+    "url": "https://live.leanstream.co/CFNYFM-MP3"
+  },
+  {
+    "name": "CFMI-FM Rock 101",
+    "url": "https://corus.leanstream.co/CFMIFM"
+  },
+  {
+    "name": "CIDC FM Z103.5",
+    "url": "https://evanov.streamb.live/SB00222"
+  },
+  {
+    "name": "CJSW 90.9 FM",
+    "url": "https://cjsw.leanstream.co/CJSWFM"
+  },
+  {
+    "name": "Boom 99.7",
+    "url": "https://live.leanstream.co/CJOTFM?args=web_01&startTime=1563536775"
+  },
+  {
+    "name": "660 News",
+    "url": "https://rogers-hls.leanstream.co/rogers/cal660.stream/icy"
+  },
+  {
+    "name": "CFAJ Classic 1220AM",
+    "url": "https://s19.myradiostream.com/19156/listen.mp3"
+  },
+  {
+    "name": "Asia Dream Radio - Jazz Sakura",
+    "url": "https://kathy.torontocast.com:3330/;"
+  },
+  {
+    "name": "Classic Rock 945 CIBU-FM",
+    "url": "https://live.leanstream.co/CIBUFM-MP3"
+  },
+  {
+    "name": "CMR FM 101.3 Hindi / Urdu",
+    "url": "https://live.cmr24.net/CMR/CMR-MQ/icecast.audio"
+  },
+  {
+    "name": "XLTRAX Dance",
+    "url": "https://centova.radioservers.biz/proxy/xltrax/stream%3Bmp3"
+  },
+  {
+    "name": "J-Club HipHop",
+    "url": "https://kathy.torontocast.com:3350/;"
+  },
+  {
+    "name": "CRIK FM - The Lynx Classic Hits",
+    "url": "https://stream.lynxradionetwork.com/hits/stream"
+  },
+  {
+    "name": "The Lounge 99.9 FM - CHPQ-FM",
+    "url": "https://icy.jpbgdigital.com/CHPQ.aac"
+  },
+  {
+    "name": "Oldies 96",
+    "url": "https://us9.streamingpulse.com/ssl/oldies96"
+  },
+  {
+    "name": "Country 600 CJWW",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CJWWAMAAC.aac"
+  },
+  {
+    "name": "Classic Metal Radio",
+    "url": "https://quincy.torontocast.com:2100/stream"
+  },
+  {
+    "name": "Latina Stereo Canada",
+    "url": "https://us1.streamingpulse.com/stream/latinast"
+  },
+  {
+    "name": "570 News",
+    "url": "https://rogers.leanstream.co/rogers/kit570.stream/icy"
+  },
+  {
+    "name": "Classical FM 96.3",
+    "url": "https://live.amperwave.net/direct/mzmedia-cfmzfmmp3-ibc2"
+  },
+  {
+    "name": "CKGE 94.9 The Rock",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CKGEFMAAC.aac"
+  },
+  {
+    "name": "4Lobos Bollywood Radio",
+    "url": "https://puma.streemlion.com:4135/stream"
+  },
+  {
+    "name": "CRIK FM - The Lynx Disco Classics",
+    "url": "https://stream.lynxradionetwork.com/disco/stream"
+  },
+  {
+    "name": "J-Club Bandstand",
+    "url": "https://cast1.torontocast.com:2060/;"
+  },
+  {
+    "name": "Hits 95.5 FM",
+    "url": "https://starboard.streamb.live/SB00160"
+  },
+  {
+    "name": "96.7 FM Oldies",
+    "url": "https://mybroadcasting.streamb.live/SB00335"
+  },
+  {
+    "name": "KX 96 New Country FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CJKXFMAAC.aac"
+  },
+  {
+    "name": "La Fiesta Latina FM",
+    "url": "https://radio.promavmedia.com/lafiestalatinafm/stream;"
+  },
+  {
+    "name": "CJNI News FM 95.7",
+    "url": "https://rogers.leanstream.co/rogers/hal957.stream/icy"
+  },
+  {
+    "name": "Choice Classic Rock",
+    "url": "https://streamer.radio.co/s66f2626b4/listen"
+  },
+  {
+    "name": "GiantFM 91.7 Classic Rock",
+    "url": "https://mybroadcasting.streamb.live/SB00329"
   }
 ]

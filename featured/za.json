@@ -30,5 +30,109 @@
   {
     "name": "Kfm 94.5",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KFMAAC.aac"
+  },
+  {
+    "name": "Good News Radio Online",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SAM09AAC244.mp3"
+  },
+  {
+    "name": "Classic FM 102.7",
+    "url": "https://edge.iono.fm/xice/49_high.aac"
+  },
+  {
+    "name": "HOT Rock",
+    "url": "https://edge.iono.fm/xice/303_high.aac"
+  },
+  {
+    "name": "Megazone Bollywood",
+    "url": "https://vm65162.streamerr.co/listen/megazone_bollywood_/radio.mp3"
+  },
+  {
+    "name": "UbuntuFM Dance Radio",
+    "url": "https://streaming.coollective.nl:8443/UbuntuFMdance"
+  },
+  {
+    "name": "HOT Club",
+    "url": "https://edge.iono.fm/xice/306_high.aac"
+  },
+  {
+    "name": "Springbok Radio - Country Music",
+    "url": "https://springbokradio.work:8443/main.mp3"
+  },
+  {
+    "name": "Good News CR FM 93.6",
+    "url": "https://edge.iono.fm/xice/155_medium.aac"
+  },
+  {
+    "name": "Cape Talk AM 567",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CAPE_TALKAAC.aac"
+  },
+  {
+    "name": "trufm",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TRUFMAAC.aac"
+  },
+  {
+    "name": "947 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/FM947AAC.aac"
+  },
+  {
+    "name": "Lesedi FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LESEDIAAC.aac"
+  },
+  {
+    "name": "Thobela FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/THOBELAAAC.aac"
+  },
+  {
+    "name": "Ikwekwezi FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/IKWEKWEZIAAC.aac"
+  },
+  {
+    "name": "Lotus FM 87.7",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LOTUSFMAAC.aac"
+  },
+  {
+    "name": "SA FM 104-107",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SAFM.mp3"
+  },
+  {
+    "name": "Phalaphala FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PHALAPHALAAAC.aac"
+  },
+  {
+    "name": "Gaan Groot Radio",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SP_R2982692.aac"
+  },
+  {
+    "name": "Radio 2000 FM 97.2",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO2000.mp3"
+  },
+  {
+    "name": "Motsweding FM 87.9",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MOTSWEDINGAAC.aac"
+  },
+  {
+    "name": "Munghana Lonene FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MUNGANALONENEAAC.aac"
+  },
+  {
+    "name": "Ligwalagwala FM 92.5",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LIGWALAGWALAAAC.aac"
+  },
+  {
+    "name": "Radio Free Tankwa FM 99.9",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SAM09AAC213.aac"
+  },
+  {
+    "name": "Radio Awakening",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SP_R4870829_SC"
+  },
+  {
+    "name": "Good Hope FM 94-97",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/GOODHOPEFMAAC_SC"
+  },
+  {
+    "name": "Channel Islam International",
+    "url": "https://edge.iono.fm/xice/109_medium.aac"
   }
 ]

@@ -30,5 +30,133 @@
   {
     "name": "WLS 890 AM",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WLSAMAAC.aac"
+  },
+  {
+    "name": "WNYC FM 93.9",
+    "url": "https://fm939.wnyc.org/wnycfm.aac"
+  },
+  {
+    "name": "The Current",
+    "url": "https://current.stream.publicradio.org/current.aac"
+  },
+  {
+    "name": "WWOZ FM 90.7",
+    "url": "https://wwoz-sc.streamguys1.com/wwoz-hi.mp3"
+  },
+  {
+    "name": "KEXP 90.3 FM",
+    "url": "https://kexp.streamguys1.com/kexp160.aac"
+  },
+  {
+    "name": "KCRW FM 89.9",
+    "url": "https://streams.kcrw.com/kcrw_mp3"
+  },
+  {
+    "name": "KQED FM 88.5",
+    "url": "https://streams.kqed.org/"
+  },
+  {
+    "name": "KUTX FM 98.9",
+    "url": "https://streams.kut.org/4428_56"
+  },
+  {
+    "name": "WFMU 91.1",
+    "url": "https://stream0.wfmu.org/freeform-128k.mp3"
+  },
+  {
+    "name": "Jazz24",
+    "url": "https://knkx-live-a.edge.audiocdn.com/6285_128k?aw_0_1st.playerid=radioGarden"
+  },
+  {
+    "name": "SomaFM — Drone Zone",
+    "url": "https://ice1.somafm.com/dronezone-128-mp3"
+  },
+  {
+    "name": "SomaFM — Groove Salad",
+    "url": "https://ice1.somafm.com/groovesalad-128-mp3"
+  },
+  {
+    "name": "Radio Paradise",
+    "url": "https://stream-tx3.radioparadise.com/mp3-128"
+  },
+  {
+    "name": "Radio Paradise - Rock",
+    "url": "https://stream.radioparadise.com/rock-128"
+  },
+  {
+    "name": "Radio Paradise - Global",
+    "url": "https://stream.radioparadise.com/world-etc-128"
+  },
+  {
+    "name": "WHTZ Z100 FM 100.3",
+    "url": "https://stream.revma.ihrhls.com/zc1469"
+  },
+  {
+    "name": "KIIS FM 102.7",
+    "url": "https://stream.revma.ihrhls.com/zc185"
+  },
+  {
+    "name": "Hot 97.1 - WQHT",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WQHTFMAAC.aac"
+  },
+  {
+    "name": "Bloomberg AM 1130",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WBBRAMAAC"
+  },
+  {
+    "name": "WCPE The Classical Station",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WCPE_FM.mp3"
+  },
+  {
+    "name": "KCRW Eclectic 24",
+    "url": "https://streams.kcrw.com/e24_mp3"
+  },
+  {
+    "name": "WLS-FM 94.7",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WLSFMAAC.aac"
+  },
+  {
+    "name": "WQCS HD2 News",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WQCSHD2.mp3"
+  },
+  {
+    "name": "IPR Classical",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WIAAFM.mp3"
+  },
+  {
+    "name": "Jazz WSSB 90.3",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WSSBFM.mp3"
+  },
+  {
+    "name": "Classic Rock WIMZ FM 103.5",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WIMZFMAAC.aac"
+  },
+  {
+    "name": "Shuddh Desi Radio",
+    "url": "https://streamer.radio.co/se30891e37/listen"
+  },
+  {
+    "name": "Radio T.K. Disco",
+    "url": "https://broadcast.miami/proxy/tkdisco?mp=/stream/;"
+  },
+  {
+    "name": "Animikii Club",
+    "url": "https://animikii.club/listen/eclectic001/radio.mp3"
+  },
+  {
+    "name": "Classic Hits 96.7 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WANVFMAAC.aac"
+  },
+  {
+    "name": "a.m. ambient",
+    "url": "https://radio.stereoscenic.com/ama-h"
+  },
+  {
+    "name": "Oldies 98.3 - WLCS",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WLCSFMAAC.aac"
+  },
+  {
+    "name": "WESM FM 91.3 Jazz, Blues and NPR News",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WESMFM.mp3"
   }
 ]

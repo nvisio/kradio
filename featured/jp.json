@@ -14,5 +14,49 @@
   {
     "name": "J-Pop Kawaii",
     "url": "https://kathy.torontocast.com:3060/stream"
+  },
+  {
+    "name": "J1 Radio Gold",
+    "url": "https://jenny.torontocast.com:2000/stream/J1GOLD"
+  },
+  {
+    "name": "Listen.moe",
+    "url": "https://listen.moe/fallback"
+  },
+  {
+    "name": "Shonan Beach FM 78.9 湘南ビーチ",
+    "url": "https://shonanbeachfm.out.airtime.pro:8000/shonanbeachfm_a"
+  },
+  {
+    "name": "AFN Eagle 810 AM Tokyo",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/AFNP_TKO.mp3"
+  },
+  {
+    "name": "AFN 89.1 FM Okinawa",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/AFNP_OKN.mp3"
+  },
+  {
+    "name": "Radio Shiga",
+    "url": "https://sv10.hdradios.net:21920/;"
+  },
+  {
+    "name": "Nonstop Casiopea",
+    "url": "https://nonstopcasiopea.radioca.st/;"
+  },
+  {
+    "name": "r/a/dio",
+    "url": "https://stream.r-a-d.io/main.mp3"
+  },
+  {
+    "name": "Gyusyabu - Retro PC Game Radio",
+    "url": "http://gyusyabu.ddo.jp:8000/;stream.mp3"
+  },
+  {
+    "name": "AFN Sasebo FM 93.1",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/AFNP_SBO.mp3"
+  },
+  {
+    "name": "AFN Iwakuni 1575 AM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/AFNP_IWAAAC.aac"
   }
 ]

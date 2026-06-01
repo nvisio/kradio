@@ -30,5 +30,133 @@
   {
     "name": "Beat 100.9",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHSONFMAAC.aac"
+  },
+  {
+    "name": "La Mejor 97.7 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XERCFM.mp3"
+  },
+  {
+    "name": "Exa FM 97.3",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHAGC.mp3"
+  },
+  {
+    "name": "La Z 103.5 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHEM_FMAAC.aac"
+  },
+  {
+    "name": "La Ranchera 106.1 FM",
+    "url": "https://cast.zuperdns.net/8022/stream/;stream.mp3"
+  },
+  {
+    "name": "88.9 Noticias",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHMFM.mp3"
+  },
+  {
+    "name": "Classic 106.9 FM",
+    "url": "https://mmradio-lb.mmlabs.mx/xhpjfm"
+  },
+  {
+    "name": "Live Jazz Radio",
+    "url": "https://stream.freepi.io/8012/live"
+  },
+  {
+    "name": "Rock Connection 77",
+    "url": "https://s43.myradiostream.com/22226/listen.mp3"
+  },
+  {
+    "name": "Mas Pop FM 95.7",
+    "url": "https://stream9.mexiserver.com/8250/stream"
+  },
+  {
+    "name": "70s Disco Nights",
+    "url": "https://panel.retrolandigital.com/radio/8170/listen"
+  },
+  {
+    "name": "Hits 106.1",
+    "url": "https://mmradio-lb.mmlabs.mx/xhitsfm"
+  },
+  {
+    "name": "Lounge King Radio",
+    "url": "https://cento02.mipanelradio.com/proxy/loungeki?mp=/stream"
+  },
+  {
+    "name": "80s Online Radio",
+    "url": "https://panel.retrolandigital.com/radio/8180/listen"
+  },
+  {
+    "name": "Blues & Jazz 97.7 FM",
+    "url": "https://sonicpanel.streaming10.net:8110/;"
+  },
+  {
+    "name": "Country Music FM 92.5",
+    "url": "https://sonicpanel.streaming10.net:8204/;"
+  },
+  {
+    "name": "BOLLOCKS Rock & Metal Radio",
+    "url": "https://s44.myradiostream.com/6588/;"
+  },
+  {
+    "name": "Rap & Hip-Hop 94.5 FM",
+    "url": "https://sonicpanel.streaming10.net:8054/;"
+  },
+  {
+    "name": "Banda 93.3",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHQQ_FMAAC.aac"
+  },
+  {
+    "name": "Radio Acámbaro Info",
+    "url": "https://app.sonicpanelradio.com/8222/stream"
+  },
+  {
+    "name": "Classic 96.1 FM Tampico",
+    "url": "https://mdstrm.com/audio/673784f2f22f160aaf4c8e8c/icecast.audio?property=radio-garden"
+  },
+  {
+    "name": "Mas Que Radio 90.1 FM - Jazz",
+    "url": "https://streaming.servicioswebmx.com/8014/stream"
+  },
+  {
+    "name": "Sonora Classic Rock - Hard",
+    "url": "https://s18.myradiostream.com/:6664/;"
+  },
+  {
+    "name": "Radio Turquesa Pop 102.7 FM",
+    "url": "https://stream.miradio.in/proxy/t1027/live"
+  },
+  {
+    "name": "Hits 101.7 - XHHPR",
+    "url": "https://mdstrm.com/audio/67378dda08ad80fb27a9bebc/icecast.audio?property=mmradio"
+  },
+  {
+    "name": "Estrellas de los 80s",
+    "url": "https://panel.retrolandigital.com/radio/8150/listen"
+  },
+  {
+    "name": "La Ranchera de Monterrey 1050 AM",
+    "url": "https://streamingcwsradio30.com/8242/stream"
+  },
+  {
+    "name": "Milenio Noticias 1090 AM",
+    "url": "https://mdstrm.com/audio/672a64d1334617594f464d9d/icecast.audio?property=radio-garden"
+  },
+  {
+    "name": "Classic 93.9 FM Torreón",
+    "url": "https://mdstrm.com/audio/67378091f22f160aaf4c34b1/icecast.audio?property=radio-garden"
+  },
+  {
+    "name": "Sonora Classic Rock - Soft",
+    "url": "https://s25.myradiostream.com/:5764/;"
+  },
+  {
+    "name": "Hits 88.5 FM Tampico",
+    "url": "https://mdstrm.com/audio/6737843db95cc90e1003387b/icecast.audio?property=radio-garden"
+  },
+  {
+    "name": "Oldies 940 AM - XEMMM",
+    "url": "https://streaming.servicioswebmx.com/8284/stream"
+  },
+  {
+    "name": "Pa´la Banda Radio",
+    "url": "https://iannes.mi-radio.stream:5003/;"
   }
 ]

@@ -30,5 +30,133 @@
   {
     "name": "France Culture",
     "url": "https://direct.franceculture.fr/live/franceculture-midfi.mp3"
+  },
+  {
+    "name": "France Musique",
+    "url": "https://icecast.radiofrance.fr/francemusique-midfi.mp3"
+  },
+  {
+    "name": "RMC",
+    "url": "https://audio.bfmtv.com/rmcradio_128.mp3"
+  },
+  {
+    "name": "Skyrock",
+    "url": "https://www.skyrock.fm/stream.php/tunein16_128mp3.mp3"
+  },
+  {
+    "name": "Nostalgie",
+    "url": "https://streaming.nrjaudio.fm/oug7girb92oc?origine=radiogarden"
+  },
+  {
+    "name": "Rire & Chansons",
+    "url": "https://streaming.nrjaudio.fm/ou8o8xgk7oiu?origine=radiogarden"
+  },
+  {
+    "name": "RFI Monde",
+    "url": "http://live02.rfi.fr/rfimonde-64.mp3"
+  },
+  {
+    "name": "FIP Radio",
+    "url": "https://icecast.radiofrance.fr/fip-midfi.mp3?id=radiofrance"
+  },
+  {
+    "name": "Radio Classique",
+    "url": "https://radioclassique.ice.infomaniak.ch/radioclassique-high.mp3?.mp3"
+  },
+  {
+    "name": "Mouv`",
+    "url": "https://icecast.radiofrance.fr/mouv-midfi.mp3"
+  },
+  {
+    "name": "RTL2 Morzine 97.9 FM",
+    "url": "https://rtl2morzine.ice.infomaniak.ch/rtl2morzine-48.mp3"
+  },
+  {
+    "name": "FIP Radio - Jazz",
+    "url": "https://direct.fipradio.fr/live/fip-webradio2.mp3"
+  },
+  {
+    "name": "FIP Radio - Rock",
+    "url": "https://direct.fipradio.fr/live/fip-webradio1.mp3"
+  },
+  {
+    "name": "FIP Radio - Reggae",
+    "url": "https://icecast.radiofrance.fr/fipreggae-midfi.mp3"
+  },
+  {
+    "name": "France Musique - La Jazz",
+    "url": "https://direct.francemusique.fr/live/francemusiquelajazz-hifi.mp3"
+  },
+  {
+    "name": "France Musique - Classique easy",
+    "url": "https://icecast.radiofrance.fr/francemusiqueeasyclassique-midfi.mp3"
+  },
+  {
+    "name": "NRJ - EDM",
+    "url": "https://streaming.nrjaudio.fm/oumr2p8fnozc?origine=radiogarden&aw_0_1st.station=NRJ-EDM"
+  },
+  {
+    "name": "NRJ - Pop",
+    "url": "https://streaming.nrjaudio.fm/ouwg2ask6j4d?origine=radiogarden&aw_0_1st.station=NRJ-Pop"
+  },
+  {
+    "name": "Replay News",
+    "url": "https://replaynews.ice.infomaniak.ch/replaynews-192.mp3"
+  },
+  {
+    "name": "Classic FM",
+    "url": "https://classicfm.ice.infomaniak.ch/classic-fm.mp3"
+  },
+  {
+    "name": "TSF Jazz",
+    "url": "https://tsfjazz.ice.infomaniak.ch/tsfjazz-high.mp3"
+  },
+  {
+    "name": "4U Classic Rock",
+    "url": "https://live.4uradios.com/4uclassicrock.mp3"
+  },
+  {
+    "name": "Replay News Hindi",
+    "url": "https://replaynewshi.ice.infomaniak.ch/replaynewshi-128.mp3"
+  },
+  {
+    "name": "NRJ - Classic Dance",
+    "url": "https://streaming.nrjaudio.fm/outpzv6ubafg?origine=radiogarden&aw_0_1st.station=NRJ-Classic-Dance"
+  },
+  {
+    "name": "Jazz Radio Electro Swing",
+    "url": "https://jazz-wr04.ice.infomaniak.ch/jazz-wr04-128.mp3"
+  },
+  {
+    "name": "NRJ - Classic Hits",
+    "url": "https://streaming.nrjaudio.fm/oufdcptx4thg?origine=radiogarden&aw_0_1st.station=NRJ-Classic-Hits"
+  },
+  {
+    "name": "Jazz Radio (Lyon)",
+    "url": "https://jazzradio.ice.infomaniak.ch/jazzradio-high.mp3"
+  },
+  {
+    "name": "Radio Vintage FM 103.4",
+    "url": "https://radiovintage.ice.infomaniak.ch/radiovintage-128.mp3"
+  },
+  {
+    "name": "Allzic Radio Blues",
+    "url": "https://allzic09.ice.infomaniak.ch/allzic09.mp3"
+  },
+  {
+    "name": "Allzic Radio Country",
+    "url": "https://allzic32.ice.infomaniak.ch/allzic32.mp3"
+  },
+  {
+    "name": "Générations Reggae",
+    "url": "https://generations-caraibes.ice.infomaniak.ch/generations-caraibes-high.mp3?.mp3"
+  },
+  {
+    "name": "FIP Radio - Metal",
+    "url": "https://icecast.radiofrance.fr/fipmetal-hifi.aac"
+  },
+  {
+    "name": "Générations Rap FR",
+    "url": "https://generationfm-rap.ice.infomaniak.ch/generationfm-rap-high.mp3"
   }
 ]

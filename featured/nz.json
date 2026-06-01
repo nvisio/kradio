@@ -14,5 +14,49 @@
   {
     "name": "Niu FM",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NIUFM.mp3"
+  },
+  {
+    "name": "Rock It FM 88.0 FM",
+    "url": "https://listen.streamaudio.co/proxy/rockitfm/stream"
+  },
+  {
+    "name": "The Chill",
+    "url": "https://media-sov.musicradio.com/Chill"
+  },
+  {
+    "name": "High Country FM",
+    "url": "https://s18.myradiostream.com/:13556/;"
+  },
+  {
+    "name": "Radio Rock FM 107.9",
+    "url": "https://www.radiorockfm.co.nz/listenlive"
+  },
+  {
+    "name": "Radio X",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SAM02AAC65.mp3"
+  },
+  {
+    "name": "Radio 531pi",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/531PI.mp3"
+  },
+  {
+    "name": "Hutt Radio 88.3 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NZME_209AAC.aac"
+  },
+  {
+    "name": "RNZ Pacific",
+    "url": "http://radionz-ice.streamguys.com/international.mp3"
+  },
+  {
+    "name": "Absolute Live FM 88.2",
+    "url": "https://stream.rcs.revma.com/ge6x97c5km3vv"
+  },
+  {
+    "name": "Radio Tarana AM 1386",
+    "url": "http://peridot.streamguys.com:7150/Tarana.aac"
+  },
+  {
+    "name": "Absolute Live FM 88.3 Whanganui",
+    "url": "https://stream.rcs.revma.com/zwwhcbd5km3vv"
   }
 ]

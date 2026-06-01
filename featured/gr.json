@@ -30,5 +30,117 @@
   {
     "name": "Kosmos 93.6",
     "url": "https://radiostreaming.ert.gr/ert-kosmos"
+  },
+  {
+    "name": "Radio Roumeli News Live",
+    "url": "https://radio.webhosting4u.gr/stream/radioroumelinews"
+  },
+  {
+    "name": "The 20th Century Classical Radio",
+    "url": "https://cast1.asurahosting.com/proxy/yiannis6/stream"
+  },
+  {
+    "name": "Kosmos Jazz",
+    "url": "https://radiostreaming.ert.gr/ert-webjazz"
+  },
+  {
+    "name": "Rock!969",
+    "url": "https://stream-eu.rcs.revma.com/sm9b1svehkcwv"
+  },
+  {
+    "name": "RadIQ Dance",
+    "url": "https://live.radiq.gr/listen/dance/radio.mp3"
+  },
+  {
+    "name": "Psyndora Trance",
+    "url": "https://cast.magicstreams.gr/sc/psyndora/stream"
+  },
+  {
+    "name": "1st Greek Hits FLAC Non-Stop Radio",
+    "url": "https://stream.newageradio.gr/listen/flac_gr/radio.aac"
+  },
+  {
+    "name": "Psyndora Chillout",
+    "url": "https://cast.magicstreams.gr:2200/ssl/psychill?mp=/stream"
+  },
+  {
+    "name": "Red 80s",
+    "url": "https://stream.rcs.revma.com/40uryq80ubuvv"
+  },
+  {
+    "name": "Blues Radio",
+    "url": "https://i4.streams.ovh/sc/bluesrad/stream"
+  },
+  {
+    "name": "The Gallery: Metal Web Radio",
+    "url": "https://radio.streamings.gr/proxy/thegallery?mp=/stream"
+  },
+  {
+    "name": "Folk Radio GR",
+    "url": "https://radio.webhosting4u.gr/stream/folkradio"
+  },
+  {
+    "name": "Arion Radio - RNB",
+    "url": "https://ice.onestreaming.com/athenspartyrnb"
+  },
+  {
+    "name": "Seven News 94.4FM",
+    "url": "https://i5.streams.ovh:14030/live"
+  },
+  {
+    "name": "Santorini Jazz Radio",
+    "url": "https://stream.santorinijazzradio.com/a2vmt89kd5uvv"
+  },
+  {
+    "name": "Rock Melodic Radio",
+    "url": "https://i4.streams.ovh/sc/rockmelo/stream"
+  },
+  {
+    "name": "Seduction Dance Tunes Radio",
+    "url": "https://24streams.gr:8057/stream"
+  },
+  {
+    "name": "Electronica Vibes Pirate Radio GR",
+    "url": "https://live.piratefm.net/electronica_vibes"
+  },
+  {
+    "name": "Radio Nostalgia",
+    "url": "https://tls-chrome.live24.gr/1648?http://radionostalgiagr.dyndns.org:2314/"
+  },
+  {
+    "name": "Soul Radio",
+    "url": "https://cast4.magicstreams.gr:2200/ssl/soulradio?mp=/stream/;"
+  },
+  {
+    "name": "Alpha News 106.2 FM",
+    "url": "https://antares.dribbcast.com/proxy/alpha1062?mp=/stream"
+  },
+  {
+    "name": "Jazz Breeze radio",
+    "url": "https://stream.radiojar.com/8tqwqkrhk48uv"
+  },
+  {
+    "name": "1055 Rock",
+    "url": "https://radio.1055rock.gr:31056/live"
+  },
+  {
+    "name": "Kiss FM 100.6",
+    "url": "https://listen-kissfm1006.sharp-stream.com/kissfm1006hqprem.mp3"
+  },
+  {
+    "name": "SOK FM 104.8",
+    "url": "https://stream.rcs.revma.com/yvcskgf6xxcwv"
+  },
+  {
+    "name": "Diesi FM 101.3",
+    "url": "https://stream.rcs.revma.com/gkfwrhqxbfhvv"
+  },
+  {
+    "name": "Dromos FM 89.8",
+    "url": "https://stream.rcs.revma.com/10q3enqxbfhvv"
+  },
+  {
+    "name": "Melodia Thessaloniki 98FM",
+    "url": "https://n31a-eu.rcs.revma.com/8tdwa6ez1duvv"
   }
 ]

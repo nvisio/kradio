@@ -30,5 +30,133 @@
   {
     "name": "Radio Arabella Wien",
     "url": "https://edge59.streams.arabella.at/arabella-wien"
+  },
+  {
+    "name": "88.6 Classic Rock",
+    "url": "https://radio886.at/streams/88.6_Classic_Rock/radio_garden/auto"
+  },
+  {
+    "name": "Radio jazz.w3.at",
+    "url": "https://air.jazz.w3.at/jazzw3.mp3"
+  },
+  {
+    "name": "Antenne Vorarlberg Classic Rock",
+    "url": "https://web.radio.antennevorarlberg.at/av-classicrock?aggregator=radio.garden"
+  },
+  {
+    "name": "Energy Pop",
+    "url": "https://streaming.nrjaudio.fm/ousgjcm4z85f"
+  },
+  {
+    "name": "Energy Dance",
+    "url": "https://streaming.nrjaudio.fm/oufxcbtx4thg"
+  },
+  {
+    "name": "Energy Hits",
+    "url": "https://streaming.nrjaudio.fm/oujywenxeb5p"
+  },
+  {
+    "name": "Energy Lounge",
+    "url": "https://streaming.nrjaudio.fm/ouhmqdapu6pb"
+  },
+  {
+    "name": "Radio Super 80s",
+    "url": "https://secureonair.krone.at/super80s.aac"
+  },
+  {
+    "name": "88.6 Metal",
+    "url": "https://frontend.streamonkey.net/radio886-metal/stream/aacp?aggregator=radiogarden"
+  },
+  {
+    "name": "Kronehit latino",
+    "url": "https://kronehit.streamabc.net/50-fschannel5-aac-128-6675703"
+  },
+  {
+    "name": "Energy RnB",
+    "url": "https://streaming.nrjaudio.fm/ou6pb6xp336f"
+  },
+  {
+    "name": "oe24 RADIO Schlager",
+    "url": "https://frontend.streamonkey.net/oe24-schlager?aggregator=radiogarden"
+  },
+  {
+    "name": "City23 Chill",
+    "url": "https://live.stream.maxfive.com/max5-chill?aggregator=radiogarden"
+  },
+  {
+    "name": "Radio Klassik Stephansdom FM 107.3",
+    "url": "https://radioklassikstephansdom.ice.infomaniak.ch/radioklassikstephansdom.mp3"
+  },
+  {
+    "name": "City Jazz Radio",
+    "url": "https://stream.radiotechnikum.at/CITYJAZZ"
+  },
+  {
+    "name": "METAL Radio",
+    "url": "https://stream.radiotechnikum.at/METALRadio"
+  },
+  {
+    "name": "Kronehit dance",
+    "url": "https://kronehit.streamabc.net/50-fschannel39-aac-128-3397335"
+  },
+  {
+    "name": "oe24 RADIO Nr 1 Hits",
+    "url": "https://frontend.streamonkey.net/oe24-nr1hits?aggregator=radiogarden"
+  },
+  {
+    "name": "Radio Arabella Relax",
+    "url": "https://frontend.streams.arabella.at/arabella-relax"
+  },
+  {
+    "name": "Life Radio Tirol 90er",
+    "url": "https://liferadio-tirol.streamabc.net/43-90s-mp3-192-2289129"
+  },
+  {
+    "name": "Antenne Vorarlberg Chillout Lounge",
+    "url": "https://web.radio.antennevorarlberg.at/av-chillout?aggregator=radio.garden"
+  },
+  {
+    "name": "Klassik Radio Österreich",
+    "url": "https://klassikr.streamabc.net/klr-krdnational-aac-128-3888428"
+  },
+  {
+    "name": "Austrian Rock Radio",
+    "url": "https://live.antenne.at/arr"
+  },
+  {
+    "name": "Kronehit disco",
+    "url": "https://kronehit.streamabc.net/50-fschannel25-aac-128-8148119"
+  },
+  {
+    "name": "Kronehit greatest hits",
+    "url": "https://kronehit.streamabc.net/50-fschannel6-aac-128-3969537"
+  },
+  {
+    "name": "Life Radio Tirol Golden Oldies",
+    "url": "https://liferadio-tirol.streamabc.net/43-goldenoldies-mp3-192-9108968"
+  },
+  {
+    "name": "Rock Antenne Österreich FM 104.6",
+    "url": "https://stream.rockantenne.at/rockantenne-oesterreich/stream/aacp"
+  },
+  {
+    "name": "Radio VM1",
+    "url": "https://radiovm1.fluidstream.eu/radiovm1.mp3"
+  },
+  {
+    "name": "Radio Alpina",
+    "url": "https://ice09.fluidstream.net/alpina.aac"
+  },
+  {
+    "name": "Radio Gruen Weiss",
+    "url": "https://ice12.fluidstream.net/rgw.aac"
+  },
+  {
+    "name": "Austria First",
+    "url": "https://stream.rcs.revma.com/3zudpqfxh0cwv"
+  },
+  {
+    "name": "Energy Salzburg",
+    "url": "https://streaming.nrjaudio.fm/ou62c3xp336f"
   }
 ]
