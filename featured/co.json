@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Caracol Radio",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CARACOL_RADIOAAC.aac"
+  },
+  {
+    "name": "Blu Radio",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BLURADIO.mp3"
+  },
+  {
+    "name": "W Radio FM 99.9",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WRADIOAAC.aac"
+  },
+  {
+    "name": "La FM 94.9",
+    "url": "https://mdstrm.com/audio/632c9b23d1dcd7027f32f7fe/icecast.audio"
+  },
+  {
+    "name": "Los 40 Bogotá 100.4 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40_COLOMBIAAAC.aac"
+  },
+  {
+    "name": "Tropicana",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TROPICANAAAC.aac"
+  },
+  {
+    "name": "Olímpica Estéreo FM 105.9",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/OLP_BOGOTAAAC.aac"
+  },
+  {
+    "name": "Radio Aktiva 97.9",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ACTIVAAAC.aac"
+  }
+]

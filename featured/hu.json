@@ -1,0 +1,34 @@
+[
+  {
+    "name": "MR1 Kossuth Radio",
+    "url": "https://icast.connectmedia.hu/4726/mr1ex.mp3"
+  },
+  {
+    "name": "MR2 Petofi Radio",
+    "url": "http://mr-stream.mediaconnect.hu/4738/mr2.mp3"
+  },
+  {
+    "name": "Retro Rádió",
+    "url": "https://icast.connectmedia.hu/5001/live.mp3"
+  },
+  {
+    "name": "Radio 1 FM 89.5",
+    "url": "https://icast.connectmedia.hu/5201/live.mp3"
+  },
+  {
+    "name": "MR3 Rádió Bartók",
+    "url": "http://mr-stream.mediaconnect.hu/4739/mr3.aac"
+  },
+  {
+    "name": "Sláger FM 95.8",
+    "url": "https://slagerfm.netregator.hu:7813/slagerfm128.mp3"
+  },
+  {
+    "name": "Klubrádió FM",
+    "url": "https://stream.klubradio.hu:8443"
+  },
+  {
+    "name": "Danubius Radio",
+    "url": "https://stream.danubiusradio.hu/danubius_320k"
+  }
+]

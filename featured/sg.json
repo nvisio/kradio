@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Yes 93.3 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/YES933.mp3?dist=radiogarden"
+  },
+  {
+    "name": "Class 95 95.0 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CLASS95_PREM.aac"
+  },
+  {
+    "name": "987",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/987FM.mp3?dist=radiogarden"
+  },
+  {
+    "name": "Kiss 92 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KISS_92AAC.aac"
+  },
+  {
+    "name": "Gold 905",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/GOLD905_PREM.aac"
+  },
+  {
+    "name": "CNA938",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/938NOW_PREM.aac?dist=radiogarden"
+  },
+  {
+    "name": "Love 972",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LOVE972FM.mp3?dist=radiogarden"
+  },
+  {
+    "name": "Capital FM 95.8",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CAPITAL958FMAAC.aac"
+  }
+]

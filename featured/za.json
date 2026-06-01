@@ -1,0 +1,34 @@
+[
+  {
+    "name": "UKhozi FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/UKHOZIFMAAC.aac"
+  },
+  {
+    "name": "Metro FM 93.0",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/METROFMAAC.aac"
+  },
+  {
+    "name": "Talk Radio 702",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/FM702AAC.aac"
+  },
+  {
+    "name": "5FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/5FMAAC.aac"
+  },
+  {
+    "name": "Umhlobo Wenene FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/UMHLOBOWENENEAAC.aac"
+  },
+  {
+    "name": "Jacaranda",
+    "url": "https://edge.iono.fm/xice/jacarandafm_live_medium.mp3?p=embed"
+  },
+  {
+    "name": "RSG FM 100.0",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RSGAAC.aac"
+  },
+  {
+    "name": "Kfm 94.5",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KFMAAC.aac"
+  }
+]

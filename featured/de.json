@@ -1,0 +1,34 @@
+[
+  {
+    "name": "SWR3",
+    "url": "https://liveradio.swr.de/sw282p3/swr3/play.mp3"
+  },
+  {
+    "name": "Antenne Bayern",
+    "url": "https://mp3channels.webradio.antenne.de/antenne"
+  },
+  {
+    "name": "1LIVE",
+    "url": "https://wdr-1live-live.icecastssl.wdr.de/wdr/1live/live/mp3/128/stream.mp3"
+  },
+  {
+    "name": "Deutschlandfunk",
+    "url": "https://st01.sslstream.dlf.de/dlf/01/128/mp3/stream.mp3"
+  },
+  {
+    "name": "NDR 2",
+    "url": "https://icecast.ndr.de/ndr/ndr2/hamburg/mp3/128/stream.mp3"
+  },
+  {
+    "name": "Rock Antenne",
+    "url": "https://mp3channels.webradio.antenne.de/rockantenne"
+  },
+  {
+    "name": "Klassik Radio",
+    "url": "https://live.streams.klassikradio.de/klassikradio-deutschland/stream/mp3?aggregator=radiogarden"
+  },
+  {
+    "name": "Hit Radio FFH",
+    "url": "https://streams.ffh.de/radioffh/aac/hqlivestream.aac?amsparams=playerid:RTFFHRadioGarden/;"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Europa Plus Moscow",
+    "url": "https://emgregion.hostingradio.ru:8064/moscow.europaplus.mp3"
+  },
+  {
+    "name": "DFM 101.2",
+    "url": "https://dfm.hostingradio.ru/dfm128.mp3"
+  },
+  {
+    "name": "Retro FM Moscow",
+    "url": "https://emgregion.hostingradio.ru:8064/moscow.retrofm.mp3"
+  },
+  {
+    "name": "Hit FM 107.4",
+    "url": "https://hitfm.hostingradio.ru/hitfm96.aacp?0.08274040077536204"
+  },
+  {
+    "name": "Love Radio",
+    "url": "http://microit.n340.com:9000/VgMv0WV17ZVx1uuo_12_love_128_reg_44"
+  },
+  {
+    "name": "Dorognoe Radio Moscow",
+    "url": "https://emgregion.hostingradio.ru:8064/moscow.dorognoe.mp3"
+  },
+  {
+    "name": "Vesti FM",
+    "url": "http://icecast.vgtrk.cdnvideo.ru/vestifm_mp3_64kbps?.mp3"
+  },
+  {
+    "name": "Nashe Radio",
+    "url": "https://nashe1.hostingradio.ru/nashe-128.mp3"
+  }
+]

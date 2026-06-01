@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Narodni Radio",
+    "url": "http://live.narodni.hr:8059/;"
+  },
+  {
+    "name": "HRT - HR1",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PROGRAM1AAC.aac"
+  },
+  {
+    "name": "Otvoreni Radio",
+    "url": "https://stream.otvoreni.hr/otvoreni"
+  },
+  {
+    "name": "Antena Zagreb 89.7 FM",
+    "url": "http://live.antenazagreb.hr:8000/stream"
+  },
+  {
+    "name": "Radio Dalmacija",
+    "url": "http://shoutcast.pondi.hr:8000/;"
+  },
+  {
+    "name": "HRT - HR2",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PROGRAM2AAC.aac"
+  },
+  {
+    "name": "Radio 101",
+    "url": "https://live.radio101.hr:9531/stream/;"
+  },
+  {
+    "name": "HRT - HR3",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PROGRAM3_ADP.aac"
+  }
+]

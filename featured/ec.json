@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Canela FM 106.5",
+    "url": "https://canelaradio.makrodigital.com/stream/canelaradioquito"
+  },
+  {
+    "name": "Radio Sonorama",
+    "url": "https://radio.kapchosting.com/8080/stream"
+  },
+  {
+    "name": "La Otra FM 91.3",
+    "url": "https://laotrafm.makrodigital.com/stream/laotrafmquito"
+  },
+  {
+    "name": "Exa FM 92.5",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ECUADOR_SC"
+  },
+  {
+    "name": "Los 40 Ecuador",
+    "url": "https://streamingecuador.com:7051/stream"
+  },
+  {
+    "name": "HCJB FM 89.3",
+    "url": "https://streamingecuador.com:8287/hcjb"
+  },
+  {
+    "name": "FM Mundo 98.1",
+    "url": "https://streamingecuador.com:9810/stream"
+  },
+  {
+    "name": "Radio Disney Ecuador",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_ECU_GY.mp3"
+  }
+]

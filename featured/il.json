@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Galgalaz",
+    "url": "https://glzicylv01.bynetcdn.com/glglz_mp3"
+  },
+  {
+    "name": "Kan Reshet Bet",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KAN_BET.mp3"
+  },
+  {
+    "name": "GLZ",
+    "url": "https://glzwizzlv.bynetcdn.com/glz_mp3"
+  },
+  {
+    "name": "Eco99fm",
+    "url": "https://eco01.livecdn.biz/ecolive/99fm_aac/icecast.audio"
+  },
+  {
+    "name": "Radio 103 FM",
+    "url": "https://cdn.cybercdn.live/103FM/Live/icecast.audio"
+  },
+  {
+    "name": "100fm",
+    "url": "https://cdn.cybercdn.live/Radios_100FM/Audio/icecast.audio"
+  },
+  {
+    "name": "Radio Tel Aviv 102 FM",
+    "url": "https://102.livecdn.biz/102fm_aac"
+  }
+]

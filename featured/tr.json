@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Power FM 100",
+    "url": "https://listen.powerapp.com.tr/powerfm/mpeg/icecast.audio"
+  },
+  {
+    "name": "Metro FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM128AAC.aac"
+  },
+  {
+    "name": "JoyTurk FM 89.0",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/JOY_TURKAAC.aac"
+  },
+  {
+    "name": "Virgin Radio TR",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/VIRGIN_RADIOAAC.aac"
+  },
+  {
+    "name": "Kral Pop",
+    "url": "http://46.20.3.202/;"
+  },
+  {
+    "name": "Best FM",
+    "url": "http://46.20.7.125/listen.pls"
+  },
+  {
+    "name": "Show Radyo",
+    "url": "https://showradyo.radyotvonline.net/showradyoaac"
+  },
+  {
+    "name": "TRT FM",
+    "url": "https://trt.radyotvonline.net/trtfm"
+  }
+]

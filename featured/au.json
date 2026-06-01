@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Triple J",
+    "url": "https://live-radio01.mediahubaustralia.com/2TJW/mp3/"
+  },
+  {
+    "name": "Nova 96.9",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOVA_969_AAC320.aac"
+  },
+  {
+    "name": "KIIS 1065",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ARN_KIIS1065AAC"
+  },
+  {
+    "name": "2GB 873 AM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/2GB.mp3"
+  },
+  {
+    "name": "Smooth FM 95.3",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SMOOTH953_AAC48.aac"
+  },
+  {
+    "name": "ABC NewsRadio",
+    "url": "https://live-radio01.mediahubaustralia.com/PBW/aac/"
+  },
+  {
+    "name": "WSFM 101.7",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ARN_WSFMAAC.aac"
+  },
+  {
+    "name": "ABC Classic",
+    "url": "https://live-radio01.mediahubaustralia.com/2FMW/mp3/"
+  }
+]

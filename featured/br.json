@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Jovem Pan 99,1",
+    "url": "https://8062.brasilstream.com.br/stream"
+  },
+  {
+    "name": "CBN FM 95.3",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_BSBAAC.aac"
+  },
+  {
+    "name": "Rádio Mix FM 88.3",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MIXFM_BRASILIAAAC.aac"
+  },
+  {
+    "name": "Massa FM Blumenau",
+    "url": "https://stm01.virtualcast.com.br:8154/massablumenau"
+  },
+  {
+    "name": "Band FM 95.3",
+    "url": "https://r15.ciclano.io/proxy/bandfmbarretos/stream"
+  },
+  {
+    "name": "Nova Brasil FM 93.5",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOVABRASIL_ARACAJUAAC.aac"
+  },
+  {
+    "name": "Kiss FM 107.9",
+    "url": "https://streaming.fox.srv.br:8052/stream"
+  },
+  {
+    "name": "Transamérica 88.7 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RT_BH.mp3"
+  }
+]

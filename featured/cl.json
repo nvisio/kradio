@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Cooperativa",
+    "url": "https://redirector.dps.live/cooperativafm/aac/icecast.audio"
+  },
+  {
+    "name": "Bío-Bío FM 99.7",
+    "url": "https://redirector.dps.live/biobiosantiago/aac/icecast.audio"
+  },
+  {
+    "name": "ADN",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ADN_SC"
+  },
+  {
+    "name": "Los 40 Chile FM 101.7",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40_CHILEAAC.aac"
+  },
+  {
+    "name": "Radio Carolina FM 99.3",
+    "url": "https://mdstrm.com/audio/637f68ddce4b1208597d8a86/icecast.audio"
+  },
+  {
+    "name": "Pudahuel",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PUDAHUELAAC.aac"
+  },
+  {
+    "name": "Radio Corazón FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CORAZONAAC.aac"
+  },
+  {
+    "name": "Agricultura",
+    "url": "https://redirector.dps.live/agricultura/mp3/icecast.audio/;"
+  }
+]

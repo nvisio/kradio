@@ -1,0 +1,30 @@
+[
+  {
+    "name": "La Mega FM 107.3",
+    "url": "https://acp4.lorini.net:2050/stream"
+  },
+  {
+    "name": "YVKE Mundial",
+    "url": "https://radiomundial.com.ve/streaming/"
+  },
+  {
+    "name": "RNV - Informativa",
+    "url": "https://guri.tepuyserver.net/8048/stream"
+  },
+  {
+    "name": "Rumbera Network 89.5 FM",
+    "url": "https://streaming.rumberamaturin.com/;"
+  },
+  {
+    "name": "Circuito X 89.7",
+    "url": "https://acp2.lorini.net:39500/stream"
+  },
+  {
+    "name": "Fe y Alegría Señal Nacional",
+    "url": "https://tx.feyalegrianoticias.com/listen/nacional/radio.mp3"
+  },
+  {
+    "name": "Radio Kys FM 101.5",
+    "url": "http://streaming3.globalhostla.com:9068/stream"
+  }
+]

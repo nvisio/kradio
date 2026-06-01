@@ -1,0 +1,34 @@
+[
+  {
+    "name": "France Inter",
+    "url": "https://direct.franceinter.fr/live/franceinter-midfi.mp3"
+  },
+  {
+    "name": "NRJ",
+    "url": "https://streaming.nrjaudio.fm/oumvmk8fnozc?origine=radiogarden"
+  },
+  {
+    "name": "France Info 105.7",
+    "url": "https://direct.franceinfo.fr/live/franceinfo-midfi.mp3"
+  },
+  {
+    "name": "Europe 1",
+    "url": "https://europe1.lmn.fm/europe1.mp3"
+  },
+  {
+    "name": "Virgin Radio",
+    "url": "https://virginradio.ice.infomaniak.ch/virgin-radio.mp3"
+  },
+  {
+    "name": "Chérie FM",
+    "url": "https://streaming.nrjaudio.fm/ouuku85n3nje?origine=radiogarden"
+  },
+  {
+    "name": "Skyrock FM",
+    "url": "https://icecast.skyrock.net/s/lille_aac_128k"
+  },
+  {
+    "name": "France Culture",
+    "url": "https://direct.franceculture.fr/live/franceculture-midfi.mp3"
+  }
+]

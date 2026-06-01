@@ -1,0 +1,34 @@
+[
+  {
+    "name": "NPO Radio 2",
+    "url": "https://icecast.omroep.nl/radio2-bb-mp3"
+  },
+  {
+    "name": "Qmusic",
+    "url": "https://streams.radio.dpgmedia.cloud/redirect/qmusic_nl/mp3?source=radiogarden&player=rp_external"
+  },
+  {
+    "name": "Radio 538",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3?dist=radiogarden"
+  },
+  {
+    "name": "NPO Radio 1",
+    "url": "https://icecast.omroep.nl/radio1-sb-mp3"
+  },
+  {
+    "name": "Sky Radio",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIO.mp3?dist=radiogarden"
+  },
+  {
+    "name": "NPO 3FM",
+    "url": "https://icecast.omroep.nl/3fm-sb-mp3"
+  },
+  {
+    "name": "Radio 10",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO10.mp3?dist=radiogarden"
+  },
+  {
+    "name": "Veronica",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/VERONICA.mp3"
+  }
+]

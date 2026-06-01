@@ -1,0 +1,34 @@
+[
+  {
+    "name": "680 News",
+    "url": "https://rogers-hls.leanstream.co/rogers/tor680.stream/icy"
+  },
+  {
+    "name": "CFRB 1010 AM Toronto",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CFRBAMAAC.aac"
+  },
+  {
+    "name": "CHFI FM 98.1",
+    "url": "https://rogers-hls.leanstream.co/rogers/tor981.stream/icy"
+  },
+  {
+    "name": "CKNW 730 AM",
+    "url": "https://corus.leanstream.co/CKNWAM-MP3"
+  },
+  {
+    "name": "KISS 92.5",
+    "url": "https://rogers-hls.leanstream.co/rogers/tor925.stream/icy"
+  },
+  {
+    "name": "CJAD AM 800",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CJADAMAAC.aac"
+  },
+  {
+    "name": "CFOX - 99.3 The Fox 99.3 FM",
+    "url": "https://corus.leanstream.co/CFOXFM"
+  },
+  {
+    "name": "News 1130",
+    "url": "https://rogers-hls.leanstream.co/rogers/van1130.stream/icy"
+  }
+]

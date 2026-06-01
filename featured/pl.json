@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Radio ZET",
+    "url": "https://hub.radiostream.pl/stream.pls?radio=8400&type=none&dist=radiogarden&app=none&coding=mp3&redirect=true"
+  },
+  {
+    "name": "Tok FM",
+    "url": "https://hub.radiostream.pl/stream.pls?radio=10&type=none&dist=radiogarden&app=none&coding=mp3&redirect=true"
+  },
+  {
+    "name": "Antyradio",
+    "url": "https://hub.radiostream.pl/stream.pls?radio=8602&type=none&dist=radiogarden&app=none&coding=mp3&redirect=true"
+  },
+  {
+    "name": "Radio Maryja",
+    "url": "https://radiomaryja.fastcast4u.com/proxy/radiomaryja?mp=/1"
+  },
+  {
+    "name": "Radio 357",
+    "url": "https://stream.rcs.revma.com/an1ugyygzk8uv"
+  },
+  {
+    "name": "Vox FM",
+    "url": "https://ic1.smcdn.pl/3990-1.mp3"
+  },
+  {
+    "name": "Radio Nowy Świat",
+    "url": "https://stream.nowyswiat.online/aac"
+  },
+  {
+    "name": "Chilli Zet",
+    "url": "https://hub.radiostream.pl/stream.pls?radio=9900&type=none&dist=radiogarden&app=none&coding=mp3&redirect=true"
+  }
+]
