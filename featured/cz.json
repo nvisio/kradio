@@ -30,5 +30,93 @@
   {
     "name": "ČRo Dvojka",
     "url": "https://rozhlas.stream/dvojka_high.aac"
+  },
+  {
+    "name": "Hitrádio Faktor Eighties",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/HITRADIO_OSMDESATKA_128.mp3"
+  },
+  {
+    "name": "Rock Radio FM 103.5",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ROCK_RADIO_128.mp3"
+  },
+  {
+    "name": "Classic FM",
+    "url": "https://icecast8.play.cz/classic128.mp3"
+  },
+  {
+    "name": "ČRo Jazz",
+    "url": "https://rozhlas.stream/jazz_high.aac"
+  },
+  {
+    "name": "Rock Max",
+    "url": "https://ice.abradio.cz/rockmax128.mp3"
+  },
+  {
+    "name": "Dance Radio",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/DANCEAAC.aac"
+  },
+  {
+    "name": "Radio Relax",
+    "url": "https://icecast7.play.cz/relax128.mp3"
+  },
+  {
+    "name": "Oldies Radio",
+    "url": "https://ice.abradio.cz/oldiesradio128.mp3"
+  },
+  {
+    "name": "Country Radio",
+    "url": "https://stream.rcs.revma.com/h7rwanvb938uv"
+  },
+  {
+    "name": "Metal Heart Radio",
+    "url": "http://fr.radio-streamhosting.com:8000/metalheartradio128mp3"
+  },
+  {
+    "name": "Radio Folk",
+    "url": "http://mp3stream2.abradio.cz:8000/folk320.mp3"
+  },
+  {
+    "name": "Radio Čas Rock",
+    "url": "https://icecast6.play.cz/casrock128.mp3"
+  },
+  {
+    "name": "Hitrádio Faktor Nineties",
+    "url": "https://ice.abradio.cz/hit90128.mp3"
+  },
+  {
+    "name": "Radio Folk - Abradio",
+    "url": "http://mp3stream2.abradio.cz:8000/folk.mp3"
+  },
+  {
+    "name": "Rock Radio Gold",
+    "url": "https://ice.abradio.cz/gold128.mp3"
+  },
+  {
+    "name": "Rock Radio Šumava",
+    "url": "https://ice.abradio.cz/sumava128.mp3"
+  },
+  {
+    "name": "Radio Vysočina",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/HITRADIO_VYSOCINA_128.mp3"
+  },
+  {
+    "name": "Hitrádio Vysočina",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/HITRADIO_VYSOCINA.aac"
+  },
+  {
+    "name": "Kiss Radio",
+    "url": "https://stream.rcs.revma.com/asn0cmvb938uv"
+  },
+  {
+    "name": "Radio Jizera",
+    "url": "https://stream.rcs.revma.com/9sw1nuvb938uv"
+  },
+  {
+    "name": "Radio 1 FM 91.9",
+    "url": "https://stream.rcs.revma.com/stk8hrvb938uv"
+  },
+  {
+    "name": "ČRo Radiožurnál Sport",
+    "url": "https://rozhlas.stream/radiozurnal_sport_high.aac"
   }
 ]

@@ -30,5 +30,133 @@
   {
     "name": "RTBF La 1ère",
     "url": "https://redbeemedia.streamabc.net/redbm-lapremiere-aac-128-7561067"
+  },
+  {
+    "name": "Nostalgie Extra",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOSTALGIEWAFEXTRA.mp3?dist=radio_garden"
+  },
+  {
+    "name": "Noordzee Info",
+    "url": "http://stream.noordzee105.be:8000/noordzee_info"
+  },
+  {
+    "name": "RGR Classic Hits",
+    "url": "https://stream1.rgrfm.be"
+  },
+  {
+    "name": "Nostalgie Jazz",
+    "url": "https://stream.rcs.revma.com/5t0ewz43ehuvv"
+  },
+  {
+    "name": "Nostalgie Rock 80",
+    "url": "https://stream.rcs.revma.com/zdhbq843ehuvv"
+  },
+  {
+    "name": "Nostalgie Pop 80",
+    "url": "https://stream.rcs.revma.com/2vy2me53ehuvv"
+  },
+  {
+    "name": "Nostalgie Dance 80",
+    "url": "https://stream.rcs.revma.com/e58cn343ehuvv"
+  },
+  {
+    "name": "Club FM",
+    "url": "https://clubfmserver.be/radioclubfm.mp3"
+  },
+  {
+    "name": "VRT MNM Hits",
+    "url": "https://icecast.vrtcdn.be/mnm_hits-high.mp3"
+  },
+  {
+    "name": "Nostalgie Extra - Relax",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOSTALGIEWAFRELAX.mp3?dist=radio_garden"
+  },
+  {
+    "name": "Retro Radio Singjaal",
+    "url": "https://mscp2.live-streams.nl:8202/radiosingjaal"
+  },
+  {
+    "name": "RTBF Classic 21 Blues",
+    "url": "https://radio.rtbf.be/c21-blues/mp3-128/rg"
+  },
+  {
+    "name": "C Rap FM 105.2",
+    "url": "https://broadcast.sksgroup.com/kif_mcl_aac"
+  },
+  {
+    "name": "Radio Contact RnB",
+    "url": "https://contact2.ice.infomaniak.ch/contact2-192.mp3"
+  },
+  {
+    "name": "Radio Eurodance Classic",
+    "url": "https://quincy.torontocast.com:2965/stream"
+  },
+  {
+    "name": "RTBF Musiq3 Jazz",
+    "url": "https://radio.rtbf.be/m3-jazz/mp3-192/rg"
+  },
+  {
+    "name": "Nostalgie Rock 90",
+    "url": "https://stream.rcs.revma.com/fzh27a53ehuvv"
+  },
+  {
+    "name": "Nostalgie Pop 90",
+    "url": "https://stream.rcs.revma.com/r5bmbrp4ehuvv"
+  },
+  {
+    "name": "Nostalgie Dance 90",
+    "url": "https://stream.rcs.revma.com/54xm7543ehuvv"
+  },
+  {
+    "name": "VRT Ketnet Hits",
+    "url": "https://icecast.vrtcdn.be/ketnetradio-high.mp3"
+  },
+  {
+    "name": "C-Dance Retro",
+    "url": "https://s45.myradiostream.com/:18304/;"
+  },
+  {
+    "name": "Nostalgie Soul Party",
+    "url": "https://stream.rcs.revma.com/6qq9cq43ehuvv"
+  },
+  {
+    "name": "RGR Dance",
+    "url": "https://stream2.rgrfm.be"
+  },
+  {
+    "name": "ONIB Disco",
+    "url": "https://play.radioking.io/onib-disco/698749"
+  },
+  {
+    "name": "BXFM",
+    "url": "https://bxfmradio.ice.infomaniak.ch/bxfmradio-192.mp3"
+  },
+  {
+    "name": "Mint",
+    "url": "https://mint.ice.infomaniak.ch/mint-mp3-192.mp3"
+  },
+  {
+    "name": "TOP2",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TOP_ZILLION.mp3"
+  },
+  {
+    "name": "YouFM",
+    "url": "https://youfm.ice.infomaniak.ch/youfm-96.mp3"
+  },
+  {
+    "name": "Zen FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TOPZEN.mp3"
+  },
+  {
+    "name": "Qmusic",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/QMUSIC.mp3"
+  },
+  {
+    "name": "CK Bleu",
+    "url": "https://mixmyday.ice.infomaniak.ch/ckbleu.mp3"
+  },
+  {
+    "name": "Ultrason",
+    "url": "https://ultrason.ice.infomaniak.ch/ultrason-high.mp3"
   }
 ]

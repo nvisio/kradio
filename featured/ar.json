@@ -30,5 +30,133 @@
   {
     "name": "Los 40 Principales FM",
     "url": "https://frontend.radiohdvivo.com/los40/live"
+  },
+  {
+    "name": "Radio Nacional AM 690",
+    "url": "https://sa.mp3.icecast.magma.edge-access.net/sc_rad4"
+  },
+  {
+    "name": "News Radio",
+    "url": "https://masservidor.net:7181/stream"
+  },
+  {
+    "name": "FM Urbana Classic 100.7",
+    "url": "https://edge02.radiohdvivo.com/urbanaclassic1007"
+  },
+  {
+    "name": "Radio Jazz Cafe FM - Smooth & Jazzy",
+    "url": "https://radio.netyco.com:18056/;"
+  },
+  {
+    "name": "Cosquín Rock Radio FM 95.5",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/cosquinrock.mp3"
+  },
+  {
+    "name": "Radio Pop 89.9",
+    "url": "https://srv591.grupomultimedios.com.ar:9902/radio/8070/radio.mp3"
+  },
+  {
+    "name": "FM Club Patagonia 88.9",
+    "url": "https://radio01.ferozo.com/proxy/ra01000872?mp=/stream"
+  },
+  {
+    "name": "Metro Power Hits 95.1",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/METRO.mp3"
+  },
+  {
+    "name": "Radio Retro Online",
+    "url": "https://server4.hostradios.com/8312/stream"
+  },
+  {
+    "name": "Radio Fe Latina",
+    "url": "https://stream5.305stream.com/6110/stream"
+  },
+  {
+    "name": "La Folk Argentina",
+    "url": "https://ssl.radiosnethosting.com/index.php?port=9996/;stream.mp3"
+  },
+  {
+    "name": "Noticias NQN",
+    "url": "https://streaming01.shockmedia.com.ar/8092/stream"
+  },
+  {
+    "name": "Classic FM 91.3",
+    "url": "https://radiohd.net/7028/stream;"
+  },
+  {
+    "name": "Radio Nacional - Rock FM 93.7",
+    "url": "https://sa.mp3.icecast.magma.edge-access.net/sc_rad39"
+  },
+  {
+    "name": "Nac&Pop FM 88.1",
+    "url": "https://streaming01.shockmedia.com.ar/8794/1.acc"
+  },
+  {
+    "name": "DJ's Club",
+    "url": "https://radios.tecnosoul.com.ar:8001/djsclubradio"
+  },
+  {
+    "name": "Hits FM 99.9",
+    "url": "https://https.nvradios.com/radio/9372/radio.mp3"
+  },
+  {
+    "name": "RPM Oldies & Retro Hits",
+    "url": "https://radios.solumedia.com/6118/stream"
+  },
+  {
+    "name": "Tango Radio CAFF",
+    "url": "https://streams.radio.co/s6b80bc417/listen"
+  },
+  {
+    "name": "FM Noticias 88.1",
+    "url": "https://stream.radioinfo.ar/p/8062/stream/"
+  },
+  {
+    "name": "Classique",
+    "url": "https://01.solumedia.com.ar/stream/classique"
+  },
+  {
+    "name": "Black Rock Radio 102.7",
+    "url": "https://srv591.grupomultimedios.com.ar:9902/listen/rock_a_pop/radio.mp3"
+  },
+  {
+    "name": "Radio Pop FM 99.1",
+    "url": "https://streaming2.locucionar.com/proxy/radiopop?mp=/stream"
+  },
+  {
+    "name": "Ultra Electronic Radio 106.5 FM",
+    "url": "https://streaming.gostreaming.com.ar/8072/stream"
+  },
+  {
+    "name": "Hits FM 89.9",
+    "url": "https://srv591.grupomultimedios.com.ar:9902/listen/fm_hits/radio.mp3"
+  },
+  {
+    "name": "Retro - La Radio Te Escucha",
+    "url": "https://radios.streamingdha.com.ar/8002/;"
+  },
+  {
+    "name": "Doble A Radio Tango",
+    "url": "https://sonic.host-live.com/8268/stream"
+  },
+  {
+    "name": "FM Noticias 105.5",
+    "url": "https://server.laradio.online/proxy/mauro_massaccesi?mp=/stream"
+  },
+  {
+    "name": "Level Rock FM",
+    "url": "https://streaming2.locucionar.com/proxy/levelrock?mp=/stream"
+  },
+  {
+    "name": "Rock & Pop San Juan FM 98.3",
+    "url": "https://streaming.radiosenlinea.com.ar/8108/stream"
+  },
+  {
+    "name": "FM Trance 103.3",
+    "url": "https://streaming01.shockmedia.com.ar:10262/;"
+  },
+  {
+    "name": "Retro FM 106.7",
+    "url": "https://argentina.shockmedia.com.ar:8018/;"
   }
 ]

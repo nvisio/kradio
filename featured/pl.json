@@ -30,5 +30,133 @@
   {
     "name": "Chilli Zet",
     "url": "https://hub.radiostream.pl/stream.pls?radio=9900&type=none&dist=radiogarden&app=none&coding=mp3&redirect=true"
+  },
+  {
+    "name": "Antyradio Classic Rock",
+    "url": "https://an02.cdn.eurozet.pl/ANTCLA.mp3"
+  },
+  {
+    "name": "Chilli Zet Jazz",
+    "url": "https://chi.cdn.eurozet.pl/CHIJAZ.mp3"
+  },
+  {
+    "name": "Rock Radio pl",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ROCK.mp3"
+  },
+  {
+    "name": "Radio ZET Dance",
+    "url": "https://zt03.cdn.eurozet.pl/ZETDAN.mp3"
+  },
+  {
+    "name": "InterStacja - Club",
+    "url": "https://radio.castpol.pl:8160/radio.mp3"
+  },
+  {
+    "name": "InterStacja - Oldies",
+    "url": "https://radio.castpol.pl:8170/radio.mp3"
+  },
+  {
+    "name": "Folk Radio",
+    "url": "https://streaming.g-news.pl:8030/fr1"
+  },
+  {
+    "name": "Jazz Kultura",
+    "url": "https://stream.radio.co/s1136b59f3/listen"
+  },
+  {
+    "name": "Eska Rock FM 93.3",
+    "url": "https://waw.ic.smcdn.pl/5380-1.mp3"
+  },
+  {
+    "name": "InterStacja - Disco Polo",
+    "url": "https://radio.castpol.pl:8150/radio.mp3"
+  },
+  {
+    "name": "Radio FTB Club",
+    "url": "https://play.radioftb.net:8000/stream"
+  },
+  {
+    "name": "DiscoParty.pl - Lata 90s",
+    "url": "https://s3.slotex.pl/shoutcast/7170/stream?sid=1"
+  },
+  {
+    "name": "Eska ROCK Poznań 93.9 FM",
+    "url": "https://waw.ic.smcdn.pl/5980-1.mp3"
+  },
+  {
+    "name": "DiscoParty.pl - Disco Polo",
+    "url": "https://s1.slotex.pl/shoutcast/7432/stream?sid=1"
+  },
+  {
+    "name": "Rock Radio 103.7 FM",
+    "url": "https://hub.radiostream.pl/stream.pls?radio=8&type=none&dist=radiogarden&app=none&coding=mp3&redirect=true"
+  },
+  {
+    "name": "Radio Pogoda",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_POGODA.mp3"
+  },
+  {
+    "name": "Radio RSC",
+    "url": "https://stream.rcs.revma.com/94fud6a6z72vv"
+  },
+  {
+    "name": "Radio Nuta",
+    "url": "https://stream.rcs.revma.com/0004tehdxzzuv"
+  },
+  {
+    "name": "Radio MORS",
+    "url": "https://stream.rcs.revma.com/440942zfcg3vv"
+  },
+  {
+    "name": "Muzo FM 102",
+    "url": "https://n15a-eu.rcs.revma.com/1nnezw8qz7zuv"
+  },
+  {
+    "name": "Radio Express",
+    "url": "https://n13a-eu.rcs.revma.com/yx6cub73kwzuv"
+  },
+  {
+    "name": "Radio Gromnik",
+    "url": "https://stream.rcs.revma.com/yh8425dv8ncwv"
+  },
+  {
+    "name": "Radio Yanosik",
+    "url": "https://n11a-eu.rcs.revma.com/sn11544ebhuvv"
+  },
+  {
+    "name": "Radio.Dimash.pl",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SAM02AAC364_SC"
+  },
+  {
+    "name": "Radio WeekendFM",
+    "url": "https://stream.rcs.revma.com/vw8w2zwpsy3vv"
+  },
+  {
+    "name": "Express 92.3 FM",
+    "url": "https://n11a-eu.rcs.revma.com/yx6cub73kwzuv"
+  },
+  {
+    "name": "Radio Ony FM 93.1",
+    "url": "https://n15a-eu.rcs.revma.com/yxv344rra2zuv.m4a"
+  },
+  {
+    "name": "Radio Niepokalanow",
+    "url": "https://stream.rcs.revma.com/p1ty3x8nh72vv"
+  },
+  {
+    "name": "Radio Kolor 103 FM",
+    "url": "https://stream.rcs.revma.com/nrfscb49xd3vv"
+  },
+  {
+    "name": "Radio Płock FM 88.1",
+    "url": "https://stream.rcs.revma.com/6qvcy46wmc9uv"
+  },
+  {
+    "name": "Radio Piekary FM 88.7",
+    "url": "https://stream.rcs.revma.com/0rg0mztk33bwv"
+  },
+  {
+    "name": "Muzyczne Radio FM 105.8",
+    "url": "https://stream.rcs.revma.com/yntzhng5072vv"
   }
 ]

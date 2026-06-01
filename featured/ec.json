@@ -30,5 +30,13 @@
   {
     "name": "Radio Disney Ecuador",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_ECU_GY.mp3"
+  },
+  {
+    "name": "Retro - Activa Radio",
+    "url": "https://dattavolt.com/8324/LaRetro"
+  },
+  {
+    "name": "Latina FM 88.1",
+    "url": "https://usa3.lhdserver.es:8087/stream"
   }
 ]

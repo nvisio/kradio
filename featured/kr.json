@@ -22,5 +22,101 @@
   {
     "name": "SBS 파워FM",
     "url": "https://radio.bsod.kr/stream?stn=sbs&ch=powerfm"
+  },
+  {
+    "name": "KBS 1라디오",
+    "url": "https://radio.bsod.kr/stream/?stn=kbs&ch=1radio"
+  },
+  {
+    "name": "KBS 3라디오",
+    "url": "https://radio.bsod.kr/stream/?stn=kbs&ch=3radio"
+  },
+  {
+    "name": "KBS 한민족방송",
+    "url": "https://radio.bsod.kr/stream/?stn=kbs&ch=hanminjok"
+  },
+  {
+    "name": "MBC mini 올댓뮤직",
+    "url": "https://radio.bsod.kr/stream/?stn=mbc&ch=chm"
+  },
+  {
+    "name": "SBS 러브FM",
+    "url": "https://radio.bsod.kr/stream/?stn=sbs&ch=lovefm"
+  },
+  {
+    "name": "SBS 고릴라디오M",
+    "url": "https://radio.bsod.kr/stream/?stn=sbs&ch=dmb"
+  },
+  {
+    "name": "CBS 음악FM",
+    "url": "https://radio.bsod.kr/stream/?stn=cbs&ch=mfm"
+  },
+  {
+    "name": "CBS 표준FM",
+    "url": "https://radio.bsod.kr/stream/?stn=cbs&ch=sfm"
+  },
+  {
+    "name": "CBS JOY4U",
+    "url": "https://radio.bsod.kr/stream/?stn=cbs&ch=joy4u"
+  },
+  {
+    "name": "YTN 라디오",
+    "url": "https://radio.bsod.kr/stream/?stn=ytn"
+  },
+  {
+    "name": "TBS eFM",
+    "url": "https://radio.bsod.kr/stream/?stn=tbs&ch=efm"
+  },
+  {
+    "name": "TBS FM",
+    "url": "https://radio.bsod.kr/stream/?stn=tbs&ch=fm"
+  },
+  {
+    "name": "EBS FM",
+    "url": "https://radio.bsod.kr/stream/?stn=ebs"
+  },
+  {
+    "name": "TBN 경인교통방송",
+    "url": "https://radio.bsod.kr/stream/?stn=tbn"
+  },
+  {
+    "name": "FEBC 서울극동방송",
+    "url": "https://radio.bsod.kr/stream/?stn=febc"
+  },
+  {
+    "name": "BBS 서울불교방송",
+    "url": "https://radio.bsod.kr/stream/?stn=bbs"
+  },
+  {
+    "name": "CPBC 가톨릭평화방송",
+    "url": "https://radio.bsod.kr/stream/?stn=cpbc"
+  },
+  {
+    "name": "국악방송",
+    "url": "https://radio.bsod.kr/stream/?stn=kugak"
+  },
+  {
+    "name": "국방FM",
+    "url": "https://radio.bsod.kr/stream/?stn=kookbang"
+  },
+  {
+    "name": "OBS 라디오",
+    "url": "https://radio.bsod.kr/stream/?stn=obs"
+  },
+  {
+    "name": "iFM 경인방송",
+    "url": "https://radio.bsod.kr/stream/?stn=ifm"
+  },
+  {
+    "name": "Big B Radio - Kpop",
+    "url": "https://antares.dribbcast.com/proxy/kpop?mp=/s"
+  },
+  {
+    "name": "AFN Eagle 88.5 FM Daegu",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/AFNP_DGUAAC.aac"
+  },
+  {
+    "name": "AFN FM Humphreys",
+    "url": "https://radio.bsod.kr/stream/?stn=afn&city=humphreys"
   }
 ]

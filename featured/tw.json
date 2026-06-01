@@ -30,5 +30,45 @@
   {
     "name": "Hakka 講客廣播電臺",
     "url": "https://stream.rcs.revma.com/akqrbx94gbkvv"
+  },
+  {
+    "name": "Classical FM 97.7",
+    "url": "https://onair.family977.com.tw:8977/live.mp3"
+  },
+  {
+    "name": "Taiwan Lounge Radio",
+    "url": "https://azuracast.conceptradio.fr/radio/8030/stream.mp3"
+  },
+  {
+    "name": "中廣鄉親網 BCC Country",
+    "url": "https://stream.rcs.revma.com/p2e3rfg3qtzuv"
+  },
+  {
+    "name": "Classical FM 古典音樂台",
+    "url": "http://onair.family977.com.tw:8000/live.mp3"
+  },
+  {
+    "name": "MRadio - National Broadcast FM 106",
+    "url": "https://n18a-eu.rcs.revma.com/044q61ha7a0uv"
+  },
+  {
+    "name": "I go AM531",
+    "url": "https://n03a-eu.rcs.revma.com/s7hc9kpy2tzuv"
+  },
+  {
+    "name": "亞洲電臺 FM 92.7",
+    "url": "https://stream.rcs.revma.com/xpgtqc74hv8uv"
+  },
+  {
+    "name": "IC 之音 FM97.5",
+    "url": "https://stream.rcs.revma.com/7mnq8rt7k5zuv"
+  },
+  {
+    "name": "亞太電台 FM 92.3",
+    "url": "https://stream.rcs.revma.com/kydend74hv8uv"
+  },
+  {
+    "name": "i-radio 任意門計劃",
+    "url": "https://n05a-eu.rcs.revma.com/ndk05tyy2tzuv"
   }
 ]

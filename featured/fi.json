@@ -14,5 +14,9 @@
   {
     "name": "YLE Klassinen",
     "url": "https://icecast.live.yle.fi/radio/YleKlassinen/icecast.audio"
+  },
+  {
+    "name": "Kaaosradio Chillout",
+    "url": "https://kaaosradio.fi:8001/chill"
   }
 ]

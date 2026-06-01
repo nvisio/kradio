@@ -30,5 +30,81 @@
   {
     "name": "Danubius Radio",
     "url": "https://stream.danubiusradio.hu/danubius_320k"
+  },
+  {
+    "name": "Oxygen Classic Rock",
+    "url": "https://oxygenmusic.hu:8443/oxygenclassicrock_128"
+  },
+  {
+    "name": "A Rock 103.9",
+    "url": "https://icast.connectmedia.hu/5301/live.mp3"
+  },
+  {
+    "name": "Club Dance Online",
+    "url": "https://stream.clubdance.online:8002/live.mp3"
+  },
+  {
+    "name": "Oxygen Classics",
+    "url": "https://oxygenmusic.hu:8443/Classic_128"
+  },
+  {
+    "name": "Oxygen Lounge",
+    "url": "https://oxygenmusic.hu:8443/oxygenlounge_128"
+  },
+  {
+    "name": "Oxygen Oldies",
+    "url": "https://oxygenmusic.hu:8443/oxygenoldies_128"
+  },
+  {
+    "name": "Argentine Tango Radio",
+    "url": "https://ais-sa2.cdnstream1.com/2202_128.mp3"
+  },
+  {
+    "name": "Jazzy Soul",
+    "url": "https://radio.musorok.org/listen/jazzysoul/jazzysoul.mp3"
+  },
+  {
+    "name": "BDPST Rock Rádió",
+    "url": "https://bdpstrock.hu/live.mp3"
+  },
+  {
+    "name": "Luxfunk® Dance",
+    "url": "https://luxfunkbroadcast.com/proxy/luxfunkdance/stream"
+  },
+  {
+    "name": "Oxygen Italo Hits",
+    "url": "https://oxygenmusic.hu:8443/oxygenitalohits_128"
+  },
+  {
+    "name": "TOP FM — Oldies",
+    "url": "http://live.topfm.hu:8000/oldies.mp3"
+  },
+  {
+    "name": "Power Dance FM",
+    "url": "http://stream1.nexusradio.fm/nexusdance.mp3"
+  },
+  {
+    "name": "Oxygen The 80s Hits",
+    "url": "https://oxygenmusic.hu:8443/oxygenthe80shits_128"
+  },
+  {
+    "name": "Oxygen The 90s Hits",
+    "url": "https://oxygenmusic.hu:8443/oxygenthe90shits_128"
+  },
+  {
+    "name": "MixRadio Retro Kedvencek",
+    "url": "http://adas.adasszerver.hu/retro"
+  },
+  {
+    "name": "Hír FM 95.3",
+    "url": "https://n07a-eu.rcs.revma.com/wevb267khf9uv"
+  },
+  {
+    "name": "HírFM Nyíregyháza 102.6 FM",
+    "url": "https://stream-eu.rcs.revma.com/bck7den8b2uvv"
+  },
+  {
+    "name": "Nemzeti Sport Radio 105.9",
+    "url": "https://icast.connectmedia.hu/4656/mr11.aac"
   }
 ]

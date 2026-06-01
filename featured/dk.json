@@ -30,5 +30,33 @@
   {
     "name": "DR P8 Jazz",
     "url": "https://live-icy.dr.dk/A/A22L.mp3"
+  },
+  {
+    "name": "Classic FM Struer",
+    "url": "https://webradio.classicfm.dk/classic"
+  },
+  {
+    "name": "M Jazz Radio",
+    "url": "https://fra-pioneer01.dedicateware.com:1460/stream"
+  },
+  {
+    "name": "Dance 100",
+    "url": "https://s31.myradiostream.com/:20624/;"
+  },
+  {
+    "name": "Retro Radio",
+    "url": "https://streammp3.retro-radio.dk/retro-mp3"
+  },
+  {
+    "name": "Radio Retro FM 105.3",
+    "url": "http://10336.cloudrad.io:9010/live"
+  },
+  {
+    "name": "Radio Faaborg Classic",
+    "url": "https://solid41.streamupsolutions.com/proxy/wrchdupm/stream"
+  },
+  {
+    "name": "Radio IIII",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO4.mp3"
   }
 ]

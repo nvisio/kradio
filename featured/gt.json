@@ -30,5 +30,29 @@
   {
     "name": "Sónica FM 106.9",
     "url": "https://s6.voscast.com:9039/stream"
+  },
+  {
+    "name": "Mia 93.7",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MIAAAC.aac"
+  },
+  {
+    "name": "949 Radio",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/949FMAAC.aac"
+  },
+  {
+    "name": "Fama FM 102.5",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/FAMA_1025AAC.aac"
+  },
+  {
+    "name": "La Red Deportiva",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LA_REDAAC.aac"
+  },
+  {
+    "name": "Radio Clásica FM 102.5",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CLASICA_1065AAC.aac"
+  },
+  {
+    "name": "Radio Cultural TGN",
+    "url": "https://my.apptunner.com/8014/stream"
   }
 ]

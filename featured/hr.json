@@ -30,5 +30,41 @@
   {
     "name": "HRT - HR3",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PROGRAM3_ADP.aac"
+  },
+  {
+    "name": "Super Hits Radio",
+    "url": "https://mcp1.mydataknox.com:8018/stream"
+  },
+  {
+    "name": "Otvoreni Chill",
+    "url": "https://stream.otvoreni.hr/chill"
+  },
+  {
+    "name": "HR Knin",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KNINAAC.aac"
+  },
+  {
+    "name": "Radio Rijeka",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RIJEKA_ADP.aac"
+  },
+  {
+    "name": "Radio Pula HRT",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PULAAAC.aac"
+  },
+  {
+    "name": "HR Radio Dubrovnik",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/DUBROVNIKAAC.aac"
+  },
+  {
+    "name": "HRT - Radio Osijek",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/OSIJEKAAC.aac"
+  },
+  {
+    "name": "The Voice of Croatia",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/VOICEOFCROATIAAAC.aac"
+  },
+  {
+    "name": "HRT Radio Zadar FM 101.8",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ZADARAAC.aac"
   }
 ]

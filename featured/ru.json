@@ -30,5 +30,133 @@
   {
     "name": "Nashe Radio",
     "url": "https://nashe1.hostingradio.ru/nashe-128.mp3"
+  },
+  {
+    "name": "Radio Record - Deep",
+    "url": "https://radiorecord.hostingradio.ru/deep96.aacp"
+  },
+  {
+    "name": "Komsomolskaya Pravda",
+    "url": "https://kpradio.hostingradio.ru:8000/krasnodar.radiokp64.mp3"
+  },
+  {
+    "name": "Radio KP",
+    "url": "https://kpradio.hostingradio.ru:8000/irkutsk.radiokp128.mp3"
+  },
+  {
+    "name": "Radio Maximum",
+    "url": "https://maximum.hostingradio.ru/maximum96.aacp"
+  },
+  {
+    "name": "Europa Plus",
+    "url": "https://emgspb.hostingradio.ru/europaplusspb128.mp3"
+  },
+  {
+    "name": "Retro FM",
+    "url": "https://emgspb.hostingradio.ru/retrofmspb128.mp3"
+  },
+  {
+    "name": "Business FM",
+    "url": "https://bfm.hostingradio.ru:9075/fm"
+  },
+  {
+    "name": "Radio Classic",
+    "url": "https://jfm1.hostingradio.ru:14536/rcstream.mp3"
+  },
+  {
+    "name": "Radio Jazz 89.1 FM",
+    "url": "https://nashe1.hostingradio.ru/jazz-128.mp3"
+  },
+  {
+    "name": "Rock FM 95.2",
+    "url": "https://nashe1.hostingradio.ru/rock-128.mp3"
+  },
+  {
+    "name": "101.RU - Pop Classical Music",
+    "url": "https://pub0202.101.ru:8443/stream/pro/aac/64/97"
+  },
+  {
+    "name": "DFM - Disco",
+    "url": "https://dfm-disco.hostingradio.ru/disco96.aacp"
+  },
+  {
+    "name": "DFM - Club",
+    "url": "https://dfm-dfmclub.hostingradio.ru/dfmclub96.aacp"
+  },
+  {
+    "name": "Retro FM 70s",
+    "url": "https://retro70.hostingradio.ru:8025/retro70-128.mp3"
+  },
+  {
+    "name": "Relax Jazz",
+    "url": "https://pub0202.101.ru:8443/stream/trust/mp3/128/264"
+  },
+  {
+    "name": "DFM - Дискач 90-X 90s Disco",
+    "url": "https://dfm-disc90.hostingradio.ru/disc9096.aacp"
+  },
+  {
+    "name": "101.RU - Blues",
+    "url": "https://pub0202.101.ru:8443/stream/pro/aac/64/76"
+  },
+  {
+    "name": "DFM - Rap",
+    "url": "https://dfm-dfmrap.hostingradio.ru/dfmrap96.aacp"
+  },
+  {
+    "name": "Relax Latino",
+    "url": "https://pub0202.101.ru:8443/stream/trust/mp3/128/265"
+  },
+  {
+    "name": "DFM - Liquid Funk",
+    "url": "https://dfm-liquid.hostingradio.ru/liquid96.aacp"
+  },
+  {
+    "name": "DFM - K-Pop",
+    "url": "https://dfm-kpop.hostingradio.ru/kpop96.aacp"
+  },
+  {
+    "name": "DFM - Chill",
+    "url": "https://dfm-dfmchill.hostingradio.ru/dfmchill96.aacp"
+  },
+  {
+    "name": "Радио JAZZ Томск 99.6 FM",
+    "url": "https://listen.radio.tomsk.ru/jazz"
+  },
+  {
+    "name": "Irkutsk Rock Portal",
+    "url": "https://live.rock.irk.ru/listen/main-mix/radio.aac"
+  },
+  {
+    "name": "DFM - Pop Dance",
+    "url": "https://dfm-popdance.hostingradio.ru/popdance96.aacp"
+  },
+  {
+    "name": "DFM - Dance Hall",
+    "url": "https://dfm-dancehall.hostingradio.ru/dancehall96.aacp"
+  },
+  {
+    "name": "DFM - Trance",
+    "url": "https://dfm-trance.hostingradio.ru/trance96.aacp"
+  },
+  {
+    "name": "Radio Maximum - Rock Hits",
+    "url": "https://rockhits.hostingradio.ru/rockhits96.aacp"
+  },
+  {
+    "name": "Relax Life",
+    "url": "https://pub0202.101.ru:8443/stream/trust/mp3/128/267"
+  },
+  {
+    "name": "Retro Hit",
+    "url": "https://retro.volna.top/Retro"
+  },
+  {
+    "name": "DFM - Trap",
+    "url": "https://dfm-dfmtrap.hostingradio.ru/dfmtrap96.aacp"
+  },
+  {
+    "name": "Radio Monte Carlo - Bossa Nova",
+    "url": "https://mc-mcbossa.hostingradio.ru/mcbossa96.aacp"
   }
 ]

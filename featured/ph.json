@@ -30,5 +30,25 @@
   {
     "name": "DZRJ FM RJ100",
     "url": "http://111.125.87.226:8000/rjfm"
+  },
+  {
+    "name": "93.5 DWIZ News FM",
+    "url": "https://hrcdo.radioca.st/stream"
+  },
+  {
+    "name": "POP Radio",
+    "url": "https://ssl.geckohost.nz/proxy/john1212?mp=/stream"
+  },
+  {
+    "name": "Brigada News FM Davao",
+    "url": "http://18.141.67.248:8004/stream.mp3"
+  },
+  {
+    "name": "Brigada News FM Batangas",
+    "url": "http://18.141.67.248:8040/stream.mp3"
+  },
+  {
+    "name": "DZRH News FM 94.3 Gensan",
+    "url": "https://dzrhnewsfmgensan.radioca.st/;"
   }
 ]

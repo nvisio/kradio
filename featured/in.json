@@ -2,5 +2,33 @@
   {
     "name": "Radio City Freedom",
     "url": "https://stream.zeno.fm/685khspd8f0uv"
+  },
+  {
+    "name": "Radio Sindhi - Classic",
+    "url": "https://stream.radiosindhi.com/proxy/classic/stream"
+  },
+  {
+    "name": "Living Waters - Hindi Station",
+    "url": "https://hindi.livingwatersgb.com/radio/8000/radio.mp3"
+  },
+  {
+    "name": "Luminous Radio Hindi",
+    "url": "https://patmos.cdnstream.com/proxy/luminoushindi/?mp=/stream"
+  },
+  {
+    "name": "Hindi Tarang",
+    "url": "https://a1.asurahosting.com/listen/hindi_tarang/radio.mp3"
+  },
+  {
+    "name": "RADIO daijiworld Konkani (कोन्कनि ಕೊ೦ಕಣಿ )",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SAM08AAC013.aac"
+  },
+  {
+    "name": "Shaiva Lahari",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SP_R2925215_SC"
+  },
+  {
+    "name": "Thiruneriya Tamilosai",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SP_R2923580_SC"
   }
 ]

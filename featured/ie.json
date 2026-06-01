@@ -30,5 +30,129 @@
   {
     "name": "RTÉ Raidió na Gaeltachta",
     "url": "https://icecast.rte.ie/rnag"
+  },
+  {
+    "name": "Nova Classic Rock",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOVA_CLASSIC_ROCK.mp3"
+  },
+  {
+    "name": "Jazz Radio Ireland",
+    "url": "https://carina.streamerr.co:8116/stream"
+  },
+  {
+    "name": "Energy Dance (DAB)",
+    "url": "https://play.digitalaudio.ie/listen/energy/ENERGY"
+  },
+  {
+    "name": "Classic Hits 80s",
+    "url": "https://edge7.audioxi.com/CH80S"
+  },
+  {
+    "name": "Nova Chill",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOVA_CHILL.mp3"
+  },
+  {
+    "name": "Nova 80s",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOVA_80S.mp3"
+  },
+  {
+    "name": "HR Country",
+    "url": "https://de4.streamingpulse.com/ssl/7047"
+  },
+  {
+    "name": "Ceol FM - Traditional Songs Only",
+    "url": "https://listen.ceol.fm/songs"
+  },
+  {
+    "name": "Sunshine Soul",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SUNSHINE_SOULAAC.aac"
+  },
+  {
+    "name": "Christmas FM Classical",
+    "url": "https://christmasfm.cdnstream1.com/2549_128.mp3"
+  },
+  {
+    "name": "Hits Radio Ireland",
+    "url": "https://uk7.internet-radio.com/proxy/hitsradioireland/stream"
+  },
+  {
+    "name": "Q102 80s",
+    "url": "https://wg.cdn.tibus.net/Q10280s"
+  },
+  {
+    "name": "LMFM Country",
+    "url": "https://gbradio.cdn.tibus.net/LMFMCountry"
+  },
+  {
+    "name": "Christmas FM Classics",
+    "url": "https://christmasfm.cdnstream1.com/2550_128.mp3"
+  },
+  {
+    "name": "90s Network 98.4 FM",
+    "url": "https://de4.streamingpulse.com/ssl/90sNetwork"
+  },
+  {
+    "name": "Irish Country Music Radio",
+    "url": "https://streaming.galaxywebsolutions.com/stream/irishcountry"
+  },
+  {
+    "name": "Clare FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CLARE_FM.mp3"
+  },
+  {
+    "name": "WLR FM 95.1",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WLR_FM.mp3"
+  },
+  {
+    "name": "KCLR 96.6 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KCLR.mp3"
+  },
+  {
+    "name": "Midlands 103",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MIDLANDS_103.mp3"
+  },
+  {
+    "name": "Mid West Radio",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MIDWEST_RADIOAAC.aac"
+  },
+  {
+    "name": "Sunshine 106.8",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SUNSHINE_106_8.mp3"
+  },
+  {
+    "name": "Highland Radio",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/HIGHLAND_RADIO.mp3"
+  },
+  {
+    "name": "Sligo FM 102.5",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/OCEAN_FM_SLIGO.mp3"
+  },
+  {
+    "name": "Absolute Irish",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ABSOLUTE_IRELAND.mp3"
+  },
+  {
+    "name": "Radio Kerry FM 96",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_KERRY.mp3"
+  },
+  {
+    "name": "East Coast FM 96.2",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/EAST_COAST_FMAAC.aac"
+  },
+  {
+    "name": "Mid West Irish Radio",
+    "url": "https://edge-audio-01-cr.sharp-stream.com/midwestfmie2.aac"
+  },
+  {
+    "name": "Dublin City FM 103.2",
+    "url": "https://listen-dublincity.sharp-stream.com/dublin_city.mp3"
+  },
+  {
+    "name": "KCLR 96.9 FM (Carlow)",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KCLR_CARLOW.mp3"
+  },
+  {
+    "name": "Juice FM 88.7",
+    "url": "https://stream.rcs.revma.com/a8mqrmhcyy8uv"
   }
 ]
