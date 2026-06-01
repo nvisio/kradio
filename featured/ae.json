@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Sky News Arabia FM 90.5",
+    "url": "https://radio.skynewsarabia.com/stream/radio/skynewsarabia"
+  },
+  {
+    "name": "Al Khaleejiya FM 100.9",
+    "url": "https://stream.radiojar.com/5wpf9e4erxquv"
+  },
+  {
+    "name": "Channel 4 FM 104.8",
+    "url": "https://streams.radio.co/sce558c2e6/listen"
+  },
+  {
+    "name": "Pulse 95 Radio",
+    "url": "https://l3.itworkscdn.net/pulse95live/pulse96/icecast.audio"
+  },
+  {
+    "name": "Mirchi FM 102.4",
+    "url": "https://eu8.fastcast4u.com/proxy/clyedupq?mp=/1"
+  },
+  {
+    "name": "Gold 101.3 FM",
+    "url": "https://stream.radio.co/s00240810b/listen"
+  },
+  {
+    "name": "Suno FM 102.4",
+    "url": "http://51.255.235.165:5476/;stream.mp3"
+  },
+  {
+    "name": "Sharjah Radio",
+    "url": "https://l3.itworkscdn.net/smcradiolive/smcradiolive/icecast.audio"
+  }
+]

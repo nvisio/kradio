@@ -1,0 +1,30 @@
+[
+  {
+    "name": "RTHK Radio 1",
+    "url": "https://stm.rthk.hk/radio1"
+  },
+  {
+    "name": "RTHK Radio 2",
+    "url": "https://stm.rthk.hk/radio2"
+  },
+  {
+    "name": "RTHK Radio 3",
+    "url": "https://stm.rthk.hk/radio3"
+  },
+  {
+    "name": "RTHK Radio 5",
+    "url": "https://stm1.rthk.hk/radio5"
+  },
+  {
+    "name": "RTHK Radio 4",
+    "url": "https://stm.rthk.hk/radio4"
+  },
+  {
+    "name": "RTHK Putonghua Channel",
+    "url": "https://stm.rthk.hk/radiopth"
+  },
+  {
+    "name": "D100 HK Radio",
+    "url": "http://59.152.232.107:8000/Channel1-128MP3"
+  }
+]

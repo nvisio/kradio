@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Love Radio FM 90.7",
+    "url": "https://azura.loveradio.com.ph/listen/love_radio_manila/radio.mp3"
+  },
+  {
+    "name": "MBC DZRH AM666",
+    "url": "https://azura.dzrh.com.ph/listen/dzrh_manila/radio.mp3"
+  },
+  {
+    "name": "Monster RX93.1",
+    "url": "https://in-icecast.eradioportal.com:8443/monsterrrx"
+  },
+  {
+    "name": "Easy Rock 96.3 FM",
+    "url": "https://azura.easyrock.com.ph/listen/easy_rock_manila/radio.mp3"
+  },
+  {
+    "name": "Yes! FM 101.1",
+    "url": "https://azura.yesfm.com.ph/listen/yes_fm_manila/radio.mp3"
+  },
+  {
+    "name": "Star FM 102.7",
+    "url": "https://stream.zeno.fm/536cwdq78heuv"
+  },
+  {
+    "name": "Home Radio 97.9 FM",
+    "url": "https://hrmanila.radioca.st/stream"
+  },
+  {
+    "name": "DZRJ FM RJ100",
+    "url": "http://111.125.87.226:8000/rjfm"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "RDS FM 103.0",
+    "url": "https://icstream.rds.radio/rds"
+  },
+  {
+    "name": "Radio 105 FM",
+    "url": "https://icecast.unitedradio.it/Radio105.mp3"
+  },
+  {
+    "name": "RMC Radio Monte Carlo",
+    "url": "http://edge.radiomontecarlo.net/RMC.mp3"
+  },
+  {
+    "name": "Virgin Radio On-Air",
+    "url": "https://icy.unitedradio.it/Virgin.mp3"
+  },
+  {
+    "name": "R101 FM 89.9",
+    "url": "https://icecast.unitedradio.it/r101"
+  },
+  {
+    "name": "Radio Kiss Kiss",
+    "url": "https://kisskiss.fluidstream.eu/KissKiss.aac"
+  },
+  {
+    "name": "RAI Radio 1",
+    "url": "https://icestreaming.rai.it/1.mp3"
+  },
+  {
+    "name": "Radio 24 - FM 106.8",
+    "url": "http://shoutcast2.radio24.ilsole24ore.com:8000/;"
+  }
+]

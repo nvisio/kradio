@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Radio Mitre AM 790",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/AM790_56AAC.aac"
+  },
+  {
+    "name": "La 100 FM 99.9",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/FM999_56.mp3"
+  },
+  {
+    "name": "FM Rock & Pop 95.9",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ROCKANDPOPAAC.aac"
+  },
+  {
+    "name": "Radio Rivadavia 630 AM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RIVADAVIAAAC.aac"
+  },
+  {
+    "name": "Radio Continental AM 590",
+    "url": "https://frontend.radiohdvivo.com/continental/live"
+  },
+  {
+    "name": "Radio La Red AM 910",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LA_RED_AM910AAC.aac"
+  },
+  {
+    "name": "Vorterix Radio FM 97.1",
+    "url": "https://ice2.edge-apps.net/radio1_high-20057.audio"
+  },
+  {
+    "name": "Los 40 Principales FM",
+    "url": "https://frontend.radiohdvivo.com/los40/live"
+  }
+]

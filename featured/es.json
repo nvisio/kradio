@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Cadena Ser",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CADENASERAAC.aac"
+  },
+  {
+    "name": "LOS40",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40.mp3"
+  },
+  {
+    "name": "Cadena COPE",
+    "url": "https://flucast08-o-cloud.flumotion.com/cope/madrid.mp3"
+  },
+  {
+    "name": "Onda Cero Madrid 98.0 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/OC_MADRIDAAC"
+  },
+  {
+    "name": "Cadena 100",
+    "url": "https://flucast01-o-cloud.flumotion.com/cope/cadena100.mp3"
+  },
+  {
+    "name": "Cadena Dial",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CADENADIALAAC.aac"
+  },
+  {
+    "name": "Kiss FM Spain",
+    "url": "https://adhandler.kissfmradio.cires21.com/get_link?url=https://bbkissfm.kissfmradio.cires21.com/bbkissfm.mp3"
+  },
+  {
+    "name": "RockFM 101.6 FM",
+    "url": "https://flucast-bl04.flumotion.com/cope/rockfm-low.mp3"
+  }
+]

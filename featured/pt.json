@@ -1,0 +1,34 @@
+[
+  {
+    "name": "RFM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RFMAAC.aac"
+  },
+  {
+    "name": "Antena 1",
+    "url": "https://radiocast.rtp.pt/antena180a.mp3"
+  },
+  {
+    "name": "Rádio Renascença",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_RENASCENCAAAC.aac"
+  },
+  {
+    "name": "TSF Rádio Notícias 89.5 FM",
+    "url": "https://directo.tsf.pt/tsfdirecto.mp3"
+  },
+  {
+    "name": "Mega Hits 92.4 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MEGA_HITSAAC.aac"
+  },
+  {
+    "name": "Antena 3",
+    "url": "https://radiocast.rtp.pt/antena380a.mp3"
+  },
+  {
+    "name": "CM Rádio",
+    "url": "https://emdireto.cmradio.pt/mp3"
+  },
+  {
+    "name": "Antena 2",
+    "url": "https://radiocast.rtp.pt/antena280a.mp3"
+  }
+]

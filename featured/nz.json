@@ -1,0 +1,18 @@
+[
+  {
+    "name": "RNZ National",
+    "url": "http://radionz-ice.streamguys.com/national.mp3"
+  },
+  {
+    "name": "RNZ Concert",
+    "url": "http://radionz-ice.streamguys.com/concert.mp3"
+  },
+  {
+    "name": "The Breeze FM 93.4",
+    "url": "https://mediaworks.streamguys1.com/breeze-akl-high_icy"
+  },
+  {
+    "name": "Niu FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NIUFM.mp3"
+  }
+]

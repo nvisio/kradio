@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Kiss FM",
+    "url": "https://live.kissfm.ro/kissfm.aacp"
+  },
+  {
+    "name": "Radio ZU",
+    "url": "https://mscp4.gazduireradio.ro:8160/radiozu.mp3"
+  },
+  {
+    "name": "ProFM",
+    "url": "https://edge126.rcs-rds.ro/profm/profm.mp3"
+  },
+  {
+    "name": "Europa FM",
+    "url": "https://astreaming.edi.ro:8443/EuropaFM_aac"
+  },
+  {
+    "name": "Magic FM",
+    "url": "https://live.magicfm.ro/magicfm.aacp"
+  },
+  {
+    "name": "Digi FM 97.9",
+    "url": "https://edge76.rcs-rds.ro/digifm/digifm.mp3"
+  },
+  {
+    "name": "Radio România Actualități",
+    "url": "https://stream4.srr.ro:8443/romania-actualitati"
+  },
+  {
+    "name": "Virgin Radio FM 100.2",
+    "url": "https://astreaming.edi.ro:8443/VirginRadio_aac"
+  }
+]

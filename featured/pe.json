@@ -1,0 +1,34 @@
+[
+  {
+    "name": "RPP Noticias",
+    "url": "https://mdstrm.com/audio/5fab3416b5f9ef165cfab6e9/icecast.audio?property=garden"
+  },
+  {
+    "name": "Onda Cero FM 98.1",
+    "url": "https://mdstrm.com/audio/6598b65ab398c90871aff8cc/icecast.audio"
+  },
+  {
+    "name": "Radio Exitosa 95.5 FM",
+    "url": "https://neptuno-2-audio.mediaserver.digital/79525baf-b0f5-4013-a8bd-3c5c293c6561"
+  },
+  {
+    "name": "Radio Planeta FM 107.7",
+    "url": "https://us-b4-p-e-zs14-audio.cdn.mdstrm.com/live-audio-aw/6839e274f40e6b9832e37633"
+  },
+  {
+    "name": "Studio92",
+    "url": "https://mdstrm.com/audio/5fada553978fe1080e3ac5ea/icecast.audio?property=garden"
+  },
+  {
+    "name": "Radio Moda",
+    "url": "https://us-b4-p-e-pb13-audio.cdn.mdstrm.com/live-audio-aw/6839e1c82cc4c480fcd318dd"
+  },
+  {
+    "name": "Ritmo Romántica 93.1 FM",
+    "url": "https://us-b4-p-e-zs14-audio.cdn.mdstrm.com/live-audio-aw/6839e2376607bdf6b2fcde27"
+  },
+  {
+    "name": "Radio Karibeña 98.7 FM",
+    "url": "https://karibena.egostreaming.pe/radio/6898b6e52d9e088a6de159/"
+  }
+]

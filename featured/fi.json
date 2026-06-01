@@ -1,0 +1,18 @@
+[
+  {
+    "name": "YleX",
+    "url": "https://icecast.live.yle.fi/radio/YleX/icecast.audio"
+  },
+  {
+    "name": "YLE Radio Suomi Helsinki",
+    "url": "https://icecast.live.yle.fi/radio/YleRS/icecast.audio"
+  },
+  {
+    "name": "YLE Radio 1",
+    "url": "https://icecast.live.yle.fi/radio/YleRadio1/icecast.audio"
+  },
+  {
+    "name": "YLE Klassinen",
+    "url": "https://icecast.live.yle.fi/radio/YleKlassinen/icecast.audio"
+  }
+]

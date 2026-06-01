@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Emisoras Unidas FM",
+    "url": "https://stream.zeno.fm/x73b8q55puquv"
+  },
+  {
+    "name": "Los 40 GT",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40_GUATEMALAAAC.aac"
+  },
+  {
+    "name": "La Red 106.1",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LA_REDAAC.aac?dist=garden"
+  },
+  {
+    "name": "Atmósfera FM 96.5",
+    "url": "https://stream.zeno.fm/pdkbxgv5f3quv"
+  },
+  {
+    "name": "MEGA 107.7",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LA_MEGA.mp3"
+  },
+  {
+    "name": "Fabulosa 88.9 FM",
+    "url": "https://s4.voscast.com:8909/flive"
+  },
+  {
+    "name": "Globo Centro FM 98.9",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/GLOBO_989AAC.aac"
+  },
+  {
+    "name": "Sónica FM 106.9",
+    "url": "https://s6.voscast.com:9039/stream"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "FM DelSol 99.5",
+    "url": "https://delsol-4.nty.uy/stream/1/"
+  },
+  {
+    "name": "Espectador 810 AM",
+    "url": "https://espectador-1.nty.uy"
+  },
+  {
+    "name": "Oceano FM 93.9",
+    "url": "https://oceano-2.nty.uy/netradio/listen.mp3"
+  },
+  {
+    "name": "Azul FM 101.9",
+    "url": "https://azul-1.nty.uy/"
+  },
+  {
+    "name": "Carve AM 850",
+    "url": "https://streamingcasazorrilla.innovanexo.com:8000/radiocarve850.mp3"
+  },
+  {
+    "name": "Radio Monte Carlo AM 930",
+    "url": "https://streamingcasazorrilla.innovanexo.com:8000/montecarlo.mp3"
+  },
+  {
+    "name": "Radio Disney FM 103.7",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_URY_MV.mp3"
+  },
+  {
+    "name": "FM Hit 90.3",
+    "url": "https://hit-1.nty.uy/stream"
+  }
+]

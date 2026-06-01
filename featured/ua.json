@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Hit FM",
+    "url": "https://online.hitfm.ua/HitFM"
+  },
+  {
+    "name": "Radio ROKS",
+    "url": "https://online.radioroks.ua/RadioROKS"
+  },
+  {
+    "name": "Kiss FM",
+    "url": "https://online.kissfm.ua/KissFM"
+  },
+  {
+    "name": "Lux FM",
+    "url": "https://icecast.luxnet.ua/lux"
+  },
+  {
+    "name": "Nashe Radio",
+    "url": "https://online.nasheradio.ua/NasheRadio"
+  },
+  {
+    "name": "Radio Maximum",
+    "url": "https://icecast.luxnet.ua/maximum"
+  },
+  {
+    "name": "Radio Relax FM",
+    "url": "https://online.radiorelax.ua/RadioRelax"
+  },
+  {
+    "name": "NRJ",
+    "url": "https://cast.mediaonline.net.ua/nrj320"
+  }
+]

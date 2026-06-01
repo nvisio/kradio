@@ -1,0 +1,34 @@
+[
+  {
+    "name": "SR P3",
+    "url": "https://live1.sr.se/p3-aac-320"
+  },
+  {
+    "name": "Rix FM",
+    "url": "https://fm01-ice.stream.khz.se/fm01_mp3"
+  },
+  {
+    "name": "SR P1",
+    "url": "https://live1.sr.se/p1-aac-320"
+  },
+  {
+    "name": "Power Hit Radio",
+    "url": "https://fm04-ice.stream.khz.se/fm04_mp3?listenerid=7104709ca5f8cbd117d1bfb1ae549a42&awparams=companionAds%3Atrue&platform=web&aw_0_1st.playerid=mtgradio-web&aw_0_1st.skey=1572636863"
+  },
+  {
+    "name": "Bandit Rock FM 101.9",
+    "url": "https://fm02-ice.stream.khz.se/fm02_mp3"
+  },
+  {
+    "name": "lugna favoriter 104.7FM",
+    "url": "https://fm03-ice.stream.khz.se/fm03_mp3"
+  },
+  {
+    "name": "Star FM",
+    "url": "https://fm05-ice.stream.khz.se/fm05_mp3"
+  },
+  {
+    "name": "SR P2 Alltid Musik",
+    "url": "https://live1.sr.se/p2-aac-320"
+  }
+]

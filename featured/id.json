@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Prambors FM 102.2",
+    "url": "https://s1.cloudmu.id/listen/prambors/stream"
+  },
+  {
+    "name": "Gen FM 98.7",
+    "url": "https://ic.mari.co.id:8443/genfm"
+  },
+  {
+    "name": "Elshinta FM 90",
+    "url": "https://stream-ssl.arenastreaming.com:8000/jakarta"
+  },
+  {
+    "name": "MNC Trijaya 104.6 FM",
+    "url": "https://proxy.rctiplus.com/?name=http://8.215.206.157:8002/"
+  },
+  {
+    "name": "Delta FM 99.1",
+    "url": "https://s1.cloudmu.id/listen/delta_fm/stream"
+  },
+  {
+    "name": "Smart FM 95.9",
+    "url": "https://cast2.my-control-panel.com/proxy/radioso3/stream"
+  },
+  {
+    "name": "Sonora FM 92.0",
+    "url": "https://sonora-radio.arenastreaming.com/8130/stream"
+  },
+  {
+    "name": "Mustang FM 88.0",
+    "url": "https://ic.mari.co.id:8443/mustangfm"
+  }
+]

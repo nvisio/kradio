@@ -1,0 +1,34 @@
+[
+  {
+    "name": "SRF 3",
+    "url": "https://stream.srg-ssr.ch/m/drs3/mp3_128"
+  },
+  {
+    "name": "SRF 1",
+    "url": "https://stream.srg-ssr.ch/m/regi_bs_bl/mp3_128?.mp3"
+  },
+  {
+    "name": "RTS La Première",
+    "url": "https://stream.srg-ssr.ch/m/la-1ere/mp3_128"
+  },
+  {
+    "name": "Radio Swiss Pop",
+    "url": "https://stream.srg-ssr.ch/m/rsp/mp3_128"
+  },
+  {
+    "name": "Energy Zürich",
+    "url": "https://energyzuerich.ice.infomaniak.ch/energyzuerich-high.mp3"
+  },
+  {
+    "name": "Couleur3",
+    "url": "https://stream.srg-ssr.ch/m/couleur3/mp3_128"
+  },
+  {
+    "name": "RSI Radio Rete Uno",
+    "url": "https://stream.srg-ssr.ch/m/reteuno/mp3_128"
+  },
+  {
+    "name": "SRF 2",
+    "url": "https://stream.srg-ssr.ch/m/drs2/mp3_128?.mp3"
+  }
+]

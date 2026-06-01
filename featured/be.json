@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Qmusic",
+    "url": "https://icecast-qmusicbe-cdp.triple-it.nl/qmusic.aac"
+  },
+  {
+    "name": "VRT Radio 1",
+    "url": "https://icecast.vrtcdn.be/radio1-high.mp3"
+  },
+  {
+    "name": "VRT Studio Brussel",
+    "url": "https://icecast.vrtcdn.be/stubru-high.mp3"
+  },
+  {
+    "name": "Bel RTL",
+    "url": "https://belrtl.ice.infomaniak.ch/belrtl-mp3-192.mp3"
+  },
+  {
+    "name": "VRT MNM",
+    "url": "https://icecast.vrtcdn.be/mnm-high.mp3"
+  },
+  {
+    "name": "RTBF Classic 21",
+    "url": "https://radio.rtbf.be/c21/mp3-160/rg"
+  },
+  {
+    "name": "JOE",
+    "url": "https://icecast-qmusicbe-cdp.triple-it.nl/joe.aac"
+  },
+  {
+    "name": "RTBF La 1ère",
+    "url": "https://redbeemedia.streamabc.net/redbm-lapremiere-aac-128-7561067"
+  }
+]
