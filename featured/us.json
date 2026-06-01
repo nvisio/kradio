@@ -1,0 +1,34 @@
+[
+  {
+    "name": "CNN",
+    "url": "https://tunein.cdnstream1.com/2868_96.mp3"
+  },
+  {
+    "name": "WTOP-FM 103.5",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WTOPFM.mp3"
+  },
+  {
+    "name": "WGN-AM 720",
+    "url": "https://live.amperwave.net/direct/wgnam-wgnamaac-imc2"
+  },
+  {
+    "name": "WBEZ FM 91.5",
+    "url": "https://stream.wbez.org/wbez64-web.aac"
+  },
+  {
+    "name": "WBUR FM 90.9",
+    "url": "https://icecast-stream.wbur.org/wbur"
+  },
+  {
+    "name": "Radio Paradise — Main",
+    "url": "https://stream.radioparadise.com/mp3-192"
+  },
+  {
+    "name": "News 95.5 AM 750 WSB - WSB",
+    "url": "https://cmg.streamguys1.com/atl750/atl750-sgplayer-aac"
+  },
+  {
+    "name": "WLS 890 AM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WLSAMAAC.aac"
+  }
+]

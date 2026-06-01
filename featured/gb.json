@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Heart 106.2 FM",
+    "url": "https://ice-sov.musicradio.com/HeartLondonMP3"
+  },
+  {
+    "name": "Classic FM",
+    "url": "https://media-ice.musicradio.com/ClassicFMMP3"
+  },
+  {
+    "name": "LBC UK",
+    "url": "https://media-ice.musicradio.com/LBCUKMP3Low"
+  },
+  {
+    "name": "Virgin Radio",
+    "url": "https://radio.virginradio.co.uk/stream"
+  },
+  {
+    "name": "Radio X UK 104.9",
+    "url": "https://media-ssl.musicradio.com/RadioXUK"
+  },
+  {
+    "name": "Times Radio",
+    "url": "https://timesradio.wireless.radio/stream"
+  },
+  {
+    "name": "Capital Xtra",
+    "url": "https://media-ice.musicradio.com/CapitalXTRANationalMP3?.mp3"
+  },
+  {
+    "name": "BBC World Service",
+    "url": "https://stream.live.vc.bbcmedia.co.uk/bbc_world_service"
+  }
+]
