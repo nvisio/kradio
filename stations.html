@@ -209,13 +209,15 @@
   var INDEX = null;
 
   // ── deep-link builders ─────────────────────────────────────────────
-  function schemeLink(name, url) {
+  function schemeLink(name, url, country) {
     return "kradio://play?name=" + encodeURIComponent(name) +
-           "&url="  + encodeURIComponent(url);
+           "&url="  + encodeURIComponent(url) +
+           (country ? "&country=" + encodeURIComponent(country) : "");
   }
-  function universalLink(name, url) {
+  function universalLink(name, url, country) {
     return "https://kradio.nvis.io/play?name=" + encodeURIComponent(name) +
-           "&url=" + encodeURIComponent(url);
+           "&url=" + encodeURIComponent(url) +
+           (country ? "&country=" + encodeURIComponent(country) : "");
   }
 
   // ── URL ↔ filter state ─────────────────────────────────────────────
@@ -433,8 +435,8 @@
     card.querySelector(".name").textContent = s.name;
     card.querySelector(".meta").textContent = metaParts.join(" · ");
     card.querySelector(".url").textContent = s.url;
-    card.querySelector(".scheme").href    = schemeLink(s.name, s.url);
-    card.querySelector(".universal").href = universalLink(s.name, s.url);
+    card.querySelector(".scheme").href    = schemeLink(s.name, s.url, s.country);
+    card.querySelector(".universal").href = universalLink(s.name, s.url, s.country);
     var schemeBtn = card.querySelector(".scheme");
     var univBtn   = card.querySelector(".universal");
     schemeBtn.addEventListener("click", function () {
