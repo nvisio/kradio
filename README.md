@@ -28,16 +28,18 @@ Most radio apps are cluttered with ads, require accounts, or bury Korean station
 
 ## Stations
 
-| Network | Stations |
-|---------|----------|
-| **KBS** | 1라디오, HappyFM, 3라디오, ClassicFM, CoolFM, 한민족방송 |
-| **MBC** | 표준FM, FM4U, mini 올댓뮤직 |
-| **SBS** | 파워FM, 러브FM, 고릴라디오M |
-| **CBS** | 표준FM, 음악FM |
-| **TBS** | FM, eFM |
-| **EBS / YTN** | EBS FM, YTN 라디오 |
-| **BBC** | Radio 1, Radio 2, Radio 3, Radio 4, World Service |
-| **Custom** | Add any HLS, MP3, or AAC stream URL |
+A browsable catalogue of **37,000+ live stations across 226 countries** —
+explore by country, genre, or language and open any of them in the app with a
+tap.
+
+| | |
+|---|---|
+| **Starter lineups** | Recognizable national broadcasters from Korea (KBS, MBC, SBS, CBS, TBS, EBS, YTN), Japan, and the UK (BBC) to get you going |
+| **Popular by country** | A curated "popular" pool for 56 storefronts, surfaced in-app and rotatable |
+| **The full catalogue** | 37,000+ stations worldwide — [browse and filter](https://kradio.nvis.io/stations.html) by country / genre / language |
+| **Your own** | Add any HLS, MP3, or AAC stream URL |
+
+> Browse the whole world at **[kradio.nvis.io/stations.html](https://kradio.nvis.io/stations.html)** — tap a station to open it in Oh My Radio.
 
 ## Features
 
