@@ -7,11 +7,11 @@ alt_label: 한국어
 alt_href: terms-of-use-ko.html
 ---
 
-By using K-Radio Tuner ("the App"), you agree to these Terms of Use.
+By using Oh My Radio ("the App"), you agree to these Terms of Use.
 
 ## Description of Service
 
-K-Radio Tuner provides access to publicly available internet radio streams from Korean and international broadcasters. The App does not host, produce, or control any radio content.
+Oh My Radio provides access to publicly available internet radio streams from Korean and international broadcasters. The App does not host, produce, or control any radio content.
 
 ## Subscriptions
 

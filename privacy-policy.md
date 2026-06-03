@@ -7,7 +7,7 @@ alt_label: 한국어
 alt_href: privacy-policy-ko.html
 ---
 
-K-Radio Tuner ("the App") is developed by HongKee Moon. This Privacy Policy describes how the App handles your information.
+Oh My Radio ("the App") is developed by HongKee Moon. This Privacy Policy describes how the App handles your information.
 
 ## Information We Do Not Collect
 
@@ -44,7 +44,7 @@ The App does not use any third-party analytics, advertising, or tracking service
 
 ## Website Analytics (kradio.nvis.io)
 
-The K-Radio Tuner website (kradio.nvis.io) records anonymous aggregate counts
+The Oh My Radio website (kradio.nvis.io) records anonymous aggregate counts
 of which station links are clicked on the catalogue page and which landing
 pages receive traffic. The data we collect is limited to:
 
