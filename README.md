@@ -34,7 +34,6 @@ tap.
 
 | | |
 |---|---|
-| **Starter lineups** | Recognizable national broadcasters from Korea (KBS, MBC, SBS, CBS, TBS, EBS, YTN), Japan, and the UK (BBC) to get you going |
 | **Popular by country** | A curated "popular" pool for 56 storefronts, surfaced in-app and rotatable |
 | **The full catalogue** | 37,000+ stations worldwide — [browse and filter](https://kradio.nvis.io/stations.html) by country / genre / language |
 | **Your own** | Add any HLS, MP3, or AAC stream URL |
