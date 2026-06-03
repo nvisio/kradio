@@ -7,7 +7,7 @@ alt_label: English
 alt_href: privacy-policy.html
 ---
 
-K-Radio Tuner("본 앱")는 HongKee Moon이 개발하였습니다. 본 개인정보 처리방침은 본 앱이 사용자의 정보를 어떻게 처리하는지 설명합니다.
+Oh My Radio("본 앱")는 HongKee Moon이 개발하였습니다. 본 개인정보 처리방침은 본 앱이 사용자의 정보를 어떻게 처리하는지 설명합니다.
 
 ## 수집하지 않는 정보
 
@@ -44,7 +44,7 @@ K-Radio Tuner("본 앱")는 HongKee Moon이 개발하였습니다. 본 개인정
 
 ## 웹사이트 분석 (kradio.nvis.io)
 
-K-Radio Tuner 웹사이트(kradio.nvis.io)는 카탈로그 페이지에서 어떤 방송국 링크가 클릭되었는지, 그리고 어떤 랜딩 페이지가 트래픽을 받는지 익명·집계 카운트만 기록합니다. 수집하는 데이터는 다음으로 제한됩니다:
+Oh My Radio 웹사이트(kradio.nvis.io)는 카탈로그 페이지에서 어떤 방송국 링크가 클릭되었는지, 그리고 어떤 랜딩 페이지가 트래픽을 받는지 익명·집계 카운트만 기록합니다. 수집하는 데이터는 다음으로 제한됩니다:
 
 - 방송국 이름 (카탈로그에 표시된 그대로)
 - 페이지 이름 (`stations`, `stations:builder`, `play` 중 하나)

@@ -1,8 +1,8 @@
-# K-Radio Tuner
+# Oh My Radio
 
-**Korean radio with no in-app ads.**
+**Live radio with no in-app ads.** *(formerly K-Radio Tuner)*
 
-Stream 23 live radio stations from Korea and around the world — without K-Radio adding a single ad of its own. KBS, MBC, SBS, CBS, TBS, EBS, YTN, and BBC, on iPhone, iPad, Apple Watch, CarPlay, and HomePod.
+Stream live radio from Korea, Japan, the UK, and around the world — without Oh My Radio adding a single ad of its own. National broadcasters like KBS, MBC, SBS, BBC, and a browsable global catalogue, on iPhone, iPad, Apple Watch, CarPlay, and HomePod.
 
 ---
 
@@ -18,9 +18,9 @@ Stream 23 live radio stations from Korea and around the world — without K-Radi
 
 ---
 
-## Why K-Radio Tuner?
+## Why Oh My Radio?
 
-Most radio apps are cluttered with ads, require accounts, or bury Korean stations behind endless menus. K-Radio Tuner is different — it launches straight to your stations, plays instantly, and works across every Apple device you own.
+Most radio apps are cluttered with ads, require accounts, or bury Korean stations behind endless menus. Oh My Radio is different — it launches straight to your stations, plays instantly, and works across every Apple device you own.
 
 - **No account required.** Open the app, tap a station, listen.
 - **No in-app ads.** No pre-rolls, banners, or pop-ups added by us. Broadcasts play exactly as they air.
@@ -42,7 +42,7 @@ Most radio apps are cluttered with ads, require accounts, or bury Korean station
 ## Features
 
 ### Listen Anywhere
-Background audio playback with full lock screen and Control Center integration. AirPlay to HomePod, speakers, or any AirPlay device. Start listening and put your phone away — K-Radio keeps playing.
+Background audio playback with full lock screen and Control Center integration. AirPlay to HomePod, speakers, or any AirPlay device. Start listening and put your phone away — Oh My Radio keeps playing.
 
 ### CarPlay
 Browse and control your stations from the car dashboard using standard CarPlay templates. Tap to play, tap again to pause. Loading and paused states are shown right in the list.
@@ -76,7 +76,7 @@ Ask Siri to play your favorite station on HomePod, AirPods, or any speaker — h
 
 ### Wake Up to Radio (Shortcuts Recipe)
 
-iOS's built-in Clock alarm only accepts Apple Music tracks as the sound, so K-Radio Tuner can't replace the alarm itself. Instead, use **Shortcuts** to start a station at a scheduled time and route the audio to a HomePod or any AirPlay 2 speaker.
+iOS's built-in Clock alarm only accepts Apple Music tracks as the sound, so Oh My Radio can't replace the alarm itself. Instead, use **Shortcuts** to start a station at a scheduled time and route the audio to a HomePod or any AirPlay 2 speaker.
 
 **iPhone → HomePod, daily at 7:00 am**
 
@@ -87,9 +87,9 @@ iOS's built-in Clock alarm only accepts Apple Music tracks as the sound, so K-Ra
      *(grab a ready-made link from [the station catalogue](https://kradio.nvis.io/stations.html))*
    - *(optional)* **Wait** 1 Hour → **Pause** *(Now Playing)*.
 
-At the scheduled time the iPhone wakes K-Radio Tuner and the station streams to your HomePod via AirPlay 2. The same recipe works with an "Alarm Stopped" trigger if you want the radio to start the moment you dismiss your usual Clock alarm.
+At the scheduled time the iPhone wakes Oh My Radio and the station streams to your HomePod via AirPlay 2. The same recipe works with an "Alarm Stopped" trigger if you want the radio to start the moment you dismiss your usual Clock alarm.
 
-> **Direct HomePod scheduling** (no iPhone in the loop) requires Apple's *SiriKit Media Intents for HomePod* program approval — our submission is pending. Until it's granted, the iPhone-mediated recipe above is the most reliable way to use K-Radio Tuner as a radio alarm.
+> **Direct HomePod scheduling** (no iPhone in the loop) requires Apple's *SiriKit Media Intents for HomePod* program approval — our submission is pending. Until it's granted, the iPhone-mediated recipe above is the most reliable way to use Oh My Radio as a radio alarm.
 
 ### Make It Yours
 Swipe to edit or remove any station. Add your own stations by URL. Reset to defaults anytime — your custom stations are kept. Settings sync across iPhone, iPad, and Apple Watch via iCloud.
@@ -106,7 +106,7 @@ See what's on air with program titles and station artwork. One-tap play/pause fr
 </p>
 
 ### Built for Reliability
-Streams drop sometimes — K-Radio handles it. Auto-recovery reconnects when a stream stalls. For KBS, MBC, and SBS, the app automatically falls back to direct broadcaster APIs if the proxy is unavailable. Your last station is remembered across launches so you pick up right where you left off.
+Streams drop sometimes — Oh My Radio handles it. Auto-recovery reconnects when a stream stalls. For KBS, MBC, and SBS, the app automatically falls back to direct broadcaster APIs if the proxy is unavailable. Your last station is remembered across launches so you pick up right where you left off.
 
 ## Supported Languages
 
@@ -122,7 +122,7 @@ Streams drop sometimes — K-Radio handles it. Auto-recovery reconnects when a s
 
 ## Privacy
 
-K-Radio Tuner does not collect any personal data. No accounts, no analytics, no tracking. Your custom stations and preferences sync across your own devices via iCloud Key-Value storage — nothing is sent to our servers.
+Oh My Radio does not collect any personal data. No accounts, no analytics, no tracking. Your custom stations and preferences sync across your own devices via iCloud Key-Value storage — nothing is sent to our servers.
 
 [Privacy Policy](privacy-policy.html) | [Terms of Use](terms-of-use.html)
 [개인정보 처리방침](privacy-policy-ko.html) | [이용약관](terms-of-use-ko.html)

@@ -5,7 +5,7 @@ stations for that country, as `[{ "name", "url" }, …]` (most popular first).
 
 Consumed by the app's **"Popular in <country>"** shelf: when the user's App
 Store storefront isn't already covered by a built-in group (i.e. not Korea / UK
-/ Japan / US), K-Radio Tuner fetches `https://kradio.nvis.io/featured/<cc>.json`
+/ Japan / US), Oh My Radio fetches `https://kradio.nvis.io/featured/<cc>.json`
 and shows it above the country groups. Tapping a row saves that station into the
 country's group.
 
