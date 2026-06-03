@@ -26,10 +26,9 @@ This data never leaves your device except via Apple's Watch Connectivity framewo
 
 ## Network Connections
 
-The App connects to the following services to stream radio:
+The App connects to the following to stream radio:
 
-- Korean radio streams via radio.bsod.kr (KBS, MBC, SBS, CBS, TBS, EBS, YTN)
-- BBC radio streams via Akamai CDN (as-hls-ww-live.akamaized.net)
+- Open, publicly available radio streams from broadcasters and stations around the world
 - Any custom stream URLs you add manually
 
 These connections are for audio playback only. No personal data is transmitted.
