@@ -1,27 +1,27 @@
 [
   {
     "name": "KBS HappyFM",
-    "url": "https://radio.bsod.kr/stream?stn=kbs&ch=2radio"
+    "url": "https://radio.bsod.kr/stream/?stn=kbs&ch=2radio"
   },
   {
     "name": "KBS ClassicFM",
-    "url": "https://radio.bsod.kr/stream?stn=kbs&ch=1fm"
+    "url": "https://radio.bsod.kr/stream/?stn=kbs&ch=1fm"
   },
   {
     "name": "KBS CoolFM",
-    "url": "https://radio.bsod.kr/stream?stn=kbs&ch=2fm"
+    "url": "https://radio.bsod.kr/stream/?stn=kbs&ch=2fm"
   },
   {
     "name": "MBC 표준FM",
-    "url": "https://radio.bsod.kr/stream?stn=mbc&ch=sfm"
+    "url": "https://radio.bsod.kr/stream/?stn=mbc&ch=sfm"
   },
   {
     "name": "MBC FM4U",
-    "url": "https://radio.bsod.kr/stream?stn=mbc&ch=fm4u"
+    "url": "https://radio.bsod.kr/stream/?stn=mbc&ch=fm4u"
   },
   {
     "name": "SBS 파워FM",
-    "url": "https://radio.bsod.kr/stream?stn=sbs&ch=powerfm"
+    "url": "https://radio.bsod.kr/stream/?stn=sbs&ch=powerfm"
   },
   {
     "name": "KBS 1라디오",
