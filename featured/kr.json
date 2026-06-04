@@ -12,7 +12,7 @@
     "url": "https://radio.bsod.kr/stream/?stn=kbs&ch=2fm"
   },
   {
-    "name": "MBC 표준FM",
+    "name": "MBC StandardFM",
     "url": "https://radio.bsod.kr/stream/?stn=mbc&ch=sfm"
   },
   {
@@ -20,39 +20,39 @@
     "url": "https://radio.bsod.kr/stream/?stn=mbc&ch=fm4u"
   },
   {
-    "name": "SBS 파워FM",
+    "name": "SBS PowerFM",
     "url": "https://radio.bsod.kr/stream/?stn=sbs&ch=powerfm"
   },
   {
-    "name": "KBS 1라디오",
+    "name": "KBS 1Radio",
     "url": "https://radio.bsod.kr/stream/?stn=kbs&ch=1radio"
   },
   {
-    "name": "KBS 3라디오",
+    "name": "KBS 3Radio",
     "url": "https://radio.bsod.kr/stream/?stn=kbs&ch=3radio"
   },
   {
-    "name": "KBS 한민족방송",
+    "name": "KBS Hanminjok",
     "url": "https://radio.bsod.kr/stream/?stn=kbs&ch=hanminjok"
   },
   {
-    "name": "MBC mini 올댓뮤직",
+    "name": "MBC mini AllThatMusic",
     "url": "https://radio.bsod.kr/stream/?stn=mbc&ch=chm"
   },
   {
-    "name": "SBS 러브FM",
+    "name": "SBS LoveFM",
     "url": "https://radio.bsod.kr/stream/?stn=sbs&ch=lovefm"
   },
   {
-    "name": "SBS 고릴라디오M",
+    "name": "SBS Gorilla Radio",
     "url": "https://radio.bsod.kr/stream/?stn=sbs&ch=dmb"
   },
   {
-    "name": "CBS 음악FM",
+    "name": "CBS MusicFM",
     "url": "https://m-aac.cbs.co.kr/mweb_cbs939/_definst_/cbs939.stream/playlist.m3u8"
   },
   {
-    "name": "CBS 표준FM",
+    "name": "CBS Standard FM",
     "url": "https://m-aac.cbs.co.kr/mweb_cbs981/_definst_/cbs981.stream/playlist.m3u8"
   },
   {
@@ -60,7 +60,7 @@
     "url": "https://radio.bsod.kr/stream/?stn=cbs&ch=joy4u"
   },
   {
-    "name": "YTN 라디오",
+    "name": "YTN Radio",
     "url": "https://radiolive.ytn.co.kr/radio/_definst_/20211118_fmlive/playlist.m3u8"
   },
   {
@@ -84,7 +84,7 @@
     "url": "https://radio.bsod.kr/stream/?stn=febc"
   },
   {
-    "name": "BBS 서울불교방송",
+    "name": "BBS Seoul Buddhism Radio",
     "url": "https://bbslive.clouducs.com/bbsradio-mlive/radio.stream/playlist.m3u8"
   },
   {
@@ -92,7 +92,7 @@
     "url": "https://radio.bsod.kr/stream/?stn=cpbc"
   },
   {
-    "name": "국악방송",
+    "name": "Gukak Radio",
     "url": "https://mgugaklive.nowcdn.co.kr/gugakradio/gugakradio.stream/playlist.m3u8"
   },
   {
