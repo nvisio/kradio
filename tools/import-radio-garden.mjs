@@ -1,48 +1,40 @@
 #!/usr/bin/env node
 // tools/import-radio-garden.mjs
 //
-// Append stations from radio.garden into ../stations.json.
+// Append stations from radio.garden into ../stations.json (by id / url / place).
+// Shared radio.garden helpers live in tools/lib/radio-garden.mjs.
 //
 // Usage:
 //   node tools/import-radio-garden.mjs <url-or-id> [<url-or-id> …] [opts]
 //
 // <url-or-id> can be:
-//   https://radio.garden/listen/<channel-id>/<slug>   one channel
-//   https://radio.garden/visit/<place-id>/<slug>      all channels at a place
-//   <channel-id>                                      raw 8-char id (e.g. zUYHDg63)
+//   https://radio.garden/listen/<slug>/<channel-id>   one channel
+//   https://radio.garden/visit/<slug>/<place-id>      all channels at a place
+//   <channel-id>                                      raw id (e.g. zUYHDg63)
 //
 // Options:
 //   --genre  a,b,c   genre tags to apply to all imports (recommended)
 //   --lang   a,b     ISO 639-1 language codes
 //   --country xx     override ISO-3166 alpha-2 (otherwise read from RG)
-//   --proxy          keep the radio.garden CDN proxy URL instead of
-//                    following the 302 to the broadcaster's stream
-//                    (use only if the direct URL turns out unreachable)
+//   --proxy          keep the radio.garden CDN proxy URL instead of resolving 302
 //   --dry-run        print what would be added, don't touch stations.json
 //   -h, --help       show this message
-//
-// Notes:
-//   * The default ("resolve") mode follows radio.garden's 302 redirect on
-//     /api/ara/content/listen/<id>/channel.mp3 to grab the broadcaster's
-//     real stream URL — that's what the K-Radio Tuner deep link needs,
-//     because radio.garden's CDN often 403s non-browser User-Agents.
-//   * radio.garden has no public genre taxonomy, so genres are taken
-//     verbatim from --genre. Re-run the script per genre bucket.
 
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import {
+  RG, countryCodeFrom, resolveListenURL, channelInfo, expandPlaceItems, sleep,
+} from "./lib/radio-garden.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const STATIONS_PATH = join(HERE, "..", "stations.json");
-const RG = "https://radio.garden";
-const UA = "kradio-importer/1.0 (+https://kradio.nvis.io)";
 
 // ── arg parsing ────────────────────────────────────────────────────
 function parseArgs(argv) {
   const out = {
     ids: [], genre: [], lang: [], country: null,
-    proxy: false, dryRun: false, help: false
+    proxy: false, dryRun: false, help: false,
   };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
@@ -59,19 +51,18 @@ function parseArgs(argv) {
   }
   return out;
 }
-const csv = (s) => (s || "").split(",").map(x => x.trim().toLowerCase()).filter(Boolean);
+const csv = (s) => (s || "").split(",").map((x) => x.trim().toLowerCase()).filter(Boolean);
 
 function printHelp() {
-  // strip the top JSDoc-ish banner from this file
-  const banner = `
+  console.log(`
 Append radio.garden stations into ../stations.json.
 
   node tools/import-radio-garden.mjs <url-or-id> […] [options]
 
 URL / id forms:
-  https://radio.garden/listen/<channel-id>/<slug>
-  https://radio.garden/visit/<place-id>/<slug>     (imports every channel at the place)
-  <channel-id>                                      (raw 8-char id)
+  https://radio.garden/listen/<slug>/<channel-id>
+  https://radio.garden/visit/<slug>/<place-id>     (imports every channel at the place)
+  <channel-id>                                      (raw id)
 
 Options:
   --genre  <a,b,c>   genre tags (recommended; radio.garden has none)
@@ -80,14 +71,7 @@ Options:
   --proxy            keep radio.garden CDN URL instead of resolving 302
   --dry-run          print result, don't write stations.json
   -h, --help         this message
-
-Examples:
-  node tools/import-radio-garden.mjs --genre jazz \\
-       https://radio.garden/listen/Rt8K9pPS/jazz-radio
-  node tools/import-radio-garden.mjs --genre kpop --country kr \\
-       https://radio.garden/visit/seoul/abcd1234
-`;
-  console.log(banner);
+`);
 }
 
 // ── helpers ─────────────────────────────────────────────────────────
@@ -97,61 +81,10 @@ function parseRef(s) {
   }
   try {
     const u = new URL(s);
-    // radio.garden URLs are /(listen|visit)/<slug>/<id>; the id is the trailing
-    // 6+ alphanum component. Fall back to /(listen|visit)/<id> for legacy URLs.
     let m = u.pathname.match(/\/(listen|visit)\/[^/]+\/([A-Za-z0-9_-]{6,})\/?$/);
     if (!m) m = u.pathname.match(/\/(listen|visit)\/([A-Za-z0-9_-]{6,})\/?$/);
     if (m) return { kind: m[1] === "listen" ? "channel" : "place", id: m[2] };
   } catch { /* fallthrough */ }
-  return null;
-}
-
-async function getJSON(url) {
-  const r = await fetch(url, { headers: { "User-Agent": UA, "Accept": "application/json" } });
-  if (!r.ok) throw new Error(`GET ${url} → HTTP ${r.status}`);
-  return r.json();
-}
-
-async function resolveListenURL(channelId) {
-  const u = `${RG}/api/ara/content/listen/${channelId}/channel.mp3?type=channel`;
-  const r = await fetch(u, {
-    redirect: "manual",
-    headers: { "User-Agent": UA }
-  });
-  if ([301, 302, 303, 307, 308].includes(r.status)) {
-    const loc = r.headers.get("location");
-    if (loc) return loc;
-  }
-  // Some channels respond 200 directly (proxying); fall back to the proxy URL.
-  if (r.ok) return u;
-  throw new Error(`listen redirect missing for ${channelId} (HTTP ${r.status})`);
-}
-
-// Common country-name → ISO 3166-1 alpha-2 (lower). Extend as needed.
-const COUNTRY_NAME_TO_CODE = {
-  "south korea": "kr", "korea": "kr", "korea, republic of": "kr",
-  "north korea": "kp",
-  "japan": "jp",
-  "united states": "us", "united states of america": "us", "usa": "us",
-  "united kingdom": "gb", "uk": "gb", "england": "gb",
-  "france": "fr", "germany": "de", "spain": "es", "italy": "it",
-  "netherlands": "nl", "sweden": "se", "norway": "no", "finland": "fi",
-  "denmark": "dk", "ireland": "ie", "portugal": "pt", "belgium": "be",
-  "switzerland": "ch", "austria": "at", "poland": "pl", "czech republic": "cz",
-  "canada": "ca", "mexico": "mx", "brazil": "br", "argentina": "ar",
-  "chile": "cl", "colombia": "co", "australia": "au", "new zealand": "nz",
-  "china": "cn", "taiwan": "tw", "hong kong": "hk", "singapore": "sg",
-  "thailand": "th", "vietnam": "vn", "india": "in", "indonesia": "id",
-  "philippines": "ph", "malaysia": "my", "turkey": "tr", "greece": "gr",
-  "russia": "ru", "ukraine": "ua", "israel": "il", "south africa": "za"
-};
-
-function countryCodeFrom(title) {
-  if (!title) return null;
-  const k = title.toLowerCase().trim();
-  if (COUNTRY_NAME_TO_CODE[k]) return COUNTRY_NAME_TO_CODE[k];
-  // already a 2-letter code?
-  if (/^[a-z]{2}$/.test(k)) return k;
   return null;
 }
 
@@ -164,43 +97,18 @@ function clean(obj) {
   );
 }
 
-// ── place / channel resolution ─────────────────────────────────────
-async function expandPlace(placeId) {
-  // /api/ara/content/page/<placeId>/channels returns sections of items;
-  // each item.page.url looks like "/listen/<slug>/<channelId>" — id is last.
-  const data = await getJSON(`${RG}/api/ara/content/page/${placeId}/channels`);
-  const ids = [];
-  const sections = data?.data?.content || data?.content || [];
-  for (const sec of sections) {
-    for (const item of (sec.items || [])) {
-      const url = item.page?.url || item.url || item.href || "";
-      const m = url.match(/\/listen\/[^/]+\/([A-Za-z0-9_-]{6,})\/?$/);
-      if (m && !ids.includes(m[1])) ids.push(m[1]);
-    }
-  }
-  return ids;
-}
-
 async function importChannel(id, args) {
-  const info = await getJSON(`${RG}/api/ara/content/channel/${id}`);
-  const d = info?.data || info || {};
-  const name = d.title || d.subtitle || id;
-  const place = d.place || {};
-  // radio.garden's country.id is their internal place id (e.g. "V7SPHPgx"),
-  // NOT a country code — only the title is human-readable ("Australia").
-  const country = d.country?.title || null;
-  const city = place.title || null;
+  const meta = await channelInfo(id);
   const url = args.proxy
     ? `${RG}/api/ara/content/listen/${id}/channel.mp3?type=channel`
     : await resolveListenURL(id);
-
   return {
-    name,
+    name: meta.name,
     url,
-    country: args.country || countryCodeFrom(country) || null,
+    country: args.country || countryCodeFrom(meta.countryTitle) || null,
     genre: args.genre.length ? args.genre.slice() : [],
     lang: args.lang.length ? args.lang.slice() : [],
-    city: city || null
+    city: meta.city || null,
   };
 }
 
@@ -209,8 +117,6 @@ async function loadExisting() {
   try { return JSON.parse(await readFile(STATIONS_PATH, "utf8")); }
   catch { return []; }
 }
-
-const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
@@ -223,7 +129,8 @@ async function main() {
     if (!ref) { console.warn(`skip (cannot parse): ${raw}`); continue; }
     if (ref.kind === "place") {
       try {
-        const ids = await expandPlace(ref.id);
+        const items = await expandPlaceItems(ref.id);
+        const ids = items.map((it) => it.channelId);
         console.log(`place ${ref.id} → ${ids.length} channel(s)`);
         channelIds.push(...ids);
       } catch (e) {
@@ -237,14 +144,14 @@ async function main() {
 
   // 2. dedup channelIds in this run
   const seenIds = new Set();
-  const uniqueChannelIds = channelIds.filter(id => {
+  const uniqueChannelIds = channelIds.filter((id) => {
     if (seenIds.has(id)) return false;
     seenIds.add(id); return true;
   });
 
   // 3. import each channel — dedup by normalized stream URL only.
   const existing = await loadExisting();
-  const existingUrls = new Set(existing.map(s => s.url));
+  const existingUrls = new Set(existing.map((s) => s.url));
   const fresh = [];
   const skipped = [];
   const errors = [];
@@ -292,4 +199,4 @@ async function main() {
   console.log(`\nwrote ${merged.length} stations to ${STATIONS_PATH} (+${fresh.length})`);
 }
 
-main().catch(err => { console.error(err); process.exit(1); });
+main().catch((err) => { console.error(err); process.exit(1); });
