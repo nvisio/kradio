@@ -25,18 +25,23 @@ test("countryCodeFrom: unknown → null", () => {
   assert.equal(countryCodeFrom(""), null);
   assert.equal(countryCodeFrom(null), null);
 });
-test("nameKey: normalizes name + country", () => {
-  assert.equal(nameKey("  KBS  Cool FM ", "kr"), "kbs cool fm|kr");
-  assert.equal(nameKey("KBS Cool FM", "KR"), "kbs cool fm|kr");
+test("nameKey: normalizes name + country + city", () => {
+  assert.equal(nameKey("  KBS  Cool FM ", "kr", "Seoul"), "kbs cool fm|kr|seoul");
+  assert.equal(nameKey("KBS Cool FM", "KR", "seoul"), "kbs cool fm|kr|seoul");
 });
-test("nameKey: collapses internal whitespace + strips punctuation", () => {
-  assert.equal(nameKey("Jazz   FM!!", "gb"), "jazz fm|gb");
+test("nameKey: collapses internal whitespace + strips punctuation (name + city)", () => {
+  assert.equal(nameKey("Jazz   FM!!", "gb", "London!"), "jazz fm|gb|london");
 });
-test("nameKey: empty country still keys", () => {
-  assert.equal(nameKey("Radio X", ""), "radio x|");
+test("nameKey: empty city still keys", () => {
+  assert.equal(nameKey("Radio X", "fr", ""), "radio x|fr|");
+  assert.equal(nameKey("Radio X", "fr", null), "radio x|fr|");
 });
-test("isKnown: membership against a Set", () => {
-  const set = new Set([nameKey("Radio X", "fr")]);
-  assert.equal(isKnown("Radio X", "fr", set), true);
-  assert.equal(isKnown("Radio Y", "fr", set), false);
+test("nameKey: same name+country, different city → different key", () => {
+  assert.notEqual(nameKey("Hot 95", "us", "Orlando"), nameKey("Hot 95", "us", "Miami"));
+});
+test("isKnown: membership against a Set (name+country+city)", () => {
+  const set = new Set([nameKey("Radio X", "fr", "Paris")]);
+  assert.equal(isKnown("Radio X", "fr", "Paris", set), true);
+  assert.equal(isKnown("Radio X", "fr", "Lyon", set), false);
+  assert.equal(isKnown("Radio Y", "fr", "Paris", set), false);
 });

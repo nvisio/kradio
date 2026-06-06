@@ -25,7 +25,7 @@ const normUrl = (u) => (u || "").trim().toLowerCase();
 
 async function main() {
   const stations = JSON.parse(await readFile(resolve("stations.json"), "utf8"));
-  const knownNames = new Set(stations.map((s) => nameKey(s.name, s.country)));
+  const knownNames = new Set(stations.map((s) => nameKey(s.name, s.country, s.city)));
   const knownUrls = new Set(stations.map((s) => normUrl(s.url)));
 
   const places = await listPlaces();
@@ -42,8 +42,8 @@ async function main() {
     await sleep(250);
 
     for (const it of items) {
-      // STAGE 1: cheap name+country dedup (no resolve)
-      if (knownNames.has(nameKey(it.title, cc))) { nameDupes++; continue; }
+      // STAGE 1: cheap name+country+city dedup (no resolve)
+      if (knownNames.has(nameKey(it.title, cc, p.title))) { nameDupes++; continue; }
       if (resolved >= MAX_RESOLVE) { capHit = true; break; }
 
       let url;
@@ -55,7 +55,7 @@ async function main() {
       const k = normUrl(url);
       if (!k || knownUrls.has(k)) continue;
       knownUrls.add(k);
-      knownNames.add(nameKey(it.title, cc));
+      knownNames.add(nameKey(it.title, cc, p.title));
       candidates.push({ name: it.title, url, country: cc || null, genre: [], lang: [], city: p.title || null });
       console.log(`+ ${it.title}  [${cc || "??"} · ${p.title}]`);
     }
