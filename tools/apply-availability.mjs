@@ -25,10 +25,8 @@ export function mergeVerdict(entry, verdict) {
   return out;
 }
 
-function compactArrayJSON(arr) {
-  if (arr.length === 0) return "[]\n";
-  return "[\n  " + arr.map((o) => JSON.stringify(o)).join(",\n  ") + "\n]\n";
-}
+// Featured files are 2-space pretty-printed; preserve that for minimal diffs.
+const formatFeatured = (arr) => JSON.stringify(arr, null, 2) + "\n";
 const normUrl = (u) => (u || "").trim().toLowerCase();
 
 async function main() {
@@ -52,7 +50,7 @@ async function main() {
     });
     if (touched) {
       const tmp = `${path}.tmp`;
-      await writeFile(tmp, compactArrayJSON(next), "utf8");
+      await writeFile(tmp, formatFeatured(next), "utf8");
       await rename(tmp, path);
       changedFiles++;
     }

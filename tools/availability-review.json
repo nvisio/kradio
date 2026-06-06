@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-06-06",
+  "vantage": "local-residential-de",
+  "note": "Featured probe from a single residential DE vantage (1545 entries: 1490 reachable, 26 dead, 29 unknown). Only one entry showed a geo/event signal. radiko stations are not yet present in featured/, so no type:radiko entries were produced. Re-run from other vantages (or after featured/jp radiko is added) to surface more exceptions. NOTE: the classification Workflow's background runner stringified `args` on the first run (candidates=0); the script now parses string args defensively — verify on the next multi-candidate run.",
+  "candidates": [
+    {
+      "url": "https://pro.radiobandit.ro/listen/bandit90/radio.mp3",
+      "name": "Radio Bandit - 90s",
+      "country": "ro",
+      "signal": "http_403",
+      "evidence": "persistent HTTP 403 from residential DE IP across browser-UA and no-UA",
+      "decision": "applied geo_restricted countries=[ro]",
+      "caveat": "403 from one vantage cannot prove in-region availability; reversible — confirm from an RO vantage."
+    }
+  ]
+}
