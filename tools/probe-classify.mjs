@@ -1,11 +1,15 @@
 // tools/probe-classify.mjs
 // Pure reachability classifier. No network, no side effects.
 //
-//   "dead"      — hard failure (DNS NXDOMAIN, conn refused, TLS invalid, 404, 410).
-//                 Exactly the set safe to prune / hard-hide.
+//   "dead"      — unambiguous, environment-independent removal (DNS NXDOMAIN,
+//                 conn refused, 410 Gone). Exactly the set safe to prune /
+//                 hard-hide. NOTE: 404 is deliberately NOT here — many
+//                 geo-restricted streams return 404 to an out-of-region probe,
+//                 so a single-vantage 404 would falsely hard-hide a station that
+//                 plays fine for its own users (→ "unknown" instead).
 //   "reachable" — 2xx with an audio-ish content-type.
-//   "unknown"   — everything else (timeout, reset, 5xx, 401/403/451, other 4xx,
-//                 2xx non-audio). 403/451 set geoHint.
+//   "unknown"   — everything else (timeout, reset, 5xx, 401/403/404/451, other
+//                 4xx, 2xx non-audio). 403/451 set geoHint.
 
 const AUDIO_TYPES = [
   "audio/",
@@ -28,11 +32,19 @@ export function classifyReachability({ status = null, contentType = null, errorC
     }
     return { reachability: "unknown", geoHint: false, signal: errorCode };
   }
-  if (status === 404 || status === 410) {
-    return { reachability: "dead", geoHint: false, signal: `http_${status}` };
+  if (status === 410) {
+    // 410 Gone is a definitive, environment-independent removal — safe to hard-hide.
+    return { reachability: "dead", geoHint: false, signal: "http_410" };
   }
   if (status === 403 || status === 451) {
     return { reachability: "unknown", geoHint: true, signal: `http_${status}` };
+  }
+  if (status === 404) {
+    // 404 is ambiguous from a single probe vantage: many geo-restricted streams
+    // (e.g. RTBF, regional/national CDNs) return 404 to out-of-region requests,
+    // so treating it as "dead" would hard-hide a live station from the very
+    // users who can play it. Keep it visible like other ambiguous 4xx.
+    return { reachability: "unknown", geoHint: false, signal: "http_404" };
   }
   if (status !== null && status >= 200 && status < 300) {
     const ct = (contentType || "").toLowerCase();

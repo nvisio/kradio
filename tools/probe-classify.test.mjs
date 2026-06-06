@@ -20,10 +20,11 @@ test("timeout → unknown (not dead)", () => {
 test("connection reset → unknown", () => {
   assert.equal(classifyReachability({ errorCode: "ECONNRESET" }).reachability, "unknown");
 });
-test("404 → dead", () => {
-  assert.equal(classifyReachability({ status: 404 }).reachability, "dead");
+test("404 → unknown (ambiguous: geo-restricted streams 404 to out-of-region probes)", () => {
+  assert.equal(classifyReachability({ status: 404 }).reachability, "unknown");
+  assert.equal(classifyReachability({ status: 404 }).signal, "http_404");
 });
-test("410 → dead", () => {
+test("410 → dead (definitive Gone)", () => {
   assert.equal(classifyReachability({ status: 410 }).reachability, "dead");
 });
 test("403 → unknown + geoHint", () => {
