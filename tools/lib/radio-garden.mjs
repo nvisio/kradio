@@ -70,3 +70,59 @@ export function nameKey(name, country) {
 export function isKnown(name, country, knownSet) {
   return knownSet.has(nameKey(name, country));
 }
+
+// ── network ────────────────────────────────────────────────────────────
+async function getJSON(url) {
+  const r = await fetch(url, { headers: { "User-Agent": UA, "Accept": "application/json" } });
+  if (!r.ok) throw new Error(`GET ${url} → HTTP ${r.status}`);
+  return r.json();
+}
+
+// All places: [{ id, title, country, size, geo, url }]
+export async function listPlaces() {
+  const j = await getJSON(`${RG}/api/ara/content/places`);
+  return j?.data?.list || j?.list || [];
+}
+
+// One place → [{ channelId, title }]
+export async function expandPlaceItems(placeId) {
+  const data = await getJSON(`${RG}/api/ara/content/page/${placeId}/channels`);
+  const sections = data?.data?.content || data?.content || [];
+  const out = [];
+  const seen = new Set();
+  for (const sec of sections) {
+    for (const item of (sec.items || [])) {
+      const url = item.page?.url || item.url || item.href || "";
+      const m = url.match(/\/listen\/[^/]+\/([A-Za-z0-9_-]{6,})\/?$/);
+      if (!m || seen.has(m[1])) continue;
+      seen.add(m[1]);
+      out.push({ channelId: m[1], title: item.title || item.page?.title || "" });
+    }
+  }
+  return out;
+}
+
+// Channel → broadcaster stream URL (follow the 302).
+export async function resolveListenURL(channelId) {
+  const u = `${RG}/api/ara/content/listen/${channelId}/channel.mp3?type=channel`;
+  const r = await fetch(u, { redirect: "manual", headers: { "User-Agent": UA } });
+  if ([301, 302, 303, 307, 308].includes(r.status)) {
+    const loc = r.headers.get("location");
+    if (loc) return loc;
+  }
+  if (r.ok) return u;
+  throw new Error(`listen redirect missing for ${channelId} (HTTP ${r.status})`);
+}
+
+// Channel metadata (name, place, country title).
+export async function channelInfo(channelId) {
+  const info = await getJSON(`${RG}/api/ara/content/channel/${channelId}`);
+  const d = info?.data || info || {};
+  return {
+    name: d.title || d.subtitle || channelId,
+    countryTitle: d.country?.title || null,
+    city: d.place?.title || null,
+  };
+}
+
+export const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
