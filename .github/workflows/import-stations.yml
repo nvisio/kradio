@@ -1,0 +1,66 @@
+name: Monthly station import (Radio Browser)
+
+on:
+  schedule:
+    - cron: "23 4 1 * *"      # 1st of month, 04:23 UTC
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Per-country fetch limit"
+        default: "500"
+      featured_cap:
+        description: "Max featured entries per country"
+        default: "50"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: station-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Import from Radio Browser (featured union + candidates)
+        run: node tools/import-radio-browser.mjs --limit "${{ github.event.inputs.limit || '500' }}" --featured-cap "${{ github.event.inputs.featured_cap || '50' }}"
+
+      - name: Probe net-new candidates
+        run: node tools/probe-streams.mjs tools/rb-candidates.json --out tools/probe-report.candidates.json --concurrency 40 --timeout 8000
+
+      - name: Drop hard-dead candidates
+        run: node tools/drop-dead-candidates.mjs
+
+      - name: Enrich genre/lang
+        run: node tools/enrich-stations.mjs tools/rb-candidates.json --in-place
+
+      - name: Merge net-new into catalogue
+        run: node tools/merge-stations.mjs stations.json tools/rb-candidates.json --in-place
+
+      - name: Rebuild index
+        run: node tools/build-index.mjs
+
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: bot/station-import
+          title: "📡 Monthly station import (Radio Browser)"
+          commit-message: "📡 data: monthly Radio Browser import (catalogue + featured)"
+          body: |
+            Automated monthly import from the Radio Browser API.
+            - `stations.json` / `stations.index.json`: net-new stations (probed, hard-dead dropped, deduped)
+            - `featured/*.json`: top-voted unioned in (existing curation preserved)
+
+            Review the diff before merging. Health/availability are handled separately by the weekly pipeline.
+          add-paths: |
+            stations.json
+            stations.index.json
+            featured/*.json
