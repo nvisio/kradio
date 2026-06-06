@@ -14,3 +14,46 @@ deduped by name); the ranking by national fame/popularity is produced per
 country and mapped back to the catalogue's exact stream URLs. Regenerate or
 hand-edit any file to curate a country — the app picks up changes on next fetch
 (no app update needed).
+
+## Availability metadata (optional)
+
+Entries default to globally playable; only **exceptions** carry extra fields.
+A normal entry stays `{ "name", "url" }`.
+
+```ts
+type StreamAvailability =
+  | "global"          // default when the field is absent
+  | "geo_restricted"
+  | "event_based"
+  | "unknown"
+  | "dead";
+
+interface FeaturedEntry {
+  name: string;
+  url?: string;                       // direct stream; also the FALLBACK for radiko entries
+  type?: "direct" | "radiko";         // absent ⇒ "direct"
+  stationId?: string;                 // when type === "radiko" (subscribed auth path)
+  availability?: StreamAvailability;  // absent ⇒ "global"
+  countries?: string[];               // lowercase alpha-2; where a geo/event station IS available
+}
+```
+
+- Absent `availability` ⇒ `global`. Annotate exceptions only.
+- `countries` lists where a `geo_restricted`/`event_based` station is available.
+- **radiko** carries both `stationId` (subscribed auth via `RadikoAuthService`)
+  and a fallback `url`; without a subscription the app plays the `url` best-effort.
+
+## Health pipeline
+
+Reachability is regenerated **weekly** by `.github/workflows/health-check.yml`:
+`tools/probe-streams.mjs` probes the whole catalogue, `tools/build-health.mjs`
+distils a compact `health.json` (a deny-list of non-healthy URLs; absent ⇒
+healthy), and the Action commits it. The app fetches `health.json` from the CDN
+and hides `dead` URLs (fail-open on error), keeping the bundled KR/UK/JP set as
+the offline fallback. The probe runs from GitHub's US datacenter IPs (recorded
+in `vantage`), so only hard-signal failures count as `dead`.
+
+Geo/event availability on the curated set is produced occasionally (by hand) via
+`tools/availability-classify.workflow.js` + `tools/apply-availability.mjs`, with
+ambiguous cases recorded in `tools/availability-review.json`. See
+`docs/superpowers/specs/2026-06-06-stream-availability-design.md`.
