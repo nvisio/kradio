@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { countryCodeFrom, nameKey, isKnown } from "./radio-garden.mjs";
+import { countryCodeFrom, nameKey, isKnown, changedPlaces, nextSigs } from "./radio-garden.mjs";
 
 test("countryCodeFrom: common names via Intl", () => {
   assert.equal(countryCodeFrom("Germany"), "de");
@@ -44,4 +44,27 @@ test("isKnown: membership against a Set (name+country+city)", () => {
   assert.equal(isKnown("Radio X", "fr", "Paris", set), true);
   assert.equal(isKnown("Radio X", "fr", "Lyon", set), false);
   assert.equal(isKnown("Radio Y", "fr", "Paris", set), false);
+});
+
+test("changedPlaces: new + size-changed are returned; unchanged skipped", () => {
+  const places = [
+    { id: "a", size: 5 },   // unchanged
+    { id: "b", size: 9 },   // changed (was 7)
+    { id: "c", size: 3 },   // new (not in store)
+  ];
+  const stored = { a: 5, b: 7, d: 2 };
+  const out = changedPlaces(places, stored).map((p) => p.id).sort();
+  assert.deepEqual(out, ["b", "c"]);
+});
+test("changedPlaces: empty store → all places", () => {
+  const places = [{ id: "a", size: 1 }, { id: "b", size: 2 }];
+  assert.equal(changedPlaces(places, {}).length, 2);
+});
+test("nextSigs: carries forward current places, updates scanned, prunes removed", () => {
+  const stored = { a: 5, b: 7, gone: 1 };
+  const current = [{ id: "a", size: 5 }, { id: "b", size: 9 }, { id: "c", size: 3 }];
+  const scanned = [{ id: "b", size: 9 }, { id: "c", size: 3 }];
+  const out = nextSigs(stored, scanned, current);
+  // a carried forward (5), b/c updated to scanned size, gone pruned (not in current)
+  assert.deepEqual(out, { a: 5, b: 9, c: 3 });
 });
