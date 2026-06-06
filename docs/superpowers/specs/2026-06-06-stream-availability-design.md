@@ -19,8 +19,11 @@ exceptions.**
 
 ## Non-Goals (deferred follow-ons)
 
-- Populating `featured/jp.json` with actual radiko stations (schema supports it;
-  data + iOS radiko rendering from featured is a separate project).
+- The **subscription-gated** radiko-auth rendering from featured (using
+  `stationId` + the token dance) and populating `featured/jp.json` with actual
+  radiko stations are a separate project. *(In scope here: the schema holds
+  radiko, and the **non-subscription `url` fallback** path works — a radiko
+  entry with a `url` plays best-effort like any direct entry.)*
 - A `category` field (overlaps the existing `genre`; not needed here).
 - Showing geo-locked stations as "disabled + JP-only badge" instead of hiding
   them (UI refinement).
@@ -37,12 +40,18 @@ exceptions.**
   unknown keys; `merge-stations.mjs` preserves whole objects.
 - `featured/` is *derived from* `stations.json` (filtered by country, ranked),
   not merged into it — they are separate artifacts.
-- **radiko is not a URL.** It needs the auth1→auth2 token dance
-  (`RadikoAuthService` already exists in the app), per-segment headers
-  (`X-Radiko-AuthToken`, `X-Radiko-AreaId`), and is keyed by `stationID` + area.
-  So representing radiko needs a `type` discriminator + `stationId`, not a
-  `url`. The `geo_restricted` metadata describes it correctly but is not
-  sufficient to play it.
+- **radiko degrades gracefully — it is two paths, not one.** The full radiko
+  path needs the auth1→auth2 token dance (`RadikoAuthService` already exists in
+  the app), per-segment headers (`X-Radiko-AuthToken`, `X-Radiko-AreaId`), and
+  is keyed by `stationID` + area. That path is **subscription-gated**: only when
+  the app's radiko/subscription auth is available does it use
+  `type:"radiko"` + `stationId`. When there is **no subscription**, the app
+  must fall back to a plain direct URL and simply *attempt* the connection
+  (best-effort, may succeed in-area or fail). Therefore a radiko featured entry
+  carries **both** `stationId` (for the subscribed auth path) **and** a `url`
+  (the direct fallback for non-subscribers). The `geo_restricted` metadata
+  describes availability correctly but is independent of which playback path is
+  used.
 - **Single-vantage probing limitation.** Probes run from one location
   (currently Europe). A single vantage point can reliably detect `dead` (hard
   failures) and `reachable` candidates, but **cannot** reliably distinguish
@@ -66,9 +75,9 @@ type StreamAvailability =
 // carry them. Global entries stay exactly `{ name, url }`.
 interface FeaturedEntry {
   name: string;
-  url?: string;                       // omittable only when type needs an id-based source
+  url?: string;                       // direct stream URL; also the FALLBACK for radiko entries
   type?: "direct" | "radiko";         // absent ⇒ "direct"
-  stationId?: string;                 // present when type === "radiko"
+  stationId?: string;                 // present when type === "radiko" (subscribed auth path)
   availability?: StreamAvailability;  // absent ⇒ "global"
   countries?: string[];               // lowercase alpha-2; meaningful for geo_restricted / event_based
 }
@@ -80,6 +89,11 @@ Design rules:
 - No redundant `geoRestricted` boolean — derivable from `availability`.
 - Annotate exceptions only; absent `availability` ⇒ `global`.
 - `countries` lists where a geo/event station *is* available.
+- **radiko entries should carry both** `stationId` and a fallback `url`. With a
+  subscription, the app uses the `stationId` radiko-auth path; without one, it
+  stores the `url` as a direct source and attempts the connection. A radiko
+  entry with neither a usable subscription path nor a `url` is unplayable and is
+  dropped by the client.
 
 ## Probe Evidence Sidecar
 
@@ -174,8 +188,13 @@ Workflow (ultracode). Hybrid #3:
   - `availability ∈ {geo_restricted, event_based}` and user alpha2 ∉
     `countries` → drop. (Key for the Explore sheet, where a user browses other
     countries' featured lists.)
-  - `type == "radiko"` (no playable `url`) → drop for now (the existing
-    `compactMap` on a nil URL already does this safely).
+  - `type == "radiko"`:
+    - subscription / radiko-auth available → use the radiko source
+      (`stationId`). *(Full radiko-auth rendering from featured is the H
+      follow-on; the decode branch + the decision point land here.)*
+    - otherwise → if `url` present, store as `.directURL(url)` and attempt the
+      connection (best-effort); if no `url`, drop (the existing `compactMap` on
+      a nil URL already does this safely).
   - absent `availability` → treated as `global` → show (backward compatible).
 - The storefront alpha2 is already available via `currentAlpha2()`; the Explore
   path passes the browsed country's alpha2 — visibility compares against the
