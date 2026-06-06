@@ -77,6 +77,28 @@ export function isKnown(name, country, city, knownSet) {
   return knownSet.has(nameKey(name, country, city));
 }
 
+// ── pure: place-size signatures (skip unchanged places on re-runs) ─────
+// A place's `size` (channel count) is a cheap per-place signature returned by
+// /places in one request. Storing it lets future runs expand only the places
+// whose size changed (or are new), instead of re-scanning all ~12.6k places.
+
+// Places that are new or whose size differs from the stored signature.
+export function changedPlaces(places, storedSigs) {
+  return places.filter((p) => storedSigs[p.id] !== p.size);
+}
+
+// Next signature snapshot: carry forward stored sizes for places still present,
+// overwrite with the sizes of places scanned this run, and prune places that
+// no longer exist upstream.
+export function nextSigs(storedSigs, scannedPlaces, currentPlaces) {
+  const out = {};
+  for (const p of currentPlaces) {
+    if (Object.prototype.hasOwnProperty.call(storedSigs, p.id)) out[p.id] = storedSigs[p.id];
+  }
+  for (const p of scannedPlaces) out[p.id] = p.size;
+  return out;
+}
+
 // ── network ────────────────────────────────────────────────────────────
 async function getJSON(url) {
   const r = await fetch(url, { headers: { "User-Agent": UA, "Accept": "application/json" } });
