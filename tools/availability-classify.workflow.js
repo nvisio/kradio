@@ -10,7 +10,11 @@ export const meta = {
 // args: [{ name, url, country, httpStatus, geoHint, signal }]
 // returns: { verdicts: [{url, availability, countries?, type?, stationId?, reason}], review: [...] }
 
-const CANDIDATES = Array.isArray(args) ? args : []
+// args may arrive as an array or (when the background runner serialises it) a
+// JSON string — accept both.
+const CANDIDATES = Array.isArray(args)
+  ? args
+  : (typeof args === 'string' ? (() => { try { return JSON.parse(args) } catch { return [] } })() : [])
 
 const CLASSIFY_SCHEMA = {
   type: 'object', additionalProperties: false,
