@@ -154,5 +154,53 @@
   {
     "name": "Juice FM 88.7",
     "url": "https://stream.rcs.revma.com/a8mqrmhcyy8uv"
+  },
+  {
+    "name": "Irish Country Music Radio",
+    "url": "http://46.28.49.164:7502/"
+  },
+  {
+    "name": "Newstalk",
+    "url": "https://edge.audioxi.com/NT"
+  },
+  {
+    "name": "Radio Nova",
+    "url": "https://stream.audioxi.com/NOVA?aw_0_1st.playerid=liveradio.ie"
+  },
+  {
+    "name": "Irish Pub Radio",
+    "url": "http://solid24.streamupsolutions.com:8026/stream"
+  },
+  {
+    "name": "Today FM",
+    "url": "https://stream.audioxi.com/TD"
+  },
+  {
+    "name": "Phever Dublin",
+    "url": "http://uk1.internet-radio.com:8200/live"
+  },
+  {
+    "name": "Zenith Classic Rock",
+    "url": "http://91.189.64.188:3644/zenith128mp3"
+  },
+  {
+    "name": "RTE1",
+    "url": "http://icecast.rte.ie/radio1"
+  },
+  {
+    "name": "8radio",
+    "url": "https://edge4.audioxi.com/8RADIO"
+  },
+  {
+    "name": "Classic Hits 4FM",
+    "url": "http://stream.audioxi.com/CLASSIC"
+  },
+  {
+    "name": "RTÉ Radio 1",
+    "url": "https://liveaudio.rte.ie/hls-radio/radio1/chunklist.m3u8"
+  },
+  {
+    "name": "all Classical Radio",
+    "url": "https://christmasfm.cdnstream1.com/2548_64.aac"
   }
 ]

@@ -158,5 +158,53 @@
   {
     "name": "Muzyczne Radio FM 105.8",
     "url": "https://stream.rcs.revma.com/yntzhng5072vv"
+  },
+  {
+    "name": "RMF FM",
+    "url": "http://195.150.20.242:8000/rmf_fm"
+  },
+  {
+    "name": "RMF FM",
+    "url": "http://195.150.20.9/RMFFM48"
+  },
+  {
+    "name": "Radio Zet",
+    "url": "http://zet-net-01.cdn.eurozet.pl:8400/"
+  },
+  {
+    "name": "Antyradio",
+    "url": "https://n-4-2.dcs.redcdn.pl/sc/o2/Eurozet/live/antyradio.livx?audio=5"
+  },
+  {
+    "name": "Polskie Radio 24",
+    "url": "http://stream3.polskieradio.pl:8080/;.mp3"
+  },
+  {
+    "name": "Polskie Radio Jedynka",
+    "url": "http://mp3.polskieradio.pl:8900/;.mp3"
+  },
+  {
+    "name": "RMF Classic",
+    "url": "http://31.192.216.8/RMFCLASSIC48"
+  },
+  {
+    "name": "RMF Polskie przeboje",
+    "url": "http://195.150.20.8/PPRZEBOJE"
+  },
+  {
+    "name": "Radioparty.pl Dj Mixes Party",
+    "url": "http://djmixes.radioparty.pl:8035/"
+  },
+  {
+    "name": "Radio RMF MAXXX",
+    "url": "https://rs9-krk2-cyfronet.rmfstream.pl/RMFMAXXX48"
+  },
+  {
+    "name": "Eska Lublin FM 103.6",
+    "url": "https://waw.ic.smcdn.pl/2130-1.aac"
+  },
+  {
+    "name": "ESKA Żary 106.6 FM",
+    "url": "https://waw.ic.smcdn.pl/2420-1.mp3"
   }
 ]

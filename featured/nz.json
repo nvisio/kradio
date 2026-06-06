@@ -58,5 +58,145 @@
   {
     "name": "Absolute Live FM 88.3 Whanganui",
     "url": "https://stream.rcs.revma.com/zwwhcbd5km3vv"
+  },
+  {
+    "name": "Easy 80s",
+    "url": "http://procyon.shoutca.st:8032/;"
+  },
+  {
+    "name": "Radio Ngāti Porou",
+    "url": "https://wowza.iwi.radio/icecast-to-hls/ngrp:NgatiPorou.stream/playlist.m3u8"
+  },
+  {
+    "name": "Newstalk ZB Wellington",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/NZME_31AAC.m3u8"
+  },
+  {
+    "name": "Sleep Radio",
+    "url": "http://65.109.81.84:9851/stream"
+  },
+  {
+    "name": "Coast",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/NZME_07AAC.m3u8"
+  },
+  {
+    "name": "Gaia FM New Zealand",
+    "url": "http://s2.stationplaylist.com:9000/gaiafm.aac"
+  },
+  {
+    "name": "Wandering Sheep Radio - Jazz Cafe",
+    "url": "http://radio.wanderingsheep.tv:8000/jazzcafe"
+  },
+  {
+    "name": "Newstalk ZB Christchurch",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/NZME_41AAC.m3u8"
+  },
+  {
+    "name": "Ski FM",
+    "url": "https://s2.radio.co/s6436891bc/listen"
+  },
+  {
+    "name": "新西兰中文广播电台 FM90.6 Radio Chinese",
+    "url": "https://s26.myradiostream.com:20274/listen.mp3"
+  },
+  {
+    "name": "The Sound",
+    "url": "https://digitalstreams.mediaworks.nz/sound_net/playlist.m3u8"
+  },
+  {
+    "name": "Sport Nation - AAC",
+    "url": "https://sen.streamguys1.com/SENZ-AAC/playlist.m3u8"
+  },
+  {
+    "name": "RNZ Pacific AAC (64kbps)",
+    "url": "http://radionz-ice.streamguys.com/international_aac64"
+  },
+  {
+    "name": "The Rock",
+    "url": "https://digitalstreams.mediaworks.nz/rock_net/playlist.m3u8"
+  },
+  {
+    "name": "RNZ Concert AAC (128kbps)",
+    "url": "http://radionz-ice.streamguys.com/Concert_aac128"
+  },
+  {
+    "name": "Radio Spice (Auckland, New Zealand)",
+    "url": "http://stream9.broadcast.co.nz:8000/radiospicewebsiteaudio.mp3"
+  },
+  {
+    "name": "3ABN Christian Radio",
+    "url": "https://stream.3abnaustralia.org.au:8443/stream"
+  },
+  {
+    "name": "BeachFM 106.3",
+    "url": "http://s8.myradiostream.com:58408/"
+  },
+  {
+    "name": "https://badradio.nz/ - 24/7 PHONK",
+    "url": "https://s2.radio.co/s2b2b68744/listen"
+  },
+  {
+    "name": "RNZ National AAC (128kbps)",
+    "url": "http://radionz-ice.streamguys.com/National_aac128"
+  },
+  {
+    "name": "Newstalk ZB",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NZME_01AAC.m3u8?aw_0_1st.playerid=iHeartRadioWebPlayer&aw_0_1st.skey=9631949606&clientType=web&companionAds=false&deviceName=web-desktop&dist=iheart&host=webapp.NZ&listenerId=&playedFrom=157&pname=live_profile&profileId=9631949606&stationid=6187&terminalId=162&territory=NZ"
+  },
+  {
+    "name": "JAZZGROOVE.org - Smooth Jazz (64k)",
+    "url": "http://streams.radiomast.io/4fdf004c-c2f3-49c1-bdb1-22e208d48780"
+  },
+  {
+    "name": "Compass FM",
+    "url": "http://stream.compassfm.org.nz:8000/Compass_FM_104.9"
+  },
+  {
+    "name": "Newstalk ZB",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NZME_41AAC.aac"
+  },
+  {
+    "name": "Brian FM 105.6 Nelson NZ",
+    "url": "https://ais-sa1.streamon.fm/7358_128k.aac/playlist.m3u8"
+  },
+  {
+    "name": "XS80s",
+    "url": "http://s1.myradiostream.com:12508/listen.mp3"
+  },
+  {
+    "name": "The Rock - NZ's #1 rock radio station",
+    "url": "https://digitalstreams.mediaworks.nz/rock_net_icy"
+  },
+  {
+    "name": "Retro Hit Radio",
+    "url": "https://riphel02.radioca.st/stream"
+  },
+  {
+    "name": "100,3FM South Canterbury",
+    "url": "http://uk4-vn.mixstream.net:8066/stream/1/"
+  },
+  {
+    "name": "The Edge",
+    "url": "https://digitalstreams.mediaworks.nz/edge_net/playlist.m3u8"
+  },
+  {
+    "name": "The Hits",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NZME_71AAC.m3u8?aw_0_1st.playerid=iHeartRadioWebPlayer&aw_0_1st.skey=9774168307&clientType=web&companionAds=false&deviceName=web-desktop&dist=iheart&host=webapp.NZ&listenerId=&playedFrom=157&pname=live_profile&profileId=9774168307&stationid=6204&terminalId=162&territory=NZ"
+  },
+  {
+    "name": "Wandering Sheep Radio - Hope Alive",
+    "url": "http://radio.wanderingsheep.tv:8012/hopealive"
+  },
+  {
+    "name": "Magic",
+    "url": "https://digitalstreams.mediaworks.nz/mmusic_net/playlist.m3u8"
+  },
+  {
+    "name": "Te Reo Irirangi O Ngāti Kahungunu",
+    "url": "https://wowza.iwi.radio/icecast-to-hls/ngrp:Kahungunu.stream/playlist.m3u8"
+  },
+  {
+    "name": "Country Radio Invercargill 105.2FM",
+    "url": "http://countryradio2.no-ip.org:8000/;"
   }
 ]

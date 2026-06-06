@@ -66,5 +66,137 @@
   {
     "name": "HRT Radio Zadar FM 101.8",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ZADARAAC.aac"
+  },
+  {
+    "name": "Extra FM",
+    "url": "http://streams.extrafm.hr:8110/;"
+  },
+  {
+    "name": "Radio Banovina",
+    "url": "http://stream1.radio-banovina.hr:8008/;"
+  },
+  {
+    "name": "Radio Deejay HR",
+    "url": "http://live.deejay.hr:7002/;"
+  },
+  {
+    "name": "Antena Zagreb Uživo",
+    "url": "http://live.antenazagreb.hr:8002/;"
+  },
+  {
+    "name": "Otvoreni radio - Uživo",
+    "url": "http://stream.otvoreni.hr/otvoreni"
+  },
+  {
+    "name": "HRT HR 1 - Prvi program",
+    "url": "http://27863.live.streamtheworld.com/PROGRAM1AAC_SC"
+  },
+  {
+    "name": "Yammat FM",
+    "url": "https://stream.yammat.fm/radio/8000/yammat.mp3"
+  },
+  {
+    "name": "Top Radio",
+    "url": "https://c5.hostingcentar.com/streams/topradio/"
+  },
+  {
+    "name": "HRT HR 2 - Drugi program",
+    "url": "http://28033.live.streamtheworld.com/PROGRAM2AAC_SC"
+  },
+  {
+    "name": "Radio Kaj",
+    "url": "https://s8.iqstreaming.com:2020/stream/radio-kaj2/stream"
+  },
+  {
+    "name": "ENTER Zagreb",
+    "url": "http://live.enterzagreb.hr:8023/"
+  },
+  {
+    "name": "Bravo",
+    "url": "http://c5.hostingcentar.com:8059/stream"
+  },
+  {
+    "name": "Antena Zagreb Rock",
+    "url": "http://live.antenazagreb.hr:8019/"
+  },
+  {
+    "name": "Radio stubica",
+    "url": "http://radiostubica.hc.hr:7006/stream"
+  },
+  {
+    "name": "Radio101",
+    "url": "http://live.radio101.hr:9531/"
+  },
+  {
+    "name": "Radio Sunce",
+    "url": "http://shoutcast.pondi.hr:8002/;*.mp3"
+  },
+  {
+    "name": "Laganini FM",
+    "url": "http://194.145.208.251:8000/start/lfmzg"
+  },
+  {
+    "name": "Radio Dalmacija - Oliver",
+    "url": "http://c5.hostingcentar.com:8275/stream"
+  },
+  {
+    "name": "..:: CLUB MUSIC RADIO ::....:: 70s 80s 90s ::..",
+    "url": "http://cmr-hosting.com:8030/stream?type=http&nocache=773949"
+  },
+  {
+    "name": "HRT Radio Sljeme",
+    "url": "http://27873.live.streamtheworld.com/SLJEMEAAC_SC"
+  },
+  {
+    "name": "bravo! kids",
+    "url": "https://audio.social3.hr/listen/bravo_kids/stream?3367"
+  },
+  {
+    "name": "Radio Tvornica",
+    "url": "https://c8.hostingcentar.com/streams/radiotvornica?type=http&nocache=50001"
+  },
+  {
+    "name": "CMC Jugoton",
+    "url": "http://radio-stream.cmc.com.hr:8020/autodj"
+  },
+  {
+    "name": "Radio 101",
+    "url": "http://live.radio101.hr:9531/stream.mp3"
+  },
+  {
+    "name": "HRT HR 1 - Prvi program",
+    "url": "http://27743.live.streamtheworld.com/PROGRAM1_SC"
+  },
+  {
+    "name": "Naxi House",
+    "url": "http://naxidigital-house128.streaming.rs:8000/"
+  },
+  {
+    "name": "Laganini FM Rijeka",
+    "url": "http://194.145.208.251:8004/start/lfmri"
+  },
+  {
+    "name": "Happy FM - Live",
+    "url": "http://c5.hostingcentar.com:9543/"
+  },
+  {
+    "name": "Otvoreni LIVE",
+    "url": "https://stream.otvoreni.hr/stream48"
+  },
+  {
+    "name": "Happy FM Party",
+    "url": "http://c5.hostingcentar.com:8390/stream?4606"
+  },
+  {
+    "name": "Radio Brac",
+    "url": "http://s8.iqstreaming.com:8066/stream"
+  },
+  {
+    "name": "HRT Radio Rijeka",
+    "url": "http://22193.live.streamtheworld.com/RIJEKAAAC_SC"
+  },
+  {
+    "name": "HRT HR 3 - Treći program",
+    "url": "http://25603.live.streamtheworld.com/PROGRAM3AAC_SC"
   }
 ]

@@ -158,5 +158,73 @@
   {
     "name": "Mirante News",
     "url": "https://mirante.jmvstream.com/stream"
+  },
+  {
+    "name": "Antena 1 São Paulo, SP (ZYD823 94,7 MHz FM) [aac]",
+    "url": "http://antena1.newradio.it/stream?ext=.mp3"
+  },
+  {
+    "name": "Rádio Flashback Fm",
+    "url": "http://hd.matutos.com.br:8008/;stream.mp3"
+  },
+  {
+    "name": "Antena 1 FM 94.7 São Paulo",
+    "url": "http://antena1.newradio.it/stream"
+  },
+  {
+    "name": "Antena 1 FM 103.7 Rio de Janeiro",
+    "url": "http://a1rj.streams.com.br:7801/stream"
+  },
+  {
+    "name": "Rádio Bossa Nova Brazil",
+    "url": "http://54.38.43.201:8009/stream-128kmp3-BossaNovaBrazil"
+  },
+  {
+    "name": "Rádio Saudade FM 99.7",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SAUDADE_FMAAC.aac"
+  },
+  {
+    "name": "Rádio Disco Funk BR",
+    "url": "http://streaming12.hstbr.net:8084/live"
+  },
+  {
+    "name": "Máquina do Tempo (Internacional)",
+    "url": "http://servidor28.brlogic.com:8212/live"
+  },
+  {
+    "name": "Máquina do Tempo (MPB Brasil)",
+    "url": "http://servidor28.brlogic.com:8032/live"
+  },
+  {
+    "name": "Bossa Jazz Brasil",
+    "url": "https://centova5.transmissaodigital.com:20104/live"
+  },
+  {
+    "name": "Arapuan FM 95.3",
+    "url": "https://streaming.engelhosting.com.br:10026/stream"
+  },
+  {
+    "name": "Autêntica Favela FM 106.7",
+    "url": "https://s30.maxcast.com.br:8114/live"
+  },
+  {
+    "name": "Massa FM 92.3",
+    "url": "https://stm01.virtualcast.com.br:8116/massamaringa"
+  },
+  {
+    "name": "Rádio Massa FM 95.3",
+    "url": "https://live.virtualcast.com.br/massagramado"
+  },
+  {
+    "name": "Band FM 94.7",
+    "url": "https://live.virtualcast.com.br/bandchapeco"
+  },
+  {
+    "name": "CBN Vitória",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_VITORIA.mp3"
+  },
+  {
+    "name": "Rádio Yandê",
+    "url": "https://cloud.cdnseguro.com:2611/stream"
   }
 ]

@@ -58,5 +58,145 @@
   {
     "name": "Radio IIII",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO4.mp3"
+  },
+  {
+    "name": "Vinylhits.dk",
+    "url": "http://stream.vinylhits.dk/vinylmp3"
+  },
+  {
+    "name": "Classic FM",
+    "url": "http://webradio.classicfm.dk/classichorsens"
+  },
+  {
+    "name": "DR P1",
+    "url": "http://live-icy.gss.dr.dk/A/A03H.mp3"
+  },
+  {
+    "name": "DR P4 København",
+    "url": "http://live-icy.gslb01.dr.dk/A/A08H.mp3"
+  },
+  {
+    "name": "PartyFM",
+    "url": "http://stream.partyfm.dk/Party320/"
+  },
+  {
+    "name": "Limfjord Plus Slager",
+    "url": "http://media.limfjordnetradio.dk/plusslager128"
+  },
+  {
+    "name": "DR P3",
+    "url": "http://live-icy.gslb01.dr.dk/A/A05H.mp3"
+  },
+  {
+    "name": "Retro Radio",
+    "url": "http://stream128.retro-radio.dk/retro"
+  },
+  {
+    "name": "Radio Soft",
+    "url": "http://tx-bauerdk.sharp-stream.com/http_live.php?i=radiosoft_dk_mp3"
+  },
+  {
+    "name": "DR P5",
+    "url": "http://live-icy.gslb01.dr.dk/A/A25H.mp3"
+  },
+  {
+    "name": "DR P8 JAZZ",
+    "url": "http://live-icy.gslb01.dr.dk/A/A22H.mp3"
+  },
+  {
+    "name": "Tango Copenhagen Radio",
+    "url": "https://tangocopenhagen.stream.laut.fm/tangocopenhagen?t302=2021-01-15_18-47-40&uuid=64db9a91-4a6e-4bc8-ba24-26a2fa7f24d0"
+  },
+  {
+    "name": "Skala FM",
+    "url": "http://webradio.skala.fm/kolding"
+  },
+  {
+    "name": "Nova 100% Dansk",
+    "url": "https://live-bauerdk.sharp-stream.com/DK_HQ_RP11.aac"
+  },
+  {
+    "name": "DR P1",
+    "url": "http://live-icy.gslb01.dr.dk/A/A03H.mp3"
+  },
+  {
+    "name": "ANR",
+    "url": "http://stream.anr.dk/anr"
+  },
+  {
+    "name": "TechnoBase.FM - AACplus 96k",
+    "url": "http://listen.technobase.fm/tunein-aacplus-pls"
+  },
+  {
+    "name": "DR P6 BEAT",
+    "url": "http://live-icy.gslb01.dr.dk/A/A29H.mp3"
+  },
+  {
+    "name": "DR P3",
+    "url": "http://live-icy.gss.dr.dk:8000/A/A05H.mp3"
+  },
+  {
+    "name": "TechnoBase.FM - MP3 192k",
+    "url": "http://listen.technobase.fm/tunein-mp3-pls"
+  },
+  {
+    "name": "World Music Radio",
+    "url": "http://stream.wlmm.dk:8010/wmr"
+  },
+  {
+    "name": "DR P4 Bornholm",
+    "url": "http://live-icy.gslb01.dr.dk/A/A06H.mp3"
+  },
+  {
+    "name": "DR P2",
+    "url": "http://live-icy.gslb01.dr.dk/A/A04H.mp3"
+  },
+  {
+    "name": "DR P8 JAZZ (AAC)",
+    "url": "https://drliveradio1.akamaized.net/hls/live/2097651/p8jazz/masterab.m3u8"
+  },
+  {
+    "name": "Party Fm",
+    "url": "http://stream1.partyfm.dk/Party320"
+  },
+  {
+    "name": "Always Elvis Radio",
+    "url": "http://radioserver.dk/alwayselvisradio"
+  },
+  {
+    "name": "Retro-Radio Jul",
+    "url": "http://isstream.kanalplus.fm/TX-1"
+  },
+  {
+    "name": "DR P3 (AAC)",
+    "url": "https://drliveradio1.akamaized.net/hls/live/2097651/p3/masterab.m3u8"
+  },
+  {
+    "name": "DR Nyheder",
+    "url": "http://live-icy.gslb01.dr.dk/A/A02L.mp3"
+  },
+  {
+    "name": "nordic lodge copenhagen",
+    "url": "http://radio.streemlion.com:1160/stream"
+  },
+  {
+    "name": "Radio ABC",
+    "url": "http://netradio.radioabc.dk/"
+  },
+  {
+    "name": "DR P4 Østjyllands Radio",
+    "url": "http://live-icy.gslb01.dr.dk/A/A14H.mp3"
+  },
+  {
+    "name": "Classic Rock Danmark",
+    "url": "https://netradio.classicfm.dk/classicrock"
+  },
+  {
+    "name": "myROCK",
+    "url": "https://live-bauerdk.sharp-stream.com/myrock_dk_mp3"
+  },
+  {
+    "name": "Limfjord Plus",
+    "url": "http://media.limfjordnetradio.dk/plus128"
   }
 ]

@@ -58,5 +58,149 @@
   {
     "name": "AFN Iwakuni 1575 AM",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/AFNP_IWAAAC.aac"
+  },
+  {
+    "name": "Jazz Sakura (asia dream radio)",
+    "url": "http://kathy.torontocast.com:3330/stream/1/?esPlayer&cb=82181.mp3"
+  },
+  {
+    "name": "Listen.Moe JPop Vorbis",
+    "url": "https://listen.moe/stream"
+  },
+  {
+    "name": "Retro PC GAME MUSIC Streaming Radio",
+    "url": "http://gyusyabu.ddo.jp:8000/"
+  },
+  {
+    "name": "Gensokyo Radio",
+    "url": "https://stream.gensokyoradio.net/3"
+  },
+  {
+    "name": "J1 Gold (HTTP)",
+    "url": "http://jenny.torontocast.com:8062/"
+  },
+  {
+    "name": "FM Kahoku 78.7 (FMかほく, JOZZ5AM-FM, 78.7 MHz, Kahoku City, Ishikawa)",
+    "url": "http://radio.kahoku.net:8000/;"
+  },
+  {
+    "name": "Shonan Beach FM 78.9",
+    "url": "http://shonanbeachfm.out.airtime.pro:8000/shonanbeachfm_a"
+  },
+  {
+    "name": "Free FM Tokyo",
+    "url": "https://rocafmadrid.radioca.st/"
+  },
+  {
+    "name": "Free FM 80 Tokyo",
+    "url": "https://freefm80.radioca.st/"
+  },
+  {
+    "name": "J1 Hits (HTTP)",
+    "url": "http://jenny.torontocast.com:8056/"
+  },
+  {
+    "name": "Nightwave Plaza OPUS 96",
+    "url": "http://radio.plaza.one/opus"
+  },
+  {
+    "name": "Ottava",
+    "url": "http://ottava2.out.airtime.pro:8000/ottava2_a"
+  },
+  {
+    "name": "Free FM Tokyo",
+    "url": "https://rocafmadrid.radioca.st/stream"
+  },
+  {
+    "name": "Súper Tokio Radio",
+    "url": "https://streamer.radio.co/s83eb8ff39/listen"
+  },
+  {
+    "name": "Big B Radio - Jpop",
+    "url": "https://antares.dribbcast.com/proxy/jpop?mp=/s"
+  },
+  {
+    "name": "Moon Mission Recordings",
+    "url": "http://uk5.internet-radio.com:8306/"
+  },
+  {
+    "name": "Fred Film Radio(日本語)",
+    "url": "https://s10.webradio-hosting.com/proxy/fredradiojp/stream"
+  },
+  {
+    "name": "Nightwave Plaza MP3 182",
+    "url": "http://radio.plaza.one/mp3"
+  },
+  {
+    "name": "NHK-FM",
+    "url": "http://mnet.x10.mx/nhkfm.m3u8"
+  },
+  {
+    "name": "BAN-BANラジオ",
+    "url": "https://mtist.as.smartstream.ne.jp/30078/livestream/playlist.m3u8"
+  },
+  {
+    "name": "J-POP Powerplay",
+    "url": "https://kathy.torontocast.com:3560/"
+  },
+  {
+    "name": "J-Rock Powerplay(Asia DREAM Radio)",
+    "url": "https://kathy.torontocast.com:3340/;?shoutcast"
+  },
+  {
+    "name": "OnlyHits Japan",
+    "url": "https://j.onlyhit.us/play"
+  },
+  {
+    "name": "J1 HITS",
+    "url": "https://jenny.torontocast.com:2000/stream/J1HITS?_=184325"
+  },
+  {
+    "name": "J-Pop Powerplay Kawaii(asia dream radio)",
+    "url": "https://kathy.torontocast.com:3060/;?shoutcast"
+  },
+  {
+    "name": "Tokyo Star Radio(八王子FM)",
+    "url": "https://mtist.as.smartstream.ne.jp/30081/livestream/playlist.m3u8"
+  },
+  {
+    "name": "A&G+",
+    "url": "https://www.uniqueradio.jp/agapps/hls/cdn.m3u8"
+  },
+  {
+    "name": "Vaporwave",
+    "url": "http://radio.plaza.one/ogg"
+  },
+  {
+    "name": "FM世田谷",
+    "url": "https://fmsetagaya834.out.airtime.pro/fmsetagaya834_a"
+  },
+  {
+    "name": "エフエム椿台",
+    "url": "https://mtist.as.smartstream.ne.jp/30014/livestream/playlist.m3u8"
+  },
+  {
+    "name": "エフエム世田谷",
+    "url": "http://mtist.as.smartstream.ne.jp/30027/livestream/playlist.m3u8"
+  },
+  {
+    "name": "Jazz Sakura",
+    "url": "https://kathy.torontocast.com:3330/;"
+  },
+  {
+    "name": "ALR Jazz Radio",
+    "url": "http://195.154.79.204:8638/stream"
+  },
+  {
+    "name": "京都三条ラジオカフェ",
+    "url": "https://mtist.as.smartstream.ne.jp/30082/livestream/playlist.m3u8"
+  },
+  {
+    "name": "Hitsujikai Radio",
+    "url": "http://streaming.radio.co/se4a8e6a93/listen"
+  },
+  {
+    "name": "AFN Thunder 1575 AM Misawa",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/AFNP_MSW.mp3"
   }
 ]

@@ -158,5 +158,45 @@
   {
     "name": "Radio Nostalgia Liguria",
     "url": "https://ice08.fluidstream.net:8080/fluid814.mp3"
+  },
+  {
+    "name": "Rai Radio 1",
+    "url": "http://icestreaming.rai.it/1.mp3"
+  },
+  {
+    "name": "Virgin Radio Classic Rock",
+    "url": "http://icy.unitedradio.it/VirginRockClassics.mp3"
+  },
+  {
+    "name": "Radio 24 il sole 24 ore",
+    "url": "http://shoutcast2.radio24.it:8000/;"
+  },
+  {
+    "name": "Radio 105 Network",
+    "url": "http://icecast.unitedradio.it/Radio105.mp3"
+  },
+  {
+    "name": "Rai Radio 2",
+    "url": "http://icestreaming.rai.it/2.mp3"
+  },
+  {
+    "name": "Radio Stereocittà",
+    "url": "http://onair11.xdevel.com:8134/;stream.mp3"
+  },
+  {
+    "name": "Rai Radio 3",
+    "url": "http://icestreaming.rai.it/3.mp3"
+  },
+  {
+    "name": "RMC Radio Monte Carlo",
+    "url": "http://icecast.unitedradio.it/RMC.mp3"
+  },
+  {
+    "name": "Radio Armisa",
+    "url": "https://onair.armisa.it/listen/armisa/radio.mp3"
+  },
+  {
+    "name": "Virgin Radio Italia",
+    "url": "http://icecast.unitedradio.it/Virgin.mp3"
   }
 ]

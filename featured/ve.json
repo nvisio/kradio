@@ -62,5 +62,149 @@
   {
     "name": "Swing Latina 88.3 FM",
     "url": "https://server6.globalhostla.com:9310/stream"
+  },
+  {
+    "name": "Unión Radio 90.3 FM Caracas",
+    "url": "http://ur58.lorini.net:2080/stream"
+  },
+  {
+    "name": "RocaFM Clasicos Caracas",
+    "url": "http://protostar.shoutca.st:8370/"
+  },
+  {
+    "name": "Adulto Joven 88.1",
+    "url": "https://server6.globalhostla.com:9168/stream"
+  },
+  {
+    "name": "DJ Shaggy Venezuela Radio",
+    "url": "https://laradiossl.online:9226/;"
+  },
+  {
+    "name": "Alba Ciudad Radio 93.6 FM16k",
+    "url": "https://envivo.albaciudad.org/alba16.mp3"
+  },
+  {
+    "name": "Rumba 98.1 FM",
+    "url": "https://cast20.plugstreaming.com:2020/stream/r981/;"
+  },
+  {
+    "name": "FM Mundial 104.1",
+    "url": "https://onlineradiobox.com/json/ve/lafmmundial/play?platform=web"
+  },
+  {
+    "name": "La Radio del Sur",
+    "url": "http://190.202.130.61:8000/lrds"
+  },
+  {
+    "name": "Exa FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHPSFMAAC.aac"
+  },
+  {
+    "name": "Radio dinámica 92.9",
+    "url": "https://guri.tepuyserver.net/8012/stream"
+  },
+  {
+    "name": "Circuito X",
+    "url": "http://cp2.lorini.net:39500/stream"
+  },
+  {
+    "name": "MPB Radio Venezuela",
+    "url": "https://radiozender.mpbnetwerken.nl/radiovenezuela.mp3"
+  },
+  {
+    "name": "Radio 2000",
+    "url": "https://streaming.adclichosting.com:8030/radio2000.mp3"
+  },
+  {
+    "name": "Rumba 100.1 Barquisimeto FM",
+    "url": "https://cast10.plugstreaming.com:2020/stream/r1001/;"
+  },
+  {
+    "name": "Espacio Network",
+    "url": "https://acp2.lorini.net:28050/stream"
+  },
+  {
+    "name": "Acción 104.5 FM (La diferencia en el dial)",
+    "url": "https://stream.intervalohost.com/accionfm/stream"
+  },
+  {
+    "name": "Rumba 104.9 Anzoategui FM",
+    "url": "https://cast10.plugstreaming.com:2020/stream/r1049/;"
+  },
+  {
+    "name": "Planeta 105.3 Caracas FM",
+    "url": "https://cast10.plugstreaming.com:2020/stream/planetafm/;"
+  },
+  {
+    "name": "Alba Ciudad 96.3 FM",
+    "url": "https://envivo.albaciudad.org/albaciudad.mp3"
+  },
+  {
+    "name": "Andes 89.3 FM",
+    "url": "http://streamingned.com:7098/;"
+  },
+  {
+    "name": "Lasser 97.7 FM",
+    "url": "https://server6.globalhostla.com:8010/stream"
+  },
+  {
+    "name": "DJ Carlos Radio",
+    "url": "https://sc10.conectarhosting.com/proxy/djcarlo1?mp=/stream"
+  },
+  {
+    "name": "COSTERA 102.7 FM",
+    "url": "https://streamingned.com:7112/stream"
+  },
+  {
+    "name": "Circuito X 89.7 FM",
+    "url": "http://cp2.lorini.net:39500/;mp312844|mp312844"
+  },
+  {
+    "name": "Radio María Venezuela",
+    "url": "https://dreamsiteradiocp2.com/proxy/rmvenezuela?mp=/stream"
+  },
+  {
+    "name": "Magic Radio 92.5 Maracay",
+    "url": "https://cloudstream2030.conectarhosting.com/8324/;"
+  },
+  {
+    "name": "Tama Stereo",
+    "url": "https://guri.tepuyserver.net/8457/stream"
+  },
+  {
+    "name": "CDR 98.7 FM",
+    "url": "https://laradiossl.online:8347/;"
+  },
+  {
+    "name": "BANDERA 105.7 FM",
+    "url": "http://streamingned.com:7148/;"
+  },
+  {
+    "name": "Contacto FM 93.7",
+    "url": "https://laradiossl.online:10058/;"
+  },
+  {
+    "name": "Electrik 97.7 FM",
+    "url": "https://streamingned.com:7044/stream"
+  },
+  {
+    "name": "Radio Dinámica 1490AM",
+    "url": "https://guri.tepuyserver.net/8040/stream"
+  },
+  {
+    "name": "Guanareña 98.3 FM",
+    "url": "https://laradiossl.online:10175/;?_=1#.mp3"
+  },
+  {
+    "name": "C-Oye 89.1 FM",
+    "url": "http://streamingned.com:7146/;"
+  },
+  {
+    "name": "CNB 95.3 FM Merideña",
+    "url": "https://stream.intervalohost.com/cnb95fm"
+  },
+  {
+    "name": "ULA 97.9 FM",
+    "url": "https://stream.intervalohost.com/ula979fm/stream"
   }
 ]

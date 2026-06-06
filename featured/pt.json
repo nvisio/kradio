@@ -78,5 +78,125 @@
   {
     "name": "RFM - Oceano Pacífico",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/OCEANPACIFICAAC.aac"
+  },
+  {
+    "name": "ORBITAL",
+    "url": "http://centova.radios.pt:8401/;listen.pls"
+  },
+  {
+    "name": "Antena 1 (Portugal)",
+    "url": "http://streaming-live-app.rtp.pt/liveradio/antena180a/playlist.m3u8"
+  },
+  {
+    "name": "RFM",
+    "url": "https://23603.live.streamtheworld.com/RFMAAC.aac"
+  },
+  {
+    "name": "Antena 1 (Portugal)",
+    "url": "https://streaming-live.rtp.pt/liveradio/antena180a/playlist.m3u8"
+  },
+  {
+    "name": "Rádio Observador",
+    "url": "http://195.23.85.126:8455/stream"
+  },
+  {
+    "name": "Rádio Renascença",
+    "url": "http://22653.live.streamtheworld.com/RADIO_RENASCENCA_SC"
+  },
+  {
+    "name": "RDP Africa (Portugal)",
+    "url": "https://streaming-live.rtp.pt/liveradio/rdpafrica80a/playlist.m3u8"
+  },
+  {
+    "name": "Mega Hits",
+    "url": "http://22333.live.streamtheworld.com:3690/MEGA_HITS_SC"
+  },
+  {
+    "name": "Rap/Hip Hop",
+    "url": "http://185.32.188.17:8097/stream"
+  },
+  {
+    "name": "TOP 80 - Todos Os Exitos De 80 A 2000",
+    "url": "http://live.top80.fm:8086/"
+  },
+  {
+    "name": "Rádio Amália",
+    "url": "http://centova.radio.com.pt:9496/;"
+  },
+  {
+    "name": "Deep in Radio",
+    "url": "http://s3.viastreaming.net:8525/"
+  },
+  {
+    "name": "Rádio Nova Era",
+    "url": "http://centova.radio.com.pt:9478/"
+  },
+  {
+    "name": "4Drive Jazz",
+    "url": "http://radio.streemlion.com:1150/stream"
+  },
+  {
+    "name": "Rádio Planície 92.8 Moura",
+    "url": "http://109.71.41.6:8026/stream"
+  },
+  {
+    "name": "M80 rádio",
+    "url": "http://stream-icy.bauermedia.pt/m80.mp3"
+  },
+  {
+    "name": "ABC Portugal",
+    "url": "http://centova.radio.com.pt:8547/;"
+  },
+  {
+    "name": "Rádio Comercial",
+    "url": "https://stream-hls.bauermedia.pt/comercial.aac/playlist.m3u8"
+  },
+  {
+    "name": "Rádio MEO Music",
+    "url": "http://centova.radio.com.pt:8495/;"
+  },
+  {
+    "name": "Rádio Nova 98.9 FM",
+    "url": "http://centova.radio.com.pt:9528/"
+  },
+  {
+    "name": "Rádio Marginal",
+    "url": "http://centova.radio.com.pt:8499/;"
+  },
+  {
+    "name": "Radio Comercial Portugal",
+    "url": "https://stream-icy.bauermedia.pt/comercial.mp3"
+  },
+  {
+    "name": "Antena 1",
+    "url": "http://streaming-live.rtp.pt/liveradio/antena180a/playlist.m3u8"
+  },
+  {
+    "name": "M80 Rádio – 80s",
+    "url": "https://stream-icy.bauermedia.pt/m8080.aac"
+  },
+  {
+    "name": "Rádio Regional de Arouca",
+    "url": "http://centova.radio.com.pt:8485/;"
+  },
+  {
+    "name": "Hiper FM",
+    "url": "http://195.23.85.126:9500/;"
+  },
+  {
+    "name": "Diana FM",
+    "url": "http://centova.radio.com.pt:9460/;"
+  },
+  {
+    "name": "Radio Fado de Coimbra",
+    "url": "https://nl.digitalrm.pt:8048/stream"
+  },
+  {
+    "name": "Antena 3 (AAC)",
+    "url": "http://streaming-live-app.rtp.pt/liveradio/antena380a/playlist.m3u8"
+  },
+  {
+    "name": "RFM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RFMAAC_SC"
   }
 ]

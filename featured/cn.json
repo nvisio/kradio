@@ -158,5 +158,97 @@
   {
     "name": "Sunshine FM 101 烟台广播电视台新闻综合广播",
     "url": "https://lhttp.qingting.fm/live/1682/64k.mp3"
+  },
+  {
+    "name": "CNR-1 中国之声",
+    "url": "http://zbbf2.ahbztv.com/live/4f3.m3u8"
+  },
+  {
+    "name": "AsiaFM高清音乐台",
+    "url": "http://asiafm.hk:8000/asiahd"
+  },
+  {
+    "name": "AsiaFM亚洲经典台",
+    "url": "http://goldfm.cn:8000/goldfm"
+  },
+  {
+    "name": "新闻联播",
+    "url": "https://rfienchinois64k.ice.infomaniak.ch//rfienchinois-64.mp3"
+  },
+  {
+    "name": "Lam Rim",
+    "url": "http://199.180.72.2:9097/lamrim"
+  },
+  {
+    "name": "BBN 中文",
+    "url": "https://streams.radiomast.io/ce298b32-8776-4192-9900-092f44b63e7f"
+  },
+  {
+    "name": "Raggakings雷鬼音乐频道",
+    "url": "https://raggakings.radio:8443/stream.ogg"
+  },
+  {
+    "name": "AsiaFM 亚洲热歌台【2023.10.17】",
+    "url": "http://hot.asiafm.net:8000/asiafm"
+  },
+  {
+    "name": "Cinemix电影音乐频道",
+    "url": "http://94.23.51.96:8001/"
+  },
+  {
+    "name": "Anison动漫音乐台",
+    "url": "http://pool.anison.fm:9000/AniSonFM(320)?"
+  },
+  {
+    "name": "Economic Radio FM 95 浙江经济广播",
+    "url": "https://lhttp.qingting.fm/live/4519/64k.mp3"
+  },
+  {
+    "name": "Jiangsu News Radio FM 93.7",
+    "url": "https://lhttp.qingting.fm/live/4944/64k.mp3"
+  },
+  {
+    "name": "Jiangsu Traffic Radio FM 101.1 江苏交通广播",
+    "url": "https://lhttp.qingting.fm/live/4054/64k.mp3"
+  },
+  {
+    "name": "江苏健康广播 FM 100.5",
+    "url": "https://lhttp.qingting.fm/live/20014/64k.mp3"
+  },
+  {
+    "name": "江苏故事广播 FM 104.9",
+    "url": "https://lhttp.qingting.fm/live/20012/64k.mp3"
+  },
+  {
+    "name": "江苏文艺广播 FM 91.4",
+    "url": "https://lhttp.qingting.fm/live/20013/64k.mp3"
+  },
+  {
+    "name": "江苏新闻综合广播 AM702",
+    "url": "https://lhttp.qingting.fm/live/5055/64k.mp3"
+  },
+  {
+    "name": "江苏财经广播 FM 95.2",
+    "url": "https://lhttp.qingting.fm/live/20015/64k.mp3"
+  },
+  {
+    "name": "Play FM 89.7 江苏音乐广播",
+    "url": "https://lhttp.qingting.fm/live/4936/64k.mp3"
+  },
+  {
+    "name": "浙江旅游之声 FM 104.5",
+    "url": "https://lhttp.qingting.fm/live/4524/64k.mp3"
+  },
+  {
+    "name": "杭州西湖之声 FM 105.4",
+    "url": "https://lhttp.qingting.fm/live/1163/64k.mp3"
+  },
+  {
+    "name": "Traffic 91.8 FM 杭州交通经济广播",
+    "url": "https://lhttp.qingting.fm/live/1133/64k.mp3"
+  },
+  {
+    "name": "Chengdu PBS - Traffic Channel",
+    "url": "https://lhttp.qingting.fm/live/4891/64k.mp3"
   }
 ]

@@ -142,5 +142,61 @@
   {
     "name": "Melodia Thessaloniki 98FM",
     "url": "https://n31a-eu.rcs.revma.com/8tdwa6ez1duvv"
+  },
+  {
+    "name": "Blues Radio",
+    "url": "http://cast3.radiohost.ovh:8352/"
+  },
+  {
+    "name": "KISS FM 100.6",
+    "url": "http://live.radiokiss.gr/kissfm1006hq.mp3"
+  },
+  {
+    "name": "Real FM 97.8",
+    "url": "http://netradio.live24.gr/realfm"
+  },
+  {
+    "name": "Trance Athena",
+    "url": "http://cast.streams.ovh:8008/stream"
+  },
+  {
+    "name": "Kiss 92.9",
+    "url": "http://netradio.live24.gr/kissfmathens"
+  },
+  {
+    "name": "Sport FM 94.6",
+    "url": "http://netradio.live24.gr/sportfm7712"
+  },
+  {
+    "name": "Skai 100.3",
+    "url": "http://netradio.live24.gr/skai1003"
+  },
+  {
+    "name": "Zeppelin 106.7",
+    "url": "https://radiostreaming.ert.gr/ert-zeppelin"
+  },
+  {
+    "name": "Sfera 102.2",
+    "url": "http://sfera.live24.gr/sfera4132"
+  },
+  {
+    "name": "Παραπολιτικά FM 90.1",
+    "url": "http://netradio.live24.gr/athinaradio"
+  },
+  {
+    "name": "Ellinikos 93.2",
+    "url": "http://netradio.live24.gr/orange9320"
+  },
+  {
+    "name": "Psyndora Psytrance",
+    "url": "http://cast.magicstreams.gr:9111/stream"
+  },
+  {
+    "name": "Vanilla Radio Smooth Flavors",
+    "url": "https://smooth.vanillaradio.com:8032/live"
+  },
+  {
+    "name": "Derti 98.6",
+    "url": "http://derti.live24.gr/derty1000"
   }
 ]

@@ -66,5 +66,141 @@
   {
     "name": "Radio Cultura 1290 AM",
     "url": "https://radios.iwstreaming.uy/8034/stream"
+  },
+  {
+    "name": "Del Sol FM",
+    "url": "http://radio.dl.uy:9950/radio"
+  },
+  {
+    "name": "Fm Inolvidable 93.1",
+    "url": "https://inolvidable-2.nty.uy/"
+  },
+  {
+    "name": "Radio Pipí Cucú",
+    "url": "https://comodin.uy/radio/8000/320.mp3"
+  },
+  {
+    "name": "CX12 Radio Oriental 770 AM",
+    "url": "http://radiolatina.live:7906/1"
+  },
+  {
+    "name": "Radio Centenario CX36 1250 AM",
+    "url": "http://rfm.radio.netgate.com.uy:8000/centenario"
+  },
+  {
+    "name": "Babel",
+    "url": "https://radios.iwstreaming.uy/8030/stream"
+  },
+  {
+    "name": "Radio Uruguay 1050",
+    "url": "https://radios.iwstreaming.uy/8036/stream"
+  },
+  {
+    "name": "Concierto FM 95.1",
+    "url": "https://conectperu.com/8012/stream"
+  },
+  {
+    "name": "Azul FM 101.9",
+    "url": "https://azul-2.nty.uy/"
+  },
+  {
+    "name": "colonia am 550",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/COLONIA_ADP.aac"
+  },
+  {
+    "name": "La Isla Radio Online Del Uruguay",
+    "url": "http://lirodu.zapto.org:8000/laislaradio"
+  },
+  {
+    "name": "Radio Uno FM",
+    "url": "http://radio.hostlagarto.com:9822/"
+  },
+  {
+    "name": "RADIO MARIA URUGUAY",
+    "url": "http://dreamsiteradiocp.com:8088/stream"
+  },
+  {
+    "name": "America FM",
+    "url": "http://emisiones.com.uy:8118/america"
+  },
+  {
+    "name": "FM Naturaleza 88.1",
+    "url": "http://stm.gmpro.top:7006/"
+  },
+  {
+    "name": "970 Universal",
+    "url": "https://970universal-3.nty.uy/"
+  },
+  {
+    "name": "Radio Rivera CX144 AM 1440",
+    "url": "http://usa15.ciudaddigital.com.uy:8060/RiveraAM"
+  },
+  {
+    "name": "Sport 890",
+    "url": "https://alba-uy-sport890-sport890.stream.mediatiquestream.com/index.m3u8"
+  },
+  {
+    "name": "Zorrilla de San Martin",
+    "url": "https://server-usa2.radioseninternet.net/9312/stream"
+  },
+  {
+    "name": "mundo fm uruguay",
+    "url": "http://emisiones.com.uy:8088/mundo"
+  },
+  {
+    "name": "M24 · La radio que nos mueve (97.9  / 102.5 )",
+    "url": "https://streaming1.hostingmontevideo.com/8034/stream"
+  },
+  {
+    "name": "Del Sol FM",
+    "url": "https://delsol-1.nty.uy/?type=http&nocache=2780&dbl=0"
+  },
+  {
+    "name": "Metropolis 104.9",
+    "url": "https://metropolis-web-1.nty.uy/"
+  },
+  {
+    "name": "Radio Pipí Cucú (128 kbps)",
+    "url": "https://comodin.uy/radio/8000/128.mp3"
+  },
+  {
+    "name": "Laser FM",
+    "url": "https://server.laradio.online/proxy/eduardo_correa?mp=/stream"
+  },
+  {
+    "name": "102.3 FM CORONILLA",
+    "url": "https://streaming01.shockmedia.com.ar/9184/stream"
+  },
+  {
+    "name": "Radio Carmelo",
+    "url": "https://server.laradio.online/proxy/martin_barragan05?mp=/stream"
+  },
+  {
+    "name": "24 de Agosto",
+    "url": "https://24deagosto-zikoxweb.radioca.st/stream"
+  },
+  {
+    "name": "Del Plata FM 95.5",
+    "url": "https://alba-uy-delplata-delplata.stream.mediatiquestream.com/index.m3u8"
+  },
+  {
+    "name": "CX 30 Radio Nacional",
+    "url": "https://a1.asurahosting.com:8650/radio.mp3"
+  },
+  {
+    "name": "Oceano FM",
+    "url": "https://oceano-2.nty.uy/"
+  },
+  {
+    "name": "Radio Pedal",
+    "url": "https://streaming1.hostingmontevideo.com:7003/stream.mp3"
+  },
+  {
+    "name": "Radio San Carlos",
+    "url": "http://198.49.65.43:10396/;"
+  },
+  {
+    "name": "CX 121 Difusora Soriano  1210 AM",
+    "url": "http://usa15.ciudaddigital.com.uy:8094/DifusoraSoriano"
   }
 ]

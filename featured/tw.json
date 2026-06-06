@@ -70,5 +70,133 @@
   {
     "name": "i-radio 任意門計劃",
     "url": "https://n05a-eu.rcs.revma.com/ndk05tyy2tzuv"
+  },
+  {
+    "name": "臺北電台",
+    "url": "https://stream.ginnet.cloud/live0130lo-yfyo/_definst_/fm/playlist.m3u8"
+  },
+  {
+    "name": "Classical 古典音樂台 FM 97.7",
+    "url": "http://59.120.88.155:8000/live.mp3"
+  },
+  {
+    "name": "臺北電台AM",
+    "url": "https://stream.ginnet.cloud/live0130lo-yfyo/_definst_/am/playlist.m3u8"
+  },
+  {
+    "name": "教育廣播電臺-臺北總臺FM臺",
+    "url": "https://cast.ner.gov.tw/1"
+  },
+  {
+    "name": "1766線上電臺-私房音樂",
+    "url": "http://livestream.1766.today:1769/live1.mp3"
+  },
+  {
+    "name": "城市廣播網•台南知音",
+    "url": "http://fm971.cityfm.tw:8080/971.mp3"
+  },
+  {
+    "name": "正聲廣播公司",
+    "url": "https://flv.ccdntech.com/live/_definst_/mp4:vod117_Live/live1/playlist.m3u8"
+  },
+  {
+    "name": "教育廣播電臺-臺北總臺AM臺",
+    "url": "https://cast.ner.gov.tw/2"
+  },
+  {
+    "name": "佳音經典音樂網",
+    "url": "https://stream.ginnet.cloud/live0119lo-p4rb/_definst_/classic/playlist.m3u8"
+  },
+  {
+    "name": "佳音電台",
+    "url": "https://stream.ginnet.cloud/live0119lo-p4rb/_definst_/fm909/playlist.m3u8"
+  },
+  {
+    "name": "Phate",
+    "url": "http://phate.io/listen"
+  },
+  {
+    "name": "警察廣播電台 - 台北台",
+    "url": "http://stream.pbs.gov.tw:1935/live/TPS/playlist.m3u8"
+  },
+  {
+    "name": "台中城市廣播",
+    "url": "http://fm901.cityfm.tw:8080/901.mp3"
+  },
+  {
+    "name": "寶島聯播網",
+    "url": "http://125.227.87.206:8000/FM98.5"
+  },
+  {
+    "name": "牽手之聲網路台",
+    "url": "http://us3.internet-radio.com:8232/stream"
+  },
+  {
+    "name": "1766線上電臺-百家知識",
+    "url": "http://livestream.1766.today:1768/live1.mp3"
+  },
+  {
+    "name": "警察廣播電台 - 全國治安交通網",
+    "url": "http://stream.pbs.gov.tw:1935/live/mp3:PBS/playlist.m3u8"
+  },
+  {
+    "name": "Taiwan Plus",
+    "url": "https://bcovlive-a.akamaihd.net/rce33d845cb9e42dfa302c7ac345f7858/ap-northeast-1/6282251407001/playlist.m3u8"
+  },
+  {
+    "name": "金聲廣播電台",
+    "url": "http://60.249.186.105:9000/;"
+  },
+  {
+    "name": "警察廣播電台 - 台中台",
+    "url": "http://stream.pbs.gov.tw:1935/live/TCS/playlist.m3u8"
+  },
+  {
+    "name": "警察廣播電臺 - 全國治安交通網 FM 104.9",
+    "url": "https://stream.pbs.gov.tw/live/PBS/playlist.m3u8"
+  },
+  {
+    "name": "教育廣播電臺-高雄分臺",
+    "url": "https://cast.ner.gov.tw/5"
+  },
+  {
+    "name": "城市廣播網-城市廣播",
+    "url": "http://fm929.cityfm.tw:8080/929.mp3"
+  },
+  {
+    "name": "TAIWAN LOUNGE RADIO",
+    "url": "https://azuracast.conceptradio.fr:8030/stream.mp3"
+  },
+  {
+    "name": "飛碟聯播網 台中真善美",
+    "url": "http://cast.uforadio.com.tw:8000/tai-stream"
+  },
+  {
+    "name": "台灣廣播 台北一台",
+    "url": "http://test.taiwan-radio.tw:8000/TP.AM1323"
+  },
+  {
+    "name": "世新廣播電台-1",
+    "url": "https://stream.ginnet.cloud/live0115lo-89xv/_definst_/fm881/playlist.m3u8"
+  },
+  {
+    "name": "https://www.csbc.com.tw",
+    "url": "http://flv.ccdntech.com/live/_definst_/mp4:vod117_Live/live1/playlist.m3u8"
+  },
+  {
+    "name": "正聲綜合",
+    "url": "http://flv.ccdntech.com/live/_definst_/mp4:vod117_Live/live2/playlist.m3u8"
+  },
+  {
+    "name": "教育廣播電臺-彰化分臺FM",
+    "url": "https://cast.ner.gov.tw/4"
+  },
+  {
+    "name": "教育廣播電臺-臺東分臺FM-1",
+    "url": "https://cast.ner.gov.tw/6"
+  },
+  {
+    "name": "Stars RADIO星蹤之愛廣播網",
+    "url": "https://cdn280.ccdntech.com/live-http/_definst_/vod280_Live/stars/playlist.m3u8"
   }
 ]

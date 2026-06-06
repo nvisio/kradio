@@ -74,5 +74,129 @@
   {
     "name": "Power 98 Love Songs",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/POWER98_LOVESONGS_SC"
+  },
+  {
+    "name": "YES 933 Radio",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/YES933AAC.aac"
+  },
+  {
+    "name": "Warna 942 Radio",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/WARNA942FMAAC.aac"
+  },
+  {
+    "name": "Love 972 Radio",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/LOVE972FMAAC.aac"
+  },
+  {
+    "name": "Jia 883 Radio",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/883JIAAAC.aac"
+  },
+  {
+    "name": "UFM 100.3 Radio",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/UFM_1003AAC.aac"
+  },
+  {
+    "name": "Capital 958 Radio",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/CAPITAL958FMAAC.aac"
+  },
+  {
+    "name": "CNA 938 Live Singapore",
+    "url": "http://19183.live.streamtheworld.com:3690/938NOW_PREM_SC"
+  },
+  {
+    "name": "Class 95 Radio",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/CLASS95AAC.aac"
+  },
+  {
+    "name": "SPH 963 Radio",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/HAO_963AAC.aac"
+  },
+  {
+    "name": "Gold 905 Radio",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/GOLD905AAC.aac"
+  },
+  {
+    "name": "Oli 968 Radio",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/OLI968FMAAC.aac"
+  },
+  {
+    "name": "987FM",
+    "url": "https://22393.live.streamtheworld.com/987FM_PREM.aac"
+  },
+  {
+    "name": "Symphony 924 Radio",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/SYMPHONY924AAC.aac"
+  },
+  {
+    "name": "Mediacorp 987 Radio",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/987FMAAC.aac"
+  },
+  {
+    "name": "Power 98 Love Songs",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/POWER98_LOVESONGS.mp3"
+  },
+  {
+    "name": "Ria 897 Radio",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/RIA897FMAAC.aac"
+  },
+  {
+    "name": "ONE FM",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/one_FM_913AAC.aac?dist=radiosingaporeapp"
+  },
+  {
+    "name": "Oli 96.8 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/OLI968FMAAC.aac"
+  },
+  {
+    "name": "AXR Singapore",
+    "url": "http://singaporestream.axr.online/"
+  },
+  {
+    "name": "LOVE 972",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LOVE972FM_PREM.aac"
+  },
+  {
+    "name": "CNA938",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/938NOW_PREM.m3u8"
+  },
+  {
+    "name": "GOLD 905",
+    "url": "https://22403.live.streamtheworld.com/GOLD905_SC"
+  },
+  {
+    "name": "938 Now Radio",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/938NOWAAC.aac"
+  },
+  {
+    "name": "CNA 938",
+    "url": "https://22893.live.streamtheworld.com/938NOW_SC"
+  },
+  {
+    "name": "Yes 933",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/YES933AAC_SC"
+  },
+  {
+    "name": "Money 893 Radio",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/MONEY_893AAC.aac"
+  },
+  {
+    "name": "Singapore Chinese POP YES FM 933",
+    "url": "https://22893.live.streamtheworld.com/YES933_SC?dist=radiosingapore"
+  },
+  {
+    "name": "CAPITAL 958",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CAPITAL958FM_PREM.aac"
+  },
+  {
+    "name": "Radio Melody with Brother Bjorn",
+    "url": "http://ssl.geckohost.nz:9191/autodj"
+  },
+  {
+    "name": "987",
+    "url": "https://14033.live.streamtheworld.com/987FM_SC"
+  },
+  {
+    "name": "ONE FM 91.3 SPH AAC",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/ONE_FM_913AAC.aac"
   }
 ]

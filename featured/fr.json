@@ -158,5 +158,49 @@
   {
     "name": "Générations Rap FR",
     "url": "https://generationfm-rap.ice.infomaniak.ch/generationfm-rap-high.mp3"
+  },
+  {
+    "name": "France Info",
+    "url": "http://direct.franceinfo.fr/live/franceinfo-midfi.mp3"
+  },
+  {
+    "name": "RFI Afrique",
+    "url": "http://live02.rfi.fr/rfiafrique-64.mp3"
+  },
+  {
+    "name": "Jazz Radio Blues",
+    "url": "http://jazzblues.ice.infomaniak.ch/jazzblues-high.mp3"
+  },
+  {
+    "name": "France Inter",
+    "url": "http://direct.franceinter.fr/live/franceinter-hifi.aac"
+  },
+  {
+    "name": "France Info",
+    "url": "http://icecast.radiofrance.fr/franceinfo-hifi.aac"
+  },
+  {
+    "name": "RTL",
+    "url": "http://streaming.radio.rtl.fr/rtl-1-44-128"
+  },
+  {
+    "name": "RFI-Afrique",
+    "url": "http://live02.rfi.fr/rfiafrique-96k.mp3"
+  },
+  {
+    "name": "France Culture",
+    "url": "http://icecast.radiofrance.fr/franceculture-hifi.aac"
+  },
+  {
+    "name": "France Inter",
+    "url": "http://direct.franceinter.fr/live/franceinter-midfi.mp3"
+  },
+  {
+    "name": "Skyrock",
+    "url": "http://icecast.skyrock.net/s/natio_mp3_128k"
+  },
+  {
+    "name": "Tropiques FM 92.6",
+    "url": "https://listen.radioking.com/radio/8916/stream/19088"
   }
 ]
