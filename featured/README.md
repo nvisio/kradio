@@ -57,3 +57,22 @@ Geo/event availability on the curated set is produced occasionally (by hand) via
 `tools/availability-classify.workflow.js` + `tools/apply-availability.mjs`, with
 ambiguous cases recorded in `tools/availability-review.json`. See
 `docs/superpowers/specs/2026-06-06-stream-availability-design.md`.
+
+## Station intake (Channel B — Radio Browser)
+
+Monthly, `.github/workflows/import-stations.yml` runs
+`tools/import-radio-browser.mjs`: for each country it fetches the most-voted
+stations from the Radio Browser API (`order=votes&hidebroken=true`), maps them
+to our schema, unions the top ones into `featured/{cc}.json` (existing curation
+preserved), and collects net-new stations. The Action then probes the net-new
+candidates (`probe-streams` → `drop-dead-candidates`), enriches genre/lang,
+merges them into `stations.json` (URL-deduped) via `merge-stations`, rebuilds
+the index, and **opens a PR** — catalogue changes are never auto-merged.
+
+- Stream URL = RB `url_resolved`; country = `countrycode` (lowercased);
+  genre = `tags`; lang = `languagecodes`. Dedup is by normalized URL.
+- Data is CC0; requests send a `kradio/1.0` User-Agent.
+- **radio.garden** stays a manual source (`tools/import-radio-garden.mjs`) that
+  funnels through the same `merge-stations` → `build-index` path.
+
+See `docs/superpowers/specs/2026-06-06-channel-b-radio-browser-design.md`.
