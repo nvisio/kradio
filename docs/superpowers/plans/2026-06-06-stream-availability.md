@@ -2,11 +2,11 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Add a minimal stream-availability model to the catalogue (default global, flag only exceptions), verify it by actually probing streams, conservatively prune hard-dead links from the 37k catalogue, and have the iOS app geo-filter the featured shelf.
+**Goal:** Stand up a weekly automated stream-health pipeline (GitHub Actions → `health.json` served via CDN), populate geo/event availability on the curated featured set once, and have the iOS app fetch both layers + keep a bundled fallback.
 
-**Architecture:** Deterministic, dependency-free Node tools in `kradio/tools/` own reachability (dead/reachable/unknown) for both the featured set and the full catalogue. A small LLM Workflow judges geo/event for the handful of featured *candidates* (probe `geoHint` 403/451, a tiny conservative domain prior, or event keywords) with an adversarial refute pass; ambiguous verdicts go to a human-confirm list. The iOS `RemoteStationCatalog` decodes the new optional fields and hides stations the user can't play.
+**Architecture:** Two layers on two cadences. **Health** (reachability) is regenerated weekly by a GitHub Action that runs a deterministic, dependency-free probe over the 37k catalogue and commits a compact `health.json` deny-list (LLM-free). **Availability** (geo/event) is an occasional, by-hand LLM Workflow over the few hundred featured candidates with adversarial verification. The iOS app fetches `health.json` + `featured/{cc}.json`, hides dead/geo-restricted, fails open on fetch error, and keeps the existing KR/UK/JP built-ins as the offline fallback.
 
-**Tech Stack:** Node ≥20 (built-in `node:test`, `fetch`, `AbortController`) — no new deps; the Workflow tool for LLM classification; Swift/SwiftUI (pure logic TDD'd via the `swift` CLI, since kbscong has no XCTest target).
+**Tech Stack:** Node ≥20 built-ins (`node:test`, `fetch`, `AbortController`) — no new deps; GitHub Actions (weekly cron); the Workflow tool for the LLM geo pass; Swift/SwiftUI (pure logic TDD'd via the `swift` CLI — kbscong has no XCTest target).
 
 **Repos:**
 - Public: `/Users/moon/Projects/claude/kradio` → `nvisio/kradio`
@@ -14,7 +14,9 @@
 
 **Spec:** `docs/superpowers/specs/2026-06-06-stream-availability-design.md`
 
-**Node:** use `/usr/local/opt/node@22/bin/node` (v22) for all `node` commands below; the default `node` is v21 and works too, but pin v22 for consistency. Shorthand used in commands: prefix `PATH="/usr/local/opt/node@22/bin:$PATH"`.
+**Node:** prefix every `node` command with `PATH="/usr/local/opt/node@22/bin:$PATH"` (v22). Default `node` is v21 and also works.
+
+**Datacenter-IP caveat (drives the conservative classifier):** the weekly Action runs from GitHub's US datacenter IPs, which radio CDNs 403/block more than residential IPs. So `dead` is hard-signal-only; 403/451 → `unknown`+`geoHint` (never dead); the app hides only `dead`.
 
 ---
 
@@ -23,33 +25,34 @@
 ### `nvisio/kradio`
 ```
 tools/
-├── probe-classify.mjs            # NEW — pure: classifyReachability(), isPrunable()
+├── probe-classify.mjs            # NEW — pure classifyReachability(), isPrunable()
 ├── probe-classify.test.mjs       # NEW — node:test
-├── probe-streams.mjs             # NEW — network probe harness → probe-report.*.json
-├── geo-prior.mjs                 # NEW — pure: geoPriorForUrl(), selectGeoCandidates()
+├── probe-streams.mjs             # NEW — concurrent probe harness → probe-report.*.json
+├── build-health.mjs              # NEW — pure toHealth() + harness → health.json
+├── build-health.test.mjs         # NEW — node:test
+├── prune-dead.mjs                # NEW — OCCASIONAL hard compaction (not in weekly Action)
+├── geo-prior.mjs                 # NEW — pure geoPriorForUrl(), selectGeoCandidates()
 ├── geo-prior.test.mjs            # NEW — node:test
-├── apply-availability.mjs        # NEW — pure: mergeVerdict() + harness writes featured/
+├── apply-availability.mjs        # NEW — pure mergeVerdict() + harness → featured/
 ├── apply-availability.test.mjs   # NEW — node:test
-├── prune-dead.mjs                # NEW — conservative stations.json prune + reindex
-├── availability-classify.workflow.js  # NEW — Workflow script (LLM classify + adversarial)
-├── probe-report.featured.json    # ARTIFACT (gitignored)
-├── probe-report.full.json        # ARTIFACT (gitignored)
-└── availability-review.json      # human-confirm list (committed — audit trail)
-featured/
-├── *.json                        # exception entries annotated by apply-availability
-└── README.md                     # MODIFY — document new fields + StreamAvailability + radiko
-.gitignore                        # MODIFY — probe-report*.json
-docs/superpowers/{specs,plans}/…  # spec + this plan
+├── availability-classify.workflow.js  # NEW — Workflow (LLM classify + adversarial)
+├── availability-review.json      # human-confirm list (committed)
+└── probe-report.*.json           # ARTIFACTS (gitignored)
+.github/workflows/health-check.yml # NEW — weekly cron
+health.json                        # NEW — committed status layer, served via CDN
+featured/*.json                    # exception entries annotated
+featured/README.md                 # MODIFY — schema docs
+.gitignore                         # MODIFY — tools/probe-report*.json
 ```
 
 ### `kbscong`
 ```
-Shared/RemoteStationCatalog.swift  # MODIFY — extend FeaturedEntry, add isHidden(), filter + radiko url-fallback
+Shared/RemoteStationCatalog.swift  # MODIFY — health fetch + fallback + geo decode/filter
 ```
 
 ---
 
-## Phase 1 — Probe tooling (deterministic, TDD)
+## Phase 1 — Health pipeline tools (deterministic, TDD)
 
 ### Task 1: Pure reachability classifier
 
@@ -99,7 +102,7 @@ test("451 → unknown + geoHint", () => {
 test("200 audio/mpeg → reachable", () => {
   assert.equal(classifyReachability({ status: 200, contentType: "audio/mpeg" }).reachability, "reachable");
 });
-test("200 HLS playlist → reachable", () => {
+test("206 HLS playlist → reachable", () => {
   assert.equal(classifyReachability({ status: 206, contentType: "application/vnd.apple.mpegurl" }).reachability, "reachable");
 });
 test("200 text/html → unknown (bad content type)", () => {
@@ -110,7 +113,7 @@ test("503 → unknown (kept, transient)", () => {
 });
 test("isPrunable: dead → true; unknown/reachable → false", () => {
   assert.equal(isPrunable({ reachability: "dead" }), true);
-  assert.equal(isPrunable({ reachability: "unknown" }), false);   // covers 503, 403, timeout
+  assert.equal(isPrunable({ reachability: "unknown" }), false);
   assert.equal(isPrunable({ reachability: "reachable" }), false);
 });
 ```
@@ -126,11 +129,10 @@ Expected: FAIL — cannot find module `./probe-classify.mjs`.
 
 ```js
 // tools/probe-classify.mjs
-// Pure reachability classifier. No network, no side effects — unit-testable.
+// Pure reachability classifier. No network, no side effects.
 //
-// reachability:
 //   "dead"      — hard failure (DNS NXDOMAIN, conn refused, TLS invalid, 404, 410).
-//                 By construction this is exactly the set safe to prune.
+//                 Exactly the set safe to prune / hard-hide.
 //   "reachable" — 2xx with an audio-ish content-type.
 //   "unknown"   — everything else (timeout, reset, 5xx, 401/403/451, other 4xx,
 //                 2xx non-audio). 403/451 set geoHint.
@@ -183,7 +185,7 @@ export function isPrunable(record) {
 - [ ] **Step 4: Run, expect pass**
 
 Run: `cd /Users/moon/Projects/claude/kradio && PATH="/usr/local/opt/node@22/bin:$PATH" node --test tools/probe-classify.test.mjs`
-Expected: all tests PASS.
+Expected: all PASS.
 
 - [ ] **Step 5: Commit**
 
@@ -201,17 +203,13 @@ git commit -m "🔬 feat: pure stream reachability classifier (tested)"
 - Create: `/Users/moon/Projects/claude/kradio/tools/probe-streams.mjs`
 - Modify: `/Users/moon/Projects/claude/kradio/.gitignore`
 
-No new unit tests (network harness); the classifier it calls is already tested. Verified by a live smoke run in Step 3.
-
 - [ ] **Step 1: Broaden .gitignore**
 
-Replace the probe-report line in `.gitignore` so both report files are ignored. The file currently contains a block ending with `tools/probe-report.json`. Change that exact line:
-
-`tools/probe-report.json`
-
-to:
+In `.gitignore`, change the exact line `tools/probe-report.json` to:
 
 `tools/probe-report*.json`
+
+(If the line isn't present, add it.) Do NOT ignore `health.json` — it is committed.
 
 - [ ] **Step 2: Write the harness**
 
@@ -221,12 +219,11 @@ to:
 #!/usr/bin/env node
 // tools/probe-streams.mjs
 // Deterministic, LLM-free stream reachability probe. Writes a sidecar report;
-// never touches featured/ or stations.json itself.
+// never touches featured/ or stations.json.
 //
-// Usage:
-//   node tools/probe-streams.mjs --featured                       → tools/probe-report.featured.json
-//   node tools/probe-streams.mjs stations.json                    → tools/probe-report.full.json
-//   node tools/probe-streams.mjs <input> --out file --concurrency 40 --timeout 8000
+//   node tools/probe-streams.mjs --featured                    → tools/probe-report.featured.json
+//   node tools/probe-streams.mjs stations.json                 → tools/probe-report.full.json
+//   node tools/probe-streams.mjs <input> --out f --concurrency 40 --timeout 8000
 
 import { readFile, writeFile, readdir } from "node:fs/promises";
 import { join, resolve } from "node:path";
@@ -285,7 +282,7 @@ async function probeOne(entry, timeout) {
   }
   try {
     let r = await probeOnce(entry.url, timeout);
-    if (r.status >= 500) {            // one retry on 5xx
+    if (r.status >= 500) {
       try { r = await probeOnce(entry.url, timeout); } catch { /* keep first */ }
     }
     const c = classifyReachability({ status: r.status, contentType: r.contentType });
@@ -303,8 +300,8 @@ async function pool(items, n, fn) {
   async function worker() {
     while (i < items.length) {
       const idx = i++;
-      out[idx] = await fn(items[idx], idx);
-      if (++done % 100 === 0) process.stderr.write(`  probed ${done}/${items.length}\n`);
+      out[idx] = await fn(items[idx]);
+      if (++done % 200 === 0) process.stderr.write(`  probed ${done}/${items.length}\n`);
     }
   }
   await Promise.all(Array.from({ length: Math.min(n, items.length) }, worker));
@@ -317,7 +314,7 @@ async function main() {
   const out = args.out || (args.featured ? "tools/probe-report.featured.json" : "tools/probe-report.full.json");
   console.error(`probing ${items.length} streams (concurrency ${args.concurrency}, timeout ${args.timeout}ms)…`);
   const records = await pool(items, args.concurrency, (e) => probeOne(e, args.timeout));
-  await writeFile(resolve(out), JSON.stringify(records, null, 0) + "\n", "utf8");
+  await writeFile(resolve(out), JSON.stringify(records) + "\n", "utf8");
   const tally = records.reduce((m, r) => ((m[r.reachability] = (m[r.reachability] || 0) + 1), m), {});
   console.error(`wrote ${out} — ${JSON.stringify(tally)}`);
 }
@@ -327,37 +324,168 @@ main().catch((e) => { console.error(e); process.exit(1); });
 
 - [ ] **Step 3: Smoke-test on a 5-entry slice**
 
-Run a tiny probe to confirm the harness works end to end (writes a throwaway report):
-
 ```bash
 cd /Users/moon/Projects/claude/kradio
 PATH="/usr/local/opt/node@22/bin:$PATH" node -e '
-import("./tools/probe-classify.mjs").then(async ({classifyReachability}) => {
-  const urls = JSON.parse(require("fs").readFileSync("featured/de.json")).slice(0,5);
-  for (const e of urls) {
-    try { const r = await fetch(e.url, {method:"GET", headers:{Range:"bytes=0-1"}}); console.log(r.status, (r.headers.get("content-type")||"").slice(0,30), e.name); }
-    catch(err){ console.log("ERR", err.cause?.code||err.code, e.name); }
-  }
-});'
+const fs=require("fs");
+(async()=>{ for(const e of JSON.parse(fs.readFileSync("featured/de.json")).slice(0,5)){
+  try{const r=await fetch(e.url,{method:"GET",headers:{Range:"bytes=0-1"}});console.log(r.status,(r.headers.get("content-type")||"").slice(0,28),e.name);}
+  catch(err){console.log("ERR",err.cause?.code||err.code,e.name);} } })();'
 ```
-Expected: 5 lines, mostly `200`/`206` with `audio/...` content types (proves real streams resolve from this host). This validates `fetch`+`Range` works here before the full run.
+Expected: 5 lines, mostly `200`/`206` with `audio/...` types (proves `fetch`+`Range` resolves real streams here).
 
 - [ ] **Step 4: Commit**
 
 ```bash
 cd /Users/moon/Projects/claude/kradio
 git add tools/probe-streams.mjs .gitignore
-git commit -m "🛰️ feat: deterministic stream probe harness (concurrent, sidecar report)"
+git commit -m "🛰️ feat: deterministic concurrent stream probe harness"
 ```
 
 ---
 
-### Task 3: Conservative dead-prune tool
+### Task 3: Distil report → health.json
+
+**Files:**
+- Create: `/Users/moon/Projects/claude/kradio/tools/build-health.mjs`
+- Create: `/Users/moon/Projects/claude/kradio/tools/build-health.test.mjs`
+
+- [ ] **Step 1: Write the failing test**
+
+`tools/build-health.test.mjs`:
+
+```js
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { toHealth } from "./build-health.mjs";
+
+const recs = [
+  { url: "https://ok1", reachability: "reachable", signal: "ok", httpStatus: 200 },
+  { url: "https://ok2", reachability: "reachable", signal: "ok", httpStatus: 206 },
+  { url: "https://dead1", reachability: "dead", signal: "ENOTFOUND", httpStatus: null },
+  { url: "https://geo1", reachability: "unknown", signal: "http_403", httpStatus: 403, geoHint: true },
+];
+
+test("counts healthy/unknown/dead", () => {
+  const h = toHealth(recs, { vantage: "test" });
+  assert.deepEqual(h.counts, { healthy: 2, unknown: 1, dead: 1 });
+  assert.equal(h.total, 4);
+  assert.equal(h.vantage, "test");
+});
+test("unhealthy lists only non-healthy, with fields", () => {
+  const h = toHealth(recs, { vantage: "test" });
+  assert.equal(h.unhealthy.length, 2);
+  const dead = h.unhealthy.find((u) => u.url === "https://dead1");
+  assert.deepEqual(dead, { url: "https://dead1", status: "dead", signal: "ENOTFOUND", httpStatus: null });
+});
+test("geoHint preserved only when true", () => {
+  const h = toHealth(recs, { vantage: "test" });
+  const geo = h.unhealthy.find((u) => u.url === "https://geo1");
+  assert.equal(geo.geoHint, true);
+  const dead = h.unhealthy.find((u) => u.url === "https://dead1");
+  assert.equal("geoHint" in dead, false);
+});
+test("healthy URLs are omitted from unhealthy", () => {
+  const h = toHealth(recs, { vantage: "test" });
+  assert.equal(h.unhealthy.some((u) => u.url.startsWith("https://ok")), false);
+});
+```
+
+- [ ] **Step 2: Run, expect fail**
+
+Run: `cd /Users/moon/Projects/claude/kradio && PATH="/usr/local/opt/node@22/bin:$PATH" node --test tools/build-health.test.mjs`
+Expected: FAIL — module not found.
+
+- [ ] **Step 3: Implement**
+
+`tools/build-health.mjs`:
+
+```js
+#!/usr/bin/env node
+// tools/build-health.mjs
+// Distil a probe report into health.json — a compact deny-list of non-healthy
+// URLs (absent ⇒ healthy). Pure toHealth() is unit-tested; the harness adds the
+// timestamp and refuses to write on a suspiciously small report.
+//
+//   node tools/build-health.mjs [--report tools/probe-report.full.json] [--out health.json]
+//   HEALTH_VANTAGE=github-actions-us node tools/build-health.mjs
+
+import { readFile, writeFile } from "node:fs/promises";
+import { resolve } from "node:path";
+
+export function toHealth(records, { vantage = "local" } = {}) {
+  const counts = { healthy: 0, unknown: 0, dead: 0 };
+  const unhealthy = [];
+  for (const r of records) {
+    const status = r.reachability === "reachable" ? "healthy" : r.reachability;
+    counts[status] = (counts[status] || 0) + 1;
+    if (status !== "healthy") {
+      const row = { url: r.url, status, signal: r.signal, httpStatus: r.httpStatus ?? null };
+      if (r.geoHint) row.geoHint = true;
+      unhealthy.push(row);
+    }
+  }
+  return { vantage, total: records.length, counts, unhealthy };
+}
+
+const MIN_REPORT = 1000;
+
+async function main() {
+  const argv = process.argv.slice(2);
+  let report = "tools/probe-report.full.json", out = "health.json";
+  for (let i = 0; i < argv.length; i++) {
+    if (argv[i] === "--report") report = argv[++i];
+    else if (argv[i] === "--out") out = argv[++i];
+  }
+  const records = JSON.parse(await readFile(resolve(report), "utf8"));
+  if (!Array.isArray(records) || records.length < MIN_REPORT) {
+    throw new Error(`report ${report} has ${records.length} rows (< ${MIN_REPORT}); refusing to overwrite ${out}`);
+  }
+  const health = {
+    generatedAt: new Date().toISOString(),
+    ...toHealth(records, { vantage: process.env.HEALTH_VANTAGE || "local" }),
+  };
+  await writeFile(resolve(out), JSON.stringify(health) + "\n", "utf8");
+  console.error(`wrote ${out} — ${JSON.stringify(health.counts)} (unhealthy rows: ${health.unhealthy.length})`);
+}
+
+import { fileURLToPath } from "node:url";
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  main().catch((e) => { console.error(e); process.exit(1); });
+}
+```
+
+- [ ] **Step 4: Run, expect pass**
+
+Run: `cd /Users/moon/Projects/claude/kradio && PATH="/usr/local/opt/node@22/bin:$PATH" node --test tools/build-health.test.mjs`
+Expected: all PASS.
+
+- [ ] **Step 5: Verify the report-size guard**
+
+```bash
+cd /Users/moon/Projects/claude/kradio
+echo '[{"url":"https://x","reachability":"dead","signal":"ENOTFOUND"}]' > /tmp/tiny.json
+PATH="/usr/local/opt/node@22/bin:$PATH" node tools/build-health.mjs --report /tmp/tiny.json --out /tmp/health.json; echo "exit=$?"
+rm -f /tmp/tiny.json /tmp/health.json
+```
+Expected: "refusing to overwrite" and `exit=1`.
+
+- [ ] **Step 6: Commit**
+
+```bash
+cd /Users/moon/Projects/claude/kradio
+git add tools/build-health.mjs tools/build-health.test.mjs
+git commit -m "🩺 feat: distil probe report → compact health.json (tested)"
+```
+
+---
+
+### Task 4: Occasional hard-compaction tool
 
 **Files:**
 - Create: `/Users/moon/Projects/claude/kradio/tools/prune-dead.mjs`
 
-Reuses the already-tested `isPrunable`. The prune harness is thin; correctness of "what gets pruned" is guaranteed by Task 1's `isPrunable` tests (dead only; 5xx/403/timeout kept).
+Not part of the weekly Action — `health.json` + runtime filtering is the live mechanism. This tool is for an occasional manual compaction of long-dead entries. Reuses the tested `isPrunable`.
 
 - [ ] **Step 1: Write the harness**
 
@@ -366,27 +494,25 @@ Reuses the already-tested `isPrunable`. The prune harness is thin; correctness o
 ```js
 #!/usr/bin/env node
 // tools/prune-dead.mjs
-// Conservatively remove hard-dead entries from stations.json, keyed by URL,
-// using a probe report. Only reachability === "dead" (DNS/conn/TLS/404/410)
-// is pruned; timeouts, 403, and 5xx are kept. Refuses to run on a suspiciously
-// small report (guards against a truncated probe).
+// OCCASIONAL manual compaction: physically remove hard-dead entries from
+// stations.json, keyed by URL, using a probe report. Only reachability ===
+// "dead" (DNS/conn/TLS/404/410) is removed; timeouts, 403, 5xx are kept.
+// Refuses on a suspiciously small report. NOT run on a schedule.
 //
-// Usage:
 //   node tools/prune-dead.mjs [--report tools/probe-report.full.json] [--stations stations.json] [--dry-run]
 
 import { readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { isPrunable } from "./probe-classify.mjs";
 
-const MIN_REPORT = 1000; // a real full-catalogue report has tens of thousands of rows
+const MIN_REPORT = 1000;
 
 function parseArgs(argv) {
   const o = { report: "tools/probe-report.full.json", stations: "stations.json", dryRun: false };
   for (let i = 0; i < argv.length; i++) {
-    const a = argv[i];
-    if (a === "--report") o.report = argv[++i];
-    else if (a === "--stations") o.stations = argv[++i];
-    else if (a === "--dry-run") o.dryRun = true;
+    if (argv[i] === "--report") o.report = argv[++i];
+    else if (argv[i] === "--stations") o.stations = argv[++i];
+    else if (argv[i] === "--dry-run") o.dryRun = true;
   }
   return o;
 }
@@ -405,18 +531,12 @@ async function main() {
     throw new Error(`report ${a.report} has ${report.length} rows (< ${MIN_REPORT}); refusing to prune`);
   }
   const deadUrls = new Set(report.filter(isPrunable).map((r) => normUrl(r.url)).filter(Boolean));
-
   const stations = JSON.parse(await readFile(resolve(a.stations), "utf8"));
   const kept = stations.filter((s) => !deadUrls.has(normUrl(s.url)));
-  const removed = stations.length - kept.length;
-
-  console.error(`report rows: ${report.length}  hard-dead urls: ${deadUrls.size}`);
-  console.error(`stations: ${stations.length} → ${kept.length}  (pruned ${removed})`);
-
+  console.error(`report ${report.length}  hard-dead ${deadUrls.size}  stations ${stations.length} → ${kept.length} (pruned ${stations.length - kept.length})`);
   if (a.dryRun) { console.error("dry-run: not writing"); return; }
   await writeFile(resolve(a.stations), compactArrayJSON(kept), "utf8");
-  console.error(`wrote ${a.stations}`);
-  console.error(`next: node tools/build-index.mjs`);
+  console.error(`wrote ${a.stations}\nnext: node tools/build-index.mjs`);
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });
@@ -430,21 +550,115 @@ echo '[{"url":"https://x","reachability":"dead"}]' > /tmp/tiny-report.json
 PATH="/usr/local/opt/node@22/bin:$PATH" node tools/prune-dead.mjs --report /tmp/tiny-report.json --dry-run; echo "exit=$?"
 rm -f /tmp/tiny-report.json
 ```
-Expected: prints "refusing to prune" and `exit=1`.
+Expected: "refusing to prune" and `exit=1`.
 
 - [ ] **Step 3: Commit**
 
 ```bash
 cd /Users/moon/Projects/claude/kradio
 git add tools/prune-dead.mjs
-git commit -m "🧹 feat: conservative hard-dead prune (refuses on truncated report)"
+git commit -m "🧹 feat: occasional hard-dead compaction tool (refuses on truncated report)"
 ```
 
 ---
 
-## Phase 2 — Geo/event classification (LLM + adversarial)
+## Phase 2 — Weekly automation
 
-### Task 4: Geo prior + candidate selection (pure)
+### Task 5: GitHub Actions weekly health check
+
+**Files:**
+- Create: `/Users/moon/Projects/claude/kradio/.github/workflows/health-check.yml`
+
+- [ ] **Step 1: Write the workflow**
+
+`.github/workflows/health-check.yml`:
+
+```yaml
+name: Weekly stream health check
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"      # Mondays 03:17 UTC
+  workflow_dispatch: {}        # allow manual runs
+
+permissions:
+  contents: write
+
+concurrency:
+  group: health-check
+  cancel-in-progress: false
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Probe full catalogue
+        run: node tools/probe-streams.mjs stations.json --concurrency 40 --timeout 8000
+      - name: Build health.json
+        env:
+          HEALTH_VANTAGE: github-actions-us
+        run: node tools/build-health.mjs
+      - name: Commit health.json if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add health.json
+          if git diff --staged --quiet; then
+            echo "no health change"
+          else
+            git commit -m "🩺 chore: weekly stream health refresh"
+            git push
+          fi
+```
+
+Notes for the implementer:
+- `probe-report.full.json` is gitignored (Task 2), so the Action never commits it — only `health.json`.
+- The probe over ~37k entries takes tens of minutes; `timeout-minutes: 120` is headroom.
+- If the repo has branch protection on `main` that blocks the Actions bot, switch the commit step to open a PR instead (out of scope here; note it in the PR description).
+
+- [ ] **Step 2: Lint the YAML**
+
+```bash
+cd /Users/moon/Projects/claude/kradio
+PATH="/usr/local/opt/node@22/bin:$PATH" node -e '
+const fs=require("fs");const s=fs.readFileSync(".github/workflows/health-check.yml","utf8");
+// minimal structural sanity (no YAML dep): required keys present
+for(const k of ["on:","schedule:","workflow_dispatch:","permissions:","contents: write","probe-streams.mjs","build-health.mjs"]){
+  if(!s.includes(k)) throw new Error("missing: "+k);
+}
+console.log("workflow structure OK");'
+```
+Expected: `workflow structure OK`.
+
+- [ ] **Step 3: Commit + push (so the Action becomes available)**
+
+```bash
+cd /Users/moon/Projects/claude/kradio
+git add .github/workflows/health-check.yml
+git commit -m "⚙️ ci: weekly stream health-check workflow (probe → health.json)"
+git push
+```
+
+- [ ] **Step 4: Validate via a manual dispatch (after first health.json exists — see Task 9)**
+
+After Task 9 has committed an initial `health.json`, trigger the Action once to confirm CI works end to end:
+
+```bash
+gh workflow run "Weekly stream health check" -R nvisio/kradio
+gh run watch -R nvisio/kradio
+```
+Expected: the run succeeds; if any stream health changed since Task 9, a `🩺 chore: weekly stream health refresh` commit appears. (From the datacenter vantage expect a somewhat larger `unknown`/`dead` count than a local run — that's the documented IP caveat; `vantage` in `health.json` will read `github-actions-us`.)
+
+---
+
+## Phase 3 — Availability (geo/event) tools (TDD)
+
+### Task 6: Geo prior + candidate selection (pure)
 
 **Files:**
 - Create: `/Users/moon/Projects/claude/kradio/tools/geo-prior.mjs`
@@ -460,8 +674,6 @@ import assert from "node:assert/strict";
 import { geoPriorForUrl, selectGeoCandidates } from "./geo-prior.mjs";
 
 test("radiko.jp → jp + radiko type", () => {
-  assert.deepEqual(geoPriorForUrl("https://f-radiko.smartstream.ne.jp/TBS/_definst_/simul-stream.stream/playlist.m3u8"),
-    null); // not the radiko.jp host — must be exact apex match
   assert.deepEqual(geoPriorForUrl("https://radiko.jp/v2/api/ts/playlist.m3u8?station_id=TBS"),
     { country: "jp", type: "radiko" });
 });
@@ -472,26 +684,20 @@ test("ordinary broadcaster → null (no false geo-lock)", () => {
 test("garbage url → null", () => {
   assert.equal(geoPriorForUrl("not a url"), null);
 });
-
-test("selectGeoCandidates: geoHint record is a candidate", () => {
-  const recs = [{ name: "X", url: "https://x", reachability: "unknown", geoHint: true }];
-  assert.equal(selectGeoCandidates(recs).length, 1);
+test("geoHint record is a candidate", () => {
+  assert.equal(selectGeoCandidates([{ name: "X", url: "https://x", reachability: "unknown", geoHint: true }]).length, 1);
 });
-test("selectGeoCandidates: plain reachable global is NOT a candidate", () => {
-  const recs = [{ name: "Pop FM", url: "https://pop.example/s.mp3", reachability: "reachable", geoHint: false }];
-  assert.equal(selectGeoCandidates(recs).length, 0);
+test("plain reachable global is NOT a candidate", () => {
+  assert.equal(selectGeoCandidates([{ name: "Pop FM", url: "https://pop.example/s.mp3", reachability: "reachable", geoHint: false }]).length, 0);
 });
-test("selectGeoCandidates: radiko prior is a candidate", () => {
-  const recs = [{ name: "TBS", url: "https://radiko.jp/x", reachability: "reachable", geoHint: false }];
-  assert.equal(selectGeoCandidates(recs).length, 1);
+test("radiko prior is a candidate", () => {
+  assert.equal(selectGeoCandidates([{ name: "TBS", url: "https://radiko.jp/x", reachability: "reachable", geoHint: false }]).length, 1);
 });
-test("selectGeoCandidates: event keyword is a candidate", () => {
-  const recs = [{ name: "Bundesliga Konferenz", url: "https://x", reachability: "reachable", geoHint: false }];
-  assert.equal(selectGeoCandidates(recs).length, 1);
+test("event keyword is a candidate", () => {
+  assert.equal(selectGeoCandidates([{ name: "Bundesliga Konferenz", url: "https://x", reachability: "reachable", geoHint: false }]).length, 1);
 });
-test("selectGeoCandidates: dead is never a candidate", () => {
-  const recs = [{ name: "X", url: "https://radiko.jp/x", reachability: "dead", geoHint: true }];
-  assert.equal(selectGeoCandidates(recs).length, 0);
+test("dead is never a candidate", () => {
+  assert.equal(selectGeoCandidates([{ name: "X", url: "https://radiko.jp/x", reachability: "dead", geoHint: true }]).length, 0);
 });
 ```
 
@@ -509,11 +715,10 @@ Expected: FAIL — module not found.
 // CONSERVATIVE geo prior. Only DEFINITE audio geo-locks belong here.
 //
 // IMPORTANT: most public broadcasters (ARD/WDR/SWR/NDR/BR/DLF, BBC radio,
-// Radio France, RAI, RTVE …) serve their AUDIO streams GLOBALLY, even though
-// their TV/video is geo-fenced. Do NOT add them here — that would create false
-// geo-locks. Geo/event detection leans on probe geoHint (403/451) + the LLM
-// classify+adversarial pass, defaulting to global. This table is a tiny set of
-// streams that genuinely require in-region auth.
+// Radio France, RAI, RTVE …) serve their AUDIO worldwide even though their
+// TV/video is geo-fenced. Do NOT add them — that would create false geo-locks.
+// Geo/event detection leans on probe geoHint (403/451) + the LLM
+// classify+adversarial pass, defaulting to global.
 
 const PRIOR = [
   // radiko.jp: hard JP geo + token auth (see RadikoAuthService in the app).
@@ -523,17 +728,12 @@ const PRIOR = [
 export function geoPriorForUrl(url) {
   let host;
   try { host = new URL(url).host.toLowerCase(); } catch { return null; }
-  for (const p of PRIOR) {
-    if (p.test(host)) return { country: p.country, type: p.type || "direct" };
-  }
+  for (const p of PRIOR) if (p.test(host)) return { country: p.country, type: p.type || "direct" };
   return null;
 }
 
 const EVENT_RE = /\b(konferenz|bundesliga|liga\b|matchday|gameday|derby|sportschau|live\s?sport|sports?\s?live)\b/i;
 
-// A record needs LLM geo/event judgment when it is not hard-dead AND shows a
-// geo/event signal: a probe geoHint (403/451), a geo prior hit, or an
-// event-y name. Plain reachable-global entries skip the LLM entirely.
 export function selectGeoCandidates(records) {
   return records.filter((r) =>
     r && r.reachability !== "dead" &&
@@ -557,7 +757,7 @@ git commit -m "🌍 feat: conservative geo prior + LLM candidate selection (test
 
 ---
 
-### Task 5: Apply verdicts to featured (pure merge + harness)
+### Task 7: Apply verdicts to featured (pure merge + harness)
 
 **Files:**
 - Create: `/Users/moon/Projects/claude/kradio/tools/apply-availability.mjs`
@@ -583,17 +783,13 @@ test("geo_restricted → adds availability + lowercased countries", () => {
   const out = mergeVerdict({ name: "X", url: "https://x" }, { availability: "geo_restricted", countries: ["DE", "AT"] });
   assert.deepEqual(out, { name: "X", url: "https://x", availability: "geo_restricted", countries: ["de", "at"] });
 });
-test("event_based → adds availability + countries", () => {
-  const out = mergeVerdict({ name: "Liga", url: "https://x" }, { availability: "event_based", countries: ["de"] });
-  assert.equal(out.availability, "event_based");
+test("event_based → adds availability", () => {
+  assert.equal(mergeVerdict({ name: "Liga", url: "https://x" }, { availability: "event_based", countries: ["de"] }).availability, "event_based");
 });
 test("radiko verdict → adds type + stationId, keeps url fallback", () => {
   const out = mergeVerdict({ name: "TBS", url: "https://radiko.jp/x" },
     { availability: "geo_restricted", countries: ["jp"], type: "radiko", stationId: "TBS" });
-  assert.deepEqual(out, {
-    name: "TBS", url: "https://radiko.jp/x",
-    availability: "geo_restricted", countries: ["jp"], type: "radiko", stationId: "TBS",
-  });
+  assert.deepEqual(out, { name: "TBS", url: "https://radiko.jp/x", availability: "geo_restricted", countries: ["jp"], type: "radiko", stationId: "TBS" });
 });
 test("dead verdict → marks availability dead", () => {
   assert.equal(mergeVerdict({ name: "X", url: "https://x" }, { availability: "dead" }).availability, "dead");
@@ -612,21 +808,19 @@ Expected: FAIL — module not found.
 ```js
 #!/usr/bin/env node
 // tools/apply-availability.mjs
-// Pure: mergeVerdict(entry, verdict) → entry with availability metadata applied.
-// Harness: read a verdicts JSON (keyed by url) and rewrite featured/{cc}.json
-// atomically, in the same compact one-object-per-line style as merge-stations.
+// Pure mergeVerdict(entry, verdict); harness rewrites featured/{cc}.json
+// atomically in the compact one-object-per-line style.
 //
-// Usage:
 //   node tools/apply-availability.mjs verdicts.json
-//   verdicts.json shape: [{ url, availability, countries?, type?, stationId? }, …]
+//   verdicts.json: [{ url, availability, countries?, type?, stationId? }, …]
 
 import { readFile, writeFile, readdir, rename } from "node:fs/promises";
 import { join, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
 export function mergeVerdict(entry, verdict) {
   if (!verdict || verdict.availability === "global") {
-    const out = { name: entry.name, url: entry.url };
-    return out;
+    return { name: entry.name, url: entry.url };
   }
   const out = { name: entry.name };
   if (entry.url) out.url = entry.url;            // keep url (also radiko fallback)
@@ -643,7 +837,6 @@ function compactArrayJSON(arr) {
   if (arr.length === 0) return "[]\n";
   return "[\n  " + arr.map((o) => JSON.stringify(o)).join(",\n  ") + "\n]\n";
 }
-
 const normUrl = (u) => (u || "").trim().toLowerCase();
 
 async function main() {
@@ -651,18 +844,16 @@ async function main() {
   if (!verdictsPath) { console.error("usage: node tools/apply-availability.mjs verdicts.json"); process.exit(1); }
   const verdicts = JSON.parse(await readFile(resolve(verdictsPath), "utf8"));
   const byUrl = new Map(verdicts.map((v) => [normUrl(v.url), v]));
-
   const dir = resolve("featured");
   const files = (await readdir(dir)).filter((f) => f.endsWith(".json"));
   let changedFiles = 0, changedEntries = 0;
-
   for (const f of files) {
     const path = join(dir, f);
     const arr = JSON.parse(await readFile(path, "utf8"));
     let touched = false;
     const next = arr.map((entry) => {
       const v = byUrl.get(normUrl(entry.url));
-      if (!v) return entry;                       // no verdict → leave as-is
+      if (!v) return entry;
       const merged = mergeVerdict(entry, v);
       if (JSON.stringify(merged) !== JSON.stringify(entry)) { touched = true; changedEntries++; }
       return merged;
@@ -677,8 +868,6 @@ async function main() {
   console.error(`applied ${verdicts.length} verdicts → ${changedEntries} entries in ${changedFiles} files`);
 }
 
-// Only run main when executed directly (not when imported by the test).
-import { fileURLToPath } from "node:url";
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   main().catch((e) => { console.error(e); process.exit(1); });
 }
@@ -699,12 +888,10 @@ git commit -m "🏷️ feat: apply availability verdicts to featured (atomic, te
 
 ---
 
-### Task 6: Author the classification Workflow script
+### Task 8: Author the classification Workflow script
 
 **Files:**
 - Create: `/Users/moon/Projects/claude/kradio/tools/availability-classify.workflow.js`
-
-This file is the script passed to the Workflow tool at execution time (Task 8). It is authored here and committed for reproducibility; it is *run* in Phase 3.
 
 - [ ] **Step 1: Write the workflow script**
 
@@ -720,175 +907,156 @@ export const meta = {
   ],
 }
 
-// args: array of candidate records:
-//   { name, url, country, httpStatus, geoHint, signal }
-// Returns: { verdicts: [{url, availability, countries?, type?, stationId?, reason}], review: [...] }
+// args: [{ name, url, country, httpStatus, geoHint, signal }]
+// returns: { verdicts: [{url, availability, countries?, type?, stationId?, reason}], review: [...] }
 
 const CANDIDATES = Array.isArray(args) ? args : []
 
 const CLASSIFY_SCHEMA = {
-  type: 'object',
-  additionalProperties: false,
+  type: 'object', additionalProperties: false,
   required: ['availability', 'confidence', 'reason'],
   properties: {
     availability: { enum: ['global', 'geo_restricted', 'event_based'] },
-    countries: { type: 'array', items: { type: 'string' } },   // lowercase alpha-2, where it IS available
+    countries: { type: 'array', items: { type: 'string' } },
     type: { enum: ['direct', 'radiko'] },
     stationId: { type: 'string' },
     confidence: { enum: ['low', 'medium', 'high'] },
     reason: { type: 'string' },
   },
 }
-
 const VERDICT_SCHEMA = {
-  type: 'object',
-  additionalProperties: false,
+  type: 'object', additionalProperties: false,
   required: ['stillRestricted', 'reason'],
-  properties: {
-    stillRestricted: { type: 'boolean' },
-    reason: { type: 'string' },
-  },
+  properties: { stillRestricted: { type: 'boolean' }, reason: { type: 'string' } },
 }
 
 function classifyPrompt(c) {
   return [
-    `You are auditing whether a radio AUDIO stream is globally playable.`,
-    `Station: ${JSON.stringify(c.name)}`,
-    `URL: ${c.url}`,
-    `Listed country: ${c.country}`,
-    `Probe evidence: httpStatus=${c.httpStatus ?? 'n/a'}, geoHint=${!!c.geoHint} (403/451 seen), signal=${c.signal}`,
+    `Audit whether a radio AUDIO stream is globally playable.`,
+    `Station: ${JSON.stringify(c.name)}  URL: ${c.url}  Listed country: ${c.country}`,
+    `Probe: httpStatus=${c.httpStatus ?? 'n/a'}, geoHint=${!!c.geoHint} (403/451), signal=${c.signal}`,
     ``,
     `Rules:`,
-    `- DEFAULT to "global". Only choose geo_restricted or event_based with a STRONG signal.`,
-    `- A 403/451 (geoHint) is a strong signal the stream is geo- or auth-gated.`,
-    `- radiko.jp streams are geo_restricted to Japan and need radiko auth: set`,
-    `  availability=geo_restricted, countries=["jp"], type="radiko", and stationId if inferable from the URL.`,
-    `- IMPORTANT: public broadcasters (ARD/WDR/SWR/NDR/BR/DLF, BBC radio, Radio France,`,
-    `  RAI, RTVE …) almost always serve AUDIO worldwide even when their TV is geo-fenced.`,
-    `  Do NOT mark them geo_restricted without a 403/451 probe signal.`,
-    `- event_based: only for streams that are live solely during specific events`,
-    `  (e.g. a "Bundesliga Konferenz"/match-day sports feed). countries = where it airs.`,
-    `- countries lists where the station IS available (lowercase ISO 3166-1 alpha-2).`,
-    `Return your classification.`,
+    `- DEFAULT to "global". Only geo_restricted/event_based with a STRONG signal.`,
+    `- A 403/451 (geoHint) is a strong geo/auth signal.`,
+    `- radiko.jp → geo_restricted, countries=["jp"], type="radiko", stationId if inferable.`,
+    `- Public broadcasters (ARD/WDR/SWR/NDR/DLF, BBC radio, Radio France, RAI, RTVE)`,
+    `  serve AUDIO worldwide; do NOT mark geo_restricted without a 403/451.`,
+    `- event_based: live only during specific events (e.g. a Bundesliga Konferenz feed).`,
+    `- countries = where it IS available (lowercase alpha-2).`,
   ].join('\n')
 }
-
-function refutePrompt(c, verdict) {
+function refutePrompt(c, v) {
   return [
-    `A reviewer classified this radio AUDIO stream as "${verdict.availability}"`,
-    `${verdict.countries ? `(available in: ${verdict.countries.join(', ')})` : ''}.`,
-    `Station: ${JSON.stringify(c.name)} | URL: ${c.url} | probe httpStatus=${c.httpStatus ?? 'n/a'}, geoHint=${!!c.geoHint}.`,
-    `Reviewer's reason: ${verdict.reason}`,
-    ``,
-    `Your job: try to REFUTE the restriction. Is this stream actually globally`,
-    `playable audio? Public-broadcaster audio is usually global. If the only`,
-    `evidence is a guess (no 403/451, not radiko), the restriction is probably`,
-    `wrong — set stillRestricted=false. Keep stillRestricted=true ONLY if the`,
-    `restriction is well-supported (probe 403/451, or radiko, or a genuine`,
-    `event-only sports feed). When in doubt, refute (false).`,
+    `A reviewer marked this radio AUDIO stream "${v.availability}"${v.countries ? ` (in: ${v.countries.join(', ')})` : ''}.`,
+    `Station: ${JSON.stringify(c.name)} URL: ${c.url} probe httpStatus=${c.httpStatus ?? 'n/a'} geoHint=${!!c.geoHint}.`,
+    `Reason: ${v.reason}`,
+    `Try to REFUTE the restriction. Public-broadcaster audio is usually global.`,
+    `If the only evidence is a guess (no 403/451, not radiko), set stillRestricted=false.`,
+    `Keep true ONLY if well-supported (403/451, radiko, or a genuine event-only feed).`,
+    `When in doubt, refute (false).`,
   ].join('\n')
 }
 
 const results = await pipeline(
   CANDIDATES,
-  (c) => agent(classifyPrompt(c), { label: `classify:${c.country}:${(c.name || '').slice(0, 24)}`, phase: 'Classify', schema: CLASSIFY_SCHEMA })
-    .then((v) => ({ c, v })),
+  (c) => agent(classifyPrompt(c), { label: `classify:${c.country}:${(c.name || '').slice(0, 20)}`, phase: 'Classify', schema: CLASSIFY_SCHEMA }).then((v) => ({ c, v })),
   ({ c, v }) => {
-    if (!v || v.availability === 'global') return { c, v, verified: true, restricted: false }
-    // adversarial: 3 independent refuters; restriction survives only on majority "still restricted"
+    if (!v || v.availability === 'global') return { c, v, restricted: false }
     return parallel([0, 1, 2].map((i) => () =>
       agent(refutePrompt(c, v), { label: `verify:${c.country}:${i}`, phase: 'Verify', schema: VERDICT_SCHEMA })
     )).then((votes) => {
       const kept = votes.filter(Boolean).filter((x) => x.stillRestricted).length
       const total = votes.filter(Boolean).length || 1
-      return { c, v, verified: true, restricted: kept * 2 > total } // strict majority
+      return { c, v, restricted: kept * 2 > total }
     })
   }
 )
 
-const verdicts = []
-const review = []
+const verdicts = [], review = []
 for (const r of results.filter(Boolean)) {
-  if (!r.v) continue
-  if (r.v.availability === 'global') continue           // nothing to write; entry stays minimal
+  if (!r.v || r.v.availability === 'global') continue
   if (r.restricted && r.v.confidence !== 'low') {
-    verdicts.push({
-      url: r.c.url,
-      availability: r.v.availability,
-      countries: r.v.countries || [r.c.country],
-      ...(r.v.type ? { type: r.v.type } : {}),
-      ...(r.v.stationId ? { stationId: r.v.stationId } : {}),
-      reason: r.v.reason,
-    })
+    verdicts.push({ url: r.c.url, availability: r.v.availability, countries: r.v.countries || [r.c.country],
+      ...(r.v.type ? { type: r.v.type } : {}), ...(r.v.stationId ? { stationId: r.v.stationId } : {}), reason: r.v.reason })
   } else {
-    // refuted, or low-confidence restriction → human decides
-    review.push({
-      url: r.c.url, name: r.c.name, country: r.c.country,
-      proposed: r.v.availability, confidence: r.v.confidence,
-      restrictedByPanel: r.restricted, reason: r.v.reason,
-      httpStatus: r.c.httpStatus, geoHint: r.c.geoHint,
-    })
+    review.push({ url: r.c.url, name: r.c.name, country: r.c.country, proposed: r.v.availability,
+      confidence: r.v.confidence, restrictedByPanel: r.restricted, reason: r.v.reason, httpStatus: r.c.httpStatus, geoHint: r.c.geoHint })
   }
 }
-
 log(`candidates=${CANDIDATES.length} verdicts=${verdicts.length} review=${review.length}`)
 return { verdicts, review }
 ```
 
-- [ ] **Step 2: Syntax-check the script**
+- [ ] **Step 2: Syntax-check**
 
 Run: `cd /Users/moon/Projects/claude/kradio && PATH="/usr/local/opt/node@22/bin:$PATH" node --check tools/availability-classify.workflow.js`
-Expected: no output (the file is valid JS even though `agent`/`pipeline`/`args` are workflow-injected globals).
+Expected: no output (valid JS; `agent`/`pipeline`/`args`/`log` are workflow-injected globals).
 
 - [ ] **Step 3: Commit**
 
 ```bash
 cd /Users/moon/Projects/claude/kradio
 git add tools/availability-classify.workflow.js
-git commit -m "🤖 feat: availability classification workflow (classify + adversarial verify)"
+git commit -m "🤖 feat: availability classification workflow (classify + adversarial)"
 ```
 
 ---
 
-## Phase 3 — Run it (populate the flags)
+## Phase 4 — Run it (seed health.json + populate availability)
 
-> The user explicitly asked for the flags to be verified and populated. These tasks RUN the tools built above. They are not TDD; each ends in a reviewed commit.
-
-### Task 7: Probe the featured set
+### Task 9: First health run (seed health.json) + reindex check
 
 **Files:**
-- Produces: `tools/probe-report.featured.json` (gitignored)
+- Produces: `tools/probe-report.full.json` (gitignored), `health.json` (committed)
 
-- [ ] **Step 1: Run the featured probe**
+- [ ] **Step 1: Probe the full catalogue (background)**
 
-Run: `cd /Users/moon/Projects/claude/kradio && PATH="/usr/local/opt/node@22/bin:$PATH" node tools/probe-streams.mjs --featured --concurrency 20`
-Expected: stderr ends with `wrote tools/probe-report.featured.json — {"reachable":…,"unknown":…,"dead":…}`. ~1,545 entries; takes a few minutes.
+Run (use the Bash tool's `run_in_background: true` — this takes tens of minutes):
+`cd /Users/moon/Projects/claude/kradio && PATH="/usr/local/opt/node@22/bin:$PATH" node tools/probe-streams.mjs stations.json --concurrency 40 --timeout 8000`
+Expected on completion: `wrote tools/probe-report.full.json — {"reachable":…,"unknown":…,"dead":…}`.
 
-- [ ] **Step 2: Eyeball the tallies + dead list**
+- [ ] **Step 2: Build health.json locally (vantage = local)**
+
+Run: `cd /Users/moon/Projects/claude/kradio && PATH="/usr/local/opt/node@22/bin:$PATH" node tools/build-health.mjs`
+Expected: `wrote health.json — {"healthy":…,"unknown":…,"dead":…} (unhealthy rows: N)`.
+
+- [ ] **Step 3: Sanity-check health.json**
 
 ```bash
 cd /Users/moon/Projects/claude/kradio
 PATH="/usr/local/opt/node@22/bin:$PATH" node -e '
-const r=require("./tools/probe-report.featured.json");
-const by=r.reduce((m,x)=>((m[x.reachability]=(m[x.reachability]||0)+1),m),{});
-console.log("tally",by);
-console.log("geoHint count", r.filter(x=>x.geoHint).length);
-console.log("sample dead:", r.filter(x=>x.reachability==="dead").slice(0,10).map(x=>x.country+" "+x.name+" ["+x.signal+"]"));
-'
+const h=require("./health.json");
+console.log("vantage", h.vantage, "total", h.total, "counts", h.counts);
+console.log("dead sample:", h.unhealthy.filter(u=>u.status==="dead").slice(0,8).map(u=>u.signal+" "+u.url));
+console.log("dead %", (h.counts.dead/h.total*100).toFixed(1));'
 ```
-Expected: a tally and a readable sample of dead/geoHint entries. Sanity-check that the dead set looks like genuine failures, not a network glitch (if *everything* is dead, your network dropped — re-run).
+Expected: `dead %` is a small minority (hard-dead only). If it's a large fraction, the probe hit a network problem — re-run Step 1 before committing.
 
-No commit (the report is gitignored).
+- [ ] **Step 4: Commit the seed health.json**
+
+```bash
+cd /Users/moon/Projects/claude/kradio
+git add health.json
+git commit -m "🩺 data: seed initial stream health.json"
+git push
+```
+(Now Task 5 Step 4's manual `gh workflow run` validation can be performed — the Action will refresh this file weekly from the CI vantage.)
 
 ---
 
-### Task 8: Classify geo/event + apply to featured
+### Task 10: Populate geo/event availability on featured
 
 **Files:**
-- Produces: `tools/candidates.json` (temp), `tools/availability-verdicts.json` (temp), `tools/availability-review.json` (committed)
+- Produces: `tools/probe-report.featured.json` (gitignored), `tools/availability-review.json` (committed)
 - Modifies: `featured/*.json`
 
-- [ ] **Step 1: Extract candidates for the LLM**
+- [ ] **Step 1: Probe the featured set**
+
+Run: `cd /Users/moon/Projects/claude/kradio && PATH="/usr/local/opt/node@22/bin:$PATH" node tools/probe-streams.mjs --featured --concurrency 20`
+Expected: `wrote tools/probe-report.featured.json — {...}` (~1,545 entries, a few minutes).
+
+- [ ] **Step 2: Extract candidates**
 
 ```bash
 cd /Users/moon/Projects/claude/kradio
@@ -896,141 +1064,137 @@ PATH="/usr/local/opt/node@22/bin:$PATH" node -e '
 import("./tools/geo-prior.mjs").then(({selectGeoCandidates})=>{
   const r=require("./tools/probe-report.featured.json");
   const c=selectGeoCandidates(r).map(x=>({name:x.name,url:x.url,country:x.country,httpStatus:x.httpStatus,geoHint:x.geoHint,signal:x.signal}));
-  require("fs").writeFileSync("tools/candidates.json", JSON.stringify(c,null,0));
+  require("fs").writeFileSync("tools/candidates.json", JSON.stringify(c));
   console.log("candidates:", c.length);
 });'
 ```
-Expected: prints a candidate count (likely a few dozen — geoHint + radiko + event-keyword only, not all 1,545).
+Expected: a small count (geoHint + radiko + event-keyword only — likely a few dozen, not 1,545).
 
-- [ ] **Step 2: Run the classification workflow**
+- [ ] **Step 3: Run the classification workflow**
 
-Invoke the Workflow tool with the authored script and the candidates as args:
+Invoke the Workflow tool:
 
 ```
 Workflow({
   scriptPath: "/Users/moon/Projects/claude/kradio/tools/availability-classify.workflow.js",
-  args: <the parsed contents of tools/candidates.json>   // pass as a real JSON array, not a string
+  args: <parsed JSON array from tools/candidates.json>   // pass the real array, not a string
 })
 ```
 
-When it completes, write its return value to disk:
-- save `result.verdicts` → `tools/availability-verdicts.json`
-- save `result.review` → `tools/availability-review.json`
+Save the return value: `result.verdicts` → `tools/availability-verdicts.json`; `result.review` → `tools/availability-review.json`. If `candidates.json` is `[]`, skip the workflow and set `tools/availability-verdicts.json` = `[]`.
 
-(If candidates.json is empty, skip the workflow; create `tools/availability-verdicts.json` = `[]` and an empty review.)
+- [ ] **Step 4: Human-confirm the review list**
 
-- [ ] **Step 3: Human-confirm the review list**
+Open `tools/availability-review.json`. For each refuted / low-confidence row, decide if it is genuinely restricted. Move confirmed ones into `tools/availability-verdicts.json` (shape `{url, availability, countries, type?, stationId?, reason}`). Leave global ones out (absence ⇒ global).
 
-Open `tools/availability-review.json`. For each entry the panel refuted or flagged low-confidence, decide: is it really restricted? Move any you confirm into `tools/availability-verdicts.json` (same shape: `{url, availability, countries, type?, stationId?, reason}`). Leave genuinely-global ones out (absence = global). This is the deliberate human gate from the spec.
-
-- [ ] **Step 4: Apply verdicts to featured**
+- [ ] **Step 5: Apply verdicts**
 
 Run: `cd /Users/moon/Projects/claude/kradio && PATH="/usr/local/opt/node@22/bin:$PATH" node tools/apply-availability.mjs tools/availability-verdicts.json`
 Expected: `applied N verdicts → M entries in K files`.
 
-- [ ] **Step 5: Review the diff**
+- [ ] **Step 6: Review the diff**
 
 Run: `cd /Users/moon/Projects/claude/kradio && git diff --stat featured/ && git diff featured/ | head -80`
-Expected: only exception entries gained `availability`/`countries`/`type`/`stationId`; global entries untouched (still `{name,url}`). Confirm no broadcaster was wrongly geo-locked (e.g. SWR/WDR should NOT be geo_restricted unless they returned 403).
+Expected: only exception entries gained fields; globals untouched (`{name,url}`). Confirm no public broadcaster was wrongly geo-locked (SWR/WDR/BBC radio should stay global unless they returned 403).
 
-- [ ] **Step 6: Clean temp + commit**
+- [ ] **Step 7: Clean temp + commit**
 
 ```bash
 cd /Users/moon/Projects/claude/kradio
 rm -f tools/candidates.json tools/availability-verdicts.json
 git add featured/*.json tools/availability-review.json
-git commit -m "🌍 data: flag geo/event/dead exceptions in featured (verified probe + adversarial)"
-```
-
----
-
-### Task 9: Probe full catalogue + conservative dead-prune
-
-**Files:**
-- Produces: `tools/probe-report.full.json` (gitignored)
-- Modifies: `stations.json`, `stations.index.json`
-
-- [ ] **Step 1: Probe the full 37k catalogue (background)**
-
-This is long (tens of minutes). Run it in the background:
-
-Run: `cd /Users/moon/Projects/claude/kradio && PATH="/usr/local/opt/node@22/bin:$PATH" node tools/probe-streams.mjs stations.json --concurrency 40 --timeout 8000`
-(Use the Bash tool's `run_in_background: true`.) Expected on completion: `wrote tools/probe-report.full.json — {...}`.
-
-- [ ] **Step 2: Dry-run the prune**
-
-Run: `cd /Users/moon/Projects/claude/kradio && PATH="/usr/local/opt/node@22/bin:$PATH" node tools/prune-dead.mjs --dry-run`
-Expected: prints `stations: 37793 → <kept>  (pruned <N>)`. Sanity: pruned should be a minority (hard-dead only). If it tries to prune a huge fraction, stop and inspect — likely a network issue during probe.
-
-- [ ] **Step 3: Apply the prune**
-
-Run: `cd /Users/moon/Projects/claude/kradio && PATH="/usr/local/opt/node@22/bin:$PATH" node tools/prune-dead.mjs`
-Expected: `wrote stations.json`.
-
-- [ ] **Step 4: Rebuild the index**
-
-Run: `cd /Users/moon/Projects/claude/kradio && PATH="/usr/local/opt/node@22/bin:$PATH" node tools/build-index.mjs`
-Expected: `indexed <kept> stations → …/stations.index.json`.
-
-- [ ] **Step 5: Commit**
-
-```bash
-cd /Users/moon/Projects/claude/kradio
-git add stations.json stations.index.json
-git commit -m "🧹 data: prune hard-dead streams from catalogue (conservative, reindexed)"
+git commit -m "🌍 data: flag geo/event exceptions in featured (probe + adversarial verify)"
 git push
 ```
 
 ---
 
-## Phase 4 — iOS geo filter
+## Phase 5 — iOS (health fetch + fallback + geo filter)
 
-### Task 10: Decode availability + filter the shelf
+### Task 11: Fetch health + decode availability + filter
 
 **Files:**
 - Modify: `/Users/moon/Projects/claude/kbscong/Shared/RemoteStationCatalog.swift`
 
-- [ ] **Step 1: TDD the pure visibility logic via the `swift` CLI**
+- [ ] **Step 1: TDD the pure logic via the `swift` CLI**
 
-kbscong has no XCTest target, so test the pure function as a standalone script first. Create `/tmp/isHidden_check.swift`:
+kbscong has no XCTest target, so test the pure helpers as a standalone script. Create `/tmp/health_check.swift`:
 
 ```swift
+import Foundation
+
+func normalizeURL(_ u: String) -> String { u.trimmingCharacters(in: .whitespaces).lowercased() }
+
 func isHidden(availability: String?, countries: [String]?, userAlpha2: String?) -> Bool {
     switch availability {
     case "dead":
         return true
     case "geo_restricted", "event_based":
-        guard let cc = userAlpha2?.lowercased() else { return false } // unknown storefront → don't over-hide
-        let allowed = (countries ?? []).map { $0.lowercased() }
-        return !allowed.contains(cc)
+        guard let cc = userAlpha2?.lowercased() else { return false }
+        return !((countries ?? []).map { $0.lowercased() }.contains(cc))
     default:
-        return false // global / nil / unknown string → show
+        return false
     }
 }
 
-// dead → always hidden
+func isDead(_ url: String, deadSet: Set<String>) -> Bool { deadSet.contains(normalizeURL(url)) }
+
+// isHidden
 assert(isHidden(availability: "dead", countries: nil, userAlpha2: "kr") == true)
-// geo: user inside allowed → shown
 assert(isHidden(availability: "geo_restricted", countries: ["jp"], userAlpha2: "jp") == false)
-// geo: user outside allowed → hidden
 assert(isHidden(availability: "geo_restricted", countries: ["jp"], userAlpha2: "de") == true)
-// event: user outside → hidden
 assert(isHidden(availability: "event_based", countries: ["de"], userAlpha2: "kr") == true)
-// geo but unknown storefront → don't over-hide
 assert(isHidden(availability: "geo_restricted", countries: ["jp"], userAlpha2: nil) == false)
-// global → shown
 assert(isHidden(availability: "global", countries: nil, userAlpha2: "de") == false)
-// nil availability (backward compat) → shown
 assert(isHidden(availability: nil, countries: nil, userAlpha2: "de") == false)
-// case-insensitive country match
 assert(isHidden(availability: "geo_restricted", countries: ["JP"], userAlpha2: "JP") == false)
-print("isHidden: all assertions passed")
+// health dead set (case/whitespace-insensitive)
+let dead: Set<String> = ["https://dead.example/s.mp3"]
+assert(isDead("  https://Dead.example/s.mp3 ", deadSet: dead) == true)
+assert(isDead("https://ok.example/s.mp3", deadSet: dead) == false)
+print("health+isHidden: all assertions passed")
 ```
 
-Run: `swift /tmp/isHidden_check.swift`
-Expected: `isHidden: all assertions passed` (and exit 0). If an assertion fails the process traps — fix the function until it passes.
+Run: `swift /tmp/health_check.swift`
+Expected: `health+isHidden: all assertions passed`, exit 0. (Fix the functions until it passes; a failed assert traps.)
 
-- [ ] **Step 2: Extend `FeaturedEntry` in RemoteStationCatalog.swift**
+- [ ] **Step 2: Add the health fetch + `HealthList`**
+
+In `Shared/RemoteStationCatalog.swift`, add this above `enum RegionalStations` (top-level):
+
+```swift
+/// Dead-URL deny-list fetched weekly-regenerated from the CDN. Absent URLs are
+/// healthy. Only `dead` is hard-hidden; `unknown` stays visible (the health probe
+/// runs from datacenter IPs and over-reports 403/timeouts).
+struct HealthList: Sendable {
+    let deadURLs: Set<String>
+    static let empty = HealthList(deadURLs: [])
+    func isDead(_ url: String) -> Bool { deadURLs.contains(HealthList.normalize(url)) }
+    static func normalize(_ u: String) -> String { u.trimmingCharacters(in: .whitespaces).lowercased() }
+}
+
+enum StreamHealth {
+    private struct HealthFile: Decodable {
+        struct Row: Decodable { let url: String; let status: String }
+        let unhealthy: [Row]
+    }
+    /// Fail-open: any fetch/decode failure yields an empty list (show everything).
+    static func fetch() async -> HealthList {
+        guard let url = URL(string: "https://kradio.nvis.io/health.json") else { return .empty }
+        var req = URLRequest(url: url)
+        req.cachePolicy = .reloadRevalidatingCacheData
+        req.timeoutInterval = 10
+        guard let (data, resp) = try? await URLSession.shared.data(for: req),
+              let http = resp as? HTTPURLResponse, http.statusCode == 200,
+              let file = try? JSONDecoder().decode(HealthFile.self, from: data)
+        else { return .empty }
+        let dead = file.unhealthy.filter { $0.status == "dead" }.map { HealthList.normalize($0.url) }
+        return HealthList(deadURLs: Set(dead))
+    }
+}
+```
+
+- [ ] **Step 3: Extend `FeaturedEntry` + add `isHidden`**
 
 Replace the existing struct (around line 12):
 
@@ -1047,70 +1211,45 @@ with:
     struct FeaturedEntry: Decodable {
         let name: String
         let url: String?            // optional: radiko-only entries may omit it
-        let type: String?           // "direct" | "radiko" (absent ⇒ direct)
+        let type: String?           // "direct" | "radiko"
         let availability: String?   // StreamAvailability raw (absent ⇒ global)
-        let countries: [String]?    // lowercase alpha-2 where the station IS available
-        let stationId: String?      // present for type == "radiko"
+        let countries: [String]?    // lowercase alpha-2 where it IS available
+        let stationId: String?
     }
-```
 
-- [ ] **Step 3: Add the pure `isHidden` helper**
-
-Add this static method to the `RegionalStations` enum (place it right after `struct FeaturedEntry`):
-
-```swift
-    /// Whether a featured entry should be hidden from a user in `userAlpha2`.
-    /// `dead` is always hidden; `geo_restricted`/`event_based` are hidden when the
-    /// user's storefront isn't in `countries`; everything else (global / nil /
-    /// unknown) is shown. Unknown storefront ⇒ don't over-hide.
+    /// Hide what the user can't play: dead always; geo/event when out of region.
     static func isHidden(availability: String?, countries: [String]?, userAlpha2: String?) -> Bool {
         switch availability {
         case "dead":
             return true
         case "geo_restricted", "event_based":
             guard let cc = userAlpha2?.lowercased() else { return false }
-            let allowed = (countries ?? []).map { $0.lowercased() }
-            return !allowed.contains(cc)
+            return !((countries ?? []).map { $0.lowercased() }.contains(cc))
         default:
             return false
         }
     }
 ```
 
-- [ ] **Step 4: Apply the filter + radiko url-fallback in `stations(forAlpha2:)`**
+- [ ] **Step 4: Filter in `stations(forAlpha2:)`**
 
-The current body (around lines 58–69) is:
+Change the signature to accept a health list, and replace the body's `compactMap`. The method currently starts at line 44 (`static func stations(forAlpha2 alpha2: String) async -> [RadioStation]?`). Update the signature:
 
 ```swift
-        return entries.enumerated().compactMap { index, entry in
-            guard let streamURL = URL(string: entry.url),
-                  let scheme = streamURL.scheme?.lowercased(),
-                  scheme == "http" || scheme == "https",
-                  !(streamURL.host ?? "").isEmpty else { return nil }
-            return RadioStation(
-                id: "region_\(alpha2)_\(index)",
-                name: entry.name,
-                subtitle: streamURL.host ?? entry.url,
-                source: .directURL(streamURL),
-                iconName: curatedIcon(forKey: entry.url),
-                country: displayName
-            )
-        }
+    static func stations(forAlpha2 alpha2: String, health: HealthList = .empty) async -> [RadioStation]? {
 ```
 
-Replace it with (note `entry.url` is now optional, and we resolve the user's own storefront for geo comparison):
+and replace the `return entries.enumerated().compactMap { … }` block (lines ~58–69) with:
 
 ```swift
         let userAlpha2 = await currentAlpha2()
         return entries.enumerated().compactMap { index, entry in
-            // Hide what the user can't play (dead always; geo/event when out of region).
             if isHidden(availability: entry.availability, countries: entry.countries, userAlpha2: userAlpha2) {
                 return nil
             }
-            // radiko full-auth rendering from featured is a follow-on; for now we
-            // only play the direct `url` fallback. An entry with no usable url
-            // (e.g. subscription-only radiko) is dropped here.
-            guard let urlString = entry.url,
+            // radiko full-auth rendering from featured is a follow-on; play the
+            // direct url fallback only. No usable url ⇒ drop.
+            guard let urlString = entry.url, !health.isDead(urlString),
                   let streamURL = URL(string: urlString),
                   let scheme = streamURL.scheme?.lowercased(),
                   scheme == "http" || scheme == "https",
@@ -1126,33 +1265,72 @@ Replace it with (note `entry.url` is now optional, and we resolve the user's own
         }
 ```
 
-- [ ] **Step 5: Build**
+- [ ] **Step 5: Pass health into the shelf builder**
 
-Open the project in Xcode (`KBSRadio.xcodeproj` / `K-Radio Tuner.xcodeproj`) and ⌘B. Expected: clean build. (The decoder change is additive; `currentAlpha2()` is already `async` and `stations(forAlpha2:)` is already `async`, so `await` compiles.)
+In `current()` (around line 22), fetch health once and pass it. Replace:
 
-- [ ] **Step 6: Simulator sanity check**
+```swift
+        if let alpha2 = await currentAlpha2(),
+           let stations = await stations(forAlpha2: alpha2), !stations.isEmpty {
+```
 
-⌘R. With a German storefront (or any non-JP), open Explore → browse **Japan**. Expected: any JP entry flagged `geo_restricted`/radiko-without-url does not appear; global JP entries still do. Switch the scheme's storefront / region to JP and confirm the JP geo entries reappear. (If you have no geo entries in featured/jp.json yet, temporarily add one by hand to verify, then remove it.)
+with:
 
-- [ ] **Step 7: Commit**
+```swift
+        let health = await StreamHealth.fetch()
+        if let alpha2 = await currentAlpha2(),
+           let stations = await stations(forAlpha2: alpha2, health: health), !stations.isEmpty {
+```
+
+(The bundled `globalDefault()` fallback is unchanged — it still serves the KR built-ins when offline / unmapped / empty.)
+
+- [ ] **Step 6: Filter the "Feel Lucky" random pick**
+
+In `RemoteStationCatalog.randomEntry()` (the second enum, around the `entries.randomElement()` line), drop dead URLs before picking. Replace:
+
+```swift
+        let entries = try JSONDecoder().decode([CatalogEntry].self, from: data)
+        guard let pick = entries.randomElement() else { throw CatalogError.emptyCatalog }
+```
+
+with:
+
+```swift
+        let entries = try JSONDecoder().decode([CatalogEntry].self, from: data)
+        let health = await StreamHealth.fetch()
+        let live = entries.filter { !health.isDead($0.url) }
+        guard let pick = (live.isEmpty ? entries : live).randomElement() else { throw CatalogError.emptyCatalog }
+```
+
+(`live.isEmpty ? entries` keeps Feel Lucky working even if health somehow nukes everything — fail open.)
+
+- [ ] **Step 7: Build**
+
+Open the project in Xcode and ⌘B. Expected: clean build. (`stations(forAlpha2:health:)` has a defaulted param so any other caller still compiles; `current()` and `randomEntry()` are already `async`.)
+
+- [ ] **Step 8: Simulator sanity check**
+
+⌘R. With a non-JP storefront, Explore → browse Japan: radiko/geo entries with `countries:["jp"]` don't appear; global JP entries do. Temporarily add a fake `{"name":"DeadTest","url":"https://dead.invalid/x"}`-style dead URL to `health.json`'s `unhealthy` (status `dead`) on a local server, or trust the unit test from Step 1 for the dead path. Confirm offline (airplane mode) still shows the bundled KR fallback.
+
+- [ ] **Step 9: Commit**
 
 ```bash
 cd /Users/moon/Projects/claude/kbscong
 git add Shared/RemoteStationCatalog.swift
-git commit -m "🌍 feat: geo-filter featured shelf by availability (+ radiko url fallback)"
+git commit -m "🌍 feat: fetch health.json + geo-filter featured (fail-open, bundled fallback)"
 git push
 ```
 
 ---
 
-## Phase 5 — Documentation
+## Phase 6 — Documentation
 
-### Task 11: Document the schema in featured/README.md
+### Task 12: Document schema + health in featured/README.md
 
 **Files:**
 - Modify: `/Users/moon/Projects/claude/kradio/featured/README.md`
 
-- [ ] **Step 1: Append the schema section**
+- [ ] **Step 1: Append the schema + pipeline section**
 
 Add to the end of `featured/README.md`:
 
@@ -1182,15 +1360,22 @@ interface FeaturedEntry {
 
 - Absent `availability` ⇒ `global`. Annotate exceptions only.
 - `countries` lists where a `geo_restricted`/`event_based` station is available.
-- **radiko** carries both `stationId` (subscribed auth path via `RadikoAuthService`)
-  and a fallback `url`. Without a subscription the app plays the `url` best-effort.
-- The app hides `dead` always, and `geo_restricted`/`event_based` when the user's
-  storefront isn't in `countries`.
+- **radiko** carries both `stationId` (subscribed auth via `RadikoAuthService`)
+  and a fallback `url`; without a subscription the app plays the `url` best-effort.
 
-Flags are produced by `tools/probe-streams.mjs` (reachability) + the
-`tools/availability-classify.workflow.js` LLM pass (geo/event) and applied with
-`tools/apply-availability.mjs`. Hard-dead catalogue entries are pruned by
-`tools/prune-dead.mjs`. See `docs/superpowers/specs/2026-06-06-stream-availability-design.md`.
+## Health pipeline
+
+Reachability is regenerated **weekly** by `.github/workflows/health-check.yml`:
+`tools/probe-streams.mjs` probes the whole catalogue, `tools/build-health.mjs`
+distils a compact `health.json` (a deny-list of non-healthy URLs; absent ⇒
+healthy), and the Action commits it. The app fetches `health.json` from the CDN
+and hides `dead` URLs (fail-open on error), keeping the bundled KR/UK/JP set as
+the offline fallback. The probe runs from GitHub's US datacenter IPs (recorded
+in `vantage`), so only hard-signal failures count as `dead`.
+
+Geo/event availability on the curated set is produced occasionally (by hand) via
+`tools/availability-classify.workflow.js` + `tools/apply-availability.mjs`.
+See `docs/superpowers/specs/2026-06-06-stream-availability-design.md`.
 ```
 
 - [ ] **Step 2: Commit + push**
@@ -1198,7 +1383,7 @@ Flags are produced by `tools/probe-streams.mjs` (reachability) + the
 ```bash
 cd /Users/moon/Projects/claude/kradio
 git add featured/README.md
-git commit -m "📚 docs: document availability metadata + radiko dual-path in featured/README"
+git commit -m "📚 docs: availability schema + weekly health pipeline in featured/README"
 git push
 ```
 
@@ -1210,28 +1395,35 @@ git push
 
 | Spec section | Task |
 |---|---|
-| Schema (StreamAvailability + optional fields, url-as-radiko-fallback) | Tasks 5, 10, 11 |
-| Probe evidence sidecar (`probe-report.*.json`, gitignored) | Tasks 2, 7, 9 |
-| `probe-streams.mjs` reachability (dead/reachable/unknown, 403/451 geoHint, 5xx retry) | Tasks 1, 2 |
-| Classification workflow (domain prior, conservative global, adversarial verify, human-confirm) | Tasks 4, 6, 8 |
-| `prune-dead.mjs` conservative (hard signals only; 5xx/403/timeout kept) | Tasks 1 (`isPrunable`), 3, 9 |
-| iOS decode + geo filter (dead always; geo/event when out of region; radiko fallback; backward compat) | Task 10 |
-| Conservative pruning protects Korea-only-from-Europe streams | Task 1 (`isPrunable` keeps unknown), Task 3 (hard-dead only) |
-| featured/README documentation | Task 11 |
-| Repo/file layout | matches the File Structure section |
-| radiko graceful degrade (subscribed → stationId; else → url) | Tasks 5 (mergeVerdict keeps url+stationId), 10 (url fallback, radiko follow-on), 11 |
-| Out-of-scope (full radiko render, category, multi-region, full-catalogue availability) | not implemented; noted in Task 10 follow-on comment |
+| Operating model: weekly health + occasional availability | Phases 1–2 (health), 3–4 (availability) |
+| `probe-classify.mjs` (dead/reachable/unknown, 403/451 geoHint, 5xx retry) | Tasks 1, 2 |
+| `probe-streams.mjs` → `probe-report.{featured,full}.json` | Task 2 |
+| `build-health.mjs` → compact `health.json` deny-list (+ vantage, guard) | Task 3 |
+| `.github/workflows/health-check.yml` weekly cron, commits health.json | Task 5 |
+| `prune-dead.mjs` occasional, hard-signal only | Task 4 |
+| geo prior (conservative, radiko-only) + candidate select | Task 6 |
+| classification Workflow (classify + adversarial + human review) | Tasks 8, 10 |
+| `apply-availability.mjs` (atomic featured merge, radiko stationId+url) | Tasks 7, 10 |
+| iOS health fetch (`StreamHealth`/`HealthList`, fail-open) | Task 11 (Steps 2,5,6) |
+| iOS geo decode + filter (dead always; geo/event out-of-region; radiko url fallback; backward compat) | Task 11 (Steps 3,4) |
+| iOS bundled KR/UK/JP fallback retained | Task 11 (Step 5 — `globalDefault()` untouched) |
+| Datacenter-IP caveat → conservative dead, app hides only dead | Tasks 1 (classifier), 5 (vantage), 11 (only `dead` hidden) |
+| health.json deny-list shape (absent ⇒ healthy) | Tasks 3, 11 |
+| featured/README docs | Task 12 |
+| Repo/file layout | matches File Structure |
 
 **Type / name consistency:**
-- `classifyReachability` / `isPrunable` exported from `probe-classify.mjs`; imported in `probe-streams.mjs` (Task 2) and `prune-dead.mjs` (Task 3) ✓
-- record shape `{name,url,country,httpStatus,contentType,reachability,geoHint,signal,checkedAt,error?}` produced in Task 2, consumed in Tasks 3 (`isPrunable` reads `reachability`), 4 (`selectGeoCandidates` reads `reachability,geoHint,url,name`), 8 ✓
-- `geoPriorForUrl` / `selectGeoCandidates` exported from `geo-prior.mjs`; used in Task 8 Step 1 ✓
-- `mergeVerdict` exported from `apply-availability.mjs`; verdict shape `{url,availability,countries?,type?,stationId?}` matches the workflow output (Task 6) and the apply harness (Task 5) ✓
-- iOS `isHidden(availability:countries:userAlpha2:)` signature identical in the `/tmp` TDD scratch (Task 10 Step 1) and the real method (Step 3) ✓
-- `FeaturedEntry.url` becomes optional in Task 10 Step 2; every later use (`entry.url` guard) handles the optional ✓
-- Reachability vocabulary `dead|reachable|unknown` identical across classifier, prune, candidate selection, workflow, README ✓
+- `classifyReachability`/`isPrunable` exported (Task 1), imported by probe-streams (Task 2) + prune-dead (Task 4) ✓
+- `toHealth` exported (Task 3), tested (Task 3) ✓
+- probe record `{name,url,country,httpStatus,contentType,reachability,geoHint,signal,checkedAt,error?}` produced (Task 2), consumed by build-health (Task 3 reads reachability/signal/httpStatus/geoHint/url), geo-prior (Task 6 reads reachability/geoHint/url/name), prune (Task 4) ✓
+- `geoPriorForUrl`/`selectGeoCandidates` exported (Task 6), used in Task 10 Step 2 ✓
+- `mergeVerdict` (Task 7) consumes verdict `{url,availability,countries?,type?,stationId?}` = workflow output (Task 8) ✓
+- health.json shape `{generatedAt,vantage,total,counts,unhealthy:[{url,status,signal,httpStatus,geoHint?}]}` produced (Task 3), decoded by iOS `HealthFile{unhealthy:[{url,status}]}` (Task 11) — iOS reads only the fields it needs ✓
+- iOS `isHidden(availability:countries:userAlpha2:)` + `HealthList.isDead`/`normalize` identical in `/tmp` TDD (Task 11 Step 1) and the real code (Steps 2,3) ✓
+- `stations(forAlpha2:health:)` defaulted param keeps existing callers compiling; `current()` passes health (Task 11 Steps 4,5) ✓
+- Reachability/status vocabulary `dead|unknown|healthy(=reachable)` consistent across classifier, build-health, health.json, iOS ✓
 
-**Placeholder scan:** No TBD/TODO/"similar to above". Task 8 Step 2 references "the parsed contents of tools/candidates.json" — that is a concrete instruction to pass the file's JSON array as the Workflow `args`, not a placeholder. Every code step has complete code.
+**Placeholder scan:** No TBD/TODO/"similar to". Task 10 Step 3's "`<parsed JSON array from tools/candidates.json>`" is a concrete instruction (pass the file's array as Workflow `args`). Every code step has complete code.
 
 Plan is clean.
 
@@ -1243,7 +1435,7 @@ Plan saved to `/Users/moon/Projects/claude/kradio/docs/superpowers/plans/2026-06
 
 Two execution options:
 
-1. **Subagent-Driven (recommended)** — fresh subagent per task, review between tasks. Phase 3 (the probe + workflow run) stays with the main session since it invokes the Workflow tool and needs your human-confirm on the review list.
-2. **Inline Execution** — execute here with checkpoints (this lets me run the probe + classification Workflow directly, which fits the "verify and populate" ask best).
+1. **Subagent-Driven (recommended for Phases 1, 3, 6)** — fresh subagent per tool task, review between. Phases 2/4/5 (Action validation, the probe + classification Workflow run + human-confirm, Xcode build/Simulator) stay in the main session.
+2. **Inline Execution** — run here with checkpoints; fits the "verify and populate" ask since I run the probe + Workflow directly.
 
 Which approach?
