@@ -198,5 +198,13 @@
   {
     "name": "Radio RMF MAXXX",
     "url": "https://rs9-krk2-cyfronet.rmfstream.pl/RMFMAXXX48"
+  },
+  {
+    "name": "Eska Lublin FM 103.6",
+    "url": "https://waw.ic.smcdn.pl/2130-1.aac"
+  },
+  {
+    "name": "ESKA Żary 106.6 FM",
+    "url": "https://waw.ic.smcdn.pl/2420-1.mp3"
   }
 ]

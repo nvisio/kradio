@@ -198,5 +198,13 @@
   {
     "name": "C-Oye 89.1 FM",
     "url": "http://streamingned.com:7146/;"
+  },
+  {
+    "name": "CNB 95.3 FM Merideña",
+    "url": "https://stream.intervalohost.com/cnb95fm"
+  },
+  {
+    "name": "ULA 97.9 FM",
+    "url": "https://stream.intervalohost.com/ula979fm/stream"
   }
 ]

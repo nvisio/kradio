@@ -198,5 +198,33 @@
   {
     "name": "Bossa Jazz Brasil",
     "url": "https://centova5.transmissaodigital.com:20104/live"
+  },
+  {
+    "name": "Arapuan FM 95.3",
+    "url": "https://streaming.engelhosting.com.br:10026/stream"
+  },
+  {
+    "name": "Autêntica Favela FM 106.7",
+    "url": "https://s30.maxcast.com.br:8114/live"
+  },
+  {
+    "name": "Massa FM 92.3",
+    "url": "https://stm01.virtualcast.com.br:8116/massamaringa"
+  },
+  {
+    "name": "Rádio Massa FM 95.3",
+    "url": "https://live.virtualcast.com.br/massagramado"
+  },
+  {
+    "name": "Band FM 94.7",
+    "url": "https://live.virtualcast.com.br/bandchapeco"
+  },
+  {
+    "name": "CBN Vitória",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_VITORIA.mp3"
+  },
+  {
+    "name": "Rádio Yandê",
+    "url": "https://cloud.cdnseguro.com:2611/stream"
   }
 ]

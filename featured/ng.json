@@ -198,5 +198,17 @@
   {
     "name": "Afrofusion Gospel Radio",
     "url": "https://a10.asurahosting.com:7120/radio.mp3"
+  },
+  {
+    "name": "Beat FM Abuja 97.9",
+    "url": "https://beatfmabuja-atunwadigital.streamguys1.com/beatfmabuja"
+  },
+  {
+    "name": "Classic FM 94.3",
+    "url": "http://classicfmabuja.atunwadigital.streamguys1.com/classicfmabuja"
+  },
+  {
+    "name": "Brila FM 88.9",
+    "url": "https://brilafm-atunwadigital.streamguys1.com/brilafm"
   }
 ]

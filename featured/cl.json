@@ -198,5 +198,25 @@
   {
     "name": "Futuro",
     "url": "http://19253.live.streamtheworld.com/FUTUROAAC_SC"
+  },
+  {
+    "name": "CNN Chile Radio",
+    "url": "https://sonicstream-puntual.grupozgh.cl/8232/cnnchileradio"
+  },
+  {
+    "name": "Radio Polar",
+    "url": "https://radiopolar.giize.com/listen/radio_polar/radio.mp3"
+  },
+  {
+    "name": "Radio Presidente Ibañez",
+    "url": "https://ibanez.servercl.com:8000/ibanez"
+  },
+  {
+    "name": "Radio Rancagua FM 99.5",
+    "url": "https://sonic-cl.arkeo.cl/9324/stream"
+  },
+  {
+    "name": "Universitaria FM (Universidad de La Serena)",
+    "url": "https://radio.cic.userena.cl/radio-uls"
   }
 ]

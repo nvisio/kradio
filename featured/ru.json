@@ -198,5 +198,13 @@
   {
     "name": "Авторадио - FM 90.3 - Москва",
     "url": "http://ic4.101.ru:8000/v3_1"
+  },
+  {
+    "name": "Russkoe Radio 107.9 FM",
+    "url": "https://broadcast.osetiafm.ru/rr.mp3"
+  },
+  {
+    "name": "Radio Rossii Orenburg 91.0 FM",
+    "url": "https://radio-translation.vestirama.ru:8443/russia.mp3"
   }
 ]

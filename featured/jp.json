@@ -198,5 +198,9 @@
   {
     "name": "Hitsujikai Radio",
     "url": "http://streaming.radio.co/se4a8e6a93/listen"
+  },
+  {
+    "name": "AFN Thunder 1575 AM Misawa",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/AFNP_MSW.mp3"
   }
 ]

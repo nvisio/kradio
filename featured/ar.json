@@ -198,5 +198,13 @@
   {
     "name": "Feeling 91.9 FM",
     "url": "http://turadioenvivo.com:8430/stream"
+  },
+  {
+    "name": "Vorterix 104.5 Mendoza",
+    "url": "https://radios.solumedia.com:6560/stream"
+  },
+  {
+    "name": "El Observador 107.9 FM",
+    "url": "https://redirector.dps.live/observador/aac/icecast.audio"
   }
 ]

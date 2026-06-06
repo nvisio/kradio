@@ -198,5 +198,9 @@
   {
     "name": "Super Clásica",
     "url": "http://sclasica-stream.sytes.net:8012/;"
+  },
+  {
+    "name": "Ecos del Combeima",
+    "url": "https://mediacp16.rootservers.co:8002/stream"
   }
 ]

@@ -198,5 +198,57 @@
   {
     "name": "Anison动漫音乐台",
     "url": "http://pool.anison.fm:9000/AniSonFM(320)?"
+  },
+  {
+    "name": "Economic Radio FM 95 浙江经济广播",
+    "url": "https://lhttp.qingting.fm/live/4519/64k.mp3"
+  },
+  {
+    "name": "Jiangsu News Radio FM 93.7",
+    "url": "https://lhttp.qingting.fm/live/4944/64k.mp3"
+  },
+  {
+    "name": "Jiangsu Traffic Radio FM 101.1 江苏交通广播",
+    "url": "https://lhttp.qingting.fm/live/4054/64k.mp3"
+  },
+  {
+    "name": "江苏健康广播 FM 100.5",
+    "url": "https://lhttp.qingting.fm/live/20014/64k.mp3"
+  },
+  {
+    "name": "江苏故事广播 FM 104.9",
+    "url": "https://lhttp.qingting.fm/live/20012/64k.mp3"
+  },
+  {
+    "name": "江苏文艺广播 FM 91.4",
+    "url": "https://lhttp.qingting.fm/live/20013/64k.mp3"
+  },
+  {
+    "name": "江苏新闻综合广播 AM702",
+    "url": "https://lhttp.qingting.fm/live/5055/64k.mp3"
+  },
+  {
+    "name": "江苏财经广播 FM 95.2",
+    "url": "https://lhttp.qingting.fm/live/20015/64k.mp3"
+  },
+  {
+    "name": "Play FM 89.7 江苏音乐广播",
+    "url": "https://lhttp.qingting.fm/live/4936/64k.mp3"
+  },
+  {
+    "name": "浙江旅游之声 FM 104.5",
+    "url": "https://lhttp.qingting.fm/live/4524/64k.mp3"
+  },
+  {
+    "name": "杭州西湖之声 FM 105.4",
+    "url": "https://lhttp.qingting.fm/live/1163/64k.mp3"
+  },
+  {
+    "name": "Traffic 91.8 FM 杭州交通经济广播",
+    "url": "https://lhttp.qingting.fm/live/1133/64k.mp3"
+  },
+  {
+    "name": "Chengdu PBS - Traffic Channel",
+    "url": "https://lhttp.qingting.fm/live/4891/64k.mp3"
   }
 ]

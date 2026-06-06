@@ -198,5 +198,37 @@
   {
     "name": "BIBLE RADIO",
     "url": "https://stream.radio.co/se9de95c10/listen"
+  },
+  {
+    "name": "iFM 93.9 FM",
+    "url": "https://air.doscast.com/proxy/ifmcebu/;"
+  },
+  {
+    "name": "DZGB - AM 729 kHz",
+    "url": "https://stream.zeno.fm/dnmfv8wykbxvv"
+  },
+  {
+    "name": "Bombo Radyo DZGR 891 AM",
+    "url": "https://stream.zeno.fm/w8pcsam29heuv"
+  },
+  {
+    "name": "Star FM Bacolod 95.9",
+    "url": "https://stream.zeno.fm/kg6tx8w4t9duv"
+  },
+  {
+    "name": "Brigada News FM 97.5 Kidapawan",
+    "url": "http://18.141.67.248:8008/stream.mp3"
+  },
+  {
+    "name": "Brigada News FM 89.5 Dumaguete",
+    "url": "http://18.141.67.248:8030/stream.mp3"
+  },
+  {
+    "name": "Bombo Radyo AM 1125",
+    "url": "https://stream.zeno.fm/26w6wq3mz9duv"
+  },
+  {
+    "name": "DXMC AM 1026 Bombo Radyo",
+    "url": "https://stream.zeno.fm/s81g7zfnz9duv"
   }
 ]

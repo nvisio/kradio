@@ -198,5 +198,25 @@
   {
     "name": "EL SHADDAI FM SOLO",
     "url": "http://shaddai.onlivestreaming.net:9130/live"
+  },
+  {
+    "name": "Geronimo 106.1 FM",
+    "url": "https://ig.idstreamer.com:8090//live"
+  },
+  {
+    "name": "OZ Radio FM 101.2",
+    "url": "https://streaming.ozradiobali.id:8443/ozradiobali"
+  },
+  {
+    "name": "Elshinta Lampung FM 105.1",
+    "url": "https://stream-ssl.arenastreaming.com:8070/lampung"
+  },
+  {
+    "name": "Elshinta Palembang FM 96.7",
+    "url": "https://stream-ssl.arenastreaming.com:8015/palembang"
+  },
+  {
+    "name": "Gamasi 105.9 FM",
+    "url": "https://stream.zeno.fm/5dfi6ftz7dwuv"
   }
 ]

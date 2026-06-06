@@ -198,5 +198,9 @@
   {
     "name": "Skyrock",
     "url": "http://icecast.skyrock.net/s/natio_mp3_128k"
+  },
+  {
+    "name": "Tropiques FM 92.6",
+    "url": "https://listen.radioking.com/radio/8916/stream/19088"
   }
 ]

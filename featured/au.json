@@ -198,5 +198,9 @@
   {
     "name": "ABC Classic FM (MP3)",
     "url": "http://live-radio01.mediahubaustralia.com/2FMW/mp3/;*.mp3"
+  },
+  {
+    "name": "5GTR 100.1 FM",
+    "url": "http://14.102.166.175:88/broadwave.mp3"
   }
 ]

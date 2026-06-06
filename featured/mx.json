@@ -198,5 +198,41 @@
   {
     "name": "La Ke Buena Ciudad de México - 92.9 FM - XEQ-FM - Radiópolis - Ciudad de México",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KEBUENAAAC.aac"
+  },
+  {
+    "name": "Exa 100.5 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHFRE.mp3"
+  },
+  {
+    "name": "Exa FM 102.1",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHESL.mp3"
+  },
+  {
+    "name": "Exa FM 101.1",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHMA_SC"
+  },
+  {
+    "name": "Exa FM 95.5",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHMP_SC"
+  },
+  {
+    "name": "Exa 95.5 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHOE_SC"
+  },
+  {
+    "name": "Exa FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHQT_SC"
+  },
+  {
+    "name": "La Mejor FM 107.9",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHEMA.mp3"
+  },
+  {
+    "name": "La Mejor 95.5 FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHRO.mp3"
+  },
+  {
+    "name": "La Mejor 92.5 FM - XHUU",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHUUFM.mp3"
   }
 ]

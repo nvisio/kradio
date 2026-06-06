@@ -202,5 +202,9 @@
   {
     "name": "Virgin Radio Romania",
     "url": "http://astreaming.virginradio.ro:8000/virgin_aacp_64k"
+  },
+  {
+    "name": "Radio CFM 92.9",
+    "url": "https://stream2.radiocfm.ro:8443/CFM"
   }
 ]

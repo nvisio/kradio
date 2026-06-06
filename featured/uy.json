@@ -198,5 +198,9 @@
   {
     "name": "Radio San Carlos",
     "url": "http://198.49.65.43:10396/;"
+  },
+  {
+    "name": "CX 121 Difusora Soriano  1210 AM",
+    "url": "http://usa15.ciudaddigital.com.uy:8094/DifusoraSoriano"
   }
 ]
