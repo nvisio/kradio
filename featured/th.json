@@ -42,5 +42,149 @@
   {
     "name": "Islamic Audio Radio FM 104.25",
     "url": "https://radio12.plathong.net/7234/;stream.mp3"
+  },
+  {
+    "name": "RequestRadio เพื่อชีวิต",
+    "url": "https://cast.requestradio.in.th:830/stream/"
+  },
+  {
+    "name": "90 rakthai",
+    "url": "http://radio11.plathong.net:8896/;stream.mp3"
+  },
+  {
+    "name": "requestradio/looktung/",
+    "url": "http://27.254.142.208:8300/"
+  },
+  {
+    "name": "ไทยลานนาเรดิโอ FM 106.5 จังหวัดตาก",
+    "url": "https://inter.lannaradio.com/radio/8000/radio.mp3"
+  },
+  {
+    "name": "สวพ.91",
+    "url": "http://122.155.16.48:8955/;stream.mp3"
+  },
+  {
+    "name": "Isan FM 98",
+    "url": "http://radio11.plathong.net:8900/stream.mp3"
+  },
+  {
+    "name": "Top News",
+    "url": "https://live.topnews.co.th/hls/topnews.m3u8"
+  },
+  {
+    "name": "RequestRadio Dance",
+    "url": "https://cast.requestradio.in.th:850//stream/3"
+  },
+  {
+    "name": "Cool fahrenheit",
+    "url": "https://coolism-web3rd.cdn.byteark.com/stream/1/"
+  },
+  {
+    "name": "RequestRadio Inter",
+    "url": "https://cast.requestradio.in.th:840//stream/3"
+  },
+  {
+    "name": "BKK.FM",
+    "url": "https://rsas.bkk.fm/radio"
+  },
+  {
+    "name": "requestradio String",
+    "url": "http://27.254.142.208:8100/stream"
+  },
+  {
+    "name": "requestradio",
+    "url": "http://27.254.142.208:8300/;"
+  },
+  {
+    "name": "ลูกทุ่งเน็ตเวิร์ค",
+    "url": "http://media.login.in.th:8200/;stream.mp3"
+  },
+  {
+    "name": "Bluewave 97 (CR)",
+    "url": "http://112.121.151.133:8109/live"
+  },
+  {
+    "name": "106 Family News Radio",
+    "url": "https://radio11.plathong.net/7138/;stream.mp3"
+  },
+  {
+    "name": "Flex 104.5",
+    "url": "https://streaming.flexconnect.net/voiceflex/voiceflex/playlist.m3u8"
+  },
+  {
+    "name": "Best Radio FM. 89.0 MHz.",
+    "url": "https://80sv2.hostpleng.com/?url=http://112.121.150.133:8198/;"
+  },
+  {
+    "name": "Bluewave 97",
+    "url": "https://80sv2.hostpleng.com/?url=http://112.121.151.133:8109/stream"
+  },
+  {
+    "name": "บ้านธัมมะ",
+    "url": "https://radio10.plathong.net/7238/;stream.mp3"
+  },
+  {
+    "name": "Rad Radio",
+    "url": "http://radio1.serverradio.net:8592/;?type=http"
+  },
+  {
+    "name": "MCOT อุดรธานี",
+    "url": "http://rstream.mcot.net:9044/;.mp3"
+  },
+  {
+    "name": "94 Bangkok Smile",
+    "url": "http://fm94.tv5.co.th:8000/fm94ch3"
+  },
+  {
+    "name": "สังฆทานธรรม",
+    "url": "https://cdn-th2.livestreaming.in.th/shoutcast/8615"
+  },
+  {
+    "name": "JS100",
+    "url": "http://103.246.19.203:8004/stream?type=http&nocache=145"
+  },
+  {
+    "name": "talay 90.25FM",
+    "url": "https://stream.talay.asia/talay"
+  },
+  {
+    "name": "Chili Radio Thailand",
+    "url": "https://stream.chiliradio.app/chiliclassics"
+  },
+  {
+    "name": "Mcot Radio Buriram 92.0 FM",
+    "url": "http://rstream.mcot.net:9050/"
+  },
+  {
+    "name": "Top News (Mobile Stream)",
+    "url": "https://live3.topnews.co.th/hls/mobile_v1.m3u8"
+  },
+  {
+    "name": "วัดปากบ่อ",
+    "url": "http://radio1.siamlivehost.com:8001/;"
+  },
+  {
+    "name": "91.5 FM Panzer Radio Station",
+    "url": "http://radio.servradio.com:9398/;stream.mp3"
+  },
+  {
+    "name": "Yesterday 106.5",
+    "url": "http://radio4.thzhost.com:4122/"
+  },
+  {
+    "name": "วัดป่าไทรงาม",
+    "url": "https://radio10.plathong.net/7110/;stream.mp3"
+  },
+  {
+    "name": "FM 93.50 MHz บ้านใหม่ เรดิโอ",
+    "url": "https://radio10.plathong.net/7590/;stream.mp3"
+  },
+  {
+    "name": "Keangun Radio เขียนกันเรดิโอ ฟังเพลงสบายสไตล์ร้านกาแฟ ร้านเหล้า ร้านนั่งชิล",
+    "url": "https://radio9.plathong.net/7054/;stream.mp3"
+  },
+  {
+    "name": "JS 100",
+    "url": "http://103.246.19.203:8004/stream"
   }
 ]

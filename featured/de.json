@@ -158,5 +158,45 @@
   {
     "name": "ON Reggae",
     "url": "https://0n-reggae.radionetz.de/0n-reggae.mp3"
+  },
+  {
+    "name": "MANGORADIO",
+    "url": "https://mangoradio.stream.laut.fm/mangoradio"
+  },
+  {
+    "name": "Rock Antenne - Heavy Metal",
+    "url": "http://mp3channels.webradio.rockantenne.de/heavy-metal"
+  },
+  {
+    "name": "1LIVE",
+    "url": "http://wdr-1live-live.icecast.wdr.de/wdr/1live/live/mp3/128/stream.mp3"
+  },
+  {
+    "name": "Rock Antenne",
+    "url": "http://mp3channels.webradio.rockantenne.de/rockantenne"
+  },
+  {
+    "name": "WDR 5",
+    "url": "http://wdr-wdr5-live.icecast.wdr.de/wdr/wdr5/live/mp3/128/stream.mp3"
+  },
+  {
+    "name": "TranceBase.FM - AAC HD 256k",
+    "url": "http://listen.trancebase.fm/tunein-aac-hd-pls"
+  },
+  {
+    "name": "Antenne Bayern",
+    "url": "http://mp3channels.webradio.antenne.de/antenne"
+  },
+  {
+    "name": "TechnoBase.FM",
+    "url": "http://lw2.mp3.tb-group.fm/tb.mp3"
+  },
+  {
+    "name": "Antenne Bayern - Chillout",
+    "url": "http://mp3channels.webradio.antenne.de/chillout"
+  },
+  {
+    "name": "Radio Eins",
+    "url": "http://f121.rndfnk.com/ard/rbb/radioeins/live/mp3/128/stream.mp3?cid=01FC1WH12KJ93TCQPDSE2E5PZ9&sid=38HoeEhwMU9ZjQaArYLcNuLu9LN&token=VXH8C52tOJ6o_G5uLXexxjt84DXyHGfH0RABfQljedk&tvf=8PpblQ7uihhmMTIxLnJuZGZuay5jb20"
   }
 ]

@@ -82,5 +82,121 @@
   {
     "name": "The Voice of the University",
     "url": "https://1062onair.runi.ac.il/idc123.mp3"
+  },
+  {
+    "name": "راديو مكان  - Kan Israel Makan",
+    "url": "http://kanliveicy.media.kan.org.il/icy/makan_mp3"
+  },
+  {
+    "name": "Лучшее Радио",
+    "url": "http://live.cdnwz.net/thebest"
+  },
+  {
+    "name": "reka",
+    "url": "http://kanliveicy.media.kan.org.il/icy/kanreka_mp3"
+  },
+  {
+    "name": "Galei Zahal",
+    "url": "http://glzwizzlv.bynetcdn.com/glz_mp3"
+  },
+  {
+    "name": "Glglz",
+    "url": "https://api.bynetcdn.com/Redirector/glz/glglz/ICE-LIVE"
+  },
+  {
+    "name": "اذاعة الشمس - A-Shams",
+    "url": "https://cdna.streamgates.net/Ashams/Live/icecast.audio"
+  },
+  {
+    "name": "Radios 100FM",
+    "url": "http://gb25.streamgates.net/radios-audio/100Workout/icecast.audio"
+  },
+  {
+    "name": "Первое радио 89.1FM",
+    "url": "https://cdn.cybercdn.live/Pervoia/Audio/icecast.audio"
+  },
+  {
+    "name": "גלגלצ - Glglz",
+    "url": "http://glzwizzlv.bynetcdn.com/glglz_mp3"
+  },
+  {
+    "name": "Jewish Music Stream",
+    "url": "https://stream.jewishmusicstream.com:8000/"
+  },
+  {
+    "name": "נושמים מזרחית - Noshmim Mizrahit",
+    "url": "http://www.rs.mizrahit.fm:7777/"
+  },
+  {
+    "name": "KAN 88",
+    "url": "http://kanliveicy.media.kan.org.il/icy/749623_mp3?providername=tunein"
+  },
+  {
+    "name": "100fm - 100% Movies",
+    "url": "http://gb25.streamgates.net/radios-audio/100Movies/icecast.audio"
+  },
+  {
+    "name": "Kan Israel Tarbut",
+    "url": "http://kanliveicy.media.kan.org.il/icy/kantarbut_mp3"
+  },
+  {
+    "name": "Kan Kol HaMusica",
+    "url": "http://kanliveicy.media.kan.org.il/icy/kankolhamusica_mp3"
+  },
+  {
+    "name": "Kan Israel 88 FM",
+    "url": "http://kanliveicy.media.kan.org.il/icy/kan88_mp3"
+  },
+  {
+    "name": "גלי ישראל Galey Yisrael",
+    "url": "https://cdn.cybercdn.live/Galei_Israel/Live/icecast.audio"
+  },
+  {
+    "name": "KAN gimel (real)",
+    "url": "http://kanliveicy.media.kan.org.il/icy/749625_mp3"
+  },
+  {
+    "name": "Kan Israel Reshet Moreshet 92.5 FM",
+    "url": "http://kanliveicy.media.kan.org.il/icy/kanmoreshet_mp3"
+  },
+  {
+    "name": "גלצ",
+    "url": "http://glzwizzlv.bynetcdn.com/glz_mp3?awCollectionId=misc&awEpisodeId=glz"
+  },
+  {
+    "name": "Kan Reka",
+    "url": "http://kanliveicy01.bynetcdn.com/icy/kanreka_mp3"
+  },
+  {
+    "name": "קול ברמה - Kol Barama",
+    "url": "http://kb.cdnwz.net/kol_barama"
+  },
+  {
+    "name": "רדיו חמאש - Radio Hamesh",
+    "url": "http://995.livecdn.biz:8000/995fm"
+  },
+  {
+    "name": "קול חי - Kol Chai",
+    "url": "https://media2.93fm.co.il/live-new"
+  },
+  {
+    "name": "Radios 100FM - 100% Oldies",
+    "url": "http://gb25.streamgates.net/radios-audio/100Oldies/icecast.audio"
+  },
+  {
+    "name": "#joint radio Beat Trance",
+    "url": "https://jointil.com/stream-beat"
+  },
+  {
+    "name": "#joint radio Reggae",
+    "url": "https://jointil.com/stream-reggae"
+  },
+  {
+    "name": "קול חי מיוזיק - Kol Chai Music",
+    "url": "https://media2.93fm.co.il/livemusic"
+  },
+  {
+    "name": "Israeli voice radio",
+    "url": "https://icecast.live/ivr"
   }
 ]

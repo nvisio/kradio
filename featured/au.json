@@ -158,5 +158,45 @@
   {
     "name": "Trax FM 88.0 - Trax Country",
     "url": "https://s3.voscast.com:9189/live"
+  },
+  {
+    "name": "ABC NewsRadio MP3",
+    "url": "http://abc.streamguys1.com/live/newsradio/icecast.audio"
+  },
+  {
+    "name": "Kiss FM 87.6, 87.8 & 88.0 Melbourne, VIC",
+    "url": "http://cc.net2streams.com:8565/kissfm.mp3"
+  },
+  {
+    "name": "ABC Radio National AAC+",
+    "url": "http://abc.streamguys1.com/live/rnnsw/icecast.audio"
+  },
+  {
+    "name": "ABC Country (MP3)",
+    "url": "http://live-radio01.mediahubaustralia.com/CTRW/mp3/;*.mp3"
+  },
+  {
+    "name": "The Prog Rock Machine",
+    "url": "https://theproganrockmachine.out.airtime.pro/theproganrockmachine_b"
+  },
+  {
+    "name": "ABC Jazz (AAC)",
+    "url": "http://live-radio01.mediahubaustralia.com/JAZW/aac/"
+  },
+  {
+    "name": "Gold 104.3",
+    "url": "https://ais-arn.streamguys1.com/au_004_icy"
+  },
+  {
+    "name": "ABC Local Radio 774 Melbourne (AAC)",
+    "url": "http://live-radio01.mediahubaustralia.com/3LRW/aac/"
+  },
+  {
+    "name": "ABC Grandstand (AAC)",
+    "url": "http://live-radio02.mediahubaustralia.com/GSDW/aac/;"
+  },
+  {
+    "name": "ABC Classic FM (MP3)",
+    "url": "http://live-radio01.mediahubaustralia.com/2FMW/mp3/;*.mp3"
   }
 ]

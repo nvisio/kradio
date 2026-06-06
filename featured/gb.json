@@ -158,5 +158,45 @@
   {
     "name": "Mi-Soul",
     "url": "https://listen-misoul.sharp-stream.com/462_mi_soul_128_mp3"
+  },
+  {
+    "name": "BBC World Service",
+    "url": "http://stream.live.vc.bbcmedia.co.uk/bbc_world_service"
+  },
+  {
+    "name": "Classic FM UK",
+    "url": "http://ice-the.musicradio.com/ClassicFMMP3"
+  },
+  {
+    "name": "LBC Radio",
+    "url": "http://media-sov.musicradio.com/LBC973MP3Low"
+  },
+  {
+    "name": "Radio Caroline",
+    "url": "http://78.129.202.200:8040/;"
+  },
+  {
+    "name": "talkSPORT",
+    "url": "http://radio.talksport.com/stream?aisGetOriginalStream=true"
+  },
+  {
+    "name": "Capital FM London",
+    "url": "http://media-ice.musicradio.com/CapitalMP3"
+  },
+  {
+    "name": "Heart 80s",
+    "url": "https://media-ssl.musicradio.com/Heart80sMP3"
+  },
+  {
+    "name": "Heart London 106.2 [MP3]",
+    "url": "http://ice-sov.musicradio.com/HeartLondonMP3"
+  },
+  {
+    "name": "LBC UK",
+    "url": "http://media-ice.musicradio.com/LBCUK"
+  },
+  {
+    "name": "Smooth Radio",
+    "url": "http://media-the.musicradio.com/SmoothEastMids"
   }
 ]

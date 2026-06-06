@@ -94,5 +94,109 @@
   {
     "name": "Dansbandradioen",
     "url": "https://live-nors.sharp-stream.com/nors1.mp3"
+  },
+  {
+    "name": "P5 Nonstop Hits (AAC HQ)",
+    "url": "https://p5n.p4groupaudio.com/P05AAH"
+  },
+  {
+    "name": "P12 Hitmix (MP3 128k)",
+    "url": "https://nrj.p4groupaudio.com/NRJ_MM"
+  },
+  {
+    "name": "P4 Norge (AAC HQ)",
+    "url": "https://p4.p4groupaudio.com/P04_AH"
+  },
+  {
+    "name": "P6 Rock (MP3 128k)",
+    "url": "https://p6.p4groupaudio.com/P06_MM"
+  },
+  {
+    "name": "P10 Country (AAC HQ)",
+    "url": "https://p10.p4groupaudio.com/P10_AH"
+  },
+  {
+    "name": "Metal Express Radio",
+    "url": "http://s39.myradiostream.com:11590/;"
+  },
+  {
+    "name": "Norsk Country Radio",
+    "url": "http://s6.voscast.com:10258/"
+  },
+  {
+    "name": "1-NRK Jazz",
+    "url": "http://cdn0-47115-liveicecast0.dna.contentdelivery.net/jazz_mp3_h"
+  },
+  {
+    "name": "Tube Tamil FM Radio டியூப் தமிழ் எஃப்.எம் பண்பலை ரேடியோtube",
+    "url": "http://s2.voscast.com:12084/;stream1619441439791/1"
+  },
+  {
+    "name": "P24-7 Mix",
+    "url": "https://live-bauerno.sharp-stream.com/p247mix_no_mp3"
+  },
+  {
+    "name": "Radio Rock (NO)",
+    "url": "https://live-bauerno.sharp-stream.com/radiorock_no_mp3"
+  },
+  {
+    "name": "P7 Klem (AAC HQ)",
+    "url": "https://p7.p4groupaudio.com/P07_AH"
+  },
+  {
+    "name": "NRJ Norge",
+    "url": "https://live-bauerno.sharp-stream.com/kiss_no_mp3"
+  },
+  {
+    "name": "P4 Norge (MP3 128k)",
+    "url": "https://p4.p4groupaudio.com/P04_MM"
+  },
+  {
+    "name": "Radio Vinyl Oslo",
+    "url": "http://live-bauerno.sharp-stream.com/vinyl_no_mp3"
+  },
+  {
+    "name": "P11 Dance (MP3 128k)",
+    "url": "https://p11.p4groupaudio.com/P11_MM"
+  },
+  {
+    "name": "Nrk P1 Stor-Oslo",
+    "url": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/p1_mp3_h"
+  },
+  {
+    "name": "Radio Norge",
+    "url": "https://live-bauerno.sharp-stream.com/radionorge_no_mp3"
+  },
+  {
+    "name": "NRK Nyheter",
+    "url": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/nyheter_aac_h"
+  },
+  {
+    "name": "Radio Nova",
+    "url": "http://stream.radionova.no/mp3"
+  },
+  {
+    "name": "NRK P3",
+    "url": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/p3_mp3_h"
+  },
+  {
+    "name": "NRK MP3",
+    "url": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/mp3_mp3_h"
+  },
+  {
+    "name": "Radio Northern Star",
+    "url": "http://5866.cloudrad.io:8018/northernstar.mp3"
+  },
+  {
+    "name": "Radiø Bø",
+    "url": "https://nettradio.radiobo.com/radiobo-high"
+  },
+  {
+    "name": "Topp 40",
+    "url": "http://live-bauerno.sharp-stream.com/top40_no_mp3"
+  },
+  {
+    "name": "Radio Metro Oslo",
+    "url": "http://stream.oneplay.no/oslo128"
   }
 ]

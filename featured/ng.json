@@ -46,5 +46,89 @@
   {
     "name": "Naija Gospel Radio",
     "url": "https://radio.i-churchresources.com/listen/naija_gospel_radio/radio.mp3"
+  },
+  {
+    "name": "RFI Haoussa",
+    "url": "http://live02.rfi.fr/rfihaoussa-96k.mp3"
+  },
+  {
+    "name": "METRO FM LAGOS",
+    "url": "https://go.webgateready.com/metrofm/radio.mp3"
+  },
+  {
+    "name": "Gospotainment Radio",
+    "url": "https://radio.gotright.net/radio/8000/radio.mp3"
+  },
+  {
+    "name": "Bond 92.9 FM",
+    "url": "https://go.webgateready.com/bondfm"
+  },
+  {
+    "name": "HOD RADIO",
+    "url": "https://servidor21.brlogic.com:7766/live"
+  },
+  {
+    "name": "LagosJump Radio",
+    "url": "https://radio.lagosjumpradio.com/listen/lagosjump_radio/radio.mp3"
+  },
+  {
+    "name": "Praiseworld Radio",
+    "url": "https://streaming.radio.co/s7dc18f0ad/listen"
+  },
+  {
+    "name": "Metro 97.7 FM",
+    "url": "https://go.webgateready.com/metrofm"
+  },
+  {
+    "name": "Rose FM",
+    "url": "http://ec1.everestcast.host:4730/stream"
+  },
+  {
+    "name": "Green Radio Uganda",
+    "url": "https://servidor17-1.brlogic.com:7940/live?source=12124"
+  },
+  {
+    "name": "RCCG Central Parish Radio",
+    "url": "https://s2.radio.co/s82911d13a/low"
+  },
+  {
+    "name": "Dream Center Internet Radio",
+    "url": "https://admin.dciradio.org/radio/8010/radio.mp3"
+  },
+  {
+    "name": "Sports Radio Brila FM",
+    "url": "https://atunwadigital.streamguys1.com/brilafm"
+  },
+  {
+    "name": "Usaku FM 90.5",
+    "url": "https://eu8.fastcast4u.com/proxy/usakufm?mp=/1"
+  },
+  {
+    "name": "KCity Radio",
+    "url": "https://radio.gotright.net/radio/8010/radio.mp3"
+  },
+  {
+    "name": "FAD FM",
+    "url": "https://radio.gotright.net/listen/fadfm/radio.mp3"
+  },
+  {
+    "name": "Konga103.7FM",
+    "url": "https://lunar.citrus3.com:8124/stream"
+  },
+  {
+    "name": "Abdulbasit Abdulsamad",
+    "url": "https://radio.mp3islam.com/listen/abdulbasit/radio.mp3"
+  },
+  {
+    "name": "Domi Radio",
+    "url": "https://domimedia.org/stream"
+  },
+  {
+    "name": "Softlife Afrofusion Radio",
+    "url": "http://eu4.fastcast4u.com:3768/stream?type=http&nocache=11"
+  },
+  {
+    "name": "Afrofusion Gospel Radio",
+    "url": "https://radio.nitro-server.uk/listen/afrofusiongospelradio/radio.mp3"
   }
 ]

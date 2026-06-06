@@ -110,5 +110,93 @@
   {
     "name": "Radyo Mydonose Türk",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MYDONOSE_TURK128AAC.aac"
+  },
+  {
+    "name": "Arabesk FM",
+    "url": "http://yayin.arabeskfm.biz:8042/"
+  },
+  {
+    "name": "Virgin Radio Türkiye",
+    "url": "http://29103.live.streamtheworld.com/VIRGIN_RADIO_SC"
+  },
+  {
+    "name": "DAMAR TURK FM",
+    "url": "https://live.radyositesihazir.com:10997/"
+  },
+  {
+    "name": "Radyo 7",
+    "url": "http://46.20.3.250/;stream"
+  },
+  {
+    "name": "Türkülerle Türkiye",
+    "url": "http://37.247.98.8/stream/22/;"
+  },
+  {
+    "name": "Radyo Şiran",
+    "url": "https://live.radyositesihazir.com/8078/stream"
+  },
+  {
+    "name": "Metro FM",
+    "url": "http://28503.live.streamtheworld.com:3690/METRO_FMAAC_SC"
+  },
+  {
+    "name": "NTV Radyo",
+    "url": "http://46.20.3.207/listen.pls"
+  },
+  {
+    "name": "Radio 5 Turkey",
+    "url": "http://radyo.yayin.com.tr:4108/stream"
+  },
+  {
+    "name": "KRAL TÜRK FM",
+    "url": "https://live.radyositesihazir.com/8032/stream"
+  },
+  {
+    "name": "Alem FM",
+    "url": "http://turkmedya.radyotvonline.com/turkmedya/alemfm.stream/playlist.m3u8"
+  },
+  {
+    "name": "Ankara Havalari",
+    "url": "http://37.247.98.8/stream/30/;"
+  },
+  {
+    "name": "Baba Radyo",
+    "url": "http://46.20.7.116/"
+  },
+  {
+    "name": "ALTIN SARKILAR",
+    "url": "http://37.247.98.8/stream/25/;"
+  },
+  {
+    "name": "a HABER",
+    "url": "https://trkvz-radyolar.ercdn.net/ahaberradyo/playlist.m3u8"
+  },
+  {
+    "name": "Radyo Fenomen",
+    "url": "https://live.radyofenomen.com/fenomen/128/icecast.audio"
+  },
+  {
+    "name": "Radyo Vatan Türkü",
+    "url": "http://95.0.173.195:9000/turku"
+  },
+  {
+    "name": "dinamo.fm sleep",
+    "url": "http://channels.dinamo.fm/sleep-mp3"
+  },
+  {
+    "name": "Süper FM",
+    "url": "http://29023.live.streamtheworld.com:3690/SUPER_FMAAC_SC"
+  },
+  {
+    "name": "Radyo Seymen",
+    "url": "https://yayin.radyoseymen.com.tr:1070/stream"
+  },
+  {
+    "name": "DamarTurk FM",
+    "url": "https://live.radyositesihazir.com:10997/stream?type=http&nocache=99881"
+  },
+  {
+    "name": "Radyo Voyage",
+    "url": "http://voyagewmp.radyotvonline.com/;stream.mp3"
   }
 ]

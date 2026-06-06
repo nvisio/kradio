@@ -158,5 +158,45 @@
   {
     "name": "Retro FM 106.7",
     "url": "https://argentina.shockmedia.com.ar:8018/;"
+  },
+  {
+    "name": "Radio Rivadavia",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RIVADAVIA.mp3"
+  },
+  {
+    "name": "Blue FM 100.7. Ciudad de Buenos Aires",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BLUE_FM_100_7AAC.aac"
+  },
+  {
+    "name": "Radio 10",
+    "url": "https://radio10.stweb.tv/radio10/live/playlist.m3u8"
+  },
+  {
+    "name": "El Destape Radio",
+    "url": "https://ipanel.instream.audio/8004/stream"
+  },
+  {
+    "name": "Radio Con Vos 89.9",
+    "url": "https://server1.stweb.tv/rcvos/live/playlist.m3u8"
+  },
+  {
+    "name": "Radio Nacional Folklorica 98.7",
+    "url": "http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad38"
+  },
+  {
+    "name": "Radio Mitre",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/AM790_56AAC_SC"
+  },
+  {
+    "name": "Radio Recuerdos 106.7",
+    "url": "http://198.204.234.10:8580/stream"
+  },
+  {
+    "name": "Radio Nacional Rock 93.7",
+    "url": "http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad39"
+  },
+  {
+    "name": "Feeling 91.9 FM",
+    "url": "http://turadioenvivo.com:8430/stream"
   }
 ]

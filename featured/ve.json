@@ -62,5 +62,77 @@
   {
     "name": "Swing Latina 88.3 FM",
     "url": "https://server6.globalhostla.com:9310/stream"
+  },
+  {
+    "name": "Unión Radio 90.3 FM Caracas",
+    "url": "http://ur58.lorini.net:2080/stream"
+  },
+  {
+    "name": "RocaFM Clasicos Caracas",
+    "url": "http://protostar.shoutca.st:8370/"
+  },
+  {
+    "name": "Adulto Joven 88.1",
+    "url": "https://server6.globalhostla.com:9168/stream"
+  },
+  {
+    "name": "DJ Shaggy Venezuela Radio",
+    "url": "https://laradiossl.online:9226/;"
+  },
+  {
+    "name": "Alba Ciudad Radio 93.6 FM16k",
+    "url": "https://envivo.albaciudad.org/alba16.mp3"
+  },
+  {
+    "name": "Rumba 98.1 FM",
+    "url": "https://cast20.plugstreaming.com:2020/stream/r981/;"
+  },
+  {
+    "name": "FM Mundial 104.1",
+    "url": "https://onlineradiobox.com/json/ve/lafmmundial/play?platform=web"
+  },
+  {
+    "name": "La Radio del Sur",
+    "url": "http://190.202.130.61:8000/lrds"
+  },
+  {
+    "name": "Exa FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHPSFMAAC.aac"
+  },
+  {
+    "name": "Radio dinámica 92.9",
+    "url": "https://guri.tepuyserver.net/8012/stream"
+  },
+  {
+    "name": "Circuito X",
+    "url": "http://cp2.lorini.net:39500/stream"
+  },
+  {
+    "name": "MPB Radio Venezuela",
+    "url": "https://radiozender.mpbnetwerken.nl/radiovenezuela.mp3"
+  },
+  {
+    "name": "Radio 2000",
+    "url": "https://streaming.adclichosting.com:8030/radio2000.mp3"
+  },
+  {
+    "name": "Rumba 100.1 Barquisimeto FM",
+    "url": "https://cast10.plugstreaming.com:2020/stream/r1001/;"
+  },
+  {
+    "name": "Espacio Network",
+    "url": "https://acp2.lorini.net:28050/stream"
+  },
+  {
+    "name": "Acción 104.5 FM (La diferencia en el dial)",
+    "url": "https://stream.intervalohost.com/accionfm/stream"
+  },
+  {
+    "name": "Rumba 104.9 Anzoategui FM",
+    "url": "https://cast10.plugstreaming.com:2020/stream/r1049/;"
+  },
+  {
+    "name": "Planeta 105.3 Caracas FM",
+    "url": "https://cast10.plugstreaming.com:2020/stream/planetafm/;"
   }
 ]

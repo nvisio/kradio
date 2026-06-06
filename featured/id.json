@@ -158,5 +158,45 @@
   {
     "name": "RRI SW 4755 Voice of Indonesia",
     "url": "https://stream-node0.rri.co.id/streaming/25/9125/voi.mp3"
+  },
+  {
+    "name": "RDI 97.1 FM",
+    "url": "http://202.147.199.99:8000/;stream/1"
+  },
+  {
+    "name": "Suara Giri 98.4 FM",
+    "url": "http://streaming.girifm.com:8010/"
+  },
+  {
+    "name": "Wijaya FM 103.5 FM Surabaya",
+    "url": "http://wijayafm.onlivestreaming.net:9880/stream?"
+  },
+  {
+    "name": "Retjo Buntung 99.4 FM",
+    "url": "http://45.64.97.82:9940/"
+  },
+  {
+    "name": "89.2 FM Jakarta, Campur sari",
+    "url": "https://a8.siar.us/listen/campursari/stream"
+  },
+  {
+    "name": "Radio Dangdut 97.1 FM Jakarta",
+    "url": "http://202.147.199.99:8000/;"
+  },
+  {
+    "name": "Suara Surabaya FM",
+    "url": "https://c5.siar.us/proxy/ssfm/stream"
+  },
+  {
+    "name": "CNN Indonesia",
+    "url": "https://live.cnnindonesia.com/livecnn/smil:cnntv/chunklist.m3u8"
+  },
+  {
+    "name": "Suara Muslim Surabaya",
+    "url": "http://pu.klikhost.com:8052/"
+  },
+  {
+    "name": "EL SHADDAI FM SOLO",
+    "url": "http://shaddai.onlivestreaming.net:9130/live"
   }
 ]

@@ -106,5 +106,97 @@
   {
     "name": "Nemzeti Sport Radio 105.9",
     "url": "https://icast.connectmedia.hu/4656/mr11.aac"
+  },
+  {
+    "name": "Dance Wave!",
+    "url": "https://dancewave.online/dance.mp3"
+  },
+  {
+    "name": "Dance Wave Retro!",
+    "url": "https://retro.dancewave.online/retrodance.mp3"
+  },
+  {
+    "name": "Rádió 1 - Budapest",
+    "url": "http://icast.connectmedia.hu/5201/live.mp3"
+  },
+  {
+    "name": "Kossuth Rádió",
+    "url": "http://mr-stream.mediaconnect.hu/4734/mr1.aac"
+  },
+  {
+    "name": "Mercy Rádió - Kabaré",
+    "url": "http://stream.mercyradio.eu/kabare.mp3"
+  },
+  {
+    "name": "Petőfi Rádió",
+    "url": "http://mr-stream.mediaconnect.hu/4737/mr2.aac"
+  },
+  {
+    "name": "Oxygen The 80s Hits",
+    "url": "https://oxygenmusic.hu:8443/oxygenthe80shits"
+  },
+  {
+    "name": "MegaDance Rádió",
+    "url": "http://megadanceradio.hopto.org:8000/livemega.mp3"
+  },
+  {
+    "name": "Sláger FM",
+    "url": "http://92.61.114.159:7812/slagerfm256.mp3"
+  },
+  {
+    "name": "Inforádió",
+    "url": "http://stream.infostart.hu/lejatszo/index.html?sid=1"
+  },
+  {
+    "name": "Dance Wave!",
+    "url": "https://dancewave.online/dance.ogg"
+  },
+  {
+    "name": "Klubrádió 95,3",
+    "url": "https://a7.asurahosting.com:8160/radio.mp3"
+  },
+  {
+    "name": "Tilos Rádió",
+    "url": "http://stream.tilos.hu/tilos"
+  },
+  {
+    "name": "Oxygen Magyar Zene",
+    "url": "https://oxygenmusic.hu:8443/oxygenmagyarzene"
+  },
+  {
+    "name": "Best FM",
+    "url": "http://stream.webthings.hu:8000/fm95-x-128.mp3"
+  },
+  {
+    "name": "Poptarisznya",
+    "url": "http://adas.poptarisznya.hu:8200/live.mp3"
+  },
+  {
+    "name": "Laza Rádió (OGG 320 Kbps)",
+    "url": "http://stream.lazaradio.com:8100/live.ogg"
+  },
+  {
+    "name": "Poptarisznya Oldies",
+    "url": "http://adas.poptarisznya.hu:8200/oldies.mp3"
+  },
+  {
+    "name": "Dankó Rádió",
+    "url": "http://mr-stream.mediaconnect.hu/4747/mr7.aac"
+  },
+  {
+    "name": "Bartók Rádió",
+    "url": "http://mr-stream.mediaconnect.hu/4742/mr3hq.mp3"
+  },
+  {
+    "name": "Danubius Rádió",
+    "url": "http://stream.danubiusradio.hu/danubius_128k"
+  },
+  {
+    "name": "Oxygen Classic Rock",
+    "url": "https://oxygenmusic.hu:8443/oxygenclassicrock"
+  },
+  {
+    "name": "Mercy Rádió - Mulatós",
+    "url": "http://stream.mercyradio.eu/mulatos.mp3"
   }
 ]

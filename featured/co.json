@@ -158,5 +158,45 @@
   {
     "name": "Salsa Son y Sabor Latino",
     "url": "https://radio35.virtualtronics.com/proxy/salsasonysabor?mp=/stream"
+  },
+  {
+    "name": "Blu Radio, señal nacional (HJCK, 89.9 MHz FM, Bogotá / HJN42, 96.3 MHz, San Martín, Meta / HJH87, 103.1 MHz, Paipa, Boyacá / HJOM, 1090 KHz, Cartagena de Indias / HJM47 103.1 MHz, Algeciras, Huila / HJQ43, 94.1 MHz, Bugalagrande, Valle del Cauca)",
+    "url": "http://27433.live.streamtheworld.com:3690/BLURADIO_SC"
+  },
+  {
+    "name": "Caracol Radio Colombia (HJGL 100.9 / HJCY 810 AM, Bogotá) [AAC]",
+    "url": "http://27323.live.streamtheworld.com:3690/CARACOL_RADIOAAC_SC"
+  },
+  {
+    "name": "W Radio Colombia, Bogotá (HJCZ 690 AM; HJLN 99.9 MHz FM) Caracol Estéreo / Caracol Radio",
+    "url": "http://26653.live.streamtheworld.com/WRADIO_SC"
+  },
+  {
+    "name": "La Kalle",
+    "url": "http://26683.live.streamtheworld.com/LA_KALLE_SC"
+  },
+  {
+    "name": "123 Vallenato",
+    "url": "http://radiolatina.info:7087/;"
+  },
+  {
+    "name": "Radiónica (HJYM 99.1 Bogotá) RTVC",
+    "url": "http://shoutcast.rtvc.gov.co:8010/;"
+  },
+  {
+    "name": "Tropicana Bogotá (HJRX 102.9) Caracol Radio",
+    "url": "http://26673.live.streamtheworld.com:3690/TROPICANA_SC"
+  },
+  {
+    "name": "Candela Estéreo Bogotá (HJPU 101.9)",
+    "url": "http://24403.live.streamtheworld.com:3690/CANDELAESTEREO_SC"
+  },
+  {
+    "name": "La Mega (Medellín) 92.9 FM",
+    "url": "https://us-b4-p-e-qg12-audio.cdn.mdstrm.com/live-audio-aw/632cb48f613bac0856b931ab"
+  },
+  {
+    "name": "Super Clásica",
+    "url": "http://sclasica-stream.sytes.net:8012/;"
   }
 ]

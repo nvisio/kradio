@@ -138,5 +138,65 @@
   {
     "name": "FM Dos 98.5",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/FMDOSAAC_SC"
+  },
+  {
+    "name": "La Retro 80s Chile",
+    "url": "https://s2.radio.co:80/s9ecef4f68/listen"
+  },
+  {
+    "name": "De los Recuerdos",
+    "url": "http://sonando.us.digitalproserver.com/fmdelosrecuerdos.aac"
+  },
+  {
+    "name": "Imagina",
+    "url": "http://24483.live.streamtheworld.com:3690/IMAGINA_SC"
+  },
+  {
+    "name": "Corazon",
+    "url": "http://27413.live.streamtheworld.com/CORAZON_SC"
+  },
+  {
+    "name": "Pudahuel",
+    "url": "http://26593.live.streamtheworld.com:3690/PUDAHUEL_SC"
+  },
+  {
+    "name": "Rock and Pop",
+    "url": "http://14073.live.streamtheworld.com/ROCK_AND_POPAAC_SC"
+  },
+  {
+    "name": "Los 40 Principales Chile",
+    "url": "http://27443.live.streamtheworld.com:3690/LOS40_CHILE_SC"
+  },
+  {
+    "name": "Concierto",
+    "url": "http://26643.live.streamtheworld.com/CONCIERTO_SC"
+  },
+  {
+    "name": "Radio Definitiva",
+    "url": "http://192.198.83.230:8772/;"
+  },
+  {
+    "name": "Radio Sol 97.7",
+    "url": "https://us9.maindigitalstream.com/ssl/7389"
+  },
+  {
+    "name": "Sonar 105.3 FM",
+    "url": "https://mdstrm.com/audio/5c915724519bce27671c4d15/icecast.audio?property=radiobox"
+  },
+  {
+    "name": "FM Dos",
+    "url": "http://27363.live.streamtheworld.com:3690/FMDOSAAC_SC"
+  },
+  {
+    "name": "RADIO COOPERATIVA",
+    "url": "https://unlimited3-cl.dps.live/cooperativafm/mp3/icecast.audio"
+  },
+  {
+    "name": "Digital FM",
+    "url": "https://unlimited11-cl.dps.live/digitalfm/aac/icecast.audio"
+  },
+  {
+    "name": "Futuro",
+    "url": "http://19253.live.streamtheworld.com/FUTUROAAC_SC"
   }
 ]

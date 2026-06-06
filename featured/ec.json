@@ -38,5 +38,149 @@
   {
     "name": "Latina FM 88.1",
     "url": "https://usa3.lhdserver.es:8087/stream"
+  },
+  {
+    "name": "La tukka Ec",
+    "url": "http://grupomundodigital.com:8673/live"
+  },
+  {
+    "name": "Radio Canela Pichincha",
+    "url": "https://canelaradio.makrodigital.com:9280/stream"
+  },
+  {
+    "name": "Radio América 104.5 FM",
+    "url": "https://streamingecuador.com:7030/stream?1657848016283"
+  },
+  {
+    "name": "RADIO MARIA ECUADOR",
+    "url": "http://dreamsiteradiocp4.com:8010/stream"
+  },
+  {
+    "name": "Radio Antena 3 91.7 FM",
+    "url": "https://streamingecuador.net:9368/radioantena3"
+  },
+  {
+    "name": "Radio Onda Positiva 94.1 FM",
+    "url": "https://streamingecuador.net:8011/radioondapositiva"
+  },
+  {
+    "name": "JC La Bruja",
+    "url": "http://s7.yesstreaming.net:8040/stream?1655753305283"
+  },
+  {
+    "name": "HCJB La Voz de los Andes 89.3 FM",
+    "url": "https://streamingecuador.net:8287/hcjb"
+  },
+  {
+    "name": "Radio Canela Guayas",
+    "url": "https://canelaradio.makrodigital.com/stream/canelaradioguayaquil"
+  },
+  {
+    "name": "Radio Diblu",
+    "url": "https://streamingecuador.net:9002/stream"
+  },
+  {
+    "name": "Radio Son De Manta 93.3 FM",
+    "url": "http://grupomundodigital.com:8649/live"
+  },
+  {
+    "name": "La Radio Redonda 96.9 Quito",
+    "url": "https://laredondafm.makrodigital.com/stream/radiolaredondaquito"
+  },
+  {
+    "name": "Radio Olímpica 96.3 FM",
+    "url": "http://stream.hdserver.biz:9320/stream"
+  },
+  {
+    "name": "La Main Street (Radios Ecuador Online)",
+    "url": "https://radiolatina.info/9930/stream"
+  },
+  {
+    "name": "Radio Elite 99.7 FM",
+    "url": "https://streamingecuador.net:8135/radioelite"
+  },
+  {
+    "name": "Radio HCJB German",
+    "url": "http://segenswelle.de:8000/hcjb"
+  },
+  {
+    "name": "la chismosa",
+    "url": "https://sp.dattavolt.com/8052/stream"
+  },
+  {
+    "name": "Radio Nuevo Tiempo 92.1 FM",
+    "url": "http://stream.live.novotempo.com/radio/smil:rntQuitoEC.smil/playlist.m3u8"
+  },
+  {
+    "name": "Radio 11Q 104.9 FM",
+    "url": "https://streamingecuador.net:8012/radio11q"
+  },
+  {
+    "name": "RNC La Mundialista 103.3 FM (AAC)",
+    "url": "https://streamingecuador.net:7008/radiornc"
+  },
+  {
+    "name": "La 961 - Suprema estacion",
+    "url": "https://dattavolt.com/8150/stream"
+  },
+  {
+    "name": "Antena Uno 90.5",
+    "url": "https://dattavolt.com/8202/stream"
+  },
+  {
+    "name": "Radio HCJB German (32kbps)",
+    "url": "http://segenswelle.de:8000/hcjb-aac"
+  },
+  {
+    "name": "Radio Rumba",
+    "url": "https://streamingecuador.net:8078/radiorumbanetwork"
+  },
+  {
+    "name": "RVT Satelital 91.5 FM",
+    "url": "http://209.208.111.122:8000/rvtpeninsula"
+  },
+  {
+    "name": "La Voz de los Caras 95.3 FM",
+    "url": "http://streaming.hdserver.biz:9368/stream"
+  },
+  {
+    "name": "Radio Quito 760 AM",
+    "url": "https://streamingecuador.net:8332/radioquito?1679294453918"
+  },
+  {
+    "name": "Radio Andina",
+    "url": "https://grupomundodigital.com:8580/stream"
+  },
+  {
+    "name": "Radio Platinum Fm",
+    "url": "https://streamingecuador.com:8160/radioplatinum"
+  },
+  {
+    "name": "La Voz del Tomebamba 1070 AM",
+    "url": "https://streamingecuador.net:8074/lavozdeltomebamba"
+  },
+  {
+    "name": "Radio Gaviota 105.1 FM",
+    "url": "https://streamingecuador.net:9000/radiogaviota"
+  },
+  {
+    "name": "Radio Mágica 87.7 (Ecuador)",
+    "url": "https://usa10.fastcast4u.com:1680/;?type=http&nocache=1683302387"
+  },
+  {
+    "name": "Radio Aventura 107.1 FM",
+    "url": "http://streaming.hdserver.biz:9424/stream"
+  },
+  {
+    "name": "Radio Canela Pichincha",
+    "url": "https://ecuadorstreaming.net:9280/stream"
+  },
+  {
+    "name": "Armonica FM",
+    "url": "https://armonicafm.makrodigital.com:9570/stream"
+  },
+  {
+    "name": "Radio Ultimito Mix",
+    "url": "https://usa4.fastcast4u.com/proxy/rwrw1?mp=/1"
   }
 ]

@@ -158,5 +158,45 @@
   {
     "name": "In Tha House",
     "url": "https://ex52.voordeligstreamen.nl/8056/stream"
+  },
+  {
+    "name": "Intense Radio - We love Dance #HQ# FLAC",
+    "url": "http://secure.live-streams.nl/flac.ogg"
+  },
+  {
+    "name": "Intense Radio - We love Dance 256k",
+    "url": "http://intenseradio.live-streams.nl:8000/main"
+  },
+  {
+    "name": "NPO Radio 1",
+    "url": "http://icecast.omroep.nl/radio1-bb-mp3"
+  },
+  {
+    "name": "NPO Radio 2",
+    "url": "http://icecast.omroep.nl/radio2-bb-mp3"
+  },
+  {
+    "name": "Arrow Classic Rock",
+    "url": "http://stream.gal.io/arrow"
+  },
+  {
+    "name": "Radio 10",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/RADIO10.mp3"
+  },
+  {
+    "name": "Arrow Classic Rock",
+    "url": "https://stream.player.arrow.nl/arrowcr"
+  },
+  {
+    "name": "Hi On Line Lounge Radio",
+    "url": "http://mediaserv33.live-streams.nl:8036/live"
+  },
+  {
+    "name": "NPO Radio 5",
+    "url": "https://icecast.omroep.nl/radio5-bb-mp3"
+  },
+  {
+    "name": "NPO Radio 2 Soul & Jazz",
+    "url": "http://icecast.omroep.nl/radio6-bb-mp3"
   }
 ]

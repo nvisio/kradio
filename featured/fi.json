@@ -18,5 +18,129 @@
   {
     "name": "Kaaosradio Chillout",
     "url": "https://kaaosradio.fi:8001/chill"
+  },
+  {
+    "name": "Sveriges Radio - SR Sisuradio",
+    "url": "https://live1.sr.se/finska-aac-320"
+  },
+  {
+    "name": "Doubleclap Radio",
+    "url": "https://s3.radio.co/scfd7273b2/listen"
+  },
+  {
+    "name": "Finest Fm",
+    "url": "http://212.47.220.188:8000/listen.mp3"
+  },
+  {
+    "name": "Radio Nova",
+    "url": "https://stream.bauermedia.fi/radionova/radionova_128.mp3"
+  },
+  {
+    "name": "Radio SuomiRock",
+    "url": "https://stream.bauermedia.fi/suomirock/suomirock_128.mp3"
+  },
+  {
+    "name": "Radio Voima",
+    "url": "https://cast2.radiovoima.fi/voima.mp3"
+  },
+  {
+    "name": "Radio Santa Claus",
+    "url": "https://streaming.radiostreamlive.com/radiosantaclaus_devices"
+  },
+  {
+    "name": "Järviradio",
+    "url": "https://jarviradio.radiotaajuus.fi:9000/jr"
+  },
+  {
+    "name": "Radio Helsinki 98,5 Mhz",
+    "url": "https://stream.radiohelsinki.fi/stream"
+  },
+  {
+    "name": "LBC",
+    "url": "http://ice-sov.musicradio.com/LBCLondon"
+  },
+  {
+    "name": "Radio SUN",
+    "url": "http://st.downtime.fi/sun.mp3"
+  },
+  {
+    "name": "Nostalgia",
+    "url": "https://stream-redirect.bauermedia.fi/nostalgia/nostalgia_64.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein"
+  },
+  {
+    "name": "Ylex",
+    "url": "https://yleradiolive.akamaized.net/hls/live/2027674/in-YleX/master.m3u8"
+  },
+  {
+    "name": "Radio Dei Turku ja Eurajoki",
+    "url": "http://isojako.radiodei.fi:8000/turkueurajoki"
+  },
+  {
+    "name": "NRJ",
+    "url": "https://stream-redirect.bauermedia.fi/nrj/nrj_64.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein"
+  },
+  {
+    "name": "Radio Nova",
+    "url": "https://stream-redirect.bauermedia.fi/radionova/radionova_64.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein"
+  },
+  {
+    "name": "Radio Natale",
+    "url": "https://streaming.radiostreamlive.com/radionatale_devices"
+  },
+  {
+    "name": "POPfm",
+    "url": "https://stream.madmenmedia.se/popfm"
+  },
+  {
+    "name": "Radio Pooki",
+    "url": "http://stream.bauermedia.fi/radiopooki/radiopooki_64.aac"
+  },
+  {
+    "name": "NRJ Suomi",
+    "url": "http://stream.bauermedia.fi/nrj/nrj_128.mp3"
+  },
+  {
+    "name": "Kasari",
+    "url": "https://stream-redirect.bauermedia.fi/kasari/kasari_64.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein"
+  },
+  {
+    "name": "Iskelmä",
+    "url": "https://stream.bauermedia.fi/iskelma/iskelma_128.mp3"
+  },
+  {
+    "name": "Radio nova",
+    "url": "http://stream.bauermedia.fi/radionova/radionova_128.mp3"
+  },
+  {
+    "name": "Radio nova",
+    "url": "http://stream.bauermedia.fi/radionova/radionova_64.aac"
+  },
+  {
+    "name": "Sea fm",
+    "url": "http://s3.myradiostream.com:4976/;"
+  },
+  {
+    "name": "Radio Dei",
+    "url": "http://isojako.radiodei.fi:8000/yleisohjelma"
+  },
+  {
+    "name": "NRJ Suomi",
+    "url": "https://stream.bauermedia.fi/nrj/nrj_128.mp3?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein&aw_0_1st.skey=1667679042www"
+  },
+  {
+    "name": "Radio KAAKKO",
+    "url": "http://wr2.downtime.fi/kaakko.aac"
+  },
+  {
+    "name": "Radio Dei Helsinki",
+    "url": "http://isojako.radiodei.fi:8000/helsinki"
+  },
+  {
+    "name": "Kiss",
+    "url": "https://stream-redirect.bauermedia.fi/kiss/kiss_64.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein"
+  },
+  {
+    "name": "Basso",
+    "url": "https://stream-redirect.bauermedia.fi/basso/bassoradio_64.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein"
   }
 ]

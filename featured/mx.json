@@ -158,5 +158,45 @@
   {
     "name": "Pa´la Banda Radio",
     "url": "https://iannes.mi-radio.stream:5003/;"
+  },
+  {
+    "name": "Los 40 Principales México",
+    "url": "http://27063.live.streamtheworld.com/LOS40_MEXICO_SC"
+  },
+  {
+    "name": "Café Romántico Radio (Monterrey) - Online - www.caferomanticoradio.com - Grupo Digital Radioland - Monterrey, Nuevo León",
+    "url": "https://panel.retrolandigital.com/radio/8110/listen"
+  },
+  {
+    "name": "BEAUTIFUL Instrumentals",
+    "url": "http://s3.voscast.com:10038/"
+  },
+  {
+    "name": "Cumbias Inmortales Radio (Monterrey) - Online - www.cumbiasinmortales.com - Grupo Digital Retroland - Monterrey, Nuevo León",
+    "url": "https://panel.retrolandigital.com/listen/cumbias_inmortales_radio/listen"
+  },
+  {
+    "name": "La Ranchera de Monterrey - 1050 AM - XEG-AM - Núcleo Radio Monterrey - Monterrey, NL",
+    "url": "http://streamingcwsradio20.com:9410/stream"
+  },
+  {
+    "name": "88.9 Noticias - 88.9 FM - XHM-FM - Grupo ACIR - Ciudad de México",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHMFMAAC_SC.aac"
+  },
+  {
+    "name": "SABROSITA Ciudad de México - 590 AM - XEPH-AM - NRM Comunicaciones - Ciudad de México",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XEPHAMAAC.aac"
+  },
+  {
+    "name": "Oldies Internet Radio",
+    "url": "http://162.244.81.98:8140/listen"
+  },
+  {
+    "name": "Amor Ciudad de México - 95.3 FM - XHSH-FM - Grupo ACIR - Ciudad de México",
+    "url": "https://27143.live.streamtheworld.com:443/XHSHFMAAC.aac"
+  },
+  {
+    "name": "La Ke Buena Ciudad de México - 92.9 FM - XEQ-FM - Radiópolis - Ciudad de México",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KEBUENAAAC.aac"
   }
 ]

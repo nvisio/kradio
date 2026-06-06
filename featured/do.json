@@ -70,5 +70,121 @@
   {
     "name": "Latina 88.7 FM",
     "url": "https://sp.totalstreaming.net:8060/stream"
+  },
+  {
+    "name": "Salsa - Dominicana",
+    "url": "http://radio.domiplay.net:2002/;"
+  },
+  {
+    "name": "Radio Bachata",
+    "url": "http://perseus.shoutca.st:8312/;stream/1"
+  },
+  {
+    "name": "Top Urbano",
+    "url": "https://radio.dominiserver.com/proxy/topurbano?mp=/stream"
+  },
+  {
+    "name": "Top Balada Radio",
+    "url": "https://radio.dominiserver.com/proxy/topbaladaradio?mp=/stream"
+  },
+  {
+    "name": "FieraMix",
+    "url": "https://c11.radioboss.fm:18269/stream"
+  },
+  {
+    "name": "Independencia FM",
+    "url": "http://stream.grupotelemicro.com:9303/;stream.mp3"
+  },
+  {
+    "name": "Top Cristiano Radio",
+    "url": "https://radio.dominiserver.com/proxy/topcristianoradio?mp=/stream"
+  },
+  {
+    "name": "Comando 88 FM Santiago",
+    "url": "http://rgradio.net:8044/comando88"
+  },
+  {
+    "name": "La Rocka 91.7",
+    "url": "http://5.135.183.124:8243/"
+  },
+  {
+    "name": "Radio Cimarrona",
+    "url": "http://radiocimarrona.out.airtime.pro:8000/radiocimarrona_a"
+  },
+  {
+    "name": "Bachata Radio",
+    "url": "http://radio.domiplay.net:8002/;"
+  },
+  {
+    "name": "Ser Mejor Radio",
+    "url": "http://ca2.rcast.net:8068/;stream.mp3"
+  },
+  {
+    "name": "CDN Radio",
+    "url": "https://play.cdnradio.com.do/cdnlive"
+  },
+  {
+    "name": "Radio Bendicion",
+    "url": "https://samuel.i-radio.co:9000/radiobendicion"
+  },
+  {
+    "name": "Bravisima fm",
+    "url": "http://radio.hostlagarto.com/9924/stream"
+  },
+  {
+    "name": "Miss 104 FM",
+    "url": "https://radio.dominiserver.com/proxy/miss104fm?mp=/stream"
+  },
+  {
+    "name": "La Rocka 91.7",
+    "url": "http://5.135.183.124:8243/;stream/1"
+  },
+  {
+    "name": "Dominicana FM 98.9 y 99.9 FM",
+    "url": "https://protvradiostream.com:8610/;"
+  },
+  {
+    "name": "Platino Radio",
+    "url": "https://platinoradio-henrsosa.radioca.st/stream"
+  },
+  {
+    "name": "Amor FM 91.9",
+    "url": "http://radio.domiplay.net:9190/;"
+  },
+  {
+    "name": "Radio fm103 (RD)",
+    "url": "https://radio.radiord.net/8008/;stream.mp3"
+  },
+  {
+    "name": "810 AM Radio Salvación Internacional (RD)",
+    "url": "http://ph1.ministeriotv.com:8031/salvacion.mp3"
+  },
+  {
+    "name": "Disco 89 88.9 FM",
+    "url": "https://rgradio.net/disco89/disco89.mp3"
+  },
+  {
+    "name": "Trespatines Radio",
+    "url": "https://app0102.sonicpanelradio.com/8708/stream"
+  },
+  {
+    "name": "Monumental 100.3 FM",
+    "url": "https://radio2.grupointernet.com/8103/stream"
+  },
+  {
+    "name": "Radio Santa Maria",
+    "url": "https://paginas.moisespaulino.com/proxy/rsantamaria/stream?type=.mp3"
+  },
+  {
+    "name": "Azul Radio",
+    "url": "http://radio.domiplay.net:9300/;"
+  },
+  {
+    "name": "Criolla 106.1 FM",
+    "url": "https://streaming.grupomediosdelnorte.com:8002/stream"
+  },
+  {
+    "name": "Super K FM",
+    "url": "https://grupomedrano.stream-audio.com:8856/SuperK"
   }
 ]
