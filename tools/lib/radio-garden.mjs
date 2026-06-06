@@ -2,7 +2,7 @@
 // Shared radio.garden helpers (network + pure). The pure parts are unit-tested.
 
 export const RG = "https://radio.garden";
-export const UA = "kradio-importer/1.0 (+https://kradio.nvis.io)";
+export const UA = "radio-importer/1.0 (+https://radio)";
 
 // ── pure: country name → ISO 3166-1 alpha-2 (lowercase) ────────────────
 // Built by inverting Intl.DisplayNames over all alpha-2 codes (covers ~200
