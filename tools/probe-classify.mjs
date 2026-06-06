@@ -15,18 +15,15 @@ const AUDIO_TYPES = [
   "application/octet-stream",
 ];
 
+// Only unambiguous, environment-independent failures are "dead". TLS errors are
+// deliberately NOT here: a Node probe over-reports them (incomplete cert chains
+// it won't fetch, CA-bundle/SNI quirks) on streams iOS plays fine, so TLS →
+// "unknown" (kept visible) rather than hard-hidden.
 const HARD_DEAD_ERRORS = new Set(["ENOTFOUND", "ECONNREFUSED"]);
-
-function isTlsError(code) {
-  return typeof code === "string" &&
-    (code.includes("CERT") || code.includes("SSL") ||
-     code === "DEPTH_ZERO_SELF_SIGNED_CERT" ||
-     code === "UNABLE_TO_VERIFY_LEAF_SIGNATURE");
-}
 
 export function classifyReachability({ status = null, contentType = null, errorCode = null } = {}) {
   if (errorCode) {
-    if (HARD_DEAD_ERRORS.has(errorCode) || isTlsError(errorCode)) {
+    if (HARD_DEAD_ERRORS.has(errorCode)) {
       return { reachability: "dead", geoHint: false, signal: errorCode };
     }
     return { reachability: "unknown", geoHint: false, signal: errorCode };

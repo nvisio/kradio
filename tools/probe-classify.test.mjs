@@ -9,8 +9,10 @@ test("DNS NXDOMAIN → dead", () => {
 test("connection refused → dead", () => {
   assert.equal(classifyReachability({ errorCode: "ECONNREFUSED" }).reachability, "dead");
 });
-test("TLS cert error → dead", () => {
-  assert.equal(classifyReachability({ errorCode: "DEPTH_ZERO_SELF_SIGNED_CERT" }).reachability, "dead");
+test("TLS errors → unknown (Node over-reports; kept visible)", () => {
+  assert.equal(classifyReachability({ errorCode: "DEPTH_ZERO_SELF_SIGNED_CERT" }).reachability, "unknown");
+  assert.equal(classifyReachability({ errorCode: "UNABLE_TO_VERIFY_LEAF_SIGNATURE" }).reachability, "unknown");
+  assert.equal(classifyReachability({ errorCode: "CERT_HAS_EXPIRED" }).reachability, "unknown");
 });
 test("timeout → unknown (not dead)", () => {
   assert.equal(classifyReachability({ errorCode: "ETIMEDOUT" }).reachability, "unknown");
