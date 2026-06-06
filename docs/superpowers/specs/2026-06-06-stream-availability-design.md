@@ -17,6 +17,66 @@ radiko stations (without populating them yet).
 Default stance, per the user's framing: **assume global; flag only the
 exceptions.**
 
+## Operating Model: Automated Health Pipeline
+
+Health is not a one-time manual run — it is a **weekly automated pipeline**.
+Two distinct layers, regenerated on different cadences:
+
+| Layer | What | Cadence | Engine | Output |
+|---|---|---|---|---|
+| **Health** (reachability) | dead / unknown / healthy for the whole 37k catalogue | **weekly**, GitHub Actions cron | `probe-streams.mjs` (deterministic, LLM-free) | `health.json` (served via Pages/CDN) |
+| **Availability** (geo/event) | geo_restricted / event_based on the curated featured set | **occasional**, run by hand | LLM classify + adversarial Workflow | annotations in `featured/{cc}.json` |
+
+Pipeline (the user's 5 steps, mapped):
+
+1. **Catalogue in the GitHub repo** — `nvisio/kradio` already holds
+   `stations.json` + `featured/{cc}.json`. (done)
+2. **Weekly health check via GitHub Actions** —
+   `.github/workflows/health-check.yml` runs `probe-streams.mjs` over
+   `stations.json` on a weekly cron.
+3. **Status JSON generated** — `build-health.mjs` distils the probe report into
+   `health.json` and the Action commits it. The catalogue itself is *not*
+   mutated (curation stays human; health is a separate regenerated layer).
+4. **App fetches catalogue + health from CDN** — the app reads
+   `stations.json` / `featured/{cc}.json` and `health.json` from
+   `https://kradio.nvis.io/…` (GitHub Pages CDN) and filters at runtime.
+5. **App bundles only a fallback list** — the existing built-in KR/UK/JP
+   stations remain bundled as the offline / fetch-failure fallback; the
+   remote catalogue is the primary source.
+
+**Datacenter-IP caveat (important).** GitHub Actions runners are US datacenter
+IPs (Azure). Many radio CDNs return 403 or block datacenter IPs, so a CI health
+check sees **more false-403 / false-dead than a residential probe**. Mitigation:
+`dead` is restricted to **hard** signals (DNS NXDOMAIN, conn refused, TLS
+invalid, 404, 410); 403/451 are `unknown`+`geoHint`, never `dead`; timeouts and
+5xx are `unknown`. The app treats only `dead` as a hard hide; `unknown` stays
+visible (best-effort). Weekly (not daily) cadence is also politeness toward
+broadcasters.
+
+## health.json
+
+A separate status layer keyed by URL, regenerated weekly and served from the
+CDN. To stay small over 37k entries it lists only the **non-healthy** URLs;
+**any URL absent from the file is healthy**.
+
+```jsonc
+{
+  "generatedAt": "2026-06-06T03:00:00Z",
+  "vantage": "github-actions-us",      // honesty: where the probe ran from
+  "total": 37793,
+  "counts": { "healthy": 35120, "unknown": 2310, "dead": 363 },
+  "unhealthy": [
+    { "url": "https://dead.example/s.mp3", "status": "dead",    "signal": "ENOTFOUND",  "httpStatus": null },
+    { "url": "https://geo.example/s.mp3",  "status": "unknown", "signal": "http_403", "httpStatus": 403, "geoHint": true }
+  ]
+}
+```
+
+App rule: a catalogue/featured URL present in `unhealthy` with `status:"dead"`
+is hidden; `status:"unknown"` is kept (best-effort, may be a datacenter-IP false
+negative). This deny-list shape keeps the file to the few thousand non-healthy
+rows instead of all 37k.
+
 ## Non-Goals (deferred follow-ons)
 
 - The **subscription-gated** radiko-auth rendering from featured (using
@@ -28,8 +88,9 @@ exceptions.**
 - Showing geo-locked stations as "disabled + JP-only badge" instead of hiding
   them (UI refinement).
 - Multi-region probing to overcome the single-vantage limitation.
-- Applying full availability metadata to the 37k `stations.json` (only dead
-  cleanup there).
+- Applying geo/event **availability** metadata to the 37k `stations.json` — the
+  full catalogue gets only the **health** layer (reachability via `health.json`);
+  geo/event stays on the curated featured set.
 
 ## Constraints & Realities (discovered in code)
 
@@ -97,8 +158,10 @@ Design rules:
 
 ## Probe Evidence Sidecar
 
-Raw probe results do not pollute `featured/`. They live in
-`tools/probe-report.json` (gitignored — large), one record per probed stream:
+Raw probe results do not pollute `featured/` or the committed catalogue. They
+live in `tools/probe-report.{featured,full}.json` (gitignored — large), one
+record per probed stream. The committed, CDN-served distillation is
+`health.json` (above); the raw report is the intermediate the tools read.
 
 ```jsonc
 {
@@ -134,8 +197,9 @@ Reused for both the featured set and the full 37k catalogue. LLM-free.
     `403`/`451` set `geoHint: true`.
 - Usage:
   - `node tools/probe-streams.mjs --featured` → probes every `featured/*.json`
-    entry, writes `tools/probe-report.json`.
-  - `node tools/probe-streams.mjs stations.json` → probes the full catalogue.
+    entry, writes `tools/probe-report.featured.json`.
+  - `node tools/probe-streams.mjs stations.json` → probes the full catalogue,
+    writes `tools/probe-report.full.json` (the weekly Action path).
 
 ### 2. Classification workflow — geo/event judgment (LLM + adversarial)
 
@@ -160,17 +224,52 @@ Workflow (ultracode). Hybrid #3:
 - Confirmed verdicts are merged into `featured/{cc}.json` as `availability` +
   `countries` (and `type`/`stationId` where the prior says radiko).
 
-### 3. `tools/prune-dead.mjs` — conservative 37k cleanup
+### 3. `tools/build-health.mjs` — distil probe report → `health.json`
 
-- Reads `probe-report.json`, removes from `stations.json` only entries whose
-  reachability is `dead` by **hard signals** (`DNS NXDOMAIN`, `conn refused`,
-  `404`, `410`, `TLS invalid`). Timeouts, 403, and 5xx are **kept** (could be
-  geo or transient).
-- Re-runs `build-index.mjs` afterward.
-- Prints a summary: probed N, hard-dead M, pruned M, kept-unknown K.
+- Reads `tools/probe-report.full.json`, emits `health.json` (deny-list shape
+  above): metadata + the `unhealthy` array (every record whose reachability is
+  `dead` or `unknown`). Healthy URLs are omitted.
+- Refuses to write if the report is missing or smaller than a sanity threshold
+  (guards against a truncated/failed probe overwriting a good `health.json`).
+- This is what the weekly Action commits.
 
-### 4. iOS — `kbscong/Shared/RemoteStationCatalog.swift`
+### 4. `.github/workflows/health-check.yml` — weekly CI
 
+- `schedule: cron` weekly (plus `workflow_dispatch` for manual runs).
+- Steps: checkout → setup Node 22 → `node tools/probe-streams.mjs stations.json
+  --concurrency 40` → `node tools/build-health.mjs` → commit `health.json` if it
+  changed (`git diff --quiet || git commit`). `probe-report.full.json` stays
+  gitignored (not committed); only `health.json` is.
+- Records `vantage: "github-actions-us"` in the output for honesty about where
+  the probe ran.
+
+### 5. `tools/prune-dead.mjs` — occasional hard compaction (NOT in the weekly Action)
+
+The primary mechanism is `health.json` + runtime filtering, so the catalogue is
+**not** mutated weekly. This tool stays available for an *occasional* manual
+compaction that physically removes long-dead entries from `stations.json`:
+
+- Removes only `dead`-by-hard-signal entries (`DNS NXDOMAIN`, `conn refused`,
+  `404`, `410`, `TLS invalid`). Timeouts, 403, 5xx kept.
+- Re-runs `build-index.mjs` afterward. Run by hand when the dead set has grown,
+  not on a schedule.
+
+### 6. iOS — `kbscong/Shared/RemoteStationCatalog.swift`
+
+**Health fetch + fallback (the user's steps 4–5):**
+- Fetch `https://kradio.nvis.io/health.json` (cached, ~weekly TTL) into a
+  `HealthList` value: a `Set<String>` of dead URLs (normalised) built from
+  `unhealthy` rows where `status == "dead"`. `unknown` rows are **not** added
+  (kept visible — datacenter-IP false negatives).
+- When rendering the featured shelf (and the "Feel Lucky" random pick from
+  `stations.json`), drop any URL in the dead set.
+- **Fallback:** the existing bundled `koreaStations` / `ukStations` /
+  `japanStations` remain the offline / fetch-failure fallback (see
+  `globalDefault()`); the remote catalogue + `health.json` are the primary
+  source. If `health.json` can't be fetched, skip health filtering (fail open —
+  show everything) rather than hiding the catalogue.
+
+**Availability (geo/event) decode + filter:**
 - Extend `FeaturedEntry`:
   ```swift
   struct FeaturedEntry: Decodable {
@@ -203,18 +302,24 @@ Workflow (ultracode). Hybrid #3:
 ## Data Flow
 
 ```
-probe-streams.mjs  ──►  tools/probe-report.json
-        │                      │
-        │ (featured reachables)│ (full catalogue, hard-dead)
-        ▼                      ▼
-  classification WF      prune-dead.mjs ──► stations.json (pruned) ──► build-index.mjs
-   (LLM + adversarial)         
-        │
-        ▼
-  featured/{cc}.json  (availability / countries / type on exceptions)
-        │
-        ▼
-  iOS RemoteStationCatalog  ──► geo-filtered "Popular in <country>" shelf
+WEEKLY (GitHub Actions, automated, LLM-free):
+  cron ─► probe-streams.mjs stations.json ─► probe-report.full.json (gitignored)
+                                                   │
+                                                   ▼
+                                          build-health.mjs ─► health.json ─► commit ─► Pages/CDN
+                                                                                          │
+OCCASIONAL (by hand, LLM):                                                                │
+  probe-streams.mjs --featured ─► probe-report.featured.json                              │
+                                       │ selectGeoCandidates                              │
+                                       ▼                                                  │
+                                 classification WF (classify + adversarial)               │
+                                       │ verdicts (+ human-confirm review)                │
+                                       ▼                                                  │
+                                 apply-availability.mjs ─► featured/{cc}.json             │
+                                                                  │                       │
+                                                                  ▼                       ▼
+  iOS RemoteStationCatalog ◄──── featured/{cc}.json (geo/event) + health.json (dead set) + bundled fallback
+                          └─► geo-filtered + health-filtered "Popular in <country>" shelf
 ```
 
 ## Error Handling
@@ -245,19 +350,30 @@ probe-streams.mjs  ──►  tools/probe-report.json
 
 | Repo | Path | Change |
 |---|---|---|
+| nvisio/kradio | `tools/probe-classify.mjs` (+test) | new (pure classifier) |
 | nvisio/kradio | `tools/probe-streams.mjs` | new (probe → report) |
-| nvisio/kradio | `tools/prune-dead.mjs` | new (conservative 37k prune) |
-| nvisio/kradio | `tools/probe-report.json` | artifact (gitignore) |
-| nvisio/kradio | `tools/availability-review.json` | human-confirm list (gitignore or commit small) |
+| nvisio/kradio | `tools/build-health.mjs` | new (report → `health.json`) |
+| nvisio/kradio | `tools/geo-prior.mjs` (+test) | new (prior + candidate select) |
+| nvisio/kradio | `tools/apply-availability.mjs` (+test) | new (verdicts → featured) |
+| nvisio/kradio | `tools/availability-classify.workflow.js` | new (LLM classify + adversarial) |
+| nvisio/kradio | `tools/prune-dead.mjs` | new (occasional hard compaction) |
+| nvisio/kradio | `.github/workflows/health-check.yml` | new (weekly cron) |
+| nvisio/kradio | `health.json` | committed status layer (served via CDN) |
+| nvisio/kradio | `tools/probe-report*.json` | artifacts (gitignore) |
+| nvisio/kradio | `tools/availability-review.json` | human-confirm list (commit — audit trail) |
 | nvisio/kradio | `featured/*.json` | exception entries annotated |
 | nvisio/kradio | `featured/README.md` | document new fields + StreamAvailability |
-| nvisio/kradio | `.gitignore` | add probe-report.json |
+| nvisio/kradio | `.gitignore` | add `tools/probe-report*.json` |
 | nvisio/kradio | `docs/superpowers/specs/2026-06-06-stream-availability-design.md` | this spec |
-| kbscong | `Shared/RemoteStationCatalog.swift` | decode + geo-filter |
+| kbscong | `Shared/RemoteStationCatalog.swift` | health fetch + fallback + geo decode/filter |
 
 ## Execution Note
 
-The user explicitly wants the flags actually populated ("직접 확인해서 flag를
-넣어줘"), so the implementation phase ends in a real run: probe → classify
-(workflow) → merge into featured → conservative prune → rebuild index, then the
-iOS decode/filter change. The classification step is the ultracode Workflow.
+Two cadences, not one:
+- **Stand up the weekly pipeline** (build the tools + Action) so health
+  regenerates itself: probe → `build-health.mjs` → commit `health.json`. After
+  the first Action run, `health.json` is live on the CDN.
+- **Populate availability once now** ("직접 확인해서 flag를 넣어줘"): probe
+  featured → classify (Workflow) → human-confirm → `apply-availability.mjs` →
+  commit `featured/*.json`. Re-run occasionally, not on a schedule.
+- iOS consumes both layers + keeps the bundled KR/UK/JP fallback.
