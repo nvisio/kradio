@@ -57,18 +57,24 @@ export function countryCodeFrom(name) {
 }
 
 // ── pure: dedup key + membership ───────────────────────────────────────
-export function nameKey(name, country) {
-  const n = String(name || "")
+// Identity = name + country + city. A station is "known" only if all three
+// match an existing catalogue entry; a same-named station in a different city
+// counts as new (the authoritative URL dedup is still the final backstop).
+function norm(s) {
+  return String(s || "")
     .toLowerCase()
     .replace(/[^\p{L}\p{N}\s]+/gu, "")   // strip punctuation/emoji
     .replace(/\s+/g, " ")
     .trim();
-  const c = String(country || "").toLowerCase().trim();
-  return `${n}|${c}`;
 }
 
-export function isKnown(name, country, knownSet) {
-  return knownSet.has(nameKey(name, country));
+export function nameKey(name, country, city) {
+  const c = String(country || "").toLowerCase().trim();
+  return `${norm(name)}|${c}|${norm(city)}`;
+}
+
+export function isKnown(name, country, city, knownSet) {
+  return knownSet.has(nameKey(name, country, city));
 }
 
 // ── network ────────────────────────────────────────────────────────────
