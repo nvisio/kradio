@@ -65,7 +65,11 @@
   },
   {
     "name": "Radio Bandit - 90s",
-    "url": "https://pro.radiobandit.ro/listen/bandit90/radio.mp3"
+    "url": "https://pro.radiobandit.ro/listen/bandit90/radio.mp3",
+    "availability": "geo_restricted",
+    "countries": [
+      "ro"
+    ]
   },
   {
     "name": "EBS Blues",
