@@ -118,5 +118,85 @@
   {
     "name": "AFN FM Humphreys",
     "url": "https://radio.bsod.kr/stream/?stn=afn&city=humphreys"
+  },
+  {
+    "name": "Listen.moe Kpop",
+    "url": "https://listen.moe/kpop/stream"
+  },
+  {
+    "name": "Oldpop Cafe",
+    "url": "http://cast.oldpopcafe.net:7080/"
+  },
+  {
+    "name": "MBC FM4U",
+    "url": "https://minimw.imbc.com/dmfm/_definst_/mfm.stream/playlist.m3u8?_lsu_sa_=6B711918733F3C646B42E5203D01A74935803FA53E0702B631C07Ea6E6583766A9a0B3773B329B4B80A73B0187b3918649E1F74973A02F7DE6058842C3C6BAAFDAE9B010932285575C9A45CFE1E89074DC035ADCF170D7CC9AF5D632E071D14AE7538A787F7F6CC0A7885E4A8D350644"
+  },
+  {
+    "name": "MBC FM",
+    "url": "https://minisw.imbc.com/dsfm/_definst_/sfm.stream/playlist.m3u8?_lsu_sa_=6A115617F38D3554574DA5113B51CB4B856F3DB5250942A4363024a6B6DD3D96E5aB937C3C42E74E900637B102b4F139DC1360E1E70CBAE0DABEB23C0B01C78042CA551BDD30D8559BA4418B5C469A1DD0609723936DED72870177C9662827DFCD0D560AECF58C3E1DE9022BE53737C0"
+  },
+  {
+    "name": "SBS Power FM",
+    "url": "https://radiolive.sbs.co.kr/powerpc/powerfm.stream/playlist.m3u8?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3Njg1MDg0MDcsInBhdGgiOiIvcG93ZXJmbS5zdHJlYW0iLCJkdXJhdGlvbiI6LTEsInVubyI6IjJiZmM1Mzc1LTViZWYtNDY4Ny05NjU2LTc1ZmI4OTk3NjA0YSIsImlhdCI6MTc2ODQ2NTIwN30.xkRaVDF9QFP4Tx2jEU7nwLRfLCVxa9KTnyUFHS1ZtUE"
+  },
+  {
+    "name": "Arirang TV",
+    "url": "http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8"
+  },
+  {
+    "name": "MBC FM for you",
+    "url": "https://minimw.imbc.com/dmfm/_definst_/mfm.stream/playlist.m3u8?_lsu_sa_=6771FE1F33573B64EF4495543311CD41455335B5530902E23830ADa3866237C692a2D3D230423C4320FB3F412Eb6F1CAB5CA3F60A6D346F940E5F7E472BD4AF7BADEF7C671688ECADF926481D28281FC394AA0177FC82381492F2C12716A2B1859437D450745731303D6E3D37F616847"
+  },
+  {
+    "name": "SBS Love FM",
+    "url": "https://radiolive.sbs.co.kr/lovepc/lovefm.stream/playlist.m3u8?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3Njg0OTQwMTMsInBhdGgiOiIvbG92ZWZtLnN0cmVhbSIsImR1cmF0aW9uIjotMSwidW5vIjoiNWUwZjc1ZjktM2U3Ny00NWM3LThmYjUtMTQwNjIwNDZlYzVlIiwiaWF0IjoxNzY4NDUwODEzfQ.cJygtl9Trhq0bBqF37Rn5X-1RwaWlIe_LcFP99d1FKk"
+  },
+  {
+    "name": "CBS 음악 FM",
+    "url": "https://m-aac.cbs.co.kr/cbs939/_definst_/cbs939.stream/playlist.m3u8"
+  },
+  {
+    "name": "TBN 교통방송",
+    "url": "http://radio2.tbn.or.kr:1935/gyeongin/myStream/playlist.m3u8"
+  },
+  {
+    "name": "Arirang Radio",
+    "url": "http://amdlive.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8"
+  },
+  {
+    "name": "평양FM",
+    "url": "https://listen7.myradio24.com/69366"
+  },
+  {
+    "name": "안동MBC AM",
+    "url": "http://andong.webcasting.co.kr:1935/live/amlive/playlist.m3u8"
+  },
+  {
+    "name": "Buddhist True Network TV",
+    "url": "http://btn.nowcdn.co.kr/btn/btnlive01/playlist.m3u8"
+  },
+  {
+    "name": "Buddhist Broadcasting System TV",
+    "url": "http://bbstv.clouducs.com:1935/bbstv-live/livestream/playlist.m3u8"
+  },
+  {
+    "name": "EBS TV-Kids",
+    "url": "http://ebsonairios.ebs.co.kr/ebsufamilypc/familypc1m/playlist.m3u8"
+  },
+  {
+    "name": "Fred Film Radio(한국어)",
+    "url": "https://s10.webradio-hosting.com/proxy/fredradiokr/stream"
+  },
+  {
+    "name": "SBS Love FM",
+    "url": "https://radiolive.sbs.co.kr/lovepc/lovefm.stream/playlist.m3u8?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3Njg0ODgwMDUsInBhdGgiOiIvbG92ZWZtLnN0cmVhbSIsImR1cmF0aW9uIjotMSwidW5vIjoiMDZkZjczYmItZTM4Yi00NzI5LWEyZTUtZjRlNDAwNmZkZmI1IiwiaWF0IjoxNzY4NDQ0ODA1fQ.9C2odBRYFEmZuFWp624Xot5IhU8JrwwKOxg0wygVrUY"
+  },
+  {
+    "name": "gukak",
+    "url": "http://mgugaklive.nowcdn.co.kr/gugakradio/gugakradio.stream/playlist.m3u8"
+  },
+  {
+    "name": "CPBC TV",
+    "url": "http://onair1.cpbc.co.kr:1935/tv/mp4:live720/playlist.m3u8"
   }
 ]

@@ -162,5 +162,45 @@
   {
     "name": "90s 3NeRgY",
     "url": "https://s11.ssl-stream.com/ssl/90s_energy?mp=/stream"
+  },
+  {
+    "name": "Radio Romania Actualități",
+    "url": "http://89.238.227.6:8006/;"
+  },
+  {
+    "name": "Deep House Radio - Bucharest Romania",
+    "url": "http://live.dancemusic.ro:7000/stream"
+  },
+  {
+    "name": "Europa FM",
+    "url": "http://astreaming.europafm.ro:8000/europafm_aacp48k"
+  },
+  {
+    "name": "Play 90's",
+    "url": "http://live.playradio.org:9090/90HD"
+  },
+  {
+    "name": "Radio Manele FM",
+    "url": "http://a.fmradiomanele.ro:8054/;"
+  },
+  {
+    "name": "Radio Guerrilla",
+    "url": "http://live.guerrillaradio.ro:8010/guerrilla.aac"
+  },
+  {
+    "name": "Radio Cafe Romania",
+    "url": "http://live.radiocafe.ro:8048/live.aac"
+  },
+  {
+    "name": "Radio Zu",
+    "url": "http://zuicast.digitalag.ro:9420/zu"
+  },
+  {
+    "name": "Lautaru Populara",
+    "url": "http://live.radiolautaru.ro:9000/;stream.nsv"
+  },
+  {
+    "name": "Virgin Radio Romania",
+    "url": "http://astreaming.virginradio.ro:8000/virgin_aacp_64k"
   }
 ]

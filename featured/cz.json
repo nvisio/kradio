@@ -118,5 +118,85 @@
   {
     "name": "ČRo Radiožurnál Sport",
     "url": "https://rozhlas.stream/radiozurnal_sport_high.aac"
+  },
+  {
+    "name": "Радио Свобода",
+    "url": "https://rfe-ingest.akamaized.net/hls/live/2035254/axia04/playlist.m3u8"
+  },
+  {
+    "name": "Radio Čas Rock",
+    "url": "http://icecast6.play.cz/casrock128.mp3"
+  },
+  {
+    "name": "Rádio Blaník živé",
+    "url": "http://ice.abradio.cz/blanikfm128.mp3"
+  },
+  {
+    "name": "ČRo Radiožurnál",
+    "url": "http://icecast8.play.cz/cro1-128.mp3"
+  },
+  {
+    "name": "Radio Humor",
+    "url": "http://mp3stream4.abradio.cz:8000/humor128.mp3"
+  },
+  {
+    "name": "Radio ROCK",
+    "url": "http://ice.abradio.cz/rockradio128.mp3"
+  },
+  {
+    "name": "Rádio Blaník CZ Webové rádio",
+    "url": "http://ice.abradio.cz/blanikcz128.mp3"
+  },
+  {
+    "name": "ČRo Dvojka",
+    "url": "http://icecast6.play.cz/cro2-128.mp3"
+  },
+  {
+    "name": "Impuls Ráááádio",
+    "url": "http://icecast5.play.cz/impuls128.mp3"
+  },
+  {
+    "name": "Hitrádio Devadesátka",
+    "url": "http://ice.abradio.cz/hit90128.mp3"
+  },
+  {
+    "name": "Free Rádio 107,0 FM Brno",
+    "url": "http://icecast8.play.cz/freeradio128.mp3"
+  },
+  {
+    "name": "HIT Rádio Orion",
+    "url": "http://ice.abradio.cz/orion128.mp3"
+  },
+  {
+    "name": "Český Impuls",
+    "url": "http://icecast6.play.cz/cesky-impuls.mp3"
+  },
+  {
+    "name": "Fajn Rádio",
+    "url": "http://ice.abradio.cz/fajn128.mp3"
+  },
+  {
+    "name": "Oldies Rádio",
+    "url": "http://ice.abradio.cz/oldiesradio128.mp3"
+  },
+  {
+    "name": "Hitrádio Osmdesátka",
+    "url": "http://ice.abradio.cz/hit80128.mp3"
+  },
+  {
+    "name": "Rádio pohádka",
+    "url": "http://ice3.abradio.cz/pohadka128.mp3"
+  },
+  {
+    "name": "Dance Radio",
+    "url": "http://ice.actve.net/dance-radio320.mp3"
+  },
+  {
+    "name": "Metalománie",
+    "url": "http://ice.abradio.cz/metalomanie128.mp3"
+  },
+  {
+    "name": "ČRo Vltava",
+    "url": "http://icecast5.play.cz/cro3-128.mp3"
   }
 ]

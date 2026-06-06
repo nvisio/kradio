@@ -78,5 +78,125 @@
   {
     "name": "Radio Viking 101,4",
     "url": "https://stream.rcs.revma.com/qp6w2wzrruhvv"
+  },
+  {
+    "name": "Mix Megapol",
+    "url": "http://tx-bauerse.sharp-stream.com/http_live.php?ua=WEB&i=mixmegapol_instream_se_mp3"
+  },
+  {
+    "name": "NRJ Sweden",
+    "url": "http://tx-bauerse.sharp-stream.com/http_live.php?i=nrj_instreamtest_se_mp3"
+  },
+  {
+    "name": "Country Rocks Radio",
+    "url": "http://stream.dbmedia.se/crr96"
+  },
+  {
+    "name": "Pirate Rock  Västkustens bästa rock",
+    "url": "http://stream.piraterock.se:8101/webradio"
+  },
+  {
+    "name": "Svensk Pop",
+    "url": "http://tx.sharp-stream.com/http_live.php?i=svenskpop_se_mp3"
+  },
+  {
+    "name": "Bandit Rock",
+    "url": "http://fm02-ice.stream.khz.se/fm02_mp3"
+  },
+  {
+    "name": "Retro FM Skåne",
+    "url": "https://live-bauerse-fm.sharp-stream.com/retrofm_aacp?ua=WEB&aw_0_1st.playerid=SBS_RP_WEB&aw_0_1st.skey=1575715192&companionAds=true&listenerId=@@GUID@@"
+  },
+  {
+    "name": "Country Rocks Radio",
+    "url": "http://stream.dbmedia.se/crrMP3"
+  },
+  {
+    "name": "106,7 Rockklassiker",
+    "url": "http://tx-bauerse.sharp-stream.com/http_live.php?ua=WEB&i=rockklassiker_instream_se_mp3"
+  },
+  {
+    "name": "Bandit Metal",
+    "url": "http://wr03-ice.stream.khz.se/wr03_mp3"
+  },
+  {
+    "name": "Guldkanalen Helsingborg",
+    "url": "http://stream.dbmedia.se/gkhbg96"
+  },
+  {
+    "name": "Rix FM",
+    "url": "http://fm01-ice.stream.khz.se/fm01_mp3"
+  },
+  {
+    "name": "Sveriges Radio - P4 Plus",
+    "url": "https://live1.sr.se/p4plus-aac-320"
+  },
+  {
+    "name": "Lugna Favoriter Stockholm",
+    "url": "http://fm03-ice.stream.khz.se/fm03_mp3?"
+  },
+  {
+    "name": "SlayRadio",
+    "url": "http://relay1.slayradio.org:8000/"
+  },
+  {
+    "name": "Svensk Folkmusik - AkkA radio",
+    "url": "http://mediaserv38.live-streams.nl:8107/stream"
+  },
+  {
+    "name": "Sveriges Radio - P3",
+    "url": "https://live1.sr.se/p3-mp3-96"
+  },
+  {
+    "name": "Mix Megapol GBG",
+    "url": "http://tx-bauerse.sharp-stream.com/http_live.php?i=mixmegapolgbg_instream_se_mp3"
+  },
+  {
+    "name": "Pop & Rock",
+    "url": "http://62.101.46.15:8000/poporock"
+  },
+  {
+    "name": "Polushon",
+    "url": "https://whsh4u-clients.com:18323/proxy/ndhfnbqx?mp=/stream"
+  },
+  {
+    "name": "SceneSat Radio (MP3)",
+    "url": "http://oscar.scenesat.com:8000/scenesatmax"
+  },
+  {
+    "name": "SVT P1 192kps",
+    "url": "https://live1.sr.se/p1-mp3-96"
+  },
+  {
+    "name": "Sveriges Radio P2",
+    "url": "https://http-live.sr.se/p2musik-aac-320"
+  },
+  {
+    "name": "Guldkanalen Malmö/Lund",
+    "url": "http://stream.dbmedia.se/gk96"
+  },
+  {
+    "name": "Vinyl FM",
+    "url": "https://edge-bauerse-06-thn.sharp-stream.com/vinylfm_instream_se_mp3?"
+  },
+  {
+    "name": "Star FM",
+    "url": "http://fm05-ice.stream.khz.se/fm05_mp3"
+  },
+  {
+    "name": "Lite FM 101.1",
+    "url": "http://live.litefm.se:8000/stream_mp3"
+  },
+  {
+    "name": "SDX synthetic experience - EBM, Synth and Industrial",
+    "url": "http://radio.dawnshadow.se:8000/stream"
+  },
+  {
+    "name": "Stockholm FM 88,0 Sweden",
+    "url": "http://radiostreamfour.sytes.net:18000/"
+  },
+  {
+    "name": "Stockholm FM 101,1 Sweden",
+    "url": "http://radiostreamthree.mine.nu:18020/"
   }
 ]

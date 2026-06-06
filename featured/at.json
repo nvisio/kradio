@@ -158,5 +158,45 @@
   {
     "name": "Energy Salzburg",
     "url": "https://streaming.nrjaudio.fm/ou62c3xp336f"
+  },
+  {
+    "name": "Austrian Rock Radio",
+    "url": "http://live.antenne.at/arr"
+  },
+  {
+    "name": "ORF Radio Wien",
+    "url": "http://orf-live.ors-shoutcast.at/wie-q1a"
+  },
+  {
+    "name": "KroneHit Digital",
+    "url": "http://onair-ha1.krone.at/kronehit1058.mp3"
+  },
+  {
+    "name": "KroneHit Radio",
+    "url": "http://onair-ha1.krone.at/kronehit64.aac"
+  },
+  {
+    "name": "88.6 Hard Rock",
+    "url": "http://radio886.at/streams/88.6_Hard_Rock/mp3"
+  },
+  {
+    "name": "Lounge.FM - 100% Austria",
+    "url": "https://s35.derstream.net/100austria.mp3"
+  },
+  {
+    "name": "Superfly FM",
+    "url": "http://stream01.superfly.fm:8080/live128"
+  },
+  {
+    "name": "ORF Hitradio Ö3 | HQ",
+    "url": "https://orf-live.ors-shoutcast.at/oe3-q2a"
+  },
+  {
+    "name": "Antenne Steiermark",
+    "url": "http://live.antenne.at/as"
+  },
+  {
+    "name": "FM4 | ORF | HQ",
+    "url": "https://orf-live.ors-shoutcast.at/fm4-q2a"
   }
 ]

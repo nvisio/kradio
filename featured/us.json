@@ -158,5 +158,45 @@
   {
     "name": "WESM FM 91.3 Jazz, Blues and NPR News",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WESMFM.mp3"
+  },
+  {
+    "name": "Radio Paradise Main Mix (EU) 320k AAC",
+    "url": "http://stream-uk1.radioparadise.com/aac-320"
+  },
+  {
+    "name": "Classic Vinyl HD",
+    "url": "https://icecast.walmradio.com:8443/classic"
+  },
+  {
+    "name": "Adroit Jazz Underground",
+    "url": "https://icecast.walmradio.com:8443/jazz"
+  },
+  {
+    "name": "Christmas Vinyl HD",
+    "url": "https://icecast.walmradio.com:8443/christmas"
+  },
+  {
+    "name": "WALM HD",
+    "url": "https://icecast.walmradio.com:8443/walm"
+  },
+  {
+    "name": "WALM - Old Time Radio",
+    "url": "https://icecast.walmradio.com:8443/otr"
+  },
+  {
+    "name": "WALM 2 HD",
+    "url": "https://icecast.walmradio.com:8443/walm2"
+  },
+  {
+    "name": "101 SMOOTH JAZZ",
+    "url": "http://jking.cdnstream1.com/b22139_128mp3"
+  },
+  {
+    "name": "Deep House Lounge",
+    "url": "http://198.15.94.34:8006/stream"
+  },
+  {
+    "name": "Adroit Jazz Underground HD Opus",
+    "url": "https://icecast.walmradio.com:8443/jazz_opus"
   }
 ]

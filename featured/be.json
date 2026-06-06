@@ -158,5 +158,45 @@
   {
     "name": "Ultrason",
     "url": "https://ultrason.ice.infomaniak.ch/ultrason-high.mp3"
+  },
+  {
+    "name": "Bel RTL",
+    "url": "http://belrtl.ice.infomaniak.ch/belrtl-mp3-192.mp3"
+  },
+  {
+    "name": "Tomorrowland One World Radio",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/OWR_INTERNATIONAL_ADP.aac"
+  },
+  {
+    "name": "Fun Radio",
+    "url": "https://funradiobe.ice.infomaniak.ch/funradiobe-high.mp3"
+  },
+  {
+    "name": "Nostalgie 80's",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOSTALGIEWAF80.mp3"
+  },
+  {
+    "name": "Instrumentals Forever",
+    "url": "http://quincy.torontocast.com:1910/stream"
+  },
+  {
+    "name": "NRJ België",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NRJBELGIE.mp3?dist=radiobrowser"
+  },
+  {
+    "name": "The Funky Channel",
+    "url": "http://cast3.my-control-panel.com:8170/stream"
+  },
+  {
+    "name": "MyNoise Pure Nature",
+    "url": "https://purenature-mynoise.radioca.st/stream"
+  },
+  {
+    "name": "top radio retro",
+    "url": "https://str.topradio.be/topradioretroarena.mp3"
+  },
+  {
+    "name": "Nostalgie Vlaanderen",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOSTALGIEWHATAFEELING.mp3?dist=radiobrowser"
   }
 ]

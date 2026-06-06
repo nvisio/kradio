@@ -158,5 +158,45 @@
   {
     "name": "Radio4tng",
     "url": "https://radio4tng.ice.infomaniak.ch/radio4tng-live-web.mp3"
+  },
+  {
+    "name": "Radio Swiss Jazz",
+    "url": "http://stream.srg-ssr.ch/m/rsj/mp3_128"
+  },
+  {
+    "name": "1.FM - Amsterdam Trance Radio",
+    "url": "http://strm112.1.fm/atr_mobile_mp3"
+  },
+  {
+    "name": "1.FM - Deep House Radio",
+    "url": "http://strm112.1.fm/deephouse_mobile_mp3"
+  },
+  {
+    "name": "1.FM - Classic Rock Replay Radio",
+    "url": "http://strm112.1.fm/crock_mobile_mp3"
+  },
+  {
+    "name": "1.FM - Absolute Country Hits Radio",
+    "url": "http://strm112.1.fm/acountry_mobile_mp3"
+  },
+  {
+    "name": "1.FM - Classic Country Radio",
+    "url": "http://strm112.1.fm/ccountry_mobile_mp3"
+  },
+  {
+    "name": "1.FM - Chillout Lounge Radio",
+    "url": "http://strm112.1.fm/chilloutlounge_mobile_mp3"
+  },
+  {
+    "name": "1.FM - Blues Radio",
+    "url": "http://strm112.1.fm/blues_mobile_mp3"
+  },
+  {
+    "name": "Radio Swiss Classic German",
+    "url": "http://stream.srg-ssr.ch/m/rsc_de/mp3_128"
+  },
+  {
+    "name": "1.FM - Rock Classics Radio",
+    "url": "http://strm112.1.fm/rockclassics_mobile_mp3"
   }
 ]

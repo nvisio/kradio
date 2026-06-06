@@ -158,5 +158,45 @@
   {
     "name": "GiantFM 91.7 Classic Rock",
     "url": "https://mybroadcasting.streamb.live/SB00329"
+  },
+  {
+    "name": "ChroniX Radio Metalcore",
+    "url": "http://usa17.fastcast4u.com:5508/stream"
+  },
+  {
+    "name": "REGGAE CHILL CAFE",
+    "url": "https://maggie.torontocast.com:2020/stream/reggaechillcafe"
+  },
+  {
+    "name": "Calm Radio - Solo Piano",
+    "url": "http://streams.calmradio.com:1228/"
+  },
+  {
+    "name": "680 News Toronto",
+    "url": "https://rogers-hls.leanstream.co/rogers/tor680.stream/playlist.m3u8"
+  },
+  {
+    "name": "CFRB News/Talk 1010 (Toronto, ON)",
+    "url": "http://22113.live.streamtheworld.com:3690/CFRBAMAAC_SC"
+  },
+  {
+    "name": "CBC Radio 1 Toronto",
+    "url": "https://cbcradiolive.akamaized.net/hls/live/2041036/ES_R1ETR/master.m3u8"
+  },
+  {
+    "name": "ICI Radio-Canada Première Montréal",
+    "url": "https://rcavliveaudio.akamaized.net/hls/live/2006635/P-2QMTL0_MTL/playlist.m3u8"
+  },
+  {
+    "name": "Labgate - Progressive Rock",
+    "url": "https://s2.ssl-stream.com/radio/8180/radio.mp3"
+  },
+  {
+    "name": "# RdMix Classic Rock 70s 80s 90s",
+    "url": "https://cast1.torontocast.com:4610/stream"
+  },
+  {
+    "name": "100 GREATEST OF THE 80'S",
+    "url": "https://maggie.torontocast.com:2020/stream/100greatestofthe80s"
   }
 ]

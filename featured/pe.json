@@ -110,5 +110,93 @@
   {
     "name": "Radio Disney 96.1 FM",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_PER_LM.mp3"
+  },
+  {
+    "name": "Top Latino",
+    "url": "http://online.radiodifusion.net:8020/stream"
+  },
+  {
+    "name": "Radio Oxígeno",
+    "url": "https://mdstrm.com/audio/5fab0687bcd6c2389ee9480c/live.m3u8"
+  },
+  {
+    "name": "Radio RPP Noticias",
+    "url": "https://mdstrm.com/audio/5fab3416b5f9ef165cfab6e9/icecast.audio"
+  },
+  {
+    "name": "Radio Huancayo",
+    "url": "https://cloud9.ldwebstudios.net:7000/;"
+  },
+  {
+    "name": "RADIO LA MEGA 96.7 FM (PERU)",
+    "url": "https://us-b4-p-e-pb13-audio.cdn.mdstrm.com/live-audio-aw/5fada56fe4e09508207a7951?"
+  },
+  {
+    "name": "Radio Corazón (94.3 FM Lima)",
+    "url": "https://mdstrm.com/audio/5fada514fc16c006bd63370f/icecast.audio"
+  },
+  {
+    "name": "Studio 92 (92.5 FM Lima)",
+    "url": "https://mdstrm.com/audio/5fada553978fe1080e3ac5ea/icecast.audio"
+  },
+  {
+    "name": "Radio La Mega",
+    "url": "https://mdstrm.com/audio/5fada56fe4e09508207a7951/icecast.audio"
+  },
+  {
+    "name": "Radio frecuencia 100 - Trujillo",
+    "url": "http://oyotunstream.com:7066/;"
+  },
+  {
+    "name": "Radio Los Angeles - Chepen",
+    "url": "http://94.23.159.187:9950/;"
+  },
+  {
+    "name": "Radio La Zona (90.5 FM, Lima)",
+    "url": "https://mdstrm.com/audio/5fada54116646e098d97e6a5/icecast.audio"
+  },
+  {
+    "name": "Ovación 620 AM",
+    "url": "https://5c3fb01839654.streamlock.net:1963/ipradioovacion1/liveovacion1radio/playlist.m3u8"
+  },
+  {
+    "name": "Radio Felicidad 88.9",
+    "url": "https://mdstrm.com/audio/5fad731fcf097a068af3c8f7/icecast.audio"
+  },
+  {
+    "name": "La Noventera",
+    "url": "https://host.gometri.com/proxy/lanoventera/stream/"
+  },
+  {
+    "name": "Radio RPP Mundial",
+    "url": "https://us-b4-p-e-cg11-audio.cdn.mdstrm.com/live-audio-aw/5faee885eb830d06cf22ed4a"
+  },
+  {
+    "name": "Radio Clasica Rock&Pop",
+    "url": "https://sonicpanel.globalstream.pro/8042/stream"
+  },
+  {
+    "name": "Radio Maria Peru (OAX-4M, 580 kHz AM / OBT-4Z 97.7 MHz FM, Lima)",
+    "url": "http://dreamsiteradiocp4.com:8020/"
+  },
+  {
+    "name": "Radio Panamericana",
+    "url": "https://mdstrm.com/audio/6598b62dded1380470f4e539/icecast.audio"
+  },
+  {
+    "name": "Radio 1160 Peru",
+    "url": "https://us-b4-p-e-pb13-audio.cdn.mdstrm.com/live-audio-aw/6598b6e1261d9e088a6de859?aid=658ddcc0b2c7835d48fee06d&pid=G3FnIvg2s2uxHg1lIbLUlWa3cFT5KPBg&sid=XAAefdCCMC9B9MvNg9TwqdstYTKnk3li&uid=Nkdb2uczAeFQEIGw1fojci2BEYfd4Tye&es=us-b4-p-e-pb13-audio.cdn.mdstrm.com&ote=1711464716330&ot=YgiDR9HDtOJKN3UCFo0-xg&proto=https&pz=us&cP=128000&awCollectionId=658ddcc0b2c7835d48fee06d&liveId=6598b6e1261d9e088a6de859&listenerId=Nkdb2uczAeFQEIGw1fojci2BEYfd4Tye"
+  },
+  {
+    "name": "StereoLima",
+    "url": "https://panel.innovatestream.pe/8042/stream"
+  },
+  {
+    "name": "Filarmonía (OCR-4V, 102.7 MHz FM, Lima) (IRTP)",
+    "url": "http://c22.radioboss.fm:8100/stream"
+  },
+  {
+    "name": "Mambo INN Radio",
+    "url": "https://radio.perustream.com:7000/stream"
   }
 ]

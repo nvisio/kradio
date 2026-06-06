@@ -158,5 +158,45 @@
   {
     "name": "MoreFM 80s",
     "url": "https://stream-mmr80s.creativedork.com/"
+  },
+  {
+    "name": "Cadena 100",
+    "url": "http://cadena100-streamers-mp3.flumotion.com/cope/cadena100.mp3"
+  },
+  {
+    "name": "Chocolate FM",
+    "url": "http://streaming5.elitecomunicacion.es:8082/live.mp3"
+  },
+  {
+    "name": "Cadena SER España",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3"
+  },
+  {
+    "name": "1000 HITS 80s",
+    "url": "http://c2.auracast.net:8048/stream"
+  },
+  {
+    "name": "Rock FM",
+    "url": "http://flucast31-h-cloud.flumotion.com/cope/rockfm-low.mp3"
+  },
+  {
+    "name": "_80 EXITOS",
+    "url": "https://80sexitos.stream.laut.fm/80sexitos"
+  },
+  {
+    "name": "Los 40 Dance",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/LOS40_DANCE_SC"
+  },
+  {
+    "name": "esRadio",
+    "url": "http://livestreaming.esradio.fm/stream64.mp3"
+  },
+  {
+    "name": "Pure Ibiza Radio",
+    "url": "https://pureibizaradio.clubbingradios.com:9518/PureIbizaRadio"
+  },
+  {
+    "name": "Chocolate FM [calidad móvil-low bandwidth]",
+    "url": "http://streaming5.elitecomunicacion.es:8082/live32.aac"
   }
 ]

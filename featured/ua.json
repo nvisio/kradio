@@ -94,5 +94,109 @@
   {
     "name": "Radio KP",
     "url": "https://kpradio.hostingradio.ru:8000/crimea.radiokp128.mp3"
+  },
+  {
+    "name": "Hit FM (UKraine) - 128kb/s",
+    "url": "http://195.95.206.17/HitFM"
+  },
+  {
+    "name": "Люкс FМ 103.1",
+    "url": "http://lux.radio.tvstitch.com/kyiv/lux_adv_sd"
+  },
+  {
+    "name": "Kiss FM 106.5",
+    "url": "http://online.kissfm.ua/KissFM"
+  },
+  {
+    "name": "Радио НВ",
+    "url": "http://91.218.212.84:8000/radionv.mp3"
+  },
+  {
+    "name": "Хіт FM Сучасні хіти",
+    "url": "http://online.hitfm.ua/HitFM_Top"
+  },
+  {
+    "name": "Radio ROKS Ballads",
+    "url": "http://online.radioroks.ua/RadioROKS_Ballads_HD"
+  },
+  {
+    "name": "Мелодія FM 95.2",
+    "url": "http://online.melodiafm.ua/MelodiaFM"
+  },
+  {
+    "name": "Наше Радіо 107.9",
+    "url": "http://online.nasheradio.ua/NasheRadio"
+  },
+  {
+    "name": "Rock Ballads",
+    "url": "http://online.radioroks.ua/RadioROKS_Ballads"
+  },
+  {
+    "name": "KissFm Deep",
+    "url": "http://online.kissfm.ua/KissFM_Deep_Live"
+  },
+  {
+    "name": "Хіт ФМ Найбільші хіти",
+    "url": "http://online.hitfm.ua/HitFM_Best"
+  },
+  {
+    "name": "Radio ROKS Hard'n'Heavy",
+    "url": "http://online.radioroks.ua/RadioROKS_HardnHeavy_HD"
+  },
+  {
+    "name": "HIT FM",
+    "url": "http://online.hitfm.ua/HitFM"
+  },
+  {
+    "name": "Радіо Максимум 94.2",
+    "url": "http://lux.radio.tvstitch.com/kyiv/max_adv_sd"
+  },
+  {
+    "name": "Громадське радіо / Hromadske radio",
+    "url": "http://91.218.212.67:8000/stream"
+  },
+  {
+    "name": "Kiss FM Ukrainian",
+    "url": "https://online.kissfm.ua/KissFM_Ukr"
+  },
+  {
+    "name": "Радіо Трек",
+    "url": "http://online2.radiotrek.rv.ua:8000/AAC+_64"
+  },
+  {
+    "name": "Львівська хвиля (32 кбіт/с)",
+    "url": "http://onair.lviv.fm:8000/lviv32.fm"
+  },
+  {
+    "name": "Радіо Relax 101.5",
+    "url": "http://online.radiorelax.ua/RadioRelax"
+  },
+  {
+    "name": "TRANCE IS STAR RADIO",
+    "url": "https://myradio24.org/tisradio"
+  },
+  {
+    "name": "Єдині новини",
+    "url": "https://online-news.radioplayer.ua/RadioNews"
+  },
+  {
+    "name": "Радіо НВ 96.0",
+    "url": "https://online-radio.nv.ua/radionv.mp3"
+  },
+  {
+    "name": "Radio Roks HD",
+    "url": "http://online.radioroks.ua/RadioROKS_HD"
+  },
+  {
+    "name": "Brokenbeats",
+    "url": "https://stream.brokenbeats.net/tune"
+  },
+  {
+    "name": "Kiss FM Digital HD",
+    "url": "https://online.kissfm.ua/KissFM_Digital_HD"
+  },
+  {
+    "name": "Закарпаття FM",
+    "url": "http://195.234.148.51:8000/;"
   }
 ]

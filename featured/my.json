@@ -158,5 +158,45 @@
   {
     "name": "Rakita 107.9 FM",
     "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RAKITAAAC.aac"
+  },
+  {
+    "name": "Jazz Lounge",
+    "url": "http://eu8.fastcast4u.com:5068/;"
+  },
+  {
+    "name": "Klasik FM 101,1 MHz",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_KLASIK.mp3"
+  },
+  {
+    "name": "988 FM",
+    "url": "https://28103.live.streamtheworld.com/988_FMAAC.aac"
+  },
+  {
+    "name": "Jei FM Klang Tamil Radio",
+    "url": "https://usa3.fastcast4u.com/proxy/jeifm?mp=/1"
+  },
+  {
+    "name": "ai fm",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/AI_FMAAC_SC"
+  },
+  {
+    "name": "Gegar Musik FM",
+    "url": "http://167.114.131.90:5316/stream/1/"
+  },
+  {
+    "name": "Nasional FM 88,5 MHz",
+    "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/NASIONAL_FM.mp3"
+  },
+  {
+    "name": "Radio Rosak",
+    "url": "https://radiorosak.radioca.st/stream"
+  },
+  {
+    "name": "SkyChatzFM",
+    "url": "http://java.skychatz.org:8080/;stream/1"
+  },
+  {
+    "name": "Gemersik FM",
+    "url": "http://gemersikfm.iradio.work:8000/;"
   }
 ]

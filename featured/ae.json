@@ -30,5 +30,73 @@
   {
     "name": "Sharjah Radio",
     "url": "https://l3.itworkscdn.net/smcradiolive/smcradiolive/icecast.audio"
+  },
+  {
+    "name": "Sky Arabia News TV",
+    "url": "http://stream.skynewsarabia.com/hls/sna_720.m3u8"
+  },
+  {
+    "name": "sky news arabia radio",
+    "url": "https://stream.skynewsarabia.com/hls/sna.m3u8"
+  },
+  {
+    "name": "Radio Relax",
+    "url": "https://online.radiorelax.ua/RadioRelax_Int_HD"
+  },
+  {
+    "name": "Suno FM",
+    "url": "http://51.255.235.165:5476/"
+  },
+  {
+    "name": "Big FM 106.2 UAE",
+    "url": "https://funasia.streamguys1.com/live4"
+  },
+  {
+    "name": "Radio Mirchi Dubai",
+    "url": "https://eu8.fastcast4u.com/proxy/clyedupq/?mp=/1"
+  },
+  {
+    "name": "Quran Radio From Sharjah",
+    "url": "https://l3.itworkscdn.net/smcquranlive/quranradiolive/icecast.audio"
+  },
+  {
+    "name": "Virgin Radio Dubai 104.4 FM",
+    "url": "https://radio.virginradio.co.uk/stream"
+  },
+  {
+    "name": "Dubai Eye 103.8",
+    "url": "https://gbradio.cdn.tibus.net/U105?aw_0_1st.playerId=wireless-website&_=477645"
+  },
+  {
+    "name": "Vibe FM UAE",
+    "url": "http://ccfz.dyndns.org:4427/vfm"
+  },
+  {
+    "name": "الشرق",
+    "url": "https://bcovlive-a.akamaihd.net/0b75ef0a49e24704a4ca023d3a82c2df/ap-south-1/6203311941001/playlist.m3u8"
+  },
+  {
+    "name": "DJ Radio Dubai",
+    "url": "https://listen.radioking.com/radio/623812/stream/685903"
+  },
+  {
+    "name": "Big Melodies",
+    "url": "https://funasia.streamguys1.com/live9"
+  },
+  {
+    "name": "Rak Radio UAE",
+    "url": "https://stream.chiliradio.app/gulfradio"
+  },
+  {
+    "name": "LUV 107.1",
+    "url": "https://funasia.streamguys1.com/live2"
+  },
+  {
+    "name": "MBC Loud 105.5 FM",
+    "url": "https://d2lfa0y84k5bwn.cloudfront.net/out/v1/86dd4506a70c4d7fb35e2ab50296d9a3/index.m3u8?aws.manifestfilter=video_height:0-0"
+  },
+  {
+    "name": "The Groovy Smooth Jazz Station",
+    "url": "https://jazz.streeemer.com/listen/jazz/radio.aac"
   }
 ]
