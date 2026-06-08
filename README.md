@@ -7,13 +7,19 @@ Stream live radio from Korea, Japan, the UK, and around the world — without Oh
 ---
 
 <p align="center">
-  <img src="screenshots/00-no-ads.png" width="200" />
+  <img src="screenshots/01-hero.png" width="200" />
   &nbsp;
-  <img src="screenshots/01-stations.png" width="200" />
+  <img src="screenshots/02-library.png" width="200" />
   &nbsp;
-  <img src="screenshots/06-carplay.png" width="200" />
+  <img src="screenshots/03-widgets.png" width="200" />
   &nbsp;
-  <img src="screenshots/04-watch.png" width="200" />
+  <img src="screenshots/04-now-playing.png" width="200" />
+  &nbsp;
+  <img src="screenshots/05-watch.png" width="200" />
+  &nbsp;
+  <img src="screenshots/06-customize.png" width="200" />
+  &nbsp;
+  <img src="screenshots/07-more.png" width="200" />
 </p>
 
 ---
@@ -48,16 +54,8 @@ Background audio playback with full lock screen and Control Center integration. 
 ### CarPlay
 Browse and control your stations from the car dashboard using standard CarPlay templates. Tap to play, tap again to pause. Loading and paused states are shown right in the list.
 
-<p align="center">
-  <img src="screenshots/06-carplay.png" width="280" />
-</p>
-
 ### Apple Watch Companion
 Listen directly from your wrist — no iPhone needed. Pair Bluetooth headphones to the Watch and the app streams independently. Your station list and custom additions sync via iCloud automatically.
-
-<p align="center">
-  <img src="screenshots/04-watch.png" width="260" />
-</p>
 
 The Watch app is available with an optional subscription:
 
@@ -70,10 +68,6 @@ A 7-day free trial is included for new subscribers.
 
 ### HomePod &amp; Siri
 Ask Siri to play your favorite station on HomePod, AirPods, or any speaker — hands-free.
-
-<p align="center">
-  <img src="screenshots/07-homepod.png" width="280" />
-</p>
 
 ### Wake Up to Radio (Shortcuts Recipe)
 
@@ -95,16 +89,8 @@ At the scheduled time the iPhone wakes Oh My Radio and the station streams to yo
 ### Make It Yours
 Swipe to edit or remove any station. Add your own stations by URL. Reset to defaults anytime — your custom stations are kept. Settings sync across iPhone, iPad, and Apple Watch via iCloud.
 
-<p align="center">
-  <img src="screenshots/03-edit.png" width="260" />
-</p>
-
 ### Now Playing
 See what's on air with program titles and station artwork. One-tap play/pause from the lock screen, Control Center, watch face, CarPlay, or HomePod.
-
-<p align="center">
-  <img src="screenshots/02-player.png" width="260" />
-</p>
 
 ### Built for Reliability
 Streams drop sometimes — Oh My Radio handles it. Auto-recovery reconnects when a stream stalls. For KBS, MBC, and SBS, the app automatically falls back to direct broadcaster APIs if the proxy is unavailable. Your last station is remembered across launches so you pick up right where you left off.
