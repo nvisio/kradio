@@ -1,6 +1,6 @@
 # Oh My Radio
 
-**Live radio with no in-app ads.** *(formerly K-Radio Tuner)*
+**Live radio with no in-app ads.**
 
 Stream live radio from Korea, Japan, the UK, and around the world — without Oh My Radio adding a single ad of its own. National broadcasters like KBS, MBC, SBS, BBC, and a browsable global catalogue, on iPhone, iPad, Apple Watch, CarPlay, and HomePod.
 
