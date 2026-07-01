@@ -16,3 +16,4 @@ include:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - tools
