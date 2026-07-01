@@ -2,5 +2,201 @@
   {
     "name": "Radio Pio XII 97.9 FM",
     "url": "https://streaming01.radiosenlinea.com.ar/9154/stream"
+  },
+  {
+    "name": "Radio Cumbia 90s",
+    "url": "https://emiteradio.com/proxy/cumbia90s?mp=/stream"
+  },
+  {
+    "name": "Radio Monumental Bolivia",
+    "url": "http://streaming2.locucionar.com:9149/stream"
+  },
+  {
+    "name": "Clásica 100.3 Cochabamba",
+    "url": "http://radios.istbolivia.com:9976/;"
+  },
+  {
+    "name": "ATB Radio",
+    "url": "https://streamingenbolivia.com/8006/stream"
+  },
+  {
+    "name": "Radio Gigante Bolivia",
+    "url": "https://cloudstream2032.conectarhosting.com:7311/;"
+  },
+  {
+    "name": "Radio Chacaltaya",
+    "url": "https://cast6.asurahosting.com/proxy/irfradio/stream"
+  },
+  {
+    "name": "Radio Ciudad",
+    "url": "http://streamingenbolivia.com/8002/stream"
+  },
+  {
+    "name": "Radio Fides Cbba",
+    "url": "http://149.56.175.167:5654/;"
+  },
+  {
+    "name": "Red Uyuni: Radio Recuerdos",
+    "url": "https://emiteradio.com/proxy/uyuni2?mp=/stream"
+  },
+  {
+    "name": "Radio Fides Cochabamba",
+    "url": "https://usa14.fastcast4u.com/proxy/gfloresc?mp=/1"
+  },
+  {
+    "name": "Radio Disney - La Paz FM 102.7",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_BOL_SCAAC.aac?dist=web-radiodisney"
+  },
+  {
+    "name": "Radio Folklorica Uyuni",
+    "url": "https://emiteradio.com/proxy/uyuni?mp=/stream"
+  },
+  {
+    "name": "RADIO MARIA BOLIVIA",
+    "url": "http://dreamsiteradiocp4.com:8022/stream"
+  },
+  {
+    "name": "Fm La Paz 96.7",
+    "url": "https://spanel.gcomstreaming.com/8018/stream"
+  },
+  {
+    "name": "Radio San Gabriel",
+    "url": "https://spanel.gcomstreaming.com:7004/;"
+  },
+  {
+    "name": "Radio Kollasuyo FM",
+    "url": "https://azura2.bitstreaming.net:8000/radio128.aac"
+  },
+  {
+    "name": "Radio San Gabriel AM 620 KHz",
+    "url": "https://spanel.gcomstreaming.com:7003/;"
+  },
+  {
+    "name": "Radio Fides La Paz",
+    "url": "http://192.95.23.89:6358/stream"
+  },
+  {
+    "name": "Radio San Rafael 92.5 FM",
+    "url": "https://guri.tepuyserver.net:7098/stream"
+  },
+  {
+    "name": "Radio Qhana FM98.5",
+    "url": "https://cast6.asurahosting.com/proxy/radiost4/stream"
+  },
+  {
+    "name": "Radio Éxito (Bolivia)",
+    "url": "https://cast6.my-control-panel.com/proxy/radiostr/;"
+  },
+  {
+    "name": "Stereo97",
+    "url": "https://stream.consultoradas.com/8340/stream"
+  },
+  {
+    "name": "Cristo Viene La Red",
+    "url": "https://stream20.usastreams.com:7000/stream"
+  },
+  {
+    "name": "Exa FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHPSFMAAC.aac"
+  },
+  {
+    "name": "Classica FM",
+    "url": "http://classicafm.scbbs.net:8000/;"
+  },
+  {
+    "name": "Eres Radio 98.5 FM",
+    "url": "https://sp5.servidorrprivado.com/8789/stream"
+  },
+  {
+    "name": "El Fin del Silencio",
+    "url": "https://servidor24-1.brlogic.com:7302/live"
+  },
+  {
+    "name": "Radio Fides Cochabamba 94.9 FM",
+    "url": "http://usa14.fastcast4u.com:5654/stream"
+  },
+  {
+    "name": "Radio Ritmo 97.3 FM",
+    "url": "https://azura1.bitstreaming.net/listen/radio_ritmo/radio.aac"
+  },
+  {
+    "name": "esLatino Radio",
+    "url": "https://spanel.gcomstreaming.com/8030/stream"
+  },
+  {
+    "name": "Radio Estrella 93.1 FM",
+    "url": "https://cesarradio.realserver.es/listen/lne_93.1/radio.mp3"
+  },
+  {
+    "name": "El Derribador Radio",
+    "url": "http://sc10.conectarhosting.com/proxy/derribadorradio/;"
+  },
+  {
+    "name": "Diana D 102.1 FM",
+    "url": "https://cesarradio.realserver.es/listen/diana_d_/radio.mp3"
+  },
+  {
+    "name": "Zoy Milton",
+    "url": "https://icepool.silvacast.com/GAYFM.mp3"
+  },
+  {
+    "name": "Melodía",
+    "url": "https://stream.consultoradas.com/8244/stream"
+  },
+  {
+    "name": "Maritima fm",
+    "url": "https://spanel.gcomstreaming.com/8004/stream"
+  },
+  {
+    "name": "Ciudad Radio 101.5 FM",
+    "url": "https://emiteradio.com/proxy/monteroradio?mp=/stream"
+  },
+  {
+    "name": "Radio Gente",
+    "url": "https://server1.fex.red:8366/stream"
+  },
+  {
+    "name": "Classica FM",
+    "url": "http://classicafm.scbbs.net:8000/;?type=http&nocache=839969"
+  },
+  {
+    "name": "Radio Fides Tarija",
+    "url": "https://usa14.fastcast4u.com/proxy/fidestarija?mp=/1"
+  },
+  {
+    "name": "Radio Pop - Red Uyuni",
+    "url": "https://emiteradio.com/proxy/boliviapop?mp=/stream"
+  },
+  {
+    "name": "Radio Oldies - Red Uyuni",
+    "url": "https://emiteradio.com/proxy/clasicosingles?mp=/stream"
+  },
+  {
+    "name": "Radio Activa Guanay 105.4 Fm",
+    "url": "https://sonic.dattassd.com:10902/stream"
+  },
+  {
+    "name": "AIQUILEÑA RADIO Y TELEVISIÓN",
+    "url": "http://radios.istbolivia.com:8014/;"
+  },
+  {
+    "name": "Radio Acer",
+    "url": "https://live.turadiotv.com/8004/stream"
+  },
+  {
+    "name": "la patria",
+    "url": "https://inliveserver.com:2000/stream/8136"
+  },
+  {
+    "name": "Abdulbasit Abdulsamad",
+    "url": "https://radio.mp3islam.com/listen/abdulbasit/radio.mp3"
+  },
+  {
+    "name": "RadioSat FM - Bolivia",
+    "url": "https://mira.streamerr.co/listen/radiosatbolivia/radio.mp3"
+  },
+  {
+    "name": "Estelar Fm",
+    "url": "https://a3.asurahosting.com:6080/radio.mp3"
   }
 ]

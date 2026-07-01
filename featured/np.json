@@ -6,5 +6,85 @@
   {
     "name": "Radio Birgunj 99 FM",
     "url": "https://streaming.softnep.net:10991/;stream.nsv"
+  },
+  {
+    "name": "Kantipur FM",
+    "url": "https://radio-broadcast.ekantipur.com/stream"
+  },
+  {
+    "name": "Kalika FM 95.2 FM",
+    "url": "http://kalika-stream.softnep.com:7740/stream"
+  },
+  {
+    "name": "BBC Nepali",
+    "url": "https://stream.live.vc.bbcmedia.co.uk/bbc_nepali_radio"
+  },
+  {
+    "name": "Capital FM 92.4",
+    "url": "http://streaming.softnep.net:8037/;"
+  },
+  {
+    "name": "Radio Himalaya",
+    "url": "https://live.itech.host/himalayaradio?1588276425741"
+  },
+  {
+    "name": "Hits FM 91.2",
+    "url": "https://usa15.fastcast4u.com/proxy/hitsfm912?mp=/1"
+  },
+  {
+    "name": "CIN Khabar",
+    "url": "https://streaming.softnep.net:10996/;stream.nsv&type=mp3&volume=60"
+  },
+  {
+    "name": "Kalika FM",
+    "url": "http://kalika-stream.softnep.com:7740/;"
+  },
+  {
+    "name": "Swadesh 93.2 FM",
+    "url": "http://216.55.141.189:8653/stream?type=http&nocache=66846"
+  },
+  {
+    "name": "Naya Radio",
+    "url": "http://live.itech.host:1110/;"
+  },
+  {
+    "name": "Ultimaě radio",
+    "url": "https://ultimae-bofaradio.radioca.st/"
+  },
+  {
+    "name": "रेडियो हिमालय",
+    "url": "https://live.itech.host/himalayaradio"
+  },
+  {
+    "name": "RadioSagar",
+    "url": "https://eu1.fastcast4u.com/proxy/radiosag?mp=/stream/1/"
+  },
+  {
+    "name": "Khozee Radio",
+    "url": "http://216.55.141.189:8060/stream/1/"
+  },
+  {
+    "name": "BFBS Gurkha Radio",
+    "url": "https://listen-ssvcbfbs.sharp-stream.com/ssvcbfbs3.aac"
+  },
+  {
+    "name": "KOOL FM 90.3",
+    "url": "https://streaming.softnep.net:10944/;stream.nsv&type=mp3&volume=70"
+  },
+  {
+    "name": "Radio Thaha Sanchar",
+    "url": "https://streaming.softnep.net:10988/;stream.nsv&type=mp3"
+  },
+  {
+    "name": "Jayaprithvi F.M.",
+    "url": "https://streaming.softnep.net:10824/"
+  },
+  {
+    "name": "Abdulbasit Abdulsamad",
+    "url": "https://radio.mp3islam.com/listen/abdulbasit/radio.mp3"
+  },
+  {
+    "name": "Napho Radio FM 88.25",
+    "url": "https://radio11.plathong.net/7136/;stream.mp3"
   }
 ]

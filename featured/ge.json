@@ -2,5 +2,73 @@
   {
     "name": "Radio Palitra 103.9 FM",
     "url": "https://radiostream.palitra.ge/stream.mp3"
+  },
+  {
+    "name": "Radio Amra",
+    "url": "https://streamer.radio.co/s34b5469e0/listen"
+  },
+  {
+    "name": "Tbilisi FM 93,5",
+    "url": "http://iis.ge:8000/radiotbilisi.mp3"
+  },
+  {
+    "name": "Hereti FM",
+    "url": "http://iis.ge:8000/hereti.mp3"
+  },
+  {
+    "name": "რადიო ჩვენებური",
+    "url": "https://radio.cdn.xsg.ge/cld9-1050/chveneburi/index.m3u8"
+  },
+  {
+    "name": "რადიო იმედი (Radio Imedi)",
+    "url": "https://tv.cdn.xsg.ge/radioimedi/stream01/shoutcast"
+  },
+  {
+    "name": "WVFJ 93.3 & 102.1 The JOY FM",
+    "url": "https://rtn.cdnstream1.com/2576_96.aac?rand=81562"
+  },
+  {
+    "name": "Marneuli FM",
+    "url": "http://stream.it-solutions.ge:8000/mp3-radiomarneulifm"
+  },
+  {
+    "name": "უცნობი FM (Ucnobi FM)",
+    "url": "http://149.3.104.166:8000/stream.ogg"
+  },
+  {
+    "name": "LF Radio",
+    "url": "https://rtn.cdnstream1.com/2582_96.aac"
+  },
+  {
+    "name": "რადიო სივრცე (Radio Sivrce)",
+    "url": "https://proxy.streamer.mediabox.ge/ice/8000/sivrce"
+  },
+  {
+    "name": "Арадио Sputnik Аҧсны",
+    "url": "https://icecast-rian.cdnvideo.ru/voicesuh"
+  },
+  {
+    "name": "Mutant Radio",
+    "url": "https://listen.radioking.com/radio/282820/stream/328621"
+  },
+  {
+    "name": "Soothing jazz",
+    "url": "http://193.111.125.15:8020/soothingjazz"
+  },
+  {
+    "name": "Soothing radio",
+    "url": "http://193.111.125.15:8010/soothingradio"
+  },
+  {
+    "name": "Abdulbasit Abdulsamad",
+    "url": "https://radio.mp3islam.com/listen/abdulbasit/radio.mp3"
+  },
+  {
+    "name": "Soothing cafe",
+    "url": "http://5.180.81.227:8010/soothingcafe"
+  },
+  {
+    "name": "Soothing radio",
+    "url": "http://5.180.81.227:8020/soothingradio"
   }
 ]

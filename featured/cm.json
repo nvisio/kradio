@@ -2,5 +2,25 @@
   {
     "name": "Radio Bonne Nouvelle FM 99.6",
     "url": "https://radiobonnenouvelle2.ice.infomaniak.ch/radiobonnenouvelle2-96.mp3"
+  },
+  {
+    "name": "Equinoxe Radio",
+    "url": "https://listen.radioking.com/radio/39218/stream/76118"
+  },
+  {
+    "name": "Balla Radio",
+    "url": "http://167.114.11.79:5730/;stream/1"
+  },
+  {
+    "name": "CRTV Radio",
+    "url": "https://listen.radioking.com/radio/39218/stream/75659"
+  },
+  {
+    "name": "Abdulbasit Abdulsamad",
+    "url": "https://radio.mp3islam.com/listen/abdulbasit/radio.mp3"
+  },
+  {
+    "name": "Globe 360 Radio",
+    "url": "http://139.84.240.171:8000/globe360"
   }
 ]

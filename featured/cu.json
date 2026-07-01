@@ -6,5 +6,61 @@
   {
     "name": "Radio Granma",
     "url": "https://icecast.teveo.cu/9RLhkmRH"
+  },
+  {
+    "name": "Cuban Flow Radio",
+    "url": "http://nap.casthost.net:9194/stream.mp3"
+  },
+  {
+    "name": "CubanFlow Radio",
+    "url": "http://nap.casthost.net:9194/"
+  },
+  {
+    "name": "Exa FM",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHPSFMAAC.aac"
+  },
+  {
+    "name": "AFN 360 Guantanamo Bay",
+    "url": "http://27783.live.streamtheworld.com:3690/AFNE_GMO_SC"
+  },
+  {
+    "name": "Prensa Latina",
+    "url": "https://cdn4.onstream.audio:9267/stream"
+  },
+  {
+    "name": "Prensa Latina - Agencia Informativa Latinoamericana",
+    "url": "https://cdn4.onstream.audio:9267/stream?download=false"
+  },
+  {
+    "name": "Canal Radio Cruces Cienfuegos",
+    "url": "https://stream.laut.fm/canalradio"
+  },
+  {
+    "name": "Cubania Radio",
+    "url": "https://streamingv2.shoutcast.com/cubania?type=.mp3"
+  },
+  {
+    "name": "ROMANCE106",
+    "url": "http://s13.myradiostream.com:41400/listen.m4a"
+  },
+  {
+    "name": "Rádio Costa (Archipiélago Uno)",
+    "url": "https://radio.archipielago.uno/radiocosta"
+  },
+  {
+    "name": "Abdulbasit Abdulsamad",
+    "url": "https://radio.mp3islam.com/listen/abdulbasit/radio.mp3"
+  },
+  {
+    "name": "Radio Campesina Cubana",
+    "url": "https://radiocampesinacubana.stream.laut.fm/radiocampesinacubana?t302=2026-03-30_17-54-34&uuid=88a18688-fffa-480a-b5d6-ce0a3dc5d9b0"
+  },
+  {
+    "name": "Neonradioxl",
+    "url": "http://s12.myradiostream.com:16754/listen.m4a"
+  },
+  {
+    "name": "Radio María de la Caridad",
+    "url": "https://usa6.fastcast4u.com/proxy/aserranog/stream"
   }
 ]

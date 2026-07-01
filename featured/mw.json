@@ -2,5 +2,25 @@
   {
     "name": "MIJFM Malawi Institute of Journalism",
     "url": "http://65.108.124.70:7954/mij"
+  },
+  {
+    "name": "ZBS Zodiak FM",
+    "url": "https://ice31.securenetsystems.net/0079"
+  },
+  {
+    "name": "RADIO MARIA MALAWI",
+    "url": "http://dreamsiteradiocp.com:8040/stream"
+  },
+  {
+    "name": "Amaryllis E-Radio",
+    "url": "https://s4.radio.co/s40c05d6b1/low"
+  },
+  {
+    "name": "Abdulbasit Abdulsamad",
+    "url": "https://radio.mp3islam.com/listen/abdulbasit/radio.mp3"
+  },
+  {
+    "name": "Power Global Media",
+    "url": "https://a10.asurahosting.com:7270/radio.mp3"
   }
 ]

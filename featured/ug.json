@@ -6,5 +6,197 @@
   {
     "name": "NBS FM 89.4",
     "url": "https://smart.radioca.st/stream"
+  },
+  {
+    "name": "Akaboozi FM 87.9",
+    "url": "http://162.244.80.52:8732/stream.mp3"
+  },
+  {
+    "name": "98.7 Mutundwe Christian Fellowship",
+    "url": "https://streams.radio.co/s79fbbb432/listen"
+  },
+  {
+    "name": "Capital FM",
+    "url": "http://5229.cloudrad.io:8316/;"
+  },
+  {
+    "name": "Beat FM 96.3",
+    "url": "http://5230.cloudrad.io:8354/"
+  },
+  {
+    "name": "RADIO MARIA UGANDA",
+    "url": "http://dreamsiteradiocp.com:8052/stream"
+  },
+  {
+    "name": "107.9 Pearl Fm",
+    "url": "https://dc4.serverse.com/proxy/pearlfm/stream/1/"
+  },
+  {
+    "name": "Sanyu Fm",
+    "url": "http://s44.myradiostream.com:8138/stream"
+  },
+  {
+    "name": "95.5 Radio Buddu",
+    "url": "https://dc4.serverse.com/proxy/ccmxrgub/stream"
+  },
+  {
+    "name": "Radio one",
+    "url": "http://162.244.80.52:8740/stream"
+  },
+  {
+    "name": "KIIS Uganda",
+    "url": "http://14867.cloudrad.io:9224/live"
+  },
+  {
+    "name": "Beat FM - Kampala - 96.3 FM (MP3)",
+    "url": "http://5230.cloudrad.io:8354/live"
+  },
+  {
+    "name": "RX Radio",
+    "url": "https://c14.radioboss.fm:18223/stream?1615807421100="
+  },
+  {
+    "name": "107.3 BBC Radio Uganda",
+    "url": "https://stream.live.vc.bbcmedia.co.uk/bbc_world_service_west_africa"
+  },
+  {
+    "name": "Capital FM - 91.3 FM (MP3)",
+    "url": "http://capitalfm.cloudrad.io/stream"
+  },
+  {
+    "name": "CNN INTERNATIONAL",
+    "url": "https://tunein.cdnstream1.com/2868_96.mp3"
+  },
+  {
+    "name": "Akaboozi 87.9 FM",
+    "url": "http://162.244.80.52:8732/stream"
+  },
+  {
+    "name": "MCF Radio - Kampala - 98.7 FM (MP3)",
+    "url": "http://streams.radio.co/s79fbbb432/listen"
+  },
+  {
+    "name": "Radio Pacis 90.9",
+    "url": "https://radiopacisuganda.radioca.st/stream"
+  },
+  {
+    "name": "Gospel Radio East Africa",
+    "url": "https://c32.radioboss.fm:18451/stream?1641237600584"
+  },
+  {
+    "name": "Country music (80's)",
+    "url": "http://listen.181fm.com/181-80scountry_128k.mp3"
+  },
+  {
+    "name": "91.6 Christ Fm",
+    "url": "http://5.135.154.69:15664/;"
+  },
+  {
+    "name": "80's 90's old music radio",
+    "url": "https://maggie.torontocast.com:2020/stream/100greatestofthe80s"
+  },
+  {
+    "name": "Old School Music",
+    "url": "https://ilikeitoldskool.radioca.st/stream"
+  },
+  {
+    "name": "107.9 Pearl Fm",
+    "url": "https://dc4.serverse.com/proxy/pearlfm/stream"
+  },
+  {
+    "name": "Smooth",
+    "url": "http://media-the.musicradio.com/SmoothLondonMP3"
+  },
+  {
+    "name": "TALKSPORT 1",
+    "url": "https://radio.talksport.com/stream"
+  },
+  {
+    "name": "Capital FM Uganda",
+    "url": "https://capitalfm.cloudrad.io/stream"
+  },
+  {
+    "name": "Radio One FM 90 - 90.0 FM (MP3)",
+    "url": "http://radioone.loftuganda.tech/stream"
+  },
+  {
+    "name": "LBC RADIO",
+    "url": "http://media-ice.musicradio.com/LBCUK"
+  },
+  {
+    "name": "NRG Uganda 106.5",
+    "url": "https://dc4.serverse.com/proxy/nrgugstream/stream"
+  },
+  {
+    "name": "91.3 Lift Worship US",
+    "url": "https://emg.streamguys1.com/lift-website"
+  },
+  {
+    "name": "DW NEWS",
+    "url": "https://dw.audiostream.io/dw/1027/mp3/64/dw08"
+  },
+  {
+    "name": "Christian music channel",
+    "url": "http://streaming.live365.com/a08828"
+  },
+  {
+    "name": "Mello fm Jamaica",
+    "url": "http://peridot.streamguys.com:5660/live"
+  },
+  {
+    "name": "Trace Urban",
+    "url": "http://hydra.cdnstream.com/1531_backup"
+  },
+  {
+    "name": "104.4 Kaboozi Fm",
+    "url": "http://162.244.80.52:8732/;stream.mp3"
+  },
+  {
+    "name": "Christian hits radio",
+    "url": "https://shoutcast.christianrock.net/stream/5/"
+  },
+  {
+    "name": "RFI Kiswahili",
+    "url": "https://rfienswahili64k.ice.infomaniak.ch/rfienswahili-64.mp3"
+  },
+  {
+    "name": "Christian fm",
+    "url": "http://stream.dar.fm/27203"
+  },
+  {
+    "name": "Christ FM 91.6 - Kampala - 91.6 FM (AAC)",
+    "url": "http://s39.myradiostream.com/:15664/;"
+  },
+  {
+    "name": "88.2 Sanyu FM - Kampala - 88.2 FM (MP3)",
+    "url": "http://s44.myradiostream.com/8138/listen.mp3"
+  },
+  {
+    "name": "CBS News",
+    "url": "https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8"
+  },
+  {
+    "name": "90.1 Discovery fm Jamaica",
+    "url": "http://usa14.fastcast4u.com:5192/;"
+  },
+  {
+    "name": "Rock FM Uganda - Kampala (MP3)",
+    "url": "http://titan.shoutca.st:8341/;"
+  },
+  {
+    "name": "Christmas choir",
+    "url": "https://christmas-chor-high.rautemusik.fm/?ref=radiobrowser%20Find%20more%20stations%20in%20app%20:%20https://play.google.com/store/apps/details?id=com.atf.radiogalaxy"
+  },
+  {
+    "name": "RFI Kiswahili",
+    "url": "https://rfiswahili96k.ice.infomaniak.ch/rfiswahili-96k.mp3"
+  },
+  {
+    "name": "Trace Gospel",
+    "url": "https://c25.radioboss.fm:8130/4rm8tzo7qirtv"
+  },
+  {
+    "name": "English Premier League",
+    "url": "http://13.54.221.214:8000/sen.mp3"
   }
 ]
