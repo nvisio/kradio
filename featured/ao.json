@@ -2,5 +2,57 @@
   {
     "name": "Rádio D'Agosto 92.0",
     "url": "https://live.paineldj.com.br/proxy/radio1ago?mp=/stream"
+  },
+  {
+    "name": "Rádio MFM Angola",
+    "url": "https://centova87.instainternet.com/proxy/mfm?mp=/stream"
+  },
+  {
+    "name": "Ebnézer Rádio",
+    "url": "http://08.stmip.net:10028/;;"
+  },
+  {
+    "name": "EXA FM: Música pop em inglês e espanhol",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/XHPSFMAAC.aac"
+  },
+  {
+    "name": "Absolute country",
+    "url": "http://strm112.1.fm/acountry_mobile_mp3"
+  },
+  {
+    "name": "Powermix FM",
+    "url": "https://cast.iplayradio.net/listen/powermixfm/stream"
+  },
+  {
+    "name": "Abdulbasit Abdulsamad",
+    "url": "https://radio.mp3islam.com/listen/abdulbasit/radio.mp3"
+  },
+  {
+    "name": "Radio Luanda",
+    "url": "https://paineldj5.com.br:20089/stream"
+  },
+  {
+    "name": "Radio Bairro de Angola",
+    "url": "https://stm4.xradios.com.br:6794/stream"
+  },
+  {
+    "name": "Radio Kuia Bue",
+    "url": "https://a11.asurahosting.com:7400/radio.aac"
+  },
+  {
+    "name": "Rádio Mais",
+    "url": "https://radios.justweb.pt/8050/stream"
+  },
+  {
+    "name": "Radio Jihenda",
+    "url": "https://s02.brascast.com:7830/live"
+  },
+  {
+    "name": "AfriRádio",
+    "url": "https://cast4.asurahosting.com/proxy/afriradi/stream"
+  },
+  {
+    "name": "Radio Rashi",
+    "url": "https://s2.free-shoutcast.com/stream/18214"
   }
 ]

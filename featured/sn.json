@@ -2,5 +2,53 @@
   {
     "name": "Leral Radio 96.1 FM",
     "url": "https://stream.zeno.fm/4htga03chfhvv"
+  },
+  {
+    "name": "Dakar Musique",
+    "url": "http://listen.senemultimedia.net:8090/stream"
+  },
+  {
+    "name": "H24",
+    "url": "http://listen.senemultimedia.net:8070/stream"
+  },
+  {
+    "name": "Radio Thiossane",
+    "url": "https://listen.senemultimedia.net:8112/stream"
+  },
+  {
+    "name": "Radio Al Fayda 90.1 Kaolack",
+    "url": "https://usa5.fastcast4u.com/proxy/lyartech?mp=/stream/1/"
+  },
+  {
+    "name": "Radio Oxy Jeunes 103.4 Pikine",
+    "url": "http://s9.voscast.com:7994/;stream.nsv"
+  },
+  {
+    "name": "H24 Senegal",
+    "url": "https://listen.senemultimedia.net:8072/stream"
+  },
+  {
+    "name": "GMS FM 89.3 Ziguinchor",
+    "url": "https://myfm.acan.group/radio/8140/radio.mp3?1690707378"
+  },
+  {
+    "name": "Abdulbasit Abdulsamad",
+    "url": "https://radio.mp3islam.com/listen/abdulbasit/radio.mp3"
+  },
+  {
+    "name": "Radio Keur Massar",
+    "url": "https://stream.keurmassar.info/"
+  },
+  {
+    "name": "Radio Thiossane",
+    "url": "https://stream.radiothiossane.com/"
+  },
+  {
+    "name": "Dakar Musique",
+    "url": "https://stream.dakarmusique.com/"
+  },
+  {
+    "name": "Radio AI",
+    "url": "https://a13.asurahosting.com/listen/radio_ai/radio.mp3"
   }
 ]

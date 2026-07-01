@@ -2,5 +2,201 @@
   {
     "name": "Radio Gafsa",
     "url": "https://radio.radiotunisienne.tn/gafsa"
+  },
+  {
+    "name": "Mosaique FM",
+    "url": "http://radio.mosaiquefm.net:8000/mosalive"
+  },
+  {
+    "name": "Jawhara FM",
+    "url": "http://streaming2.toutech.net:8000/jawharafm"
+  },
+  {
+    "name": "Mosaique FM",
+    "url": "https://radio.mosaiquefm.net/mosalive"
+  },
+  {
+    "name": "diwanfm",
+    "url": "https://streaming.diwanfm.net/stream"
+  },
+  {
+    "name": "KnOOz FM",
+    "url": "http://streaming.knoozfm.net:8000/knoozfm"
+  },
+  {
+    "name": "Radio Tunisie Sfax",
+    "url": "http://rtstream.tanitweb.com/sfax"
+  },
+  {
+    "name": "Mosaique FM Tarab",
+    "url": "https://radio.mosaiquefm.net/mosatarab"
+  },
+  {
+    "name": "Radio Tunisie Nationale",
+    "url": "http://rtstream.tanitweb.com/nationale"
+  },
+  {
+    "name": "Radio Tunisie Jeunes",
+    "url": "http://rtstream.tanitweb.com/jeunes"
+  },
+  {
+    "name": "Radio Tunisie Monastir",
+    "url": "http://rtstream.tanitweb.com/monastir"
+  },
+  {
+    "name": "Radio Tunisie Kef",
+    "url": "http://rtstream.tanitweb.com/kef"
+  },
+  {
+    "name": "RTCI",
+    "url": "http://rtstream.tanitweb.com/rtci"
+  },
+  {
+    "name": "تراتيل",
+    "url": "https://qurango.net/radio/tarateel"
+  },
+  {
+    "name": "Mosaique FM Gold",
+    "url": "https://radio.mosaiquefm.net/mosagold"
+  },
+  {
+    "name": "Radio Tunisie Gafsa",
+    "url": "http://rtstream.tanitweb.com/gafsa"
+  },
+  {
+    "name": "Radio Tunisia Med",
+    "url": "https://azuracast.conceptradio.fr:8000/radio.mp3"
+  },
+  {
+    "name": "Mosaique FM Tounsi",
+    "url": "https://radio.mosaiquefm.net/mosatounsi"
+  },
+  {
+    "name": "oxygene fm",
+    "url": "http://stream.radios-arra.fr:8000/oxygenefm"
+  },
+  {
+    "name": "Radio Tunisie Tataouine",
+    "url": "http://rtstream.tanitweb.com/tataouine"
+  },
+  {
+    "name": "Sabra FM",
+    "url": "https://manager5.streamradio.fr:1905/stream"
+  },
+  {
+    "name": "قراءات متنوعة",
+    "url": "https://qurango.net/radio/mix"
+  },
+  {
+    "name": "المختصر في التفسير",
+    "url": "https://qurango.net/radio/mukhtasartafsir"
+  },
+  {
+    "name": "Mosaique FM DJ",
+    "url": "https://radio.mosaiquefm.net/mosadj"
+  },
+  {
+    "name": "Radio Misk",
+    "url": "https://live.misk.art/stream"
+  },
+  {
+    "name": "Jawhara FM",
+    "url": "https://streaming2.toutech.net/jawharafm"
+  },
+  {
+    "name": "AlHayet FM",
+    "url": "https://manager8.streamradio.fr:2885/stream"
+  },
+  {
+    "name": "Zitouna Zitouna FM",
+    "url": "https://radio.radiotunisienne.tn/radiozaitouna"
+  },
+  {
+    "name": "إذاعة السنة",
+    "url": "http://andromeda.shoutca.st:8189/live"
+  },
+  {
+    "name": "في ضلال السيرة النبوية",
+    "url": "https://qurango.net/radio/fi_zilal_alsiyra"
+  },
+  {
+    "name": "Radio Express FM",
+    "url": "https://expressfm.ice.infomaniak.ch/expressfm-64.mp3"
+  },
+  {
+    "name": "إذاعة ميراث الأنبياء",
+    "url": "https://radio.al7eah.net/8028/;"
+  },
+  {
+    "name": "Radio Tunisie Culturelle",
+    "url": "http://rtstream.tanitweb.com/culturelle"
+  },
+  {
+    "name": "Radio fouedb Music",
+    "url": "https://streaming.live365.com/a82574"
+  },
+  {
+    "name": "أذكار الصباح",
+    "url": "https://qurango.net/radio/athkar_sabah"
+  },
+  {
+    "name": "تفسير بن عثيمين رحمه الله تعالى",
+    "url": "https://qurango.net/radio/tafseer"
+  },
+  {
+    "name": "الشيخ سعد الغامدي",
+    "url": "https://qurango.net/radio/saad_alghamdi"
+  },
+  {
+    "name": "إذاعة محمد أيوب",
+    "url": "https://qurango.net/radio/mohammed_ayyub"
+  },
+  {
+    "name": "إذاعة الفتاوى العامة",
+    "url": "https://qurango.net/radio/fatwa"
+  },
+  {
+    "name": "Radio Monastir",
+    "url": "https://radio.radiotunisienne.tn/monastir"
+  },
+  {
+    "name": "تكبيرات العيد",
+    "url": "https://qurango.net/radio/eid"
+  },
+  {
+    "name": "آيات السكينة",
+    "url": "https://qurango.net/radio/sakeenah"
+  },
+  {
+    "name": "الإختيارات الفقهية لإبن باز",
+    "url": "https://qurango.net/radio/alaikhtiarat_alfiqhayh_bin_baz"
+  },
+  {
+    "name": "Sodais",
+    "url": "https://backup.qurango.net/radio/abdulrahman_alsudaes"
+  },
+  {
+    "name": ".صور من حياة الصحابة",
+    "url": "https://qurango.net/radio/sahabah"
+  },
+  {
+    "name": "أذكار المساء",
+    "url": "https://qurango.net/radio/athkar_masa"
+  },
+  {
+    "name": "sunnah radio",
+    "url": "http://andromeda.shoutca.st:8189/stream"
+  },
+  {
+    "name": "إذاعة طريق السلف",
+    "url": "https://airtime.salafwayfm.ly/"
+  },
+  {
+    "name": ".شهر رمضان",
+    "url": "https://qurango.net/radio/ramadan"
+  },
+  {
+    "name": "راديو جنجر للاطفال",
+    "url": "https://arabkidsradio.art/radio/8000/radio.mp3"
   }
 ]

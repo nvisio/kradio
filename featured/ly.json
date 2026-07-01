@@ -2,5 +2,25 @@
   {
     "name": "Tanasuh 102.1 FM",
     "url": "https://m3u.tanasuh.tv/radio"
+  },
+  {
+    "name": "Libyana Hits FM",
+    "url": "http://proxima.shoutca.st:8946/stream"
+  },
+  {
+    "name": "The Salaf Way 100.3 FM Tripoli LY",
+    "url": "http://airtime.salafway.ly/"
+  },
+  {
+    "name": "إذاعة طريق السلف",
+    "url": "https://airtime.salafwayfm.ly/"
+  },
+  {
+    "name": "تفسير بن عثيمين",
+    "url": "https://qurango.net/radio/tafseer"
+  },
+  {
+    "name": "Abdulbasit Abdulsamad",
+    "url": "https://radio.mp3islam.com/listen/abdulbasit/radio.mp3"
   }
 ]

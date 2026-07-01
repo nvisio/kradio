@@ -2,5 +2,149 @@
   {
     "name": "Europa Plus Qazaqstan 107 FM",
     "url": "https://emgsource.hostingradio.ru:8064/kazakhstan.europaplus.mp3"
+  },
+  {
+    "name": "Radio 90s Eurodance",
+    "url": "https://listen1.myradio24.com/5967"
+  },
+  {
+    "name": "Russian Dance Radio",
+    "url": "https://lux-radio.com:8015/stream"
+  },
+  {
+    "name": "Zhulduz Radio",
+    "url": "http://91.201.214.229:8000/zhulduz"
+  },
+  {
+    "name": "Qazaq radiosy",
+    "url": "https://radio-streams.kaztrk.kz/qazradio/qazradio/icecast.audio"
+  },
+  {
+    "name": "Shalqar",
+    "url": "https://radio-streams.kaztrk.kz/shalqar/shalqar/icecast.audio"
+  },
+  {
+    "name": "Avtoradio",
+    "url": "http://178.88.167.62:8080/AVTORADIO_192"
+  },
+  {
+    "name": "Народное Радио",
+    "url": "http://178.88.167.62:8080/DALA_192"
+  },
+  {
+    "name": "KTK TV",
+    "url": "http://89.218.30.37/ktklive/live.hq/playlist.m3u8"
+  },
+  {
+    "name": "Радио Микс Казахстан",
+    "url": "http://streaming.radionomy.com/JamendoLounge"
+  },
+  {
+    "name": "Radio Nostalgie (Kazakhstan)",
+    "url": "https://listen8.myradio24.com/alexx333"
+  },
+  {
+    "name": "ЖАНА FM",
+    "url": "https://live.zhanafm.kz:8443/zhanafm_onair"
+  },
+  {
+    "name": "NS-Rock",
+    "url": "https://icecast.ns.kz/radions"
+  },
+  {
+    "name": "Tengri FM",
+    "url": "http://91.201.214.229:8000/tengrifm"
+  },
+  {
+    "name": "Aspan FM",
+    "url": "http://77.240.38.228:8000/aspanfm"
+  },
+  {
+    "name": "Радио Талап",
+    "url": "https://okeyradio.ru/okey"
+  },
+  {
+    "name": "Радио SANA",
+    "url": "https://listen4.myradio24.com/radiosana"
+  },
+  {
+    "name": "Pioner FM",
+    "url": "https://live.zhanafm.kz:8443/pionerfm"
+  },
+  {
+    "name": "ВАШЕ РАДИО",
+    "url": "https://live.zhanafm.kz:8443/vasheradio"
+  },
+  {
+    "name": "Radio Azamat",
+    "url": "https://listen4.myradio24.com/8162"
+  },
+  {
+    "name": "Radio Bulbul",
+    "url": "https://radiobulbul.stream.laut.fm/radiobulbul"
+  },
+  {
+    "name": "Жаңа MIX",
+    "url": "https://live.zhanafm.kz:8443/zhanamix"
+  },
+  {
+    "name": "Радио Рауан",
+    "url": "https://listen4.myradio24.com/rauan"
+  },
+  {
+    "name": "Радио Classic",
+    "url": "https://radio-streams.kaztrk.kz/classic/classic/icecast.audio"
+  },
+  {
+    "name": "Space Beat (64k AAC)",
+    "url": "https://90116.web.hosting-russia.ru/listen/space_beat/mobile.aac"
+  },
+  {
+    "name": "The Holy Quran  by Sheikh Mahmoud Al-Husari",
+    "url": "https://qurango.net/radio/mahmoud_khalil_alhussary_warsh"
+  },
+  {
+    "name": "Жаңа Rock",
+    "url": "https://live.zhanafm.kz:8443/zhanarock"
+  },
+  {
+    "name": "Radio TMK",
+    "url": "https://a4.radioheart.ru:9036/RH13170"
+  },
+  {
+    "name": "((beu))",
+    "url": "https://stream.beufm.kz/beufm"
+  },
+  {
+    "name": "Жаңа Lounge",
+    "url": "https://live.zhanafm.kz:8443/zhanalounge"
+  },
+  {
+    "name": "Love Radio Kazakhstan",
+    "url": "https://stream.gakku.tv:8443/love128.mp3"
+  },
+  {
+    "name": "Palmera Blanca radio - Daystream",
+    "url": "https://daystream.palmerablanca.com/daystream-128.mp3"
+  },
+  {
+    "name": "Abdulbasit Abdulsamad",
+    "url": "https://radio.mp3islam.com/listen/abdulbasit/radio.mp3"
+  },
+  {
+    "name": "Space Beat (128k)",
+    "url": "https://90116.web.hosting-russia.ru/listen/space_beat/radio.mp3"
+  },
+  {
+    "name": "SVETILO.ONLINE - духовно - осознанное",
+    "url": "https://streams.svetilo.online/listen/svetilo.online/radio.mp3"
+  },
+  {
+    "name": "Astana Fm",
+    "url": "https://icecast.vgtrk.cdnvideo.ru/vestifm_aac_64kbps"
+  },
+  {
+    "name": "Darhan Radio",
+    "url": "https://stream.darhanradio.com/live"
   }
 ]

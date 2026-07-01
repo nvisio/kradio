@@ -2,5 +2,85 @@
   {
     "name": "Kurdsat",
     "url": "http://uk3.internet-radio.com:8011/stream"
+  },
+  {
+    "name": "radio maria iraq",
+    "url": "http://dreamsiteradiocp4.com:8046/stream"
+  },
+  {
+    "name": "SumerFm Iraq",
+    "url": "https://l3.itworkscdn.net/itwaudio/9012/stream"
+  },
+  {
+    "name": "Waar Radio",
+    "url": "http://streaming.radionomy.com/JamendoLounge"
+  },
+  {
+    "name": "Alseraj Radio Quran",
+    "url": "http://192.99.170.8:5550/stream"
+  },
+  {
+    "name": ".. مختصر التفسير",
+    "url": "https://qurango.net/radio/mukhtasartafsir"
+  },
+  {
+    "name": ". القارئ محمد أيوب",
+    "url": "https://qurango.net/radio/mohammed_ayyub"
+  },
+  {
+    "name": "Al-bilad Radio/Yaqoubi",
+    "url": "https://streamer.radio.co/sb38bf6e66/listen"
+  },
+  {
+    "name": "Rudaw News Radio",
+    "url": "https://l3.itworkscdn.net/itwaudio/9006/stream"
+  },
+  {
+    "name": "Darusalam Radio",
+    "url": "https://streams.radio.co/s0975ec186/listen"
+  },
+  {
+    "name": "Alseraj Radio Islam",
+    "url": "https://eu4.fastcast4u.com/proxy/aabdul00?mp=/1"
+  },
+  {
+    "name": "Waar Radio Official Stream",
+    "url": "https://c2.radioboss.fm:18564/stream"
+  },
+  {
+    "name": "راديو الغد، alghad FM",
+    "url": "http://s10.voscast.com:9410/"
+  },
+  {
+    "name": "Kurdistan 24",
+    "url": "https://audio-edge-3mayu.fra.h.radiomast.io/04b1ce4c-24f2-4172-b756-065832ef78bf"
+  },
+  {
+    "name": "Al rasheed fm",
+    "url": "https://streaming.shoutcast.com/alrasheed-fm?1719771692024"
+  },
+  {
+    "name": "Ankawa",
+    "url": "http://178.32.146.187/proxy/radioankawa?mp=/1/"
+  },
+  {
+    "name": "Turkmen FM  تركمان إف إم",
+    "url": "https://radyo1.radyo-dinle.tc/8284/stream;"
+  },
+  {
+    "name": "Shafaq radio",
+    "url": "https://radio.shafaq.com/radio"
+  },
+  {
+    "name": "Abdulbasit Abdulsamad",
+    "url": "https://radio.mp3islam.com/listen/abdulbasit/radio.mp3"
+  },
+  {
+    "name": "Waar radio",
+    "url": "https://c2.radioboss.fm/stream/564"
+  },
+  {
+    "name": "Radio Ashur  راديو أشور ܦܪܵܣ ܩܵܠܵܐ ܕܐܵܫܘܿܪ",
+    "url": "https://eu7.fastcast4u.com/proxy/radioashur?mp=/1"
   }
 ]
