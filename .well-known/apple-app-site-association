@@ -7,11 +7,12 @@
           {
             "/": "/play",
             "?": { "url": "*" },
-            "comment": "Open an external radio station in K-Radio Tuner"
+            "comment": "Open an external radio station in Oh My Radio"
           },
           {
-            "/": "/play*",
-            "comment": "Open an external radio station in K-Radio Tuner"
+            "/": "/play/",
+            "?": { "url": "*" },
+            "comment": "Trailing-slash variant of /play"
           }
         ]
       }
