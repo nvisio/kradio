@@ -70,5 +70,13 @@
   {
     "name": "Soothing radio",
     "url": "http://5.180.81.227:8020/soothingradio"
+  },
+  {
+    "name": "JUKEBOX 94.3",
+    "url": "https://stream.radiojukebox.ge/stream.ogg"
+  },
+  {
+    "name": "Radio dardimandi",
+    "url": "https://nue01-edge01.itdc.ge/fm-dardimandi-97.1/index.m3u8"
   }
 ]

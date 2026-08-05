@@ -102,5 +102,13 @@
   {
     "name": "Talk 100.3",
     "url": "https://funasia.streamguys1.com/live13"
+  },
+  {
+    "name": "Abu Dhabi fm",
+    "url": "https://admn-radio-cdn-lb.starzplayarabia.com/out/v1/admn_radio_enc/abudhabi_fm/abudhabi_fm_hls_nd/index.m3u8"
+  },
+  {
+    "name": "Emarat fm",
+    "url": "https://admn-radio-cdn-lb.starzplayarabia.com/out/v1/admn_radio_enc/emarat_fm/emarat_fm_hls_nd/index.m3u8"
   }
 ]

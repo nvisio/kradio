@@ -22,5 +22,9 @@
   {
     "name": "Globe 360 Radio",
     "url": "http://139.84.240.171:8000/globe360"
+  },
+  {
+    "name": "Mmuock Community Radio",
+    "url": "https://a7.asurahosting.com/listen/mmuock_community_radio_/radio.mp3"
   }
 ]

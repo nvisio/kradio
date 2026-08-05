@@ -62,5 +62,13 @@
   {
     "name": "Radio María de la Caridad",
     "url": "https://usa6.fastcast4u.com/proxy/aserranog/stream"
+  },
+  {
+    "name": "Radio Progreso 90.3 FM",
+    "url": "https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/XjfW7qWN"
+  },
+  {
+    "name": "Radio Habana Cuba 102.5 FM",
+    "url": "https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs"
   }
 ]
