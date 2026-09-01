@@ -78,5 +78,13 @@
   {
     "name": "Radio Yeraz",
     "url": "http://149.255.60.194:8008/stream"
+  },
+  {
+    "name": "Exclusively Meat Loaf",
+    "url": "https://streaming.exclusive.radio/er/meatloaf/icecast.audio"
+  },
+  {
+    "name": "Sawt Al Farah",
+    "url": "https://radio.garden/api/ara/content/listen/TBbZ87vu/channel.mp3"
   }
 ]

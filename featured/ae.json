@@ -110,5 +110,93 @@
   {
     "name": "Emarat fm",
     "url": "https://admn-radio-cdn-lb.starzplayarabia.com/out/v1/admn_radio_enc/emarat_fm/emarat_fm_hls_nd/index.m3u8"
+  },
+  {
+    "name": "Exclusively Pink Floyd",
+    "url": "https://streaming.exclusive.radio/er/pinkfloyd/icecast.audio"
+  },
+  {
+    "name": "Exclusively Iron Maiden",
+    "url": "https://streaming.exclusive.radio/er/ironmaiden/icecast.audio"
+  },
+  {
+    "name": "Exclusively ABBA",
+    "url": "https://streaming.exclusive.radio/er/abba/icecast.audio"
+  },
+  {
+    "name": "Exclusive Radio – Bob Marley",
+    "url": "https://streaming.exclusive.radio/er/bobmarley/icecast.audio"
+  },
+  {
+    "name": "Exclusive Radio – Black Sabbath",
+    "url": "https://streaming.exclusive.radio/er/blacksabbath/icecast.audio"
+  },
+  {
+    "name": "Exclusively Genesis",
+    "url": "https://streaming.exclusive.radio/er/genesis/icecast.audio"
+  },
+  {
+    "name": "Exclusively The Beatles",
+    "url": "http://streaming.exclusive.radio/er/beatles/icecast.audio"
+  },
+  {
+    "name": "Exclusive Radio – Queen",
+    "url": "https://streaming.exclusive.radio/er/queen/icecast.audio"
+  },
+  {
+    "name": "Exclusively Elvis Presley",
+    "url": "http://streaming.exclusive.radio/er/elvispresley/icecast.audio"
+  },
+  {
+    "name": "Exclusively U2",
+    "url": "https://streaming.exclusive.radio/er/u2/icecast.audio"
+  },
+  {
+    "name": "Exclusively Guns N’ Roses",
+    "url": "https://streaming.exclusive.radio/er/gunsnroses/icecast.audio"
+  },
+  {
+    "name": "Rolling Stones",
+    "url": "https://streaming.exclusive.radio/er/rollingstones/icecast.audio"
+  },
+  {
+    "name": "Exclusively Led Zeppelin",
+    "url": "https://streaming.exclusive.radio/er-app/ledzeppelin/icecast.audio"
+  },
+  {
+    "name": "Exclusively Coldplay",
+    "url": "https://streaming.exclusive.radio/er/coldplay/icecast.audio"
+  },
+  {
+    "name": "Exclusively Dean Martin",
+    "url": "https://streaming.exclusive.radio/er/deanmartin/icecast.audio?_=1407020069"
+  },
+  {
+    "name": "Exclusively Foo Fighters",
+    "url": "https://streaming.exclusive.radio/er/foofighters/icecast.audio"
+  },
+  {
+    "name": "Exclusively Italy",
+    "url": "https://streaming.exclusive.radio/er/italy/icecast.audio"
+  },
+  {
+    "name": "Bob Dylan",
+    "url": "https://streaming.exclusive.radio/er/bobdylan/icecast.audio"
+  },
+  {
+    "name": "Jimi Hendrix",
+    "url": "https://streaming.exclusive.radio/er/hendrix/icecast.audio"
+  },
+  {
+    "name": "Exclusively Michael Jackson",
+    "url": "https://streaming.exclusive.radio/er/michaeljackson/icecast.audio"
+  },
+  {
+    "name": "Exclusively BTS",
+    "url": "https://streaming.exclusive.radio/er/bts/icecast.audio"
+  },
+  {
+    "name": "Exclusively Eagles",
+    "url": "https://streaming.exclusive.radio/er/eagles/icecast.audio"
   }
 ]
