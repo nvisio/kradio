@@ -22,5 +22,13 @@
   {
     "name": "Power Global Media",
     "url": "https://a10.asurahosting.com:7270/radio.mp3"
+  },
+  {
+    "name": "Timveni Radio",
+    "url": "https://play.streamafrica.net/timveni"
+  },
+  {
+    "name": "Groove100 FM",
+    "url": "https://a9.asurahosting.com/listen/groove100_fm/radio.mp3"
   }
 ]

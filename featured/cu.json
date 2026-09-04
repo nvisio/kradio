@@ -70,5 +70,13 @@
   {
     "name": "Radio Habana Cuba 102.5 FM",
     "url": "https://securestreams7.autopo.st/?uri=https://icecast.teveo.cu/McW3fLhs"
+  },
+  {
+    "name": "AFN 360 Guantanamo Bay",
+    "url": "http://22653.live.streamtheworld.com:3690/AFNE_GMO_SC"
+  },
+  {
+    "name": "Radio Campesina Cubana",
+    "url": "https://radiocampesinacubana.stream.laut.fm/radiocampesinacubana?t302=2026-08-31_16-00-53&uuid=9e9f4ea0-a2aa-499d-a12b-6308fb085247"
   }
 ]
