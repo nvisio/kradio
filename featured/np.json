@@ -90,5 +90,29 @@
   {
     "name": "Kalika FM 95.2 FM",
     "url": "https://streaming.softnep.net:10828/stream"
+  },
+  {
+    "name": "Ujyaalo 90 Network",
+    "url": "http://stream.zenolive.com/wtuvp08xq1duv"
+  },
+  {
+    "name": "Radio Audio",
+    "url": "https://stream.zeno.fm/fvrx47wpg0quv"
+  },
+  {
+    "name": "Swadesh FM",
+    "url": "https://radio.garden/api/ara/content/listen/ApPqIXdm/channel.mp3?1700834587158"
+  },
+  {
+    "name": "Bhojpuriya FM 92.8",
+    "url": "http://streaming.softnep.net:8143/;stream.nsv&type=mp3&volume=60"
+  },
+  {
+    "name": "Tinau FM",
+    "url": "https://streaming.softnep.net:10854/;stream.nsv;type=mp3&volume=70"
+  },
+  {
+    "name": "Butwal FM",
+    "url": "https://streaming.softnep.net:10994/;stream.nsv"
   }
 ]
