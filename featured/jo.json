@@ -62,5 +62,57 @@
   {
     "name": "Alnas FM",
     "url": "http://stream.zeno.fm/yawenmfp64zuv"
+  },
+  {
+    "name": "Fyrozzzz",
+    "url": "https://stream.zeno.fm/k1o5gpvancntv"
+  },
+  {
+    "name": "Fusha FM 102.9 - Jordan Academy of Arabic",
+    "url": "https://eu9.fastcast4u.com/proxy/arabicla?mp=/1"
+  },
+  {
+    "name": "FABULOUSXM",
+    "url": "http://s3.voscast.com:9830/;stream.mp3"
+  },
+  {
+    "name": "Radio Hala",
+    "url": "https://hala-alrayamedia.radioca.st/;"
+  },
+  {
+    "name": "Nai FM 101.5",
+    "url": "https://naifm.radioca.st/;"
+  },
+  {
+    "name": "Noon FM 103.1",
+    "url": "https://radionoon.radioca.st/;"
+  },
+  {
+    "name": "Rabee Al Qloub",
+    "url": "http://radio-ssl.com:8006/stream"
+  },
+  {
+    "name": "Jeish FM 107.9",
+    "url": "https://jeishfm-alrayamedia.radioca.st/;"
+  },
+  {
+    "name": "Watar FM",
+    "url": "https://securestreams2.autopo.st:1243/live"
+  },
+  {
+    "name": "Drdchati Radio",
+    "url": "https://radio.gorlk.net/drdchati"
+  },
+  {
+    "name": "Tareq Al Nasser Music",
+    "url": "https://listen.radioking.com/radio/782726/stream/850381"
+  },
+  {
+    "name": "JU FM 94.9 - University of Jordan Radio",
+    "url": "https://stream.streamgenial.stream/42t0df9z0f8uv"
+  },
+  {
+    "name": "Play 99.5 FM",
+    "url": "https://play995.radioca.st//stream"
   }
 ]

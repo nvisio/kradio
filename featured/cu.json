@@ -106,5 +106,13 @@
   {
     "name": "96.7 Radio Rebelde FM",
     "url": "https://theonestopradio.com/stream?url=https://icecast.teveo.cu/zrXXWK9F"
+  },
+  {
+    "name": "Radio Campesina Cubana",
+    "url": "https://radiocampesinacubana.stream.laut.fm/radiocampesinacubana?t302=2026-10-27_23-15-23&uuid=60208d29-bfb6-22d2-e3a4-9521c1f7a0ec"
+  },
+  {
+    "name": "Cadena Roja",
+    "url": "https://stream.cadenaroja.com/radio.mp3"
   }
 ]
